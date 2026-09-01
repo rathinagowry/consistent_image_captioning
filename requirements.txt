@@ -1,0 +1,8 @@
+openai
+pillow
+pandas
+numpy
+scikit-learn
+sentence-transformers
+matplotlib
+python-dotenv
