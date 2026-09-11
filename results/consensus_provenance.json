@@ -1,0 +1,296 @@
+[
+  {
+    "image_id": "test_001",
+    "metadata": {
+      "consensus_policy": {
+        "number_of_runs": 3,
+        "minimum_support": 2,
+        "rule": "strict majority"
+      },
+      "minority_entities": [],
+      "minority_actions": [],
+      "minority_relations": [
+        {
+          "fact": {
+            "subject": "e1",
+            "relation": "through",
+            "object": "e2"
+          },
+          "support": 1,
+          "runs": [
+            2
+          ]
+        },
+        {
+          "fact": {
+            "subject": "e2",
+            "relation": "dotted_with",
+            "object": "e3"
+          },
+          "support": 1,
+          "runs": [
+            0
+          ]
+        }
+      ],
+      "scene": {
+        "location_support": {
+          "grassy field": 2
+        },
+        "minority_environment": [
+          {
+            "value": "flowers",
+            "support": 1,
+            "runs": [
+              1
+            ]
+          },
+          {
+            "value": "grassy field",
+            "support": 1,
+            "runs": [
+              2
+            ]
+          },
+          {
+            "value": "outdoor",
+            "support": 1,
+            "runs": [
+              1
+            ]
+          },
+          {
+            "value": "yellow flowers",
+            "support": 1,
+            "runs": [
+              2
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "image_id": "test_002",
+    "metadata": {
+      "consensus_policy": {
+        "number_of_runs": 3,
+        "minimum_support": 2,
+        "rule": "strict majority"
+      },
+      "minority_entities": [
+        {
+          "consensus_id": "e6",
+          "support": 1,
+          "runs": [
+            2
+          ],
+          "type_variants": [
+            "water"
+          ],
+          "attribute_support": {}
+        }
+      ],
+      "minority_actions": [],
+      "minority_relations": [
+        {
+          "fact": {
+            "subject": "e3",
+            "relation": "behind",
+            "object": "e1"
+          },
+          "support": 1,
+          "runs": [
+            1
+          ]
+        },
+        {
+          "fact": {
+            "subject": "e3",
+            "relation": "in_background_of",
+            "object": "e1"
+          },
+          "support": 1,
+          "runs": [
+            0
+          ]
+        },
+        {
+          "fact": {
+            "subject": "e3",
+            "relation": "under",
+            "object": "e5"
+          },
+          "support": 1,
+          "runs": [
+            2
+          ]
+        },
+        {
+          "fact": {
+            "subject": "e4",
+            "relation": "in",
+            "object": "e2"
+          },
+          "support": 1,
+          "runs": [
+            1
+          ]
+        },
+        {
+          "fact": {
+            "subject": "e5",
+            "relation": "above",
+            "object": "e1"
+          },
+          "support": 1,
+          "runs": [
+            0
+          ]
+        }
+      ],
+      "scene": {
+        "location_support": {},
+        "minority_environment": [
+          {
+            "value": "soft golden sky",
+            "support": 1,
+            "runs": [
+              1
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "image_id": "test_003",
+    "metadata": {
+      "consensus_policy": {
+        "number_of_runs": 3,
+        "minimum_support": 2,
+        "rule": "strict majority"
+      },
+      "minority_entities": [],
+      "minority_actions": [],
+      "minority_relations": [
+        {
+          "fact": {
+            "subject": "e2",
+            "relation": "illuminates",
+            "object": "e1"
+          },
+          "support": 1,
+          "runs": [
+            1
+          ]
+        },
+        {
+          "fact": {
+            "subject": "e3",
+            "relation": "on",
+            "object": "e1"
+          },
+          "support": 1,
+          "runs": [
+            1
+          ]
+        }
+      ],
+      "scene": {
+        "location_support": {},
+        "minority_environment": []
+      }
+    }
+  },
+  {
+    "image_id": "test_004",
+    "metadata": {
+      "consensus_policy": {
+        "number_of_runs": 3,
+        "minimum_support": 2,
+        "rule": "strict majority"
+      },
+      "minority_entities": [],
+      "minority_actions": [],
+      "minority_relations": [
+        {
+          "fact": {
+            "subject": "e6",
+            "relation": "background of",
+            "object": "e4"
+          },
+          "support": 1,
+          "runs": [
+            1
+          ]
+        },
+        {
+          "fact": {
+            "subject": "e7",
+            "relation": "wearing",
+            "object": "e2"
+          },
+          "support": 1,
+          "runs": [
+            1
+          ]
+        },
+        {
+          "fact": {
+            "subject": "e7",
+            "relation": "wearing",
+            "object": "e5"
+          },
+          "support": 1,
+          "runs": [
+            1
+          ]
+        }
+      ],
+      "scene": {
+        "location_support": {
+          "park_area": 1,
+          "grassy park area": 1,
+          "park area": 1
+        },
+        "minority_environment": [
+          {
+            "value": "trees in background",
+            "support": 1,
+            "runs": [
+              1
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "image_id": "test_005",
+    "metadata": {
+      "consensus_policy": {
+        "number_of_runs": 3,
+        "minimum_support": 2,
+        "rule": "strict majority"
+      },
+      "minority_entities": [],
+      "minority_actions": [],
+      "minority_relations": [],
+      "scene": {
+        "location_support": {
+          "classroom": 3
+        },
+        "minority_environment": [
+          {
+            "value": "indoor",
+            "support": 1,
+            "runs": [
+              0
+            ]
+          }
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,333 @@
+{
+    "timestamp": "2026-09-11T16:50:52.856625+00:00",
+    "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+    "prompt": "Describe this image in one sentence.",
+    "temperature": 0.0,
+    "runs_per_image": 3,
+    "rebuild": false,
+    "images_processed": 5,
+    "successful": 5,
+    "failed": 0,
+    "results": [
+        {
+            "image_id": "test_001",
+            "status": "success",
+            "caption": "A brown dog runs. The brown dog is through a grassy field. The grassy field is dotted with a yellow flower. The environment includes an outdoor.",
+            "csr": {
+                "image_id": "test_001",
+                "entities": [
+                    {
+                        "id": "e1",
+                        "type": "dog",
+                        "attributes": [
+                            "brown"
+                        ]
+                    },
+                    {
+                        "id": "e2",
+                        "type": "field",
+                        "attributes": [
+                            "grassy"
+                        ]
+                    },
+                    {
+                        "id": "e3",
+                        "type": "flower",
+                        "attributes": [
+                            "yellow"
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "subject": "e1",
+                        "action": "run",
+                        "object": null
+                    }
+                ],
+                "relations": [
+                    {
+                        "subject": "e1",
+                        "relation": "through",
+                        "object": "e2"
+                    },
+                    {
+                        "subject": "e2",
+                        "relation": "dotted_with",
+                        "object": "e3"
+                    }
+                ],
+                "scene": {
+                    "location": null,
+                    "environment": [
+                        "outdoor"
+                    ]
+                }
+            }
+        },
+        {
+            "image_id": "test_002",
+            "status": "success",
+            "caption": "A wooden cabin with a log sits. The wooden cabin with a log is on a calm lake. A mirrored reflection is in the calm lake and of the wooden cabin with a log. The environment includes snow capped mountains.",
+            "csr": {
+                "image_id": "test_002",
+                "entities": [
+                    {
+                        "id": "e2",
+                        "type": "cabin",
+                        "attributes": [
+                            "log",
+                            "wooden"
+                        ]
+                    },
+                    {
+                        "id": "e3",
+                        "type": "lake",
+                        "attributes": [
+                            "calm"
+                        ]
+                    },
+                    {
+                        "id": "e4",
+                        "type": "mountain",
+                        "attributes": [
+                            "majestic",
+                            "snow_capped"
+                        ]
+                    },
+                    {
+                        "id": "e6",
+                        "type": "reflection",
+                        "attributes": [
+                            "mirrored"
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "subject": "e2",
+                        "action": "sit",
+                        "object": null
+                    }
+                ],
+                "relations": [
+                    {
+                        "subject": "e2",
+                        "relation": "on",
+                        "object": "e3"
+                    },
+                    {
+                        "subject": "e6",
+                        "relation": "in",
+                        "object": "e3"
+                    },
+                    {
+                        "subject": "e6",
+                        "relation": "of",
+                        "object": "e2"
+                    }
+                ],
+                "scene": {
+                    "location": null,
+                    "environment": [
+                        "snow_capped_mountains"
+                    ]
+                }
+            }
+        },
+        {
+            "image_id": "test_003",
+            "status": "success",
+            "caption": "A man sits and types a laptop. The man is at a desk and under a desk lamp.",
+            "csr": {
+                "image_id": "test_003",
+                "entities": [
+                    {
+                        "id": "e1",
+                        "type": "desk",
+                        "attributes": []
+                    },
+                    {
+                        "id": "e2",
+                        "type": "desk_lamp",
+                        "attributes": []
+                    },
+                    {
+                        "id": "e4",
+                        "type": "laptop",
+                        "attributes": []
+                    },
+                    {
+                        "id": "e5",
+                        "type": "man",
+                        "attributes": []
+                    }
+                ],
+                "actions": [
+                    {
+                        "subject": "e5",
+                        "action": "sit",
+                        "object": null
+                    },
+                    {
+                        "subject": "e5",
+                        "action": "type",
+                        "object": "e4"
+                    }
+                ],
+                "relations": [
+                    {
+                        "subject": "e5",
+                        "relation": "at",
+                        "object": "e1"
+                    },
+                    {
+                        "subject": "e5",
+                        "relation": "under",
+                        "object": "e2"
+                    }
+                ],
+                "scene": {
+                    "location": null,
+                    "environment": []
+                }
+            }
+        },
+        {
+            "image_id": "test_004",
+            "status": "success",
+            "caption": "A woman with blue jeans and a brown tank top walks a white dog. The white dog is on a red leash. The woman with blue jeans and a brown tank top is through a grassy park.",
+            "csr": {
+                "image_id": "test_004",
+                "entities": [
+                    {
+                        "id": "e1",
+                        "type": "dog",
+                        "attributes": [
+                            "white"
+                        ]
+                    },
+                    {
+                        "id": "e4",
+                        "type": "leash",
+                        "attributes": [
+                            "red"
+                        ]
+                    },
+                    {
+                        "id": "e6",
+                        "type": "park",
+                        "attributes": [
+                            "grassy"
+                        ]
+                    },
+                    {
+                        "id": "e9",
+                        "type": "woman",
+                        "attributes": [
+                            "blue_jeans",
+                            "brown_tank_top"
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "subject": "e9",
+                        "action": "walk",
+                        "object": "e1"
+                    }
+                ],
+                "relations": [
+                    {
+                        "subject": "e1",
+                        "relation": "on",
+                        "object": "e4"
+                    },
+                    {
+                        "subject": "e9",
+                        "relation": "through",
+                        "object": "e6"
+                    }
+                ],
+                "scene": {
+                    "location": null,
+                    "environment": []
+                }
+            }
+        },
+        {
+            "image_id": "test_005",
+            "status": "success",
+            "caption": "A teacher with a female sits. A young group with a diverse is in a classroom with a bright. The teacher with a female is in the classroom with a bright and on a floor. The scene is set in a classroom.",
+            "csr": {
+                "image_id": "test_005",
+                "entities": [
+                    {
+                        "id": "e2",
+                        "type": "classroom",
+                        "attributes": [
+                            "bright"
+                        ]
+                    },
+                    {
+                        "id": "e3",
+                        "type": "floor",
+                        "attributes": []
+                    },
+                    {
+                        "id": "e4",
+                        "type": "group",
+                        "attributes": [
+                            "diverse",
+                            "young"
+                        ]
+                    },
+                    {
+                        "id": "e7",
+                        "type": "teacher",
+                        "attributes": [
+                            "female"
+                        ]
+                    },
+                    {
+                        "id": "e8",
+                        "type": "toy",
+                        "attributes": [
+                            "wooden"
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "subject": "e7",
+                        "action": "sit",
+                        "object": null
+                    }
+                ],
+                "relations": [
+                    {
+                        "subject": "e4",
+                        "relation": "in",
+                        "object": "e2"
+                    },
+                    {
+                        "subject": "e7",
+                        "relation": "in",
+                        "object": "e2"
+                    },
+                    {
+                        "subject": "e7",
+                        "relation": "on",
+                        "object": "e3"
+                    }
+                ],
+                "scene": {
+                    "location": "classroom",
+                    "environment": [
+                        "bright"
+                    ]
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,529 @@
+[
+    {
+        "image_id": "test_002",
+        "image_file": "test_002.png",
+        "baseline_run_number": 1,
+        "extraction_run_number": 1,
+        "caption": "A wooden log cabin sits on a small platform in a calm lake, its reflection perfectly mirrored in the water with majestic snow-capped mountains rising in the background.",
+        "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+        "temperature": 0.0,
+        "status": "success",
+        "attempts": 1,
+        "original_csr": {
+            "entities": [
+                {
+                    "id": "e1",
+                    "type": "cabin",
+                    "attributes": [
+                        "wooden",
+                        "log"
+                    ]
+                },
+                {
+                    "id": "e2",
+                    "type": "platform",
+                    "attributes": [
+                        "small"
+                    ]
+                },
+                {
+                    "id": "e3",
+                    "type": "lake",
+                    "attributes": [
+                        "calm"
+                    ]
+                },
+                {
+                    "id": "e4",
+                    "type": "reflection",
+                    "attributes": [
+                        "perfectly mirrored"
+                    ]
+                },
+                {
+                    "id": "e5",
+                    "type": "water",
+                    "attributes": []
+                },
+                {
+                    "id": "e6",
+                    "type": "mountains",
+                    "attributes": [
+                        "majestic",
+                        "snow-capped"
+                    ]
+                },
+                {
+                    "id": "e7",
+                    "type": "background",
+                    "attributes": []
+                }
+            ],
+            "actions": [
+                {
+                    "subject": "e1",
+                    "action": "sit",
+                    "object": null
+                },
+                {
+                    "subject": "e6",
+                    "action": "rise",
+                    "object": null
+                }
+            ],
+            "relations": [
+                {
+                    "subject": "e1",
+                    "relation": "on",
+                    "object": "e2"
+                },
+                {
+                    "subject": "e2",
+                    "relation": "in",
+                    "object": "e3"
+                },
+                {
+                    "subject": "e1",
+                    "relation": "has",
+                    "object": "e4"
+                },
+                {
+                    "subject": "e4",
+                    "relation": "in",
+                    "object": "e5"
+                },
+                {
+                    "subject": "e6",
+                    "relation": "in",
+                    "object": "e7"
+                }
+            ],
+            "scene": {
+                "location": null,
+                "environment": [
+                    "calm lake",
+                    "snow-capped mountains"
+                ]
+            }
+        },
+        "csr": {
+            "entities": [
+                {
+                    "id": "e1",
+                    "type": "background",
+                    "attributes": []
+                },
+                {
+                    "id": "e2",
+                    "type": "cabin",
+                    "attributes": [
+                        "log",
+                        "wooden"
+                    ]
+                },
+                {
+                    "id": "e3",
+                    "type": "lake",
+                    "attributes": [
+                        "calm"
+                    ]
+                },
+                {
+                    "id": "e4",
+                    "type": "mountains",
+                    "attributes": [
+                        "majestic",
+                        "snow_capped"
+                    ]
+                },
+                {
+                    "id": "e5",
+                    "type": "platform",
+                    "attributes": [
+                        "small"
+                    ]
+                },
+                {
+                    "id": "e6",
+                    "type": "reflection",
+                    "attributes": [
+                        "perfectly_mirrored"
+                    ]
+                },
+                {
+                    "id": "e7",
+                    "type": "water",
+                    "attributes": []
+                }
+            ],
+            "actions": [
+                {
+                    "subject": "e2",
+                    "action": "sit",
+                    "object": null
+                },
+                {
+                    "subject": "e4",
+                    "action": "rise",
+                    "object": null
+                }
+            ],
+            "relations": [
+                {
+                    "subject": "e2",
+                    "relation": "has",
+                    "object": "e6"
+                },
+                {
+                    "subject": "e2",
+                    "relation": "on",
+                    "object": "e5"
+                },
+                {
+                    "subject": "e4",
+                    "relation": "in",
+                    "object": "e1"
+                },
+                {
+                    "subject": "e5",
+                    "relation": "in",
+                    "object": "e3"
+                },
+                {
+                    "subject": "e6",
+                    "relation": "in",
+                    "object": "e7"
+                }
+            ],
+            "scene": {
+                "location": null,
+                "environment": [
+                    "calm_lake",
+                    "snow_capped_mountains"
+                ]
+            }
+        },
+        "extraction_attempts": 3,
+        "raw_extraction_output": "{\n    \"entities\": [\n        {\n            \"id\": \"e1\",\n            \"type\": \"cabin\",\n            \"attributes\": [\"wooden\", \"log\"]\n        },\n        {\n            \"id\": \"e2\",\n            \"type\": \"platform\",\n            \"attributes\": [\"small\"]\n        },\n        {\n            \"id\": \"e3\",\n            \"type\": \"lake\",\n            \"attributes\": [\"calm\"]\n        },\n        {\n            \"id\": \"e4\",\n            \"type\": \"reflection\",\n            \"attributes\": [\"perfectly mirrored\"]\n        },\n        {\n            \"id\": \"e5\",\n            \"type\": \"water\",\n            \"attributes\": []\n        },\n        {\n            \"id\": \"e6\",\n            \"type\": \"mountains\",\n            \"attributes\": [\"majestic\", \"snow-capped\"]\n        },\n        {\n            \"id\": \"e7\",\n            \"type\": \"background\",\n            \"attributes\": []\n        }\n    ],\n    \"actions\": [\n        {\n            \"subject\": \"e1\",\n            \"action\": \"sit\",\n            \"object\": null\n        },\n        {\n            \"subject\": \"e6\",\n            \"action\": \"rise\",\n            \"object\": null\n        }\n    ],\n    \"relations\": [\n        {\n            \"subject\": \"e1\",\n            \"relation\": \"on\",\n            \"object\": \"e2\"\n        },\n        {\n            \"subject\": \"e2\",\n            \"relation\": \"in\",\n            \"object\": \"e3\"\n        },\n        {\n            \"subject\": \"e1\",\n            \"relation\": \"has\",\n            \"object\": \"e4\"\n        },\n        {\n            \"subject\": \"e4\",\n            \"relation\": \"in\",\n            \"object\": \"e5\"\n        },\n        {\n            \"subject\": \"e6\",\n            \"relation\": \"in\",\n            \"object\": \"e7\"\n        }\n    ],\n    \"scene\": {\n        \"location\": null,\n        \"environment\": [\"calm lake\", \"snow-capped mountains\"]\n    }\n}"
+    },
+    {
+        "image_id": "test_002",
+        "image_file": "test_002.png",
+        "baseline_run_number": 2,
+        "extraction_run_number": 2,
+        "caption": "A wooden log cabin sits on a calm lake, its reflection mirrored in the water with a backdrop of majestic snow-capped mountains and a forested shoreline under a partly cloudy sky.",
+        "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+        "temperature": 0.0,
+        "status": "success",
+        "attempts": 1,
+        "original_csr": {
+            "entities": [
+                {
+                    "id": "e1",
+                    "type": "cabin",
+                    "attributes": [
+                        "wooden",
+                        "log"
+                    ]
+                },
+                {
+                    "id": "e2",
+                    "type": "lake",
+                    "attributes": [
+                        "calm"
+                    ]
+                },
+                {
+                    "id": "e3",
+                    "type": "reflection",
+                    "attributes": [
+                        "mirrored"
+                    ]
+                },
+                {
+                    "id": "e4",
+                    "type": "mountain",
+                    "attributes": [
+                        "majestic",
+                        "snow-capped"
+                    ]
+                },
+                {
+                    "id": "e5",
+                    "type": "shoreline",
+                    "attributes": [
+                        "forested"
+                    ]
+                },
+                {
+                    "id": "e6",
+                    "type": "sky",
+                    "attributes": [
+                        "partly cloudy"
+                    ]
+                }
+            ],
+            "actions": [],
+            "relations": [
+                {
+                    "subject": "e1",
+                    "relation": "on",
+                    "object": "e2"
+                },
+                {
+                    "subject": "e3",
+                    "relation": "in",
+                    "object": "e2"
+                },
+                {
+                    "subject": "e3",
+                    "relation": "of",
+                    "object": "e1"
+                },
+                {
+                    "subject": "e4",
+                    "relation": "behind",
+                    "object": "e1"
+                },
+                {
+                    "subject": "e5",
+                    "relation": "around",
+                    "object": "e2"
+                },
+                {
+                    "subject": "e6",
+                    "relation": "above",
+                    "object": "e1"
+                }
+            ],
+            "scene": {
+                "location": null,
+                "environment": [
+                    "lake",
+                    "mountain",
+                    "shoreline",
+                    "sky"
+                ]
+            }
+        },
+        "csr": {
+            "entities": [
+                {
+                    "id": "e1",
+                    "type": "cabin",
+                    "attributes": [
+                        "log",
+                        "wooden"
+                    ]
+                },
+                {
+                    "id": "e2",
+                    "type": "lake",
+                    "attributes": [
+                        "calm"
+                    ]
+                },
+                {
+                    "id": "e3",
+                    "type": "mountain",
+                    "attributes": [
+                        "majestic",
+                        "snow_capped"
+                    ]
+                },
+                {
+                    "id": "e4",
+                    "type": "reflection",
+                    "attributes": [
+                        "mirrored"
+                    ]
+                },
+                {
+                    "id": "e5",
+                    "type": "shoreline",
+                    "attributes": [
+                        "forested"
+                    ]
+                },
+                {
+                    "id": "e6",
+                    "type": "sky",
+                    "attributes": [
+                        "partly_cloudy"
+                    ]
+                }
+            ],
+            "actions": [],
+            "relations": [
+                {
+                    "subject": "e1",
+                    "relation": "on",
+                    "object": "e2"
+                },
+                {
+                    "subject": "e3",
+                    "relation": "behind",
+                    "object": "e1"
+                },
+                {
+                    "subject": "e4",
+                    "relation": "in",
+                    "object": "e2"
+                },
+                {
+                    "subject": "e4",
+                    "relation": "of",
+                    "object": "e1"
+                },
+                {
+                    "subject": "e5",
+                    "relation": "around",
+                    "object": "e2"
+                },
+                {
+                    "subject": "e6",
+                    "relation": "above",
+                    "object": "e1"
+                }
+            ],
+            "scene": {
+                "location": null,
+                "environment": [
+                    "lake",
+                    "mountain",
+                    "shoreline",
+                    "sky"
+                ]
+            }
+        },
+        "extraction_attempts": 1,
+        "raw_extraction_output": "{\n    \"entities\": [\n        {\n            \"id\": \"e1\",\n            \"type\": \"cabin\",\n            \"attributes\": [\"wooden\", \"log\"]\n        },\n        {\n            \"id\": \"e2\",\n            \"type\": \"lake\",\n            \"attributes\": [\"calm\"]\n        },\n        {\n            \"id\": \"e3\",\n            \"type\": \"reflection\",\n            \"attributes\": [\"mirrored\"]\n        },\n        {\n            \"id\": \"e4\",\n            \"type\": \"mountain\",\n            \"attributes\": [\"majestic\", \"snow-capped\"]\n        },\n        {\n            \"id\": \"e5\",\n            \"type\": \"shoreline\",\n            \"attributes\": [\"forested\"]\n        },\n        {\n            \"id\": \"e6\",\n            \"type\": \"sky\",\n            \"attributes\": [\"partly cloudy\"]\n        }\n    ],\n    \"actions\": [],\n    \"relations\": [\n        {\n            \"subject\": \"e1\",\n            \"relation\": \"on\",\n            \"object\": \"e2\"\n        },\n        {\n            \"subject\": \"e3\",\n            \"relation\": \"in\",\n            \"object\": \"e2\"\n        },\n        {\n            \"subject\": \"e3\",\n            \"relation\": \"of\",\n            \"object\": \"e1\"\n        },\n        {\n            \"subject\": \"e4\",\n            \"relation\": \"behind\",\n            \"object\": \"e1\"\n        },\n        {\n            \"subject\": \"e5\",\n            \"relation\": \"around\",\n            \"object\": \"e2\"\n        },\n        {\n            \"subject\": \"e6\",\n            \"relation\": \"above\",\n            \"object\": \"e1\"\n        }\n    ],\n    \"scene\": {\n        \"location\": null,\n        \"environment\": [\"lake\", \"mountain\", \"shoreline\", \"sky\"]\n    }\n}"
+    },
+    {
+        "image_id": "test_002",
+        "image_file": "test_002.png",
+        "baseline_run_number": 3,
+        "extraction_run_number": 3,
+        "caption": "A wooden log cabin sits on a calm lake, its reflection mirrored in the water with snow-capped mountains and a forested hillside in the background.",
+        "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+        "temperature": 0.0,
+        "status": "success",
+        "attempts": 1,
+        "original_csr": {
+            "entities": [
+                {
+                    "id": "e1",
+                    "type": "cabin",
+                    "attributes": [
+                        "wooden",
+                        "log"
+                    ]
+                },
+                {
+                    "id": "e2",
+                    "type": "lake",
+                    "attributes": [
+                        "calm"
+                    ]
+                },
+                {
+                    "id": "e3",
+                    "type": "reflection",
+                    "attributes": [
+                        "mirrored"
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "subject": "e1",
+                    "action": "sit",
+                    "object": null
+                }
+            ],
+            "relations": [
+                {
+                    "subject": "e1",
+                    "relation": "on",
+                    "object": "e2"
+                },
+                {
+                    "subject": "e3",
+                    "relation": "of",
+                    "object": "e1"
+                },
+                {
+                    "subject": "e3",
+                    "relation": "in",
+                    "object": "e2"
+                }
+            ],
+            "scene": {
+                "location": "calm lake",
+                "environment": [
+                    "snow-capped mountains",
+                    "forested hillside"
+                ]
+            }
+        },
+        "csr": {
+            "entities": [
+                {
+                    "id": "e1",
+                    "type": "cabin",
+                    "attributes": [
+                        "log",
+                        "wooden"
+                    ]
+                },
+                {
+                    "id": "e2",
+                    "type": "lake",
+                    "attributes": [
+                        "calm"
+                    ]
+                },
+                {
+                    "id": "e3",
+                    "type": "reflection",
+                    "attributes": [
+                        "mirrored"
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "subject": "e1",
+                    "action": "sit",
+                    "object": null
+                }
+            ],
+            "relations": [
+                {
+                    "subject": "e1",
+                    "relation": "on",
+                    "object": "e2"
+                },
+                {
+                    "subject": "e3",
+                    "relation": "in",
+                    "object": "e2"
+                },
+                {
+                    "subject": "e3",
+                    "relation": "of",
+                    "object": "e1"
+                }
+            ],
+            "scene": {
+                "location": "calm_lake",
+                "environment": [
+                    "forested_hillside",
+                    "snow_capped_mountains"
+                ]
+            }
+        },
+        "extraction_attempts": 1,
+        "raw_extraction_output": "{\n  \"entities\": [\n    {\n      \"id\": \"e1\",\n      \"type\": \"cabin\",\n      \"attributes\": [\"wooden\", \"log\"]\n    },\n    {\n      \"id\": \"e2\",\n      \"type\": \"lake\",\n      \"attributes\": [\"calm\"]\n    },\n    {\n      \"id\": \"e3\",\n      \"type\": \"reflection\",\n      \"attributes\": [\"mirrored\"]\n    }\n  ],\n  \"actions\": [\n    {\n      \"subject\": \"e1\",\n      \"action\": \"sit\",\n      \"object\": null\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"e1\",\n      \"relation\": \"on\",\n      \"object\": \"e2\"\n    },\n    {\n      \"subject\": \"e3\",\n      \"relation\": \"of\",\n      \"object\": \"e1\"\n    },\n    {\n      \"subject\": \"e3\",\n      \"relation\": \"in\",\n      \"object\": \"e2\"\n    }\n  ],\n  \"scene\": {\n    \"location\": \"calm lake\",\n    \"environment\": [\"snow-capped mountains\", \"forested hillside\"]\n  }\n}"
+    }
+]

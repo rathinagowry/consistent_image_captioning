@@ -1,0 +1,479 @@
+{
+  "experiment": {
+    "input_stability_file": "C:\\Projects\\Image_Consistency\\results\\stability_15_results.json",
+    "input_alignment_file": "C:\\Projects\\Image_Consistency\\results\\semantic_alignment_results.json",
+    "total_stability_records": 15,
+    "valid_csr_records": 15,
+    "total_alignment_pairs": 15,
+    "evaluated_pairs": 15,
+    "failed_pairs": 0
+  },
+  "metric_definition": {
+    "description": "Pairwise semantic consistency is computed as matched semantic elements divided by the larger corresponding element count. Overall consistency is the equally weighted mean of entity, attribute, action, relation and scene consistency.",
+    "weights": {
+      "entities": 0.2,
+      "attributes": 0.2,
+      "actions": 0.2,
+      "relations": 0.2,
+      "scene": 0.2
+    }
+  },
+  "global_summary": {
+    "entity_consistency": 0.9778,
+    "attribute_consistency": 0.9178,
+    "action_consistency": 0.8889,
+    "relation_consistency": 0.6689,
+    "scene_consistency": 0.94,
+    "overall_consistency": 0.8787
+  },
+  "image_summary": {
+    "test_001": {
+      "entity_consistency": 1.0,
+      "attribute_consistency": 1.0,
+      "action_consistency": 1.0,
+      "relation_consistency": 0.6667,
+      "scene_consistency": 0.8833,
+      "overall_consistency": 0.91
+    },
+    "test_002": {
+      "entity_consistency": 0.8889,
+      "attribute_consistency": 1.0,
+      "action_consistency": 0.8889,
+      "relation_consistency": 0.3333,
+      "scene_consistency": 0.95,
+      "overall_consistency": 0.8122
+    },
+    "test_003": {
+      "entity_consistency": 1.0,
+      "attribute_consistency": 0.8667,
+      "action_consistency": 1.0,
+      "relation_consistency": 0.7778,
+      "scene_consistency": 0.9833,
+      "overall_consistency": 0.9255
+    },
+    "test_004": {
+      "entity_consistency": 1.0,
+      "attribute_consistency": 0.8889,
+      "action_consistency": 0.5555,
+      "relation_consistency": 0.7333,
+      "scene_consistency": 0.95,
+      "overall_consistency": 0.8255
+    },
+    "test_005": {
+      "entity_consistency": 1.0,
+      "attribute_consistency": 0.8333,
+      "action_consistency": 1.0,
+      "relation_consistency": 0.8333,
+      "scene_consistency": 0.9333,
+      "overall_consistency": 0.92
+    }
+  },
+  "pair_results": [
+    {
+      "pair_id": "test_001_3_1_2",
+      "image_id": "test_001",
+      "record_a": {
+        "baseline_run_number": 3,
+        "extraction_run_number": 1
+      },
+      "record_b": {
+        "baseline_run_number": 3,
+        "extraction_run_number": 2
+      },
+      "scores": {
+        "entity_consistency": 1.0,
+        "attribute_consistency": 1.0,
+        "action_consistency": 1.0,
+        "relation_consistency": 1.0,
+        "scene_consistency": 0.9,
+        "overall_consistency": 0.98
+      },
+      "alignment_summary": {
+        "entity_matches": 3,
+        "attribute_matches": 3,
+        "action_matches": 1,
+        "relation_matches": 1,
+        "scene_equivalent": true
+      }
+    },
+    {
+      "pair_id": "test_001_3_1_3",
+      "image_id": "test_001",
+      "record_a": {
+        "baseline_run_number": 3,
+        "extraction_run_number": 1
+      },
+      "record_b": {
+        "baseline_run_number": 3,
+        "extraction_run_number": 3
+      },
+      "scores": {
+        "entity_consistency": 1.0,
+        "attribute_consistency": 1.0,
+        "action_consistency": 1.0,
+        "relation_consistency": 0.5,
+        "scene_consistency": 0.9,
+        "overall_consistency": 0.88
+      },
+      "alignment_summary": {
+        "entity_matches": 3,
+        "attribute_matches": 3,
+        "action_matches": 1,
+        "relation_matches": 1,
+        "scene_equivalent": true
+      }
+    },
+    {
+      "pair_id": "test_001_3_2_3",
+      "image_id": "test_001",
+      "record_a": {
+        "baseline_run_number": 3,
+        "extraction_run_number": 2
+      },
+      "record_b": {
+        "baseline_run_number": 3,
+        "extraction_run_number": 3
+      },
+      "scores": {
+        "entity_consistency": 1.0,
+        "attribute_consistency": 1.0,
+        "action_consistency": 1.0,
+        "relation_consistency": 0.5,
+        "scene_consistency": 0.85,
+        "overall_consistency": 0.87
+      },
+      "alignment_summary": {
+        "entity_matches": 3,
+        "attribute_matches": 3,
+        "action_matches": 1,
+        "relation_matches": 1,
+        "scene_equivalent": true
+      }
+    },
+    {
+      "pair_id": "test_002_1_1_2",
+      "image_id": "test_002",
+      "record_a": {
+        "baseline_run_number": 1,
+        "extraction_run_number": 1
+      },
+      "record_b": {
+        "baseline_run_number": 1,
+        "extraction_run_number": 2
+      },
+      "scores": {
+        "entity_consistency": 1.0,
+        "attribute_consistency": 1.0,
+        "action_consistency": 1.0,
+        "relation_consistency": 0.25,
+        "scene_consistency": 0.95,
+        "overall_consistency": 0.84
+      },
+      "alignment_summary": {
+        "entity_matches": 5,
+        "attribute_matches": 8,
+        "action_matches": 3,
+        "relation_matches": 1,
+        "scene_equivalent": true
+      }
+    },
+    {
+      "pair_id": "test_002_1_1_3",
+      "image_id": "test_002",
+      "record_a": {
+        "baseline_run_number": 1,
+        "extraction_run_number": 1
+      },
+      "record_b": {
+        "baseline_run_number": 1,
+        "extraction_run_number": 3
+      },
+      "scores": {
+        "entity_consistency": 0.8333,
+        "attribute_consistency": 1.0,
+        "action_consistency": 1.0,
+        "relation_consistency": 0.5,
+        "scene_consistency": 1.0,
+        "overall_consistency": 0.8667
+      },
+      "alignment_summary": {
+        "entity_matches": 5,
+        "attribute_matches": 8,
+        "action_matches": 3,
+        "relation_matches": 2,
+        "scene_equivalent": true
+      }
+    },
+    {
+      "pair_id": "test_002_1_2_3",
+      "image_id": "test_002",
+      "record_a": {
+        "baseline_run_number": 1,
+        "extraction_run_number": 2
+      },
+      "record_b": {
+        "baseline_run_number": 1,
+        "extraction_run_number": 3
+      },
+      "scores": {
+        "entity_consistency": 0.8333,
+        "attribute_consistency": 1.0,
+        "action_consistency": 0.6667,
+        "relation_consistency": 0.25,
+        "scene_consistency": 0.9,
+        "overall_consistency": 0.73
+      },
+      "alignment_summary": {
+        "entity_matches": 5,
+        "attribute_matches": 8,
+        "action_matches": 2,
+        "relation_matches": 1,
+        "scene_equivalent": true
+      }
+    },
+    {
+      "pair_id": "test_003_3_1_2",
+      "image_id": "test_003",
+      "record_a": {
+        "baseline_run_number": 3,
+        "extraction_run_number": 1
+      },
+      "record_b": {
+        "baseline_run_number": 3,
+        "extraction_run_number": 2
+      },
+      "scores": {
+        "entity_consistency": 1.0,
+        "attribute_consistency": 1.0,
+        "action_consistency": 1.0,
+        "relation_consistency": 0.6667,
+        "scene_consistency": 1.0,
+        "overall_consistency": 0.9333
+      },
+      "alignment_summary": {
+        "entity_matches": 4,
+        "attribute_matches": 4,
+        "action_matches": 1,
+        "relation_matches": 2,
+        "scene_equivalent": true
+      }
+    },
+    {
+      "pair_id": "test_003_3_1_3",
+      "image_id": "test_003",
+      "record_a": {
+        "baseline_run_number": 3,
+        "extraction_run_number": 1
+      },
+      "record_b": {
+        "baseline_run_number": 3,
+        "extraction_run_number": 3
+      },
+      "scores": {
+        "entity_consistency": 1.0,
+        "attribute_consistency": 0.8,
+        "action_consistency": 1.0,
+        "relation_consistency": 1.0,
+        "scene_consistency": 1.0,
+        "overall_consistency": 0.96
+      },
+      "alignment_summary": {
+        "entity_matches": 4,
+        "attribute_matches": 4,
+        "action_matches": 1,
+        "relation_matches": 2,
+        "scene_equivalent": true
+      }
+    },
+    {
+      "pair_id": "test_003_3_2_3",
+      "image_id": "test_003",
+      "record_a": {
+        "baseline_run_number": 3,
+        "extraction_run_number": 2
+      },
+      "record_b": {
+        "baseline_run_number": 3,
+        "extraction_run_number": 3
+      },
+      "scores": {
+        "entity_consistency": 1.0,
+        "attribute_consistency": 0.8,
+        "action_consistency": 1.0,
+        "relation_consistency": 0.6667,
+        "scene_consistency": 0.95,
+        "overall_consistency": 0.8833
+      },
+      "alignment_summary": {
+        "entity_matches": 4,
+        "attribute_matches": 4,
+        "action_matches": 1,
+        "relation_matches": 2,
+        "scene_equivalent": true
+      }
+    },
+    {
+      "pair_id": "test_004_3_1_2",
+      "image_id": "test_004",
+      "record_a": {
+        "baseline_run_number": 3,
+        "extraction_run_number": 1
+      },
+      "record_b": {
+        "baseline_run_number": 3,
+        "extraction_run_number": 2
+      },
+      "scores": {
+        "entity_consistency": 1.0,
+        "attribute_consistency": 0.8333,
+        "action_consistency": 0.3333,
+        "relation_consistency": 0.6,
+        "scene_consistency": 0.95,
+        "overall_consistency": 0.7433
+      },
+      "alignment_summary": {
+        "entity_matches": 7,
+        "attribute_matches": 5,
+        "action_matches": 1,
+        "relation_matches": 3,
+        "scene_equivalent": true
+      }
+    },
+    {
+      "pair_id": "test_004_3_1_3",
+      "image_id": "test_004",
+      "record_a": {
+        "baseline_run_number": 3,
+        "extraction_run_number": 1
+      },
+      "record_b": {
+        "baseline_run_number": 3,
+        "extraction_run_number": 3
+      },
+      "scores": {
+        "entity_consistency": 1.0,
+        "attribute_consistency": 1.0,
+        "action_consistency": 1.0,
+        "relation_consistency": 1.0,
+        "scene_consistency": 1.0,
+        "overall_consistency": 1.0
+      },
+      "alignment_summary": {
+        "entity_matches": 7,
+        "attribute_matches": 5,
+        "action_matches": 3,
+        "relation_matches": 3,
+        "scene_equivalent": true
+      }
+    },
+    {
+      "pair_id": "test_004_3_2_3",
+      "image_id": "test_004",
+      "record_a": {
+        "baseline_run_number": 3,
+        "extraction_run_number": 2
+      },
+      "record_b": {
+        "baseline_run_number": 3,
+        "extraction_run_number": 3
+      },
+      "scores": {
+        "entity_consistency": 1.0,
+        "attribute_consistency": 0.8333,
+        "action_consistency": 0.3333,
+        "relation_consistency": 0.6,
+        "scene_consistency": 0.9,
+        "overall_consistency": 0.7333
+      },
+      "alignment_summary": {
+        "entity_matches": 7,
+        "attribute_matches": 5,
+        "action_matches": 1,
+        "relation_matches": 3,
+        "scene_equivalent": true
+      }
+    },
+    {
+      "pair_id": "test_005_3_1_2",
+      "image_id": "test_005",
+      "record_a": {
+        "baseline_run_number": 3,
+        "extraction_run_number": 1
+      },
+      "record_b": {
+        "baseline_run_number": 3,
+        "extraction_run_number": 2
+      },
+      "scores": {
+        "entity_consistency": 1.0,
+        "attribute_consistency": 0.75,
+        "action_consistency": 1.0,
+        "relation_consistency": 0.75,
+        "scene_consistency": 0.9,
+        "overall_consistency": 0.88
+      },
+      "alignment_summary": {
+        "entity_matches": 6,
+        "attribute_matches": 3,
+        "action_matches": 4,
+        "relation_matches": 3,
+        "scene_equivalent": true
+      }
+    },
+    {
+      "pair_id": "test_005_3_1_3",
+      "image_id": "test_005",
+      "record_a": {
+        "baseline_run_number": 3,
+        "extraction_run_number": 1
+      },
+      "record_b": {
+        "baseline_run_number": 3,
+        "extraction_run_number": 3
+      },
+      "scores": {
+        "entity_consistency": 1.0,
+        "attribute_consistency": 1.0,
+        "action_consistency": 1.0,
+        "relation_consistency": 1.0,
+        "scene_consistency": 0.9,
+        "overall_consistency": 0.98
+      },
+      "alignment_summary": {
+        "entity_matches": 6,
+        "attribute_matches": 3,
+        "action_matches": 4,
+        "relation_matches": 4,
+        "scene_equivalent": true
+      }
+    },
+    {
+      "pair_id": "test_005_3_2_3",
+      "image_id": "test_005",
+      "record_a": {
+        "baseline_run_number": 3,
+        "extraction_run_number": 2
+      },
+      "record_b": {
+        "baseline_run_number": 3,
+        "extraction_run_number": 3
+      },
+      "scores": {
+        "entity_consistency": 1.0,
+        "attribute_consistency": 0.75,
+        "action_consistency": 1.0,
+        "relation_consistency": 0.75,
+        "scene_consistency": 1.0,
+        "overall_consistency": 0.9
+      },
+      "alignment_summary": {
+        "entity_matches": 6,
+        "attribute_matches": 3,
+        "action_matches": 4,
+        "relation_matches": 3,
+        "scene_equivalent": true
+      }
+    }
+  ],
+  "failures": []
+}

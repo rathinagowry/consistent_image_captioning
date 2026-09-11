@@ -1,0 +1,345 @@
+[
+    {
+        "image_id": "test_001",
+        "image_file": "test_001.png",
+        "baseline_run_number": 1,
+        "extraction_run_number": 1,
+        "caption": "A brown dog runs across a grassy field dotted with yellow flowers.",
+        "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+        "temperature": 0.0,
+        "status": "success",
+        "attempts": 1,
+        "original_csr": {
+            "entities": [
+                {
+                    "id": "e1",
+                    "type": "dog",
+                    "attributes": [
+                        "brown"
+                    ]
+                },
+                {
+                    "id": "e2",
+                    "type": "field",
+                    "attributes": [
+                        "grassy"
+                    ]
+                },
+                {
+                    "id": "e3",
+                    "type": "flower",
+                    "attributes": [
+                        "yellow"
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "subject": "e1",
+                    "action": "run",
+                    "object": null
+                }
+            ],
+            "relations": [
+                {
+                    "subject": "e1",
+                    "relation": "across",
+                    "object": "e2"
+                },
+                {
+                    "subject": "e2",
+                    "relation": "dotted_with",
+                    "object": "e3"
+                }
+            ],
+            "scene": {
+                "location": "field",
+                "environment": [
+                    "outdoor"
+                ]
+            }
+        },
+        "csr": {
+            "entities": [
+                {
+                    "id": "e1",
+                    "type": "dog",
+                    "attributes": [
+                        "brown"
+                    ]
+                },
+                {
+                    "id": "e2",
+                    "type": "field",
+                    "attributes": [
+                        "grassy"
+                    ]
+                },
+                {
+                    "id": "e3",
+                    "type": "flower",
+                    "attributes": [
+                        "yellow"
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "subject": "e1",
+                    "action": "run",
+                    "object": null
+                }
+            ],
+            "relations": [
+                {
+                    "subject": "e1",
+                    "relation": "across",
+                    "object": "e2"
+                },
+                {
+                    "subject": "e2",
+                    "relation": "dotted_with",
+                    "object": "e3"
+                }
+            ],
+            "scene": {
+                "location": "field",
+                "environment": [
+                    "outdoor"
+                ]
+            }
+        },
+        "extraction_attempts": 1,
+        "raw_extraction_output": "{\n    \"entities\": [\n        {\n            \"id\": \"e1\",\n            \"type\": \"dog\",\n            \"attributes\": [\"brown\"]\n        },\n        {\n            \"id\": \"e2\",\n            \"type\": \"field\",\n            \"attributes\": [\"grassy\"]\n        },\n        {\n            \"id\": \"e3\",\n            \"type\": \"flower\",\n            \"attributes\": [\"yellow\"]\n        }\n    ],\n    \"actions\": [\n        {\n            \"subject\": \"e1\",\n            \"action\": \"run\",\n            \"object\": null\n        }\n    ],\n    \"relations\": [\n        {\n            \"subject\": \"e1\",\n            \"relation\": \"across\",\n            \"object\": \"e2\"\n        },\n        {\n            \"subject\": \"e2\",\n            \"relation\": \"dotted_with\",\n            \"object\": \"e3\"\n        }\n    ],\n    \"scene\": {\n        \"location\": \"field\",\n        \"environment\": [\"outdoor\"]\n    }\n}"
+    },
+    {
+        "image_id": "test_001",
+        "image_file": "test_001.png",
+        "baseline_run_number": 2,
+        "extraction_run_number": 2,
+        "caption": "A tan dog runs through a grassy field dotted with yellow flowers.",
+        "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+        "temperature": 0.0,
+        "status": "success",
+        "attempts": 1,
+        "original_csr": {
+            "entities": [
+                {
+                    "id": "e1",
+                    "type": "dog",
+                    "attributes": [
+                        "tan"
+                    ]
+                },
+                {
+                    "id": "e2",
+                    "type": "field",
+                    "attributes": [
+                        "grassy"
+                    ]
+                },
+                {
+                    "id": "e3",
+                    "type": "flower",
+                    "attributes": [
+                        "yellow"
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "subject": "e1",
+                    "action": "run",
+                    "object": null
+                }
+            ],
+            "relations": [
+                {
+                    "subject": "e1",
+                    "relation": "through",
+                    "object": "e2"
+                },
+                {
+                    "subject": "e2",
+                    "relation": "dotted_with",
+                    "object": "e3"
+                }
+            ],
+            "scene": {
+                "location": null,
+                "environment": [
+                    "grassy field",
+                    "yellow flowers"
+                ]
+            }
+        },
+        "csr": {
+            "entities": [
+                {
+                    "id": "e1",
+                    "type": "dog",
+                    "attributes": [
+                        "tan"
+                    ]
+                },
+                {
+                    "id": "e2",
+                    "type": "field",
+                    "attributes": [
+                        "grassy"
+                    ]
+                },
+                {
+                    "id": "e3",
+                    "type": "flower",
+                    "attributes": [
+                        "yellow"
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "subject": "e1",
+                    "action": "run",
+                    "object": null
+                }
+            ],
+            "relations": [
+                {
+                    "subject": "e1",
+                    "relation": "through",
+                    "object": "e2"
+                },
+                {
+                    "subject": "e2",
+                    "relation": "dotted_with",
+                    "object": "e3"
+                }
+            ],
+            "scene": {
+                "location": null,
+                "environment": [
+                    "grassy_field",
+                    "yellow_flowers"
+                ]
+            }
+        },
+        "extraction_attempts": 1,
+        "raw_extraction_output": "{\n    \"entities\": [\n        {\n            \"id\": \"e1\",\n            \"type\": \"dog\",\n            \"attributes\": [\"tan\"]\n        },\n        {\n            \"id\": \"e2\",\n            \"type\": \"field\",\n            \"attributes\": [\"grassy\"]\n        },\n        {\n            \"id\": \"e3\",\n            \"type\": \"flower\",\n            \"attributes\": [\"yellow\"]\n        }\n    ],\n    \"actions\": [\n        {\n            \"subject\": \"e1\",\n            \"action\": \"run\",\n            \"object\": null\n        }\n    ],\n    \"relations\": [\n        {\n            \"subject\": \"e1\",\n            \"relation\": \"through\",\n            \"object\": \"e2\"\n        },\n        {\n            \"subject\": \"e2\",\n            \"relation\": \"dotted_with\",\n            \"object\": \"e3\"\n        }\n    ],\n    \"scene\": {\n        \"location\": null,\n        \"environment\": [\"grassy field\", \"yellow flowers\"]\n    }\n}"
+    },
+    {
+        "image_id": "test_001",
+        "image_file": "test_001.png",
+        "baseline_run_number": 3,
+        "extraction_run_number": 3,
+        "caption": "A brown dog runs through a green field dotted with yellow flowers.",
+        "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+        "temperature": 0.0,
+        "status": "success",
+        "attempts": 3,
+        "original_csr": {
+            "entities": [
+                {
+                    "id": "e1",
+                    "type": "dog",
+                    "attributes": [
+                        "brown"
+                    ]
+                },
+                {
+                    "id": "e2",
+                    "type": "field",
+                    "attributes": [
+                        "green"
+                    ]
+                },
+                {
+                    "id": "e3",
+                    "type": "flower",
+                    "attributes": [
+                        "yellow"
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "subject": "e1",
+                    "action": "run",
+                    "object": null
+                }
+            ],
+            "relations": [
+                {
+                    "subject": "e1",
+                    "relation": "through",
+                    "object": "e2"
+                },
+                {
+                    "subject": "e3",
+                    "relation": "in",
+                    "object": "e2"
+                }
+            ],
+            "scene": {
+                "location": null,
+                "environment": [
+                    "outdoor",
+                    "nature"
+                ]
+            }
+        },
+        "csr": {
+            "entities": [
+                {
+                    "id": "e1",
+                    "type": "dog",
+                    "attributes": [
+                        "brown"
+                    ]
+                },
+                {
+                    "id": "e2",
+                    "type": "field",
+                    "attributes": [
+                        "green"
+                    ]
+                },
+                {
+                    "id": "e3",
+                    "type": "flower",
+                    "attributes": [
+                        "yellow"
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "subject": "e1",
+                    "action": "run",
+                    "object": null
+                }
+            ],
+            "relations": [
+                {
+                    "subject": "e1",
+                    "relation": "through",
+                    "object": "e2"
+                },
+                {
+                    "subject": "e3",
+                    "relation": "in",
+                    "object": "e2"
+                }
+            ],
+            "scene": {
+                "location": null,
+                "environment": [
+                    "nature",
+                    "outdoor"
+                ]
+            }
+        },
+        "extraction_attempts": 1,
+        "raw_extraction_output": "{\n    \"entities\": [\n        {\n            \"id\": \"e1\",\n            \"type\": \"dog\",\n            \"attributes\": [\"brown\"]\n        },\n        {\n            \"id\": \"e2\",\n            \"type\": \"field\",\n            \"attributes\": [\"green\"]\n        },\n        {\n            \"id\": \"e3\",\n            \"type\": \"flower\",\n            \"attributes\": [\"yellow\"]\n        }\n    ],\n    \"actions\": [\n        {\n            \"subject\": \"e1\",\n            \"action\": \"run\",\n            \"object\": null\n        }\n    ],\n    \"relations\": [\n        {\n            \"subject\": \"e1\",\n            \"relation\": \"through\",\n            \"object\": \"e2\"\n        },\n        {\n            \"subject\": \"e3\",\n            \"relation\": \"in\",\n            \"object\": \"e2\"\n        }\n    ],\n    \"scene\": {\n        \"location\": null,\n        \"environment\": [\"outdoor\", \"nature\"]\n    }\n}"
+    }
+]

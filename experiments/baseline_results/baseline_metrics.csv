@@ -1,4 +1,7 @@
 image_id,num_outputs,num_unique_outputs,exact_match_rate,unique_output_ratio,mean_pairwise_semantic_similarity
-test_001,10,10,0.1,1.0,0.8998
-test_002,10,10,0.1,1.0,0.8691
-OVERALL,20,20,0.1,1.0,0.88445
+test_001,10,5,0.3,0.5,0.9259
+test_002,10,10,0.1,1.0,0.873
+test_003,10,9,0.2,0.9,0.9051
+test_004,10,7,0.3,0.7,0.927
+test_005,10,10,0.1,1.0,0.9421
+OVERALL,50,41,0.20000000000000004,0.82,0.91462

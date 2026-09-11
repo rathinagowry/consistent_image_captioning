@@ -1,0 +1,60 @@
+[
+    {
+        "image_id": "test_003",
+        "status": "success",
+        "caption": "A man sits and types a laptop. The man is at a desk and under a desk lamp.",
+        "csr": {
+            "image_id": "test_003",
+            "entities": [
+                {
+                    "id": "e1",
+                    "type": "desk",
+                    "attributes": []
+                },
+                {
+                    "id": "e2",
+                    "type": "desk_lamp",
+                    "attributes": []
+                },
+                {
+                    "id": "e4",
+                    "type": "laptop",
+                    "attributes": []
+                },
+                {
+                    "id": "e5",
+                    "type": "man",
+                    "attributes": []
+                }
+            ],
+            "actions": [
+                {
+                    "subject": "e5",
+                    "action": "sit",
+                    "object": null
+                },
+                {
+                    "subject": "e5",
+                    "action": "type",
+                    "object": "e4"
+                }
+            ],
+            "relations": [
+                {
+                    "subject": "e5",
+                    "relation": "at",
+                    "object": "e1"
+                },
+                {
+                    "subject": "e5",
+                    "relation": "under",
+                    "object": "e2"
+                }
+            ],
+            "scene": {
+                "location": null,
+                "environment": []
+            }
+        }
+    }
+]

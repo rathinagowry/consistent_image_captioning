@@ -1,0 +1,10 @@
+image_id,baseline_run_number,extraction_run_number,timestamp_utc,timestamp_ist,model,temperature,status
+test_003,3,1,2026-09-04T17:28:58.578577+00:00,2026-09-04T22:58:58.578577+05:30,nvidia/nemotron-3-ultra-550b-a55b:free,0.0,success
+test_003,3,2,2026-09-04T17:29:56.117272+00:00,2026-09-04T22:59:56.117272+05:30,nvidia/nemotron-3-ultra-550b-a55b:free,0.0,success
+test_003,3,3,2026-09-04T17:31:05.957248+00:00,2026-09-04T23:01:05.957248+05:30,nvidia/nemotron-3-ultra-550b-a55b:free,0.0,success
+test_004,3,1,2026-09-04T17:32:01.458998+00:00,2026-09-04T23:02:01.458998+05:30,nvidia/nemotron-3-ultra-550b-a55b:free,0.0,success
+test_004,3,2,2026-09-04T17:33:11.195923+00:00,2026-09-04T23:03:11.195923+05:30,nvidia/nemotron-3-ultra-550b-a55b:free,0.0,success
+test_004,3,3,2026-09-04T17:34:22.467281+00:00,2026-09-04T23:04:22.467281+05:30,nvidia/nemotron-3-ultra-550b-a55b:free,0.0,success
+test_005,3,1,2026-09-04T17:35:25.244914+00:00,2026-09-04T23:05:25.244914+05:30,nvidia/nemotron-3-ultra-550b-a55b:free,0.0,success
+test_005,3,2,2026-09-04T17:36:26.618310+00:00,2026-09-04T23:06:26.618310+05:30,nvidia/nemotron-3-ultra-550b-a55b:free,0.0,success
+test_005,3,3,2026-09-04T17:37:00.814700+00:00,2026-09-04T23:07:00.814700+05:30,nvidia/nemotron-3-ultra-550b-a55b:free,0.0,success

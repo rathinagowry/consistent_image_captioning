@@ -6,3 +6,5 @@ scikit-learn
 sentence-transformers
 matplotlib
 python-dotenv
+nltk
+seaborn

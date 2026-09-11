@@ -1,0 +1,225 @@
+[
+    {
+        "pair_id": "test_003_1_1_2",
+        "image_id": "test_003",
+        "record_a": {
+            "baseline_run_number": 1,
+            "extraction_run_number": 1
+        },
+        "record_b": {
+            "baseline_run_number": 2,
+            "extraction_run_number": 2
+        },
+        "status": "success",
+        "alignment": {
+            "entity_matches": [
+                {
+                    "a": "e1",
+                    "b": "e1"
+                },
+                {
+                    "a": "e2",
+                    "b": "e2"
+                },
+                {
+                    "a": "e4",
+                    "b": "e3"
+                },
+                {
+                    "a": "e5",
+                    "b": "e4"
+                }
+            ],
+            "attribute_matches": [
+                {
+                    "entity_a": "e2",
+                    "entity_b": "e2",
+                    "matches": [
+                        {
+                            "a": "warm",
+                            "b": "warm_light"
+                        }
+                    ]
+                }
+            ],
+            "action_matches": [
+                {
+                    "a_index": 1,
+                    "b_index": 0,
+                    "confidence": 0.95
+                },
+                {
+                    "a_index": 2,
+                    "b_index": 1,
+                    "confidence": 0.95
+                }
+            ],
+            "relation_matches": [
+                {
+                    "a_index": 0,
+                    "b_index": 0,
+                    "confidence": 0.95
+                }
+            ],
+            "scene_match": {
+                "equivalent": false,
+                "confidence": 0.9
+            }
+        }
+    },
+    {
+        "pair_id": "test_003_1_1_3",
+        "image_id": "test_003",
+        "record_a": {
+            "baseline_run_number": 1,
+            "extraction_run_number": 1
+        },
+        "record_b": {
+            "baseline_run_number": 3,
+            "extraction_run_number": 3
+        },
+        "status": "success",
+        "alignment": {
+            "entity_matches": [
+                {
+                    "a": "e1",
+                    "b": "e1"
+                },
+                {
+                    "a": "e2",
+                    "b": "e2"
+                },
+                {
+                    "a": "e4",
+                    "b": "e3"
+                },
+                {
+                    "a": "e5",
+                    "b": "e4"
+                }
+            ],
+            "attribute_matches": [
+                {
+                    "entity_a": "e2",
+                    "entity_b": "e2",
+                    "matches": [
+                        {
+                            "a": "warm",
+                            "b": "warm_glow"
+                        }
+                    ]
+                }
+            ],
+            "action_matches": [
+                {
+                    "a_index": 1,
+                    "b_index": 0,
+                    "confidence": 1.0
+                },
+                {
+                    "a_index": 2,
+                    "b_index": 1,
+                    "confidence": 1.0
+                }
+            ],
+            "relation_matches": [
+                {
+                    "a_index": 0,
+                    "b_index": 0,
+                    "confidence": 1.0
+                }
+            ],
+            "scene_match": {
+                "equivalent": false,
+                "confidence": 0.0
+            }
+        }
+    },
+    {
+        "pair_id": "test_003_2_2_3",
+        "image_id": "test_003",
+        "record_a": {
+            "baseline_run_number": 2,
+            "extraction_run_number": 2
+        },
+        "record_b": {
+            "baseline_run_number": 3,
+            "extraction_run_number": 3
+        },
+        "status": "success",
+        "alignment": {
+            "entity_matches": [
+                {
+                    "a": "e1",
+                    "b": "e1"
+                },
+                {
+                    "a": "e2",
+                    "b": "e2"
+                },
+                {
+                    "a": "e3",
+                    "b": "e3"
+                },
+                {
+                    "a": "e4",
+                    "b": "e4"
+                }
+            ],
+            "attribute_matches": [
+                {
+                    "entity_a": "e2",
+                    "entity_b": "e2",
+                    "matches": [
+                        {
+                            "a": "warm_light",
+                            "b": "warm_glow"
+                        }
+                    ]
+                },
+                {
+                    "entity_a": "e4",
+                    "entity_b": "e4",
+                    "matches": [
+                        {
+                            "a": "bearded",
+                            "b": "beard"
+                        },
+                        {
+                            "a": "wearing_glasses",
+                            "b": "glasses"
+                        }
+                    ]
+                }
+            ],
+            "action_matches": [
+                {
+                    "a_index": 0,
+                    "b_index": 0,
+                    "confidence": 1.0
+                },
+                {
+                    "a_index": 1,
+                    "b_index": 1,
+                    "confidence": 1.0
+                }
+            ],
+            "relation_matches": [
+                {
+                    "a_index": 0,
+                    "b_index": 0,
+                    "confidence": 1.0
+                },
+                {
+                    "a_index": 1,
+                    "b_index": 1,
+                    "confidence": 1.0
+                }
+            ],
+            "scene_match": {
+                "equivalent": true,
+                "confidence": 1.0
+            }
+        }
+    }
+]

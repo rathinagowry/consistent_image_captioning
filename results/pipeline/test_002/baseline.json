@@ -1,0 +1,35 @@
+[
+    {
+        "image_id": "test_002",
+        "image_file": "test_002.png",
+        "baseline_run_number": 1,
+        "extraction_run_number": 1,
+        "caption": "A wooden log cabin sits on a small platform in a calm lake, its reflection perfectly mirrored in the water with majestic snow-capped mountains rising in the background.",
+        "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+        "temperature": 0.0,
+        "status": "success",
+        "attempts": 1
+    },
+    {
+        "image_id": "test_002",
+        "image_file": "test_002.png",
+        "baseline_run_number": 2,
+        "extraction_run_number": 2,
+        "caption": "A wooden log cabin sits on a calm lake, its reflection mirrored in the water with a backdrop of majestic snow-capped mountains and a forested shoreline under a partly cloudy sky.",
+        "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+        "temperature": 0.0,
+        "status": "success",
+        "attempts": 1
+    },
+    {
+        "image_id": "test_002",
+        "image_file": "test_002.png",
+        "baseline_run_number": 3,
+        "extraction_run_number": 3,
+        "caption": "A wooden log cabin sits on a calm lake, its reflection mirrored in the water with snow-capped mountains and a forested hillside in the background.",
+        "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+        "temperature": 0.0,
+        "status": "success",
+        "attempts": 1
+    }
+]

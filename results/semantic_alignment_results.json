@@ -1,0 +1,1757 @@
+[
+  {
+    "pair_id": "test_001_3_1_2",
+    "image_id": "test_001",
+    "record_a": {
+      "baseline_run_number": 3,
+      "extraction_run_number": 1
+    },
+    "record_b": {
+      "baseline_run_number": 3,
+      "extraction_run_number": 2
+    },
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+    "temperature": 0.0,
+    "status": "success",
+    "alignment": {
+      "entity_matches": [
+        {
+          "a": "e1",
+          "b": "e1"
+        },
+        {
+          "a": "e2",
+          "b": "e2"
+        },
+        {
+          "a": "e3",
+          "b": "e3"
+        }
+      ],
+      "attribute_matches": [
+        {
+          "entity_a": "e1",
+          "entity_b": "e1",
+          "matches": [
+            {
+              "a": "tan",
+              "b": "tan"
+            }
+          ]
+        },
+        {
+          "entity_a": "e2",
+          "entity_b": "e2",
+          "matches": [
+            {
+              "a": "grassy",
+              "b": "grassy"
+            }
+          ]
+        },
+        {
+          "entity_a": "e3",
+          "entity_b": "e3",
+          "matches": [
+            {
+              "a": "yellow",
+              "b": "yellow"
+            }
+          ]
+        }
+      ],
+      "action_matches": [
+        {
+          "a_index": 0,
+          "b_index": 0,
+          "confidence": 1.0
+        }
+      ],
+      "relation_matches": [
+        {
+          "a_index": 0,
+          "b_index": 0,
+          "confidence": 1.0
+        }
+      ],
+      "scene_match": {
+        "equivalent": true,
+        "confidence": 0.9
+      }
+    },
+    "summary": {
+      "entity_matches": 3,
+      "attribute_matches": 3,
+      "action_matches": 1,
+      "relation_matches": 1,
+      "scene_equivalent": true
+    }
+  },
+  {
+    "pair_id": "test_001_3_1_3",
+    "image_id": "test_001",
+    "record_a": {
+      "baseline_run_number": 3,
+      "extraction_run_number": 1
+    },
+    "record_b": {
+      "baseline_run_number": 3,
+      "extraction_run_number": 3
+    },
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+    "temperature": 0.0,
+    "status": "success",
+    "alignment": {
+      "entity_matches": [
+        {
+          "a": "e1",
+          "b": "e1"
+        },
+        {
+          "a": "e2",
+          "b": "e2"
+        },
+        {
+          "a": "e3",
+          "b": "e3"
+        }
+      ],
+      "attribute_matches": [
+        {
+          "entity_a": "e1",
+          "entity_b": "e1",
+          "matches": [
+            {
+              "a": "tan",
+              "b": "tan"
+            }
+          ]
+        },
+        {
+          "entity_a": "e2",
+          "entity_b": "e2",
+          "matches": [
+            {
+              "a": "grassy",
+              "b": "grassy"
+            }
+          ]
+        },
+        {
+          "entity_a": "e3",
+          "entity_b": "e3",
+          "matches": [
+            {
+              "a": "yellow",
+              "b": "yellow"
+            }
+          ]
+        }
+      ],
+      "action_matches": [
+        {
+          "a_index": 0,
+          "b_index": 0,
+          "confidence": 1.0
+        }
+      ],
+      "relation_matches": [
+        {
+          "a_index": 0,
+          "b_index": 1,
+          "confidence": 1.0
+        }
+      ],
+      "scene_match": {
+        "equivalent": true,
+        "confidence": 0.9
+      }
+    },
+    "summary": {
+      "entity_matches": 3,
+      "attribute_matches": 3,
+      "action_matches": 1,
+      "relation_matches": 1,
+      "scene_equivalent": true
+    }
+  },
+  {
+    "pair_id": "test_001_3_2_3",
+    "image_id": "test_001",
+    "record_a": {
+      "baseline_run_number": 3,
+      "extraction_run_number": 2
+    },
+    "record_b": {
+      "baseline_run_number": 3,
+      "extraction_run_number": 3
+    },
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+    "temperature": 0.0,
+    "status": "success",
+    "alignment": {
+      "entity_matches": [
+        {
+          "a": "e1",
+          "b": "e1"
+        },
+        {
+          "a": "e2",
+          "b": "e2"
+        },
+        {
+          "a": "e3",
+          "b": "e3"
+        }
+      ],
+      "attribute_matches": [
+        {
+          "entity_a": "e1",
+          "entity_b": "e1",
+          "matches": [
+            {
+              "a": "tan",
+              "b": "tan"
+            }
+          ]
+        },
+        {
+          "entity_a": "e2",
+          "entity_b": "e2",
+          "matches": [
+            {
+              "a": "grassy",
+              "b": "grassy"
+            }
+          ]
+        },
+        {
+          "entity_a": "e3",
+          "entity_b": "e3",
+          "matches": [
+            {
+              "a": "yellow",
+              "b": "yellow"
+            }
+          ]
+        }
+      ],
+      "action_matches": [
+        {
+          "a_index": 0,
+          "b_index": 0,
+          "confidence": 1.0
+        }
+      ],
+      "relation_matches": [
+        {
+          "a_index": 0,
+          "b_index": 1,
+          "confidence": 1.0
+        }
+      ],
+      "scene_match": {
+        "equivalent": true,
+        "confidence": 0.85
+      }
+    },
+    "summary": {
+      "entity_matches": 3,
+      "attribute_matches": 3,
+      "action_matches": 1,
+      "relation_matches": 1,
+      "scene_equivalent": true
+    }
+  },
+  {
+    "pair_id": "test_002_1_1_2",
+    "image_id": "test_002",
+    "record_a": {
+      "baseline_run_number": 1,
+      "extraction_run_number": 1
+    },
+    "record_b": {
+      "baseline_run_number": 1,
+      "extraction_run_number": 2
+    },
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+    "temperature": 0.0,
+    "status": "success",
+    "alignment": {
+      "entity_matches": [
+        {
+          "a": "e1",
+          "b": "e1"
+        },
+        {
+          "a": "e2",
+          "b": "e2"
+        },
+        {
+          "a": "e3",
+          "b": "e3"
+        },
+        {
+          "a": "e4",
+          "b": "e4"
+        },
+        {
+          "a": "e5",
+          "b": "e5"
+        }
+      ],
+      "attribute_matches": [
+        {
+          "entity_a": "e1",
+          "entity_b": "e1",
+          "matches": [
+            {
+              "a": "rustic",
+              "b": "rustic"
+            },
+            {
+              "a": "log",
+              "b": "log"
+            }
+          ]
+        },
+        {
+          "entity_a": "e2",
+          "entity_b": "e2",
+          "matches": [
+            {
+              "a": "calm",
+              "b": "calm"
+            }
+          ]
+        },
+        {
+          "entity_a": "e3",
+          "entity_b": "e3",
+          "matches": [
+            {
+              "a": "mirrored",
+              "b": "mirrored"
+            }
+          ]
+        },
+        {
+          "entity_a": "e4",
+          "entity_b": "e4",
+          "matches": [
+            {
+              "a": "majestic",
+              "b": "majestic"
+            },
+            {
+              "a": "snow-capped",
+              "b": "snow-capped"
+            }
+          ]
+        },
+        {
+          "entity_a": "e5",
+          "entity_b": "e5",
+          "matches": [
+            {
+              "a": "soft",
+              "b": "soft"
+            },
+            {
+              "a": "golden",
+              "b": "golden"
+            }
+          ]
+        }
+      ],
+      "action_matches": [
+        {
+          "a_index": 0,
+          "b_index": 0,
+          "confidence": 1.0
+        },
+        {
+          "a_index": 1,
+          "b_index": 1,
+          "confidence": 1.0
+        },
+        {
+          "a_index": 2,
+          "b_index": 2,
+          "confidence": 1.0
+        }
+      ],
+      "relation_matches": [
+        {
+          "a_index": 0,
+          "b_index": 0,
+          "confidence": 1.0
+        }
+      ],
+      "scene_match": {
+        "equivalent": true,
+        "confidence": 0.95
+      }
+    },
+    "summary": {
+      "entity_matches": 5,
+      "attribute_matches": 8,
+      "action_matches": 3,
+      "relation_matches": 1,
+      "scene_equivalent": true
+    }
+  },
+  {
+    "pair_id": "test_002_1_1_3",
+    "image_id": "test_002",
+    "record_a": {
+      "baseline_run_number": 1,
+      "extraction_run_number": 1
+    },
+    "record_b": {
+      "baseline_run_number": 1,
+      "extraction_run_number": 3
+    },
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+    "temperature": 0.0,
+    "status": "success",
+    "alignment": {
+      "entity_matches": [
+        {
+          "a": "e1",
+          "b": "e1"
+        },
+        {
+          "a": "e2",
+          "b": "e2"
+        },
+        {
+          "a": "e3",
+          "b": "e3"
+        },
+        {
+          "a": "e4",
+          "b": "e5"
+        },
+        {
+          "a": "e5",
+          "b": "e6"
+        }
+      ],
+      "attribute_matches": [
+        {
+          "entity_a": "e1",
+          "entity_b": "e1",
+          "matches": [
+            {
+              "a": "rustic",
+              "b": "rustic"
+            },
+            {
+              "a": "log",
+              "b": "log"
+            }
+          ]
+        },
+        {
+          "entity_a": "e2",
+          "entity_b": "e2",
+          "matches": [
+            {
+              "a": "calm",
+              "b": "calm"
+            }
+          ]
+        },
+        {
+          "entity_a": "e3",
+          "entity_b": "e3",
+          "matches": [
+            {
+              "a": "mirrored",
+              "b": "mirrored"
+            }
+          ]
+        },
+        {
+          "entity_a": "e4",
+          "entity_b": "e5",
+          "matches": [
+            {
+              "a": "majestic",
+              "b": "majestic"
+            },
+            {
+              "a": "snow-capped",
+              "b": "snow-capped"
+            }
+          ]
+        },
+        {
+          "entity_a": "e5",
+          "entity_b": "e6",
+          "matches": [
+            {
+              "a": "soft",
+              "b": "soft"
+            },
+            {
+              "a": "golden",
+              "b": "golden"
+            }
+          ]
+        }
+      ],
+      "action_matches": [
+        {
+          "a_index": 0,
+          "b_index": 0,
+          "confidence": 1.0
+        },
+        {
+          "a_index": 1,
+          "b_index": 1,
+          "confidence": 0.8
+        },
+        {
+          "a_index": 2,
+          "b_index": 2,
+          "confidence": 1.0
+        }
+      ],
+      "relation_matches": [
+        {
+          "a_index": 0,
+          "b_index": 0,
+          "confidence": 1.0
+        },
+        {
+          "a_index": 1,
+          "b_index": 1,
+          "confidence": 1.0
+        }
+      ],
+      "scene_match": {
+        "equivalent": true,
+        "confidence": 1.0
+      }
+    },
+    "summary": {
+      "entity_matches": 5,
+      "attribute_matches": 8,
+      "action_matches": 3,
+      "relation_matches": 2,
+      "scene_equivalent": true
+    }
+  },
+  {
+    "pair_id": "test_002_1_2_3",
+    "image_id": "test_002",
+    "record_a": {
+      "baseline_run_number": 1,
+      "extraction_run_number": 2
+    },
+    "record_b": {
+      "baseline_run_number": 1,
+      "extraction_run_number": 3
+    },
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+    "temperature": 0.0,
+    "status": "success",
+    "alignment": {
+      "entity_matches": [
+        {
+          "a": "e1",
+          "b": "e1"
+        },
+        {
+          "a": "e2",
+          "b": "e2"
+        },
+        {
+          "a": "e3",
+          "b": "e3"
+        },
+        {
+          "a": "e4",
+          "b": "e5"
+        },
+        {
+          "a": "e5",
+          "b": "e6"
+        }
+      ],
+      "attribute_matches": [
+        {
+          "entity_a": "e1",
+          "entity_b": "e1",
+          "matches": [
+            {
+              "a": "rustic",
+              "b": "rustic"
+            },
+            {
+              "a": "log",
+              "b": "log"
+            }
+          ]
+        },
+        {
+          "entity_a": "e2",
+          "entity_b": "e2",
+          "matches": [
+            {
+              "a": "calm",
+              "b": "calm"
+            }
+          ]
+        },
+        {
+          "entity_a": "e3",
+          "entity_b": "e3",
+          "matches": [
+            {
+              "a": "mirrored",
+              "b": "mirrored"
+            }
+          ]
+        },
+        {
+          "entity_a": "e4",
+          "entity_b": "e5",
+          "matches": [
+            {
+              "a": "majestic",
+              "b": "majestic"
+            },
+            {
+              "a": "snow-capped",
+              "b": "snow-capped"
+            }
+          ]
+        },
+        {
+          "entity_a": "e5",
+          "entity_b": "e6",
+          "matches": [
+            {
+              "a": "soft",
+              "b": "soft"
+            },
+            {
+              "a": "golden",
+              "b": "golden"
+            }
+          ]
+        }
+      ],
+      "action_matches": [
+        {
+          "a_index": 0,
+          "b_index": 0,
+          "confidence": 1.0
+        },
+        {
+          "a_index": 2,
+          "b_index": 2,
+          "confidence": 1.0
+        }
+      ],
+      "relation_matches": [
+        {
+          "a_index": 0,
+          "b_index": 0,
+          "confidence": 1.0
+        }
+      ],
+      "scene_match": {
+        "equivalent": true,
+        "confidence": 0.9
+      }
+    },
+    "summary": {
+      "entity_matches": 5,
+      "attribute_matches": 8,
+      "action_matches": 2,
+      "relation_matches": 1,
+      "scene_equivalent": true
+    }
+  },
+  {
+    "pair_id": "test_003_3_1_2",
+    "image_id": "test_003",
+    "record_a": {
+      "baseline_run_number": 3,
+      "extraction_run_number": 1
+    },
+    "record_b": {
+      "baseline_run_number": 3,
+      "extraction_run_number": 2
+    },
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+    "temperature": 0.0,
+    "status": "success",
+    "alignment": {
+      "entity_matches": [
+        {
+          "a": "e1",
+          "b": "e1"
+        },
+        {
+          "a": "e2",
+          "b": "e2"
+        },
+        {
+          "a": "e3",
+          "b": "e3"
+        },
+        {
+          "a": "e4",
+          "b": "e4"
+        }
+      ],
+      "attribute_matches": [
+        {
+          "entity_a": "e1",
+          "entity_b": "e1",
+          "matches": [
+            {
+              "a": "glasses",
+              "b": "glasses"
+            },
+            {
+              "a": "beard",
+              "b": "beard"
+            },
+            {
+              "a": "white shirt",
+              "b": "white shirt"
+            }
+          ]
+        },
+        {
+          "entity_a": "e4",
+          "entity_b": "e4",
+          "matches": [
+            {
+              "a": "warm",
+              "b": "warm"
+            }
+          ]
+        }
+      ],
+      "action_matches": [
+        {
+          "a_index": 0,
+          "b_index": 0,
+          "confidence": 1.0
+        }
+      ],
+      "relation_matches": [
+        {
+          "a_index": 0,
+          "b_index": 0,
+          "confidence": 1.0
+        },
+        {
+          "a_index": 1,
+          "b_index": 2,
+          "confidence": 0.9
+        }
+      ],
+      "scene_match": {
+        "equivalent": true,
+        "confidence": 1.0
+      }
+    },
+    "summary": {
+      "entity_matches": 4,
+      "attribute_matches": 4,
+      "action_matches": 1,
+      "relation_matches": 2,
+      "scene_equivalent": true
+    }
+  },
+  {
+    "pair_id": "test_003_3_1_3",
+    "image_id": "test_003",
+    "record_a": {
+      "baseline_run_number": 3,
+      "extraction_run_number": 1
+    },
+    "record_b": {
+      "baseline_run_number": 3,
+      "extraction_run_number": 3
+    },
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+    "temperature": 0.0,
+    "status": "success",
+    "alignment": {
+      "entity_matches": [
+        {
+          "a": "e1",
+          "b": "e1"
+        },
+        {
+          "a": "e2",
+          "b": "e2"
+        },
+        {
+          "a": "e3",
+          "b": "e3"
+        },
+        {
+          "a": "e4",
+          "b": "e4"
+        }
+      ],
+      "attribute_matches": [
+        {
+          "entity_a": "e1",
+          "entity_b": "e1",
+          "matches": [
+            {
+              "a": "glasses",
+              "b": "glasses"
+            },
+            {
+              "a": "beard",
+              "b": "beard"
+            },
+            {
+              "a": "white shirt",
+              "b": "white shirt"
+            }
+          ]
+        },
+        {
+          "entity_a": "e4",
+          "entity_b": "e4",
+          "matches": [
+            {
+              "a": "warm",
+              "b": "warm"
+            }
+          ]
+        }
+      ],
+      "action_matches": [
+        {
+          "a_index": 0,
+          "b_index": 0,
+          "confidence": 1.0
+        }
+      ],
+      "relation_matches": [
+        {
+          "a_index": 0,
+          "b_index": 0,
+          "confidence": 1.0
+        },
+        {
+          "a_index": 1,
+          "b_index": 1,
+          "confidence": 1.0
+        }
+      ],
+      "scene_match": {
+        "equivalent": true,
+        "confidence": 1.0
+      }
+    },
+    "summary": {
+      "entity_matches": 4,
+      "attribute_matches": 4,
+      "action_matches": 1,
+      "relation_matches": 2,
+      "scene_equivalent": true
+    }
+  },
+  {
+    "pair_id": "test_003_3_2_3",
+    "image_id": "test_003",
+    "record_a": {
+      "baseline_run_number": 3,
+      "extraction_run_number": 2
+    },
+    "record_b": {
+      "baseline_run_number": 3,
+      "extraction_run_number": 3
+    },
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+    "temperature": 0.0,
+    "status": "success",
+    "alignment": {
+      "entity_matches": [
+        {
+          "a": "e1",
+          "b": "e1"
+        },
+        {
+          "a": "e2",
+          "b": "e2"
+        },
+        {
+          "a": "e3",
+          "b": "e3"
+        },
+        {
+          "a": "e4",
+          "b": "e4"
+        }
+      ],
+      "attribute_matches": [
+        {
+          "entity_a": "e1",
+          "entity_b": "e1",
+          "matches": [
+            {
+              "a": "glasses",
+              "b": "glasses"
+            },
+            {
+              "a": "beard",
+              "b": "beard"
+            },
+            {
+              "a": "white shirt",
+              "b": "white shirt"
+            }
+          ]
+        },
+        {
+          "entity_a": "e4",
+          "entity_b": "e4",
+          "matches": [
+            {
+              "a": "warm",
+              "b": "warm"
+            }
+          ]
+        }
+      ],
+      "action_matches": [
+        {
+          "a_index": 0,
+          "b_index": 0,
+          "confidence": 0.95
+        }
+      ],
+      "relation_matches": [
+        {
+          "a_index": 0,
+          "b_index": 0,
+          "confidence": 0.95
+        },
+        {
+          "a_index": 2,
+          "b_index": 1,
+          "confidence": 0.9
+        }
+      ],
+      "scene_match": {
+        "equivalent": true,
+        "confidence": 0.95
+      }
+    },
+    "summary": {
+      "entity_matches": 4,
+      "attribute_matches": 4,
+      "action_matches": 1,
+      "relation_matches": 2,
+      "scene_equivalent": true
+    }
+  },
+  {
+    "pair_id": "test_004_3_1_2",
+    "image_id": "test_004",
+    "record_a": {
+      "baseline_run_number": 3,
+      "extraction_run_number": 1
+    },
+    "record_b": {
+      "baseline_run_number": 3,
+      "extraction_run_number": 2
+    },
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+    "temperature": 0.0,
+    "status": "success",
+    "alignment": {
+      "entity_matches": [
+        {
+          "a": "e1",
+          "b": "e1"
+        },
+        {
+          "a": "e2",
+          "b": "e2"
+        },
+        {
+          "a": "e3",
+          "b": "e3"
+        },
+        {
+          "a": "e4",
+          "b": "e4"
+        },
+        {
+          "a": "e5",
+          "b": "e5"
+        },
+        {
+          "a": "e6",
+          "b": "e6"
+        },
+        {
+          "a": "e7",
+          "b": "e7"
+        }
+      ],
+      "attribute_matches": [
+        {
+          "entity_a": "e2",
+          "entity_b": "e2",
+          "matches": [
+            {
+              "a": "brown",
+              "b": "brown"
+            }
+          ]
+        },
+        {
+          "entity_a": "e3",
+          "entity_b": "e3",
+          "matches": [
+            {
+              "a": "blue",
+              "b": "blue"
+            }
+          ]
+        },
+        {
+          "entity_a": "e4",
+          "entity_b": "e4",
+          "matches": [
+            {
+              "a": "white",
+              "b": "white"
+            }
+          ]
+        },
+        {
+          "entity_a": "e5",
+          "entity_b": "e5",
+          "matches": [
+            {
+              "a": "red",
+              "b": "red"
+            }
+          ]
+        },
+        {
+          "entity_a": "e6",
+          "entity_b": "e6",
+          "matches": [
+            {
+              "a": "grassy",
+              "b": "grassy"
+            }
+          ]
+        }
+      ],
+      "action_matches": [
+        {
+          "a_index": 0,
+          "b_index": 0,
+          "confidence": 1.0
+        }
+      ],
+      "relation_matches": [
+        {
+          "a_index": 0,
+          "b_index": 2,
+          "confidence": 1.0
+        },
+        {
+          "a_index": 1,
+          "b_index": 3,
+          "confidence": 1.0
+        },
+        {
+          "a_index": 2,
+          "b_index": 4,
+          "confidence": 1.0
+        }
+      ],
+      "scene_match": {
+        "equivalent": true,
+        "confidence": 0.95
+      }
+    },
+    "summary": {
+      "entity_matches": 7,
+      "attribute_matches": 5,
+      "action_matches": 1,
+      "relation_matches": 3,
+      "scene_equivalent": true
+    }
+  },
+  {
+    "pair_id": "test_004_3_1_3",
+    "image_id": "test_004",
+    "record_a": {
+      "baseline_run_number": 3,
+      "extraction_run_number": 1
+    },
+    "record_b": {
+      "baseline_run_number": 3,
+      "extraction_run_number": 3
+    },
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+    "temperature": 0.0,
+    "status": "success",
+    "alignment": {
+      "entity_matches": [
+        {
+          "a": "e1",
+          "b": "e1"
+        },
+        {
+          "a": "e2",
+          "b": "e2"
+        },
+        {
+          "a": "e3",
+          "b": "e3"
+        },
+        {
+          "a": "e4",
+          "b": "e4"
+        },
+        {
+          "a": "e5",
+          "b": "e5"
+        },
+        {
+          "a": "e6",
+          "b": "e6"
+        },
+        {
+          "a": "e7",
+          "b": "e7"
+        }
+      ],
+      "attribute_matches": [
+        {
+          "entity_a": "e2",
+          "entity_b": "e2",
+          "matches": [
+            {
+              "a": "brown",
+              "b": "brown"
+            }
+          ]
+        },
+        {
+          "entity_a": "e3",
+          "entity_b": "e3",
+          "matches": [
+            {
+              "a": "blue",
+              "b": "blue"
+            }
+          ]
+        },
+        {
+          "entity_a": "e4",
+          "entity_b": "e4",
+          "matches": [
+            {
+              "a": "white",
+              "b": "white"
+            }
+          ]
+        },
+        {
+          "entity_a": "e5",
+          "entity_b": "e5",
+          "matches": [
+            {
+              "a": "red",
+              "b": "red"
+            }
+          ]
+        },
+        {
+          "entity_a": "e6",
+          "entity_b": "e6",
+          "matches": [
+            {
+              "a": "grassy",
+              "b": "grassy"
+            }
+          ]
+        }
+      ],
+      "action_matches": [
+        {
+          "a_index": 0,
+          "b_index": 0,
+          "confidence": 1.0
+        },
+        {
+          "a_index": 1,
+          "b_index": 1,
+          "confidence": 1.0
+        },
+        {
+          "a_index": 2,
+          "b_index": 2,
+          "confidence": 1.0
+        }
+      ],
+      "relation_matches": [
+        {
+          "a_index": 0,
+          "b_index": 1,
+          "confidence": 1.0
+        },
+        {
+          "a_index": 1,
+          "b_index": 0,
+          "confidence": 1.0
+        },
+        {
+          "a_index": 2,
+          "b_index": 2,
+          "confidence": 1.0
+        }
+      ],
+      "scene_match": {
+        "equivalent": true,
+        "confidence": 1.0
+      }
+    },
+    "summary": {
+      "entity_matches": 7,
+      "attribute_matches": 5,
+      "action_matches": 3,
+      "relation_matches": 3,
+      "scene_equivalent": true
+    }
+  },
+  {
+    "pair_id": "test_004_3_2_3",
+    "image_id": "test_004",
+    "record_a": {
+      "baseline_run_number": 3,
+      "extraction_run_number": 2
+    },
+    "record_b": {
+      "baseline_run_number": 3,
+      "extraction_run_number": 3
+    },
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+    "temperature": 0.0,
+    "status": "success",
+    "alignment": {
+      "entity_matches": [
+        {
+          "a": "e1",
+          "b": "e1"
+        },
+        {
+          "a": "e2",
+          "b": "e2"
+        },
+        {
+          "a": "e3",
+          "b": "e3"
+        },
+        {
+          "a": "e4",
+          "b": "e4"
+        },
+        {
+          "a": "e5",
+          "b": "e5"
+        },
+        {
+          "a": "e6",
+          "b": "e6"
+        },
+        {
+          "a": "e7",
+          "b": "e7"
+        }
+      ],
+      "attribute_matches": [
+        {
+          "entity_a": "e2",
+          "entity_b": "e2",
+          "matches": [
+            {
+              "a": "brown",
+              "b": "brown"
+            }
+          ]
+        },
+        {
+          "entity_a": "e3",
+          "entity_b": "e3",
+          "matches": [
+            {
+              "a": "blue",
+              "b": "blue"
+            }
+          ]
+        },
+        {
+          "entity_a": "e4",
+          "entity_b": "e4",
+          "matches": [
+            {
+              "a": "white",
+              "b": "white"
+            }
+          ]
+        },
+        {
+          "entity_a": "e5",
+          "entity_b": "e5",
+          "matches": [
+            {
+              "a": "red",
+              "b": "red"
+            }
+          ]
+        },
+        {
+          "entity_a": "e6",
+          "entity_b": "e6",
+          "matches": [
+            {
+              "a": "grassy",
+              "b": "grassy"
+            }
+          ]
+        }
+      ],
+      "action_matches": [
+        {
+          "a_index": 0,
+          "b_index": 0,
+          "confidence": 1.0
+        }
+      ],
+      "relation_matches": [
+        {
+          "a_index": 3,
+          "b_index": 0,
+          "confidence": 1.0
+        },
+        {
+          "a_index": 2,
+          "b_index": 1,
+          "confidence": 1.0
+        },
+        {
+          "a_index": 4,
+          "b_index": 2,
+          "confidence": 1.0
+        }
+      ],
+      "scene_match": {
+        "equivalent": true,
+        "confidence": 0.9
+      }
+    },
+    "summary": {
+      "entity_matches": 7,
+      "attribute_matches": 5,
+      "action_matches": 1,
+      "relation_matches": 3,
+      "scene_equivalent": true
+    }
+  },
+  {
+    "pair_id": "test_005_3_1_2",
+    "image_id": "test_005",
+    "record_a": {
+      "baseline_run_number": 3,
+      "extraction_run_number": 1
+    },
+    "record_b": {
+      "baseline_run_number": 3,
+      "extraction_run_number": 2
+    },
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+    "temperature": 0.0,
+    "status": "success",
+    "alignment": {
+      "entity_matches": [
+        {
+          "a": "e1",
+          "b": "e1"
+        },
+        {
+          "a": "e2",
+          "b": "e3"
+        },
+        {
+          "a": "e3",
+          "b": "e2"
+        },
+        {
+          "a": "e4",
+          "b": "e4"
+        },
+        {
+          "a": "e5",
+          "b": "e5"
+        },
+        {
+          "a": "e6",
+          "b": "e6"
+        }
+      ],
+      "attribute_matches": [
+        {
+          "entity_a": "e3",
+          "entity_b": "e2",
+          "matches": [
+            {
+              "a": "young",
+              "b": "young"
+            }
+          ]
+        },
+        {
+          "entity_a": "e5",
+          "entity_b": "e5",
+          "matches": [
+            {
+              "a": "wooden",
+              "b": "wooden"
+            }
+          ]
+        },
+        {
+          "entity_a": "e6",
+          "entity_b": "e6",
+          "matches": [
+            {
+              "a": "educational",
+              "b": "educational"
+            }
+          ]
+        }
+      ],
+      "action_matches": [
+        {
+          "a_index": 0,
+          "b_index": 0,
+          "confidence": 1.0
+        },
+        {
+          "a_index": 1,
+          "b_index": 1,
+          "confidence": 1.0
+        },
+        {
+          "a_index": 2,
+          "b_index": 2,
+          "confidence": 1.0
+        },
+        {
+          "a_index": 3,
+          "b_index": 3,
+          "confidence": 1.0
+        }
+      ],
+      "relation_matches": [
+        {
+          "a_index": 0,
+          "b_index": 0,
+          "confidence": 1.0
+        },
+        {
+          "a_index": 1,
+          "b_index": 1,
+          "confidence": 1.0
+        },
+        {
+          "a_index": 3,
+          "b_index": 2,
+          "confidence": 1.0
+        }
+      ],
+      "scene_match": {
+        "equivalent": true,
+        "confidence": 0.9
+      }
+    },
+    "summary": {
+      "entity_matches": 6,
+      "attribute_matches": 3,
+      "action_matches": 4,
+      "relation_matches": 3,
+      "scene_equivalent": true
+    }
+  },
+  {
+    "pair_id": "test_005_3_1_3",
+    "image_id": "test_005",
+    "record_a": {
+      "baseline_run_number": 3,
+      "extraction_run_number": 1
+    },
+    "record_b": {
+      "baseline_run_number": 3,
+      "extraction_run_number": 3
+    },
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+    "temperature": 0.0,
+    "status": "success",
+    "alignment": {
+      "entity_matches": [
+        {
+          "a": "e1",
+          "b": "e1"
+        },
+        {
+          "a": "e2",
+          "b": "e3"
+        },
+        {
+          "a": "e3",
+          "b": "e2"
+        },
+        {
+          "a": "e4",
+          "b": "e4"
+        },
+        {
+          "a": "e5",
+          "b": "e5"
+        },
+        {
+          "a": "e6",
+          "b": "e6"
+        }
+      ],
+      "attribute_matches": [
+        {
+          "entity_a": "e3",
+          "entity_b": "e2",
+          "matches": [
+            {
+              "a": "young",
+              "b": "young"
+            }
+          ]
+        },
+        {
+          "entity_a": "e5",
+          "entity_b": "e5",
+          "matches": [
+            {
+              "a": "wooden",
+              "b": "wooden"
+            }
+          ]
+        },
+        {
+          "entity_a": "e6",
+          "entity_b": "e6",
+          "matches": [
+            {
+              "a": "educational",
+              "b": "educational"
+            }
+          ]
+        }
+      ],
+      "action_matches": [
+        {
+          "a_index": 0,
+          "b_index": 0,
+          "confidence": 1.0
+        },
+        {
+          "a_index": 1,
+          "b_index": 1,
+          "confidence": 1.0
+        },
+        {
+          "a_index": 2,
+          "b_index": 2,
+          "confidence": 1.0
+        },
+        {
+          "a_index": 3,
+          "b_index": 3,
+          "confidence": 1.0
+        }
+      ],
+      "relation_matches": [
+        {
+          "a_index": 0,
+          "b_index": 0,
+          "confidence": 1.0
+        },
+        {
+          "a_index": 1,
+          "b_index": 1,
+          "confidence": 1.0
+        },
+        {
+          "a_index": 2,
+          "b_index": 2,
+          "confidence": 1.0
+        },
+        {
+          "a_index": 3,
+          "b_index": 3,
+          "confidence": 1.0
+        }
+      ],
+      "scene_match": {
+        "equivalent": true,
+        "confidence": 0.9
+      }
+    },
+    "summary": {
+      "entity_matches": 6,
+      "attribute_matches": 3,
+      "action_matches": 4,
+      "relation_matches": 4,
+      "scene_equivalent": true
+    }
+  },
+  {
+    "pair_id": "test_005_3_2_3",
+    "image_id": "test_005",
+    "record_a": {
+      "baseline_run_number": 3,
+      "extraction_run_number": 2
+    },
+    "record_b": {
+      "baseline_run_number": 3,
+      "extraction_run_number": 3
+    },
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+    "temperature": 0.0,
+    "status": "success",
+    "alignment": {
+      "entity_matches": [
+        {
+          "a": "e1",
+          "b": "e1"
+        },
+        {
+          "a": "e2",
+          "b": "e2"
+        },
+        {
+          "a": "e3",
+          "b": "e3"
+        },
+        {
+          "a": "e4",
+          "b": "e4"
+        },
+        {
+          "a": "e5",
+          "b": "e5"
+        },
+        {
+          "a": "e6",
+          "b": "e6"
+        }
+      ],
+      "attribute_matches": [
+        {
+          "entity_a": "e2",
+          "entity_b": "e2",
+          "matches": [
+            {
+              "a": "young",
+              "b": "young"
+            }
+          ]
+        },
+        {
+          "entity_a": "e5",
+          "entity_b": "e5",
+          "matches": [
+            {
+              "a": "wooden",
+              "b": "wooden"
+            }
+          ]
+        },
+        {
+          "entity_a": "e6",
+          "entity_b": "e6",
+          "matches": [
+            {
+              "a": "educational",
+              "b": "educational"
+            }
+          ]
+        }
+      ],
+      "action_matches": [
+        {
+          "a_index": 0,
+          "b_index": 0,
+          "confidence": 1.0
+        },
+        {
+          "a_index": 1,
+          "b_index": 1,
+          "confidence": 1.0
+        },
+        {
+          "a_index": 2,
+          "b_index": 2,
+          "confidence": 1.0
+        },
+        {
+          "a_index": 3,
+          "b_index": 3,
+          "confidence": 1.0
+        }
+      ],
+      "relation_matches": [
+        {
+          "a_index": 0,
+          "b_index": 0,
+          "confidence": 1.0
+        },
+        {
+          "a_index": 1,
+          "b_index": 1,
+          "confidence": 1.0
+        },
+        {
+          "a_index": 2,
+          "b_index": 3,
+          "confidence": 1.0
+        }
+      ],
+      "scene_match": {
+        "equivalent": true,
+        "confidence": 1.0
+      }
+    },
+    "summary": {
+      "entity_matches": 6,
+      "attribute_matches": 3,
+      "action_matches": 4,
+      "relation_matches": 3,
+      "scene_equivalent": true
+    }
+  }
+]

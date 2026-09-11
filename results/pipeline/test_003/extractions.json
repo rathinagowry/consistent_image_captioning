@@ -1,0 +1,451 @@
+[
+    {
+        "image_id": "test_003",
+        "image_file": "test_003.jpg",
+        "baseline_run_number": 1,
+        "extraction_run_number": 1,
+        "caption": "A man wearing glasses and a white shirt sits at a desk, typing on a laptop while illuminated by a warm desk lamp in a dimly lit room.",
+        "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+        "temperature": 0.0,
+        "status": "success",
+        "attempts": 1,
+        "original_csr": {
+            "entities": [
+                {
+                    "id": "e1",
+                    "type": "man",
+                    "attributes": []
+                },
+                {
+                    "id": "e2",
+                    "type": "glasses",
+                    "attributes": []
+                },
+                {
+                    "id": "e3",
+                    "type": "shirt",
+                    "attributes": [
+                        "white"
+                    ]
+                },
+                {
+                    "id": "e4",
+                    "type": "desk",
+                    "attributes": []
+                },
+                {
+                    "id": "e5",
+                    "type": "laptop",
+                    "attributes": []
+                },
+                {
+                    "id": "e6",
+                    "type": "desk lamp",
+                    "attributes": [
+                        "warm"
+                    ]
+                },
+                {
+                    "id": "e7",
+                    "type": "room",
+                    "attributes": [
+                        "dimly lit"
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "subject": "e1",
+                    "action": "sit",
+                    "object": null
+                },
+                {
+                    "subject": "e1",
+                    "action": "type",
+                    "object": "e5"
+                },
+                {
+                    "subject": "e6",
+                    "action": "illuminate",
+                    "object": "e1"
+                }
+            ],
+            "relations": [
+                {
+                    "subject": "e1",
+                    "relation": "at",
+                    "object": "e4"
+                },
+                {
+                    "subject": "e1",
+                    "relation": "wearing",
+                    "object": "e2"
+                },
+                {
+                    "subject": "e1",
+                    "relation": "wearing",
+                    "object": "e3"
+                },
+                {
+                    "subject": "e1",
+                    "relation": "in",
+                    "object": "e7"
+                }
+            ],
+            "scene": {
+                "location": "room",
+                "environment": [
+                    "dimly lit"
+                ]
+            }
+        },
+        "csr": {
+            "entities": [
+                {
+                    "id": "e1",
+                    "type": "desk",
+                    "attributes": []
+                },
+                {
+                    "id": "e2",
+                    "type": "desk_lamp",
+                    "attributes": [
+                        "warm"
+                    ]
+                },
+                {
+                    "id": "e3",
+                    "type": "glasses",
+                    "attributes": []
+                },
+                {
+                    "id": "e4",
+                    "type": "laptop",
+                    "attributes": []
+                },
+                {
+                    "id": "e5",
+                    "type": "man",
+                    "attributes": []
+                },
+                {
+                    "id": "e6",
+                    "type": "room",
+                    "attributes": [
+                        "dimly_lit"
+                    ]
+                },
+                {
+                    "id": "e7",
+                    "type": "shirt",
+                    "attributes": [
+                        "white"
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "subject": "e2",
+                    "action": "illuminate",
+                    "object": "e5"
+                },
+                {
+                    "subject": "e5",
+                    "action": "sit",
+                    "object": null
+                },
+                {
+                    "subject": "e5",
+                    "action": "type",
+                    "object": "e4"
+                }
+            ],
+            "relations": [
+                {
+                    "subject": "e5",
+                    "relation": "at",
+                    "object": "e1"
+                },
+                {
+                    "subject": "e5",
+                    "relation": "in",
+                    "object": "e6"
+                },
+                {
+                    "subject": "e5",
+                    "relation": "wearing",
+                    "object": "e3"
+                },
+                {
+                    "subject": "e5",
+                    "relation": "wearing",
+                    "object": "e7"
+                }
+            ],
+            "scene": {
+                "location": "room",
+                "environment": [
+                    "dimly_lit"
+                ]
+            }
+        },
+        "extraction_attempts": 1,
+        "raw_extraction_output": "{\n \"entities\": [\n        {\n            \"id\": \"e1\",\n            \"type\": \"man\",\n            \"attributes\": []\n        },\n        {\n            \"id\": \"e2\",\n            \"type\": \"glasses\",\n            \"attributes\": []\n        },\n        {\n            \"id\": \"e3\",\n            \"type\": \"shirt\",\n            \"attributes\": [\"white\"]\n        },\n        {\n            \"id\": \"e4\",\n            \"type\": \"desk\",\n            \"attributes\": []\n        },\n        {\n            \"id\": \"e5\",\n            \"type\": \"laptop\",\n            \"attributes\": []\n        },\n        {\n            \"id\": \"e6\",\n            \"type\": \"desk lamp\",\n            \"attributes\": [\"warm\"]\n        },\n        {\n            \"id\": \"e7\",\n            \"type\": \"room\",\n            \"attributes\": [\"dimly lit\"]\n        }\n    ],\n    \"actions\": [\n        {\n            \"subject\": \"e1\",\n            \"action\": \"sit\",\n            \"object\": null\n        },\n        {\n            \"subject\": \"e1\",\n            \"action\": \"type\",\n            \"object\": \"e5\"\n        },\n        {\n            \"subject\": \"e6\",\n            \"action\": \"illuminate\",\n            \"object\": \"e1\"\n        }\n    ],\n    \"relations\": [\n        {\n            \"subject\": \"e1\",\n            \"relation\": \"at\",\n            \"object\": \"e4\"\n        },\n        {\n            \"subject\": \"e1\",\n            \"relation\": \"wearing\",\n            \"object\": \"e2\"\n        },\n        {\n            \"subject\": \"e1\",\n            \"relation\": \"wearing\",\n            \"object\": \"e3\"\n        },\n        {\n            \"subject\": \"e1\",\n            \"relation\": \"in\",\n            \"object\": \"e7\"\n        }\n    ],\n    \"scene\": {\n        \"location\": \"room\",\n        \"environment\": [\"dimly lit\"]\n    }\n}"
+    },
+    {
+        "image_id": "test_003",
+        "image_file": "test_003.jpg",
+        "baseline_run_number": 2,
+        "extraction_run_number": 2,
+        "caption": "A bearded man wearing glasses sits at a desk, typing on a laptop under the warm light of a desk lamp.",
+        "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+        "temperature": 0.0,
+        "status": "success",
+        "attempts": 1,
+        "original_csr": {
+            "entities": [
+                {
+                    "id": "e1",
+                    "type": "man",
+                    "attributes": [
+                        "bearded",
+                        "wearing glasses"
+                    ]
+                },
+                {
+                    "id": "e2",
+                    "type": "desk",
+                    "attributes": []
+                },
+                {
+                    "id": "e3",
+                    "type": "laptop",
+                    "attributes": []
+                },
+                {
+                    "id": "e4",
+                    "type": "desk lamp",
+                    "attributes": [
+                        "warm light"
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "subject": "e1",
+                    "action": "sit",
+                    "object": null
+                },
+                {
+                    "subject": "e1",
+                    "action": "type",
+                    "object": "e3"
+                }
+            ],
+            "relations": [
+                {
+                    "subject": "e1",
+                    "relation": "at",
+                    "object": "e2"
+                },
+                {
+                    "subject": "e1",
+                    "relation": "under",
+                    "object": "e4"
+                }
+            ],
+            "scene": {
+                "location": null,
+                "environment": []
+            }
+        },
+        "csr": {
+            "entities": [
+                {
+                    "id": "e1",
+                    "type": "desk",
+                    "attributes": []
+                },
+                {
+                    "id": "e2",
+                    "type": "desk_lamp",
+                    "attributes": [
+                        "warm_light"
+                    ]
+                },
+                {
+                    "id": "e3",
+                    "type": "laptop",
+                    "attributes": []
+                },
+                {
+                    "id": "e4",
+                    "type": "man",
+                    "attributes": [
+                        "bearded",
+                        "wearing_glasses"
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "subject": "e4",
+                    "action": "sit",
+                    "object": null
+                },
+                {
+                    "subject": "e4",
+                    "action": "type",
+                    "object": "e3"
+                }
+            ],
+            "relations": [
+                {
+                    "subject": "e4",
+                    "relation": "at",
+                    "object": "e1"
+                },
+                {
+                    "subject": "e4",
+                    "relation": "under",
+                    "object": "e2"
+                }
+            ],
+            "scene": {
+                "location": null,
+                "environment": []
+            }
+        },
+        "extraction_attempts": 1,
+        "raw_extraction_output": "{\n \"entities\": [\n        {\n            \"id\": \"e1\",\n            \"type\": \"man\",\n            \"attributes\": [\"bearded\", \"wearing glasses\"]\n        },\n        {\n            \"id\": \"e2\",\n            \"type\": \"desk\",\n            \"attributes\": []\n        },\n        {\n            \"id\": \"e3\",\n            \"type\": \"laptop\",\n            \"attributes\": []\n        },\n        {\n            \"id\": \"e4\",\n            \"type\": \"desk lamp\",\n            \"attributes\": [\"warm light\"]\n        }\n    ],\n    \"actions\": [\n        {\n            \"subject\": \"e1\",\n            \"action\": \"sit\",\n            \"object\": null\n        },\n        {\n            \"subject\": \"e1\",\n            \"action\": \"type\",\n            \"object\": \"e3\"\n        }\n    ],\n    \"relations\": [\n        {\n            \"subject\": \"e1\",\n            \"relation\": \"at\",\n            \"object\": \"e2\"\n        },\n        {\n            \"subject\": \"e1\",\n            \"relation\": \"under\",\n            \"object\": \"e4\"\n        }\n    ],\n    \"scene\": {\n        \"location\": null,\n        \"environment\": []\n    }\n}"
+    },
+    {
+        "image_id": "test_003",
+        "image_file": "test_003.jpg",
+        "baseline_run_number": 3,
+        "extraction_run_number": 3,
+        "caption": "A man with glasses and a beard, wearing a white shirt, sits at a desk typing on a laptop under the warm glow of a desk lamp.",
+        "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+        "temperature": 0.0,
+        "status": "success",
+        "attempts": 1,
+        "original_csr": {
+            "entities": [
+                {
+                    "id": "e1",
+                    "type": "man",
+                    "attributes": [
+                        "glasses",
+                        "beard",
+                        "white shirt"
+                    ]
+                },
+                {
+                    "id": "e2",
+                    "type": "desk",
+                    "attributes": []
+                },
+                {
+                    "id": "e3",
+                    "type": "laptop",
+                    "attributes": []
+                },
+                {
+                    "id": "e4",
+                    "type": "desk lamp",
+                    "attributes": [
+                        "warm glow"
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "subject": "e1",
+                    "action": "sit",
+                    "object": null
+                },
+                {
+                    "subject": "e1",
+                    "action": "type",
+                    "object": "e3"
+                }
+            ],
+            "relations": [
+                {
+                    "subject": "e1",
+                    "relation": "at",
+                    "object": "e2"
+                },
+                {
+                    "subject": "e1",
+                    "relation": "under",
+                    "object": "e4"
+                }
+            ],
+            "scene": {
+                "location": null,
+                "environment": []
+            }
+        },
+        "csr": {
+            "entities": [
+                {
+                    "id": "e1",
+                    "type": "desk",
+                    "attributes": []
+                },
+                {
+                    "id": "e2",
+                    "type": "desk_lamp",
+                    "attributes": [
+                        "warm_glow"
+                    ]
+                },
+                {
+                    "id": "e3",
+                    "type": "laptop",
+                    "attributes": []
+                },
+                {
+                    "id": "e4",
+                    "type": "man",
+                    "attributes": [
+                        "beard",
+                        "glasses",
+                        "white_shirt"
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "subject": "e4",
+                    "action": "sit",
+                    "object": null
+                },
+                {
+                    "subject": "e4",
+                    "action": "type",
+                    "object": "e3"
+                }
+            ],
+            "relations": [
+                {
+                    "subject": "e4",
+                    "relation": "at",
+                    "object": "e1"
+                },
+                {
+                    "subject": "e4",
+                    "relation": "under",
+                    "object": "e2"
+                }
+            ],
+            "scene": {
+                "location": null,
+                "environment": []
+            }
+        },
+        "extraction_attempts": 1,
+        "raw_extraction_output": "{\n    \"entities\": [\n        {\n            \"id\": \"e1\",\n            \"type\": \"man\",\n            \"attributes\": [\"glasses\", \"beard\", \"white shirt\"]\n        },\n        {\n            \"id\": \"e2\",\n            \"type\": \"desk\",\n            \"attributes\": []\n        },\n        {\n            \"id\": \"e3\",\n            \"type\": \"laptop\",\n            \"attributes\": []\n        },\n        {\n            \"id\": \"e4\",\n            \"type\": \"desk lamp\",\n            \"attributes\": [\"warm glow\"]\n        }\n    ],\n    \"actions\": [\n        {\n            \"subject\": \"e1\",\n            \"action\": \"sit\",\n            \"object\": null\n        },\n        {\n            \"subject\": \"e1\",\n            \"action\": \"type\",\n            \"object\": \"e3\"\n        }\n    ],\n    \"relations\": [\n        {\n            \"subject\": \"e1\",\n            \"relation\": \"at\",\n            \"object\": \"e2\"\n        },\n        {\n            \"subject\": \"e1\",\n            \"relation\": \"under\",\n            \"object\": \"e4\"\n        }\n    ],\n    \"scene\": {\n        \"location\": null,\n        \"environment\": []\n    }\n}"
+    }
+]

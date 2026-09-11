@@ -1,0 +1,272 @@
+[
+    {
+        "pair_id": "test_005_1_1_2",
+        "image_id": "test_005",
+        "record_a": {
+            "baseline_run_number": 1,
+            "extraction_run_number": 1
+        },
+        "record_b": {
+            "baseline_run_number": 2,
+            "extraction_run_number": 2
+        },
+        "status": "success",
+        "alignment": {
+            "entity_matches": [
+                {
+                    "a": "e1",
+                    "b": "e3"
+                },
+                {
+                    "a": "e2",
+                    "b": "e1"
+                },
+                {
+                    "a": "e3",
+                    "b": "e2"
+                },
+                {
+                    "a": "e5",
+                    "b": "e5"
+                }
+            ],
+            "attribute_matches": [
+                {
+                    "entity_a": "e1",
+                    "entity_b": "e3",
+                    "matches": [
+                        {
+                            "a": "diverse",
+                            "b": "diverse"
+                        },
+                        {
+                            "a": "young",
+                            "b": "young"
+                        }
+                    ]
+                },
+                {
+                    "entity_a": "e2",
+                    "entity_b": "e1",
+                    "matches": [
+                        {
+                            "a": "bright",
+                            "b": "bright"
+                        }
+                    ]
+                }
+            ],
+            "action_matches": [
+                {
+                    "a_index": 3,
+                    "b_index": 1,
+                    "confidence": 0.9
+                }
+            ],
+            "relation_matches": [
+                {
+                    "a_index": 4,
+                    "b_index": 0,
+                    "confidence": 0.9
+                }
+            ],
+            "scene_match": {
+                "equivalent": true,
+                "confidence": 0.95
+            }
+        }
+    },
+    {
+        "pair_id": "test_005_1_1_3",
+        "image_id": "test_005",
+        "record_a": {
+            "baseline_run_number": 1,
+            "extraction_run_number": 1
+        },
+        "record_b": {
+            "baseline_run_number": 3,
+            "extraction_run_number": 3
+        },
+        "status": "success",
+        "alignment": {
+            "entity_matches": [
+                {
+                    "a": "e1",
+                    "b": "e4"
+                },
+                {
+                    "a": "e2",
+                    "b": "e2"
+                },
+                {
+                    "a": "e3",
+                    "b": "e3"
+                },
+                {
+                    "a": "e5",
+                    "b": "e5"
+                },
+                {
+                    "a": "e6",
+                    "b": "e6"
+                }
+            ],
+            "attribute_matches": [
+                {
+                    "entity_a": "e1",
+                    "entity_b": "e4",
+                    "matches": [
+                        {
+                            "a": "diverse",
+                            "b": "diverse"
+                        },
+                        {
+                            "a": "young",
+                            "b": "young"
+                        }
+                    ]
+                },
+                {
+                    "entity_a": "e2",
+                    "entity_b": "e2",
+                    "matches": [
+                        {
+                            "a": "bright",
+                            "b": "well_lit"
+                        }
+                    ]
+                },
+                {
+                    "entity_a": "e5",
+                    "entity_b": "e5",
+                    "matches": [
+                        {
+                            "a": "female",
+                            "b": "female"
+                        }
+                    ]
+                },
+                {
+                    "entity_a": "e6",
+                    "entity_b": "e6",
+                    "matches": [
+                        {
+                            "a": "wooden",
+                            "b": "wooden"
+                        }
+                    ]
+                }
+            ],
+            "action_matches": [
+                {
+                    "a_index": 3,
+                    "b_index": 1,
+                    "confidence": 1.0
+                }
+            ],
+            "relation_matches": [
+                {
+                    "a_index": 0,
+                    "b_index": 1,
+                    "confidence": 1.0
+                },
+                {
+                    "a_index": 3,
+                    "b_index": 3,
+                    "confidence": 1.0
+                },
+                {
+                    "a_index": 4,
+                    "b_index": 4,
+                    "confidence": 1.0
+                }
+            ],
+            "scene_match": {
+                "equivalent": true,
+                "confidence": 0.9
+            }
+        }
+    },
+    {
+        "pair_id": "test_005_2_2_3",
+        "image_id": "test_005",
+        "record_a": {
+            "baseline_run_number": 2,
+            "extraction_run_number": 2
+        },
+        "record_b": {
+            "baseline_run_number": 3,
+            "extraction_run_number": 3
+        },
+        "status": "success",
+        "alignment": {
+            "entity_matches": [
+                {
+                    "a": "e1",
+                    "b": "e2"
+                },
+                {
+                    "a": "e2",
+                    "b": "e3"
+                },
+                {
+                    "a": "e3",
+                    "b": "e4"
+                },
+                {
+                    "a": "e5",
+                    "b": "e5"
+                }
+            ],
+            "attribute_matches": [
+                {
+                    "entity_a": "e1",
+                    "entity_b": "e2",
+                    "matches": [
+                        {
+                            "a": "bright",
+                            "b": "well_lit"
+                        }
+                    ]
+                },
+                {
+                    "entity_a": "e3",
+                    "entity_b": "e4",
+                    "matches": [
+                        {
+                            "a": "diverse",
+                            "b": "diverse"
+                        },
+                        {
+                            "a": "young",
+                            "b": "young"
+                        }
+                    ]
+                }
+            ],
+            "action_matches": [
+                {
+                    "a_index": 1,
+                    "b_index": 1,
+                    "confidence": 0.95
+                }
+            ],
+            "relation_matches": [
+                {
+                    "a_index": 0,
+                    "b_index": 4,
+                    "confidence": 0.95
+                },
+                {
+                    "a_index": 1,
+                    "b_index": 2,
+                    "confidence": 0.9
+                }
+            ],
+            "scene_match": {
+                "equivalent": true,
+                "confidence": 0.95
+            }
+        }
+    }
+]

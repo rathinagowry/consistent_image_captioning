@@ -1,0 +1,76 @@
+[
+    {
+        "image_id": "test_005",
+        "status": "success",
+        "caption": "A teacher with a female sits. A young group with a diverse is in a classroom with a bright. The teacher with a female is in the classroom with a bright and on a floor. The scene is set in a classroom.",
+        "csr": {
+            "image_id": "test_005",
+            "entities": [
+                {
+                    "id": "e2",
+                    "type": "classroom",
+                    "attributes": [
+                        "bright"
+                    ]
+                },
+                {
+                    "id": "e3",
+                    "type": "floor",
+                    "attributes": []
+                },
+                {
+                    "id": "e4",
+                    "type": "group",
+                    "attributes": [
+                        "diverse",
+                        "young"
+                    ]
+                },
+                {
+                    "id": "e7",
+                    "type": "teacher",
+                    "attributes": [
+                        "female"
+                    ]
+                },
+                {
+                    "id": "e8",
+                    "type": "toy",
+                    "attributes": [
+                        "wooden"
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "subject": "e7",
+                    "action": "sit",
+                    "object": null
+                }
+            ],
+            "relations": [
+                {
+                    "subject": "e4",
+                    "relation": "in",
+                    "object": "e2"
+                },
+                {
+                    "subject": "e7",
+                    "relation": "in",
+                    "object": "e2"
+                },
+                {
+                    "subject": "e7",
+                    "relation": "on",
+                    "object": "e3"
+                }
+            ],
+            "scene": {
+                "location": "classroom",
+                "environment": [
+                    "bright"
+                ]
+            }
+        }
+    }
+]

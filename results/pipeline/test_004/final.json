@@ -1,0 +1,64 @@
+[
+    {
+        "image_id": "test_004",
+        "status": "success",
+        "caption": "A woman with blue jeans and a brown tank top walks a white dog. The white dog is on a red leash. The woman with blue jeans and a brown tank top is through a grassy park.",
+        "csr": {
+            "image_id": "test_004",
+            "entities": [
+                {
+                    "id": "e1",
+                    "type": "dog",
+                    "attributes": [
+                        "white"
+                    ]
+                },
+                {
+                    "id": "e4",
+                    "type": "leash",
+                    "attributes": [
+                        "red"
+                    ]
+                },
+                {
+                    "id": "e6",
+                    "type": "park",
+                    "attributes": [
+                        "grassy"
+                    ]
+                },
+                {
+                    "id": "e9",
+                    "type": "woman",
+                    "attributes": [
+                        "blue_jeans",
+                        "brown_tank_top"
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "subject": "e9",
+                    "action": "walk",
+                    "object": "e1"
+                }
+            ],
+            "relations": [
+                {
+                    "subject": "e1",
+                    "relation": "on",
+                    "object": "e4"
+                },
+                {
+                    "subject": "e9",
+                    "relation": "through",
+                    "object": "e6"
+                }
+            ],
+            "scene": {
+                "location": null,
+                "environment": []
+            }
+        }
+    }
+]

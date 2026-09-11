@@ -1,0 +1,35 @@
+[
+    {
+        "image_id": "test_005",
+        "image_file": "test_005.jpg",
+        "baseline_run_number": 1,
+        "extraction_run_number": 1,
+        "caption": "A female teacher sits on the floor with a group of diverse young children, guiding them as they engage in educational play with wooden toys and materials in a bright classroom.",
+        "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+        "temperature": 0.0,
+        "status": "success",
+        "attempts": 1
+    },
+    {
+        "image_id": "test_005",
+        "image_file": "test_005.jpg",
+        "baseline_run_number": 2,
+        "extraction_run_number": 2,
+        "caption": "In a bright classroom, a teacher sits on the floor surrounded by a diverse group of young children engaged in play with wooden educational materials.",
+        "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+        "temperature": 0.0,
+        "status": "success",
+        "attempts": 1
+    },
+    {
+        "image_id": "test_005",
+        "image_file": "test_005.jpg",
+        "baseline_run_number": 3,
+        "extraction_run_number": 3,
+        "caption": "A female teacher sits on the floor surrounded by a diverse group of young children engaged in various hands-on learning activities with wooden toys in a well-lit classroom.",
+        "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+        "temperature": 0.0,
+        "status": "success",
+        "attempts": 1
+    }
+]

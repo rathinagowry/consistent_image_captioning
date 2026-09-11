@@ -1,0 +1,3504 @@
+[
+  {
+    "image_id": "test_001",
+    "image_file": "test_001.png",
+    "baseline_run_number": 3,
+    "extraction_run_number": 1,
+    "original_caption": "A tan dog runs through a grassy field dotted with yellow flowers.",
+    "original_csr": {
+      "entities": [
+        {
+          "id": "e1",
+          "type": "dog",
+          "attributes": [
+            "tan"
+          ]
+        },
+        {
+          "id": "e2",
+          "type": "field",
+          "attributes": [
+            "grassy"
+          ]
+        },
+        {
+          "id": "e3",
+          "type": "flower",
+          "attributes": [
+            "yellow"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "subject": "e1",
+          "action": "run",
+          "object": "e2"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "e2",
+          "relation": "dotted_with",
+          "object": "e3"
+        }
+      ],
+      "scene": {
+        "location": "grassy field",
+        "environment": [
+          "grassy",
+          "field"
+        ]
+      }
+    },
+    "canonical_csr": {
+      "entities": [
+        {
+          "id": "e1",
+          "type": "dog",
+          "attributes": [
+            "tan"
+          ]
+        },
+        {
+          "id": "e2",
+          "type": "field",
+          "attributes": [
+            "grassy"
+          ]
+        },
+        {
+          "id": "e3",
+          "type": "flower",
+          "attributes": [
+            "yellow"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "subject": "e1",
+          "action": "run",
+          "object": null
+        }
+      ],
+      "relations": [
+        {
+          "subject": "e2",
+          "relation": "dotted_with",
+          "object": "e3"
+        }
+      ],
+      "scene": {
+        "location": "grassy_field",
+        "environment": [
+          "field",
+          "grassy"
+        ]
+      }
+    },
+    "aligned_csr": {
+      "entities": [
+        {
+          "id": "e1",
+          "type": "dog",
+          "attributes": [
+            "tan"
+          ]
+        },
+        {
+          "id": "e2",
+          "type": "field",
+          "attributes": [
+            "grassy"
+          ]
+        },
+        {
+          "id": "e3",
+          "type": "flower",
+          "attributes": [
+            "yellow"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "subject": "e1",
+          "action": "run",
+          "object": null
+        }
+      ],
+      "relations": [
+        {
+          "subject": "e1",
+          "relation": "through",
+          "object": "e2"
+        },
+        {
+          "subject": "e2",
+          "relation": "dotted_with",
+          "object": "e3"
+        }
+      ],
+      "scene": {
+        "location": "grassy_field",
+        "environment": [
+          "field",
+          "grassy"
+        ]
+      }
+    },
+    "rendered_caption": "a tan dog runs through a grassy field. The scene is grassy.",
+    "status": "success"
+  },
+  {
+    "image_id": "test_001",
+    "image_file": "test_001.png",
+    "baseline_run_number": 3,
+    "extraction_run_number": 2,
+    "original_caption": "A tan dog runs through a grassy field dotted with yellow flowers.",
+    "original_csr": {
+      "entities": [
+        {
+          "id": "e1",
+          "type": "dog",
+          "attributes": [
+            "tan"
+          ]
+        },
+        {
+          "id": "e2",
+          "type": "field",
+          "attributes": [
+            "grassy"
+          ]
+        },
+        {
+          "id": "e3",
+          "type": "flower",
+          "attributes": [
+            "yellow"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "subject": "e1",
+          "action": "run",
+          "object": "e2"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "e2",
+          "relation": "dotted with",
+          "object": "e3"
+        }
+      ],
+      "scene": {
+        "location": null,
+        "environment": [
+          "outdoor",
+          "grassy",
+          "field",
+          "flowers"
+        ]
+      }
+    },
+    "canonical_csr": {
+      "entities": [
+        {
+          "id": "e1",
+          "type": "dog",
+          "attributes": [
+            "tan"
+          ]
+        },
+        {
+          "id": "e2",
+          "type": "field",
+          "attributes": [
+            "grassy"
+          ]
+        },
+        {
+          "id": "e3",
+          "type": "flower",
+          "attributes": [
+            "yellow"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "subject": "e1",
+          "action": "run",
+          "object": null
+        }
+      ],
+      "relations": [
+        {
+          "subject": "e2",
+          "relation": "dotted_with",
+          "object": "e3"
+        }
+      ],
+      "scene": {
+        "location": null,
+        "environment": [
+          "field",
+          "flowers",
+          "grassy",
+          "outdoor"
+        ]
+      }
+    },
+    "aligned_csr": {
+      "entities": [
+        {
+          "id": "e1",
+          "type": "dog",
+          "attributes": [
+            "tan"
+          ]
+        },
+        {
+          "id": "e2",
+          "type": "field",
+          "attributes": [
+            "grassy"
+          ]
+        },
+        {
+          "id": "e3",
+          "type": "flower",
+          "attributes": [
+            "yellow"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "subject": "e1",
+          "action": "run",
+          "object": null
+        }
+      ],
+      "relations": [
+        {
+          "subject": "e1",
+          "relation": "through",
+          "object": "e2"
+        },
+        {
+          "subject": "e2",
+          "relation": "dotted_with",
+          "object": "e3"
+        }
+      ],
+      "scene": {
+        "location": null,
+        "environment": [
+          "field",
+          "flowers",
+          "grassy",
+          "outdoor"
+        ]
+      }
+    },
+    "rendered_caption": "a tan dog runs through a grassy field. The scene is grassy and outdoor.",
+    "status": "success"
+  },
+  {
+    "image_id": "test_001",
+    "image_file": "test_001.png",
+    "baseline_run_number": 3,
+    "extraction_run_number": 3,
+    "original_caption": "A tan dog runs through a grassy field dotted with yellow flowers.",
+    "original_csr": {
+      "entities": [
+        {
+          "id": "e1",
+          "type": "dog",
+          "attributes": [
+            "tan"
+          ]
+        },
+        {
+          "id": "e2",
+          "type": "field",
+          "attributes": [
+            "grassy"
+          ]
+        },
+        {
+          "id": "e3",
+          "type": "flower",
+          "attributes": [
+            "yellow"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "subject": "e1",
+          "action": "run",
+          "object": "e2"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "e1",
+          "relation": "through",
+          "object": "e2"
+        },
+        {
+          "subject": "e2",
+          "relation": "dotted with",
+          "object": "e3"
+        }
+      ],
+      "scene": {
+        "location": "grassy field",
+        "environment": [
+          "grassy field",
+          "yellow flowers"
+        ]
+      }
+    },
+    "canonical_csr": {
+      "entities": [
+        {
+          "id": "e1",
+          "type": "dog",
+          "attributes": [
+            "tan"
+          ]
+        },
+        {
+          "id": "e2",
+          "type": "field",
+          "attributes": [
+            "grassy"
+          ]
+        },
+        {
+          "id": "e3",
+          "type": "flower",
+          "attributes": [
+            "yellow"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "subject": "e1",
+          "action": "run",
+          "object": null
+        }
+      ],
+      "relations": [
+        {
+          "subject": "e1",
+          "relation": "through",
+          "object": "e2"
+        },
+        {
+          "subject": "e2",
+          "relation": "dotted_with",
+          "object": "e3"
+        }
+      ],
+      "scene": {
+        "location": "grassy_field",
+        "environment": [
+          "grassy_field",
+          "yellow_flowers"
+        ]
+      }
+    },
+    "aligned_csr": {
+      "entities": [
+        {
+          "id": "e1",
+          "type": "dog",
+          "attributes": [
+            "tan"
+          ]
+        },
+        {
+          "id": "e2",
+          "type": "field",
+          "attributes": [
+            "grassy"
+          ]
+        },
+        {
+          "id": "e3",
+          "type": "flower",
+          "attributes": [
+            "yellow"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "subject": "e1",
+          "action": "run",
+          "object": null
+        }
+      ],
+      "relations": [
+        {
+          "subject": "e1",
+          "relation": "through",
+          "object": "e2"
+        },
+        {
+          "subject": "e2",
+          "relation": "dotted_with",
+          "object": "e3"
+        }
+      ],
+      "scene": {
+        "location": "grassy_field",
+        "environment": [
+          "grassy_field",
+          "yellow_flowers"
+        ]
+      }
+    },
+    "rendered_caption": "a tan dog runs through a grassy field.",
+    "status": "success"
+  },
+  {
+    "image_id": "test_002",
+    "image_file": "test_002.png",
+    "baseline_run_number": 1,
+    "extraction_run_number": 1,
+    "original_caption": "A rustic log cabin sits on a calm lake, its reflection mirrored in the water with majestic snow-capped mountains rising in the background under a soft, golden sky.",
+    "original_csr": {
+      "entities": [
+        {
+          "id": "e1",
+          "type": "cabin",
+          "attributes": [
+            "rustic",
+            "log"
+          ]
+        },
+        {
+          "id": "e2",
+          "type": "lake",
+          "attributes": [
+            "calm"
+          ]
+        },
+        {
+          "id": "e3",
+          "type": "reflection",
+          "attributes": [
+            "mirrored"
+          ]
+        },
+        {
+          "id": "e4",
+          "type": "mountain",
+          "attributes": [
+            "majestic",
+            "snow-capped"
+          ]
+        },
+        {
+          "id": "e5",
+          "type": "sky",
+          "attributes": [
+            "soft",
+            "golden"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "subject": "e1",
+          "action": "sit",
+          "object": "e2"
+        },
+        {
+          "subject": "e3",
+          "action": "mirror",
+          "object": "e2"
+        },
+        {
+          "subject": "e4",
+          "action": "rise",
+          "object": null
+        }
+      ],
+      "relations": [
+        {
+          "subject": "e1",
+          "relation": "on",
+          "object": "e2"
+        },
+        {
+          "subject": "e3",
+          "relation": "of",
+          "object": "e1"
+        },
+        {
+          "subject": "e4",
+          "relation": "in_background_of",
+          "object": "e1"
+        },
+        {
+          "subject": "e5",
+          "relation": "above",
+          "object": "e1"
+        }
+      ],
+      "scene": {
+        "location": null,
+        "environment": [
+          "calm lake",
+          "snow-capped mountains",
+          "golden sky"
+        ]
+      }
+    },
+    "canonical_csr": {
+      "entities": [
+        {
+          "id": "e1",
+          "type": "cabin",
+          "attributes": [
+            "log",
+            "rustic"
+          ]
+        },
+        {
+          "id": "e2",
+          "type": "lake",
+          "attributes": [
+            "calm"
+          ]
+        },
+        {
+          "id": "e3",
+          "type": "reflection",
+          "attributes": [
+            "mirrored"
+          ]
+        },
+        {
+          "id": "e4",
+          "type": "mountain",
+          "attributes": [
+            "majestic",
+            "snow_capped"
+          ]
+        },
+        {
+          "id": "e5",
+          "type": "sky",
+          "attributes": [
+            "golden",
+            "soft"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "subject": "e1",
+          "action": "sit",
+          "object": null
+        },
+        {
+          "subject": "e3",
+          "action": "mirror",
+          "object": "e2"
+        },
+        {
+          "subject": "e4",
+          "action": "rise",
+          "object": null
+        }
+      ],
+      "relations": [
+        {
+          "subject": "e1",
+          "relation": "on",
+          "object": "e2"
+        },
+        {
+          "subject": "e3",
+          "relation": "of",
+          "object": "e1"
+        },
+        {
+          "subject": "e4",
+          "relation": "in_background_of",
+          "object": "e1"
+        },
+        {
+          "subject": "e5",
+          "relation": "above",
+          "object": "e1"
+        }
+      ],
+      "scene": {
+        "location": null,
+        "environment": [
+          "calm_lake",
+          "golden_sky",
+          "snow_capped_mountains"
+        ]
+      }
+    },
+    "aligned_csr": {
+      "entities": [
+        {
+          "id": "e1",
+          "type": "cabin",
+          "attributes": [
+            "log",
+            "rustic"
+          ]
+        },
+        {
+          "id": "e2",
+          "type": "lake",
+          "attributes": [
+            "calm"
+          ]
+        },
+        {
+          "id": "e3",
+          "type": "reflection",
+          "attributes": [
+            "mirrored"
+          ]
+        },
+        {
+          "id": "e4",
+          "type": "mountain",
+          "attributes": [
+            "majestic",
+            "snow_capped"
+          ]
+        },
+        {
+          "id": "e5",
+          "type": "sky",
+          "attributes": [
+            "golden",
+            "soft"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "subject": "e1",
+          "action": "sit",
+          "object": null
+        },
+        {
+          "subject": "e3",
+          "action": "mirror",
+          "object": "e2"
+        },
+        {
+          "subject": "e4",
+          "action": "rise",
+          "object": null
+        }
+      ],
+      "relations": [
+        {
+          "subject": "e1",
+          "relation": "on",
+          "object": "e2"
+        },
+        {
+          "subject": "e3",
+          "relation": "of",
+          "object": "e1"
+        },
+        {
+          "subject": "e4",
+          "relation": "in_background_of",
+          "object": "e1"
+        },
+        {
+          "subject": "e5",
+          "relation": "above",
+          "object": "e1"
+        }
+      ],
+      "scene": {
+        "location": null,
+        "environment": [
+          "calm_lake",
+          "golden_sky",
+          "snow_capped_mountains"
+        ]
+      }
+    },
+    "rendered_caption": "a log rustic cabin sits on a calm lake. A majestic snow-capped mountain in-background of a log rustic cabin. A golden soft sky above a log rustic cabin.",
+    "status": "success"
+  },
+  {
+    "image_id": "test_002",
+    "image_file": "test_002.png",
+    "baseline_run_number": 1,
+    "extraction_run_number": 2,
+    "original_caption": "A rustic log cabin sits on a calm lake, its reflection mirrored in the water with majestic snow-capped mountains rising in the background under a soft, golden sky.",
+    "original_csr": {
+      "entities": [
+        {
+          "id": "e1",
+          "type": "cabin",
+          "attributes": [
+            "rustic",
+            "log"
+          ]
+        },
+        {
+          "id": "e2",
+          "type": "lake",
+          "attributes": [
+            "calm"
+          ]
+        },
+        {
+          "id": "e3",
+          "type": "reflection",
+          "attributes": [
+            "mirrored"
+          ]
+        },
+        {
+          "id": "e4",
+          "type": "mountains",
+          "attributes": [
+            "majestic",
+            "snow-capped"
+          ]
+        },
+        {
+          "id": "e5",
+          "type": "sky",
+          "attributes": [
+            "soft",
+            "golden"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "subject": "e1",
+          "action": "sit",
+          "object": "e2"
+        },
+        {
+          "subject": "e3",
+          "action": "mirror",
+          "object": "e2"
+        },
+        {
+          "subject": "e4",
+          "action": "rise",
+          "object": null
+        }
+      ],
+      "relations": [
+        {
+          "subject": "e1",
+          "relation": "on",
+          "object": "e2"
+        },
+        {
+          "subject": "e3",
+          "relation": "in",
+          "object": "e2"
+        },
+        {
+          "subject": "e4",
+          "relation": "behind",
+          "object": "e1"
+        }
+      ],
+      "scene": {
+        "location": null,
+        "environment": [
+          "calm lake",
+          "snow-capped mountains",
+          "soft golden sky"
+        ]
+      }
+    },
+    "canonical_csr": {
+      "entities": [
+        {
+          "id": "e1",
+          "type": "cabin",
+          "attributes": [
+            "log",
+            "rustic"
+          ]
+        },
+        {
+          "id": "e2",
+          "type": "lake",
+          "attributes": [
+            "calm"
+          ]
+        },
+        {
+          "id": "e3",
+          "type": "reflection",
+          "attributes": [
+            "mirrored"
+          ]
+        },
+        {
+          "id": "e4",
+          "type": "mountain",
+          "attributes": [
+            "majestic",
+            "snow_capped"
+          ]
+        },
+        {
+          "id": "e5",
+          "type": "sky",
+          "attributes": [
+            "golden",
+            "soft"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "subject": "e1",
+          "action": "sit",
+          "object": null
+        },
+        {
+          "subject": "e3",
+          "action": "mirror",
+          "object": "e2"
+        },
+        {
+          "subject": "e4",
+          "action": "rise",
+          "object": null
+        }
+      ],
+      "relations": [
+        {
+          "subject": "e1",
+          "relation": "on",
+          "object": "e2"
+        },
+        {
+          "subject": "e3",
+          "relation": "in",
+          "object": "e2"
+        },
+        {
+          "subject": "e4",
+          "relation": "behind",
+          "object": "e1"
+        }
+      ],
+      "scene": {
+        "location": null,
+        "environment": [
+          "calm_lake",
+          "snow_capped_mountains",
+          "soft_golden_sky"
+        ]
+      }
+    },
+    "aligned_csr": {
+      "entities": [
+        {
+          "id": "e1",
+          "type": "cabin",
+          "attributes": [
+            "log",
+            "rustic"
+          ]
+        },
+        {
+          "id": "e2",
+          "type": "lake",
+          "attributes": [
+            "calm"
+          ]
+        },
+        {
+          "id": "e3",
+          "type": "reflection",
+          "attributes": [
+            "mirrored"
+          ]
+        },
+        {
+          "id": "e4",
+          "type": "mountain",
+          "attributes": [
+            "majestic",
+            "snow_capped"
+          ]
+        },
+        {
+          "id": "e5",
+          "type": "sky",
+          "attributes": [
+            "golden",
+            "soft"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "subject": "e1",
+          "action": "sit",
+          "object": null
+        },
+        {
+          "subject": "e3",
+          "action": "mirror",
+          "object": "e2"
+        },
+        {
+          "subject": "e4",
+          "action": "rise",
+          "object": null
+        }
+      ],
+      "relations": [
+        {
+          "subject": "e1",
+          "relation": "on",
+          "object": "e2"
+        },
+        {
+          "subject": "e3",
+          "relation": "in",
+          "object": "e2"
+        },
+        {
+          "subject": "e4",
+          "relation": "behind",
+          "object": "e1"
+        }
+      ],
+      "scene": {
+        "location": null,
+        "environment": [
+          "calm_lake",
+          "snow_capped_mountains",
+          "soft_golden_sky"
+        ]
+      }
+    },
+    "rendered_caption": "a log rustic cabin sits on a calm lake. A majestic snow-capped mountain behind a log rustic cabin.",
+    "status": "success"
+  },
+  {
+    "image_id": "test_002",
+    "image_file": "test_002.png",
+    "baseline_run_number": 1,
+    "extraction_run_number": 3,
+    "original_caption": "A rustic log cabin sits on a calm lake, its reflection mirrored in the water with majestic snow-capped mountains rising in the background under a soft, golden sky.",
+    "original_csr": {
+      "entities": [
+        {
+          "id": "e1",
+          "type": "cabin",
+          "attributes": [
+            "rustic",
+            "log"
+          ]
+        },
+        {
+          "id": "e2",
+          "type": "lake",
+          "attributes": [
+            "calm"
+          ]
+        },
+        {
+          "id": "e3",
+          "type": "reflection",
+          "attributes": [
+            "mirrored"
+          ]
+        },
+        {
+          "id": "e4",
+          "type": "water",
+          "attributes": []
+        },
+        {
+          "id": "e5",
+          "type": "mountains",
+          "attributes": [
+            "majestic",
+            "snow-capped"
+          ]
+        },
+        {
+          "id": "e6",
+          "type": "sky",
+          "attributes": [
+            "soft",
+            "golden"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "subject": "e1",
+          "action": "sit",
+          "object": "e2"
+        },
+        {
+          "subject": "e3",
+          "action": "mirror",
+          "object": "e4"
+        },
+        {
+          "subject": "e5",
+          "action": "rise",
+          "object": null
+        }
+      ],
+      "relations": [
+        {
+          "subject": "e1",
+          "relation": "on",
+          "object": "e2"
+        },
+        {
+          "subject": "e3",
+          "relation": "of",
+          "object": "e1"
+        },
+        {
+          "subject": "e3",
+          "relation": "in",
+          "object": "e4"
+        },
+        {
+          "subject": "e5",
+          "relation": "under",
+          "object": "e6"
+        }
+      ],
+      "scene": {
+        "location": null,
+        "environment": [
+          "calm lake",
+          "snow-capped mountains",
+          "golden sky"
+        ]
+      }
+    },
+    "canonical_csr": {
+      "entities": [
+        {
+          "id": "e1",
+          "type": "cabin",
+          "attributes": [
+            "log",
+            "rustic"
+          ]
+        },
+        {
+          "id": "e2",
+          "type": "lake",
+          "attributes": [
+            "calm"
+          ]
+        },
+        {
+          "id": "e3",
+          "type": "reflection",
+          "attributes": [
+            "mirrored"
+          ]
+        },
+        {
+          "id": "e4",
+          "type": "water",
+          "attributes": []
+        },
+        {
+          "id": "e5",
+          "type": "mountain",
+          "attributes": [
+            "majestic",
+            "snow_capped"
+          ]
+        },
+        {
+          "id": "e6",
+          "type": "sky",
+          "attributes": [
+            "golden",
+            "soft"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "subject": "e1",
+          "action": "sit",
+          "object": null
+        },
+        {
+          "subject": "e3",
+          "action": "mirror",
+          "object": "e4"
+        },
+        {
+          "subject": "e5",
+          "action": "rise",
+          "object": null
+        }
+      ],
+      "relations": [
+        {
+          "subject": "e1",
+          "relation": "on",
+          "object": "e2"
+        },
+        {
+          "subject": "e3",
+          "relation": "in",
+          "object": "e4"
+        },
+        {
+          "subject": "e3",
+          "relation": "of",
+          "object": "e1"
+        },
+        {
+          "subject": "e5",
+          "relation": "under",
+          "object": "e6"
+        }
+      ],
+      "scene": {
+        "location": null,
+        "environment": [
+          "calm_lake",
+          "golden_sky",
+          "snow_capped_mountains"
+        ]
+      }
+    },
+    "aligned_csr": {
+      "entities": [
+        {
+          "id": "e1",
+          "type": "cabin",
+          "attributes": [
+            "log",
+            "rustic"
+          ]
+        },
+        {
+          "id": "e2",
+          "type": "lake",
+          "attributes": [
+            "calm"
+          ]
+        },
+        {
+          "id": "e3",
+          "type": "water",
+          "attributes": []
+        },
+        {
+          "id": "e4",
+          "type": "reflection",
+          "attributes": [
+            "mirrored"
+          ]
+        },
+        {
+          "id": "e5",
+          "type": "mountain",
+          "attributes": [
+            "majestic",
+            "snow_capped"
+          ]
+        },
+        {
+          "id": "e6",
+          "type": "sky",
+          "attributes": [
+            "golden",
+            "soft"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "subject": "e1",
+          "action": "sit",
+          "object": null
+        },
+        {
+          "subject": "e4",
+          "action": "mirror",
+          "object": "e3"
+        },
+        {
+          "subject": "e5",
+          "action": "rise",
+          "object": null
+        }
+      ],
+      "relations": [
+        {
+          "subject": "e1",
+          "relation": "on",
+          "object": "e2"
+        },
+        {
+          "subject": "e4",
+          "relation": "in",
+          "object": "e3"
+        },
+        {
+          "subject": "e4",
+          "relation": "of",
+          "object": "e1"
+        },
+        {
+          "subject": "e5",
+          "relation": "under",
+          "object": "e6"
+        }
+      ],
+      "scene": {
+        "location": null,
+        "environment": [
+          "calm_lake",
+          "golden_sky",
+          "snow_capped_mountains"
+        ]
+      }
+    },
+    "rendered_caption": "a log rustic cabin sits on a calm lake. A majestic snow-capped mountain under a golden soft sky.",
+    "status": "success"
+  },
+  {
+    "image_id": "test_003",
+    "image_file": "test_003.jpg",
+    "baseline_run_number": 3,
+    "extraction_run_number": 1,
+    "original_caption": "A man with glasses and a beard, wearing a white shirt, is focused on typing on a laptop at a desk illuminated by a warm desk lamp.",
+    "original_csr": {
+      "entities": [
+        {
+          "id": "e1",
+          "type": "man",
+          "attributes": [
+            "glasses",
+            "beard",
+            "white shirt"
+          ]
+        },
+        {
+          "id": "e2",
+          "type": "laptop",
+          "attributes": []
+        },
+        {
+          "id": "e3",
+          "type": "desk",
+          "attributes": []
+        },
+        {
+          "id": "e4",
+          "type": "desk lamp",
+          "attributes": [
+            "warm"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "subject": "e1",
+          "action": "type",
+          "object": "e2"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "e1",
+          "relation": "at",
+          "object": "e3"
+        },
+        {
+          "subject": "e3",
+          "relation": "illuminated by",
+          "object": "e4"
+        }
+      ],
+      "scene": {
+        "location": null,
+        "environment": []
+      }
+    },
+    "canonical_csr": {
+      "entities": [
+        {
+          "id": "e1",
+          "type": "man",
+          "attributes": [
+            "beard",
+            "glasses",
+            "white_shirt"
+          ]
+        },
+        {
+          "id": "e2",
+          "type": "laptop",
+          "attributes": []
+        },
+        {
+          "id": "e3",
+          "type": "desk",
+          "attributes": []
+        },
+        {
+          "id": "e4",
+          "type": "desk_lamp",
+          "attributes": [
+            "warm"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "subject": "e1",
+          "action": "type",
+          "object": "e2"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "e1",
+          "relation": "at",
+          "object": "e3"
+        },
+        {
+          "subject": "e3",
+          "relation": "illuminated_by",
+          "object": "e4"
+        }
+      ],
+      "scene": {
+        "location": null,
+        "environment": []
+      }
+    },
+    "aligned_csr": {
+      "entities": [
+        {
+          "id": "e1",
+          "type": "man",
+          "attributes": [
+            "beard",
+            "glasses",
+            "white_shirt"
+          ]
+        },
+        {
+          "id": "e2",
+          "type": "desk",
+          "attributes": []
+        },
+        {
+          "id": "e3",
+          "type": "laptop",
+          "attributes": []
+        },
+        {
+          "id": "e4",
+          "type": "desk_lamp",
+          "attributes": [
+            "warm"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "subject": "e1",
+          "action": "type",
+          "object": "e3"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "e1",
+          "relation": "at",
+          "object": "e2"
+        },
+        {
+          "subject": "e2",
+          "relation": "illuminated_by",
+          "object": "e4"
+        }
+      ],
+      "scene": {
+        "location": null,
+        "environment": []
+      }
+    },
+    "rendered_caption": "a man with a beard and a glasses wearing a white shirt types on a laptop at a desk.",
+    "status": "success"
+  },
+  {
+    "image_id": "test_003",
+    "image_file": "test_003.jpg",
+    "baseline_run_number": 3,
+    "extraction_run_number": 2,
+    "original_caption": "A man with glasses and a beard, wearing a white shirt, is focused on typing on a laptop at a desk illuminated by a warm desk lamp.",
+    "original_csr": {
+      "entities": [
+        {
+          "id": "e1",
+          "type": "man",
+          "attributes": [
+            "glasses",
+            "beard",
+            "white shirt"
+          ]
+        },
+        {
+          "id": "e2",
+          "type": "laptop",
+          "attributes": []
+        },
+        {
+          "id": "e3",
+          "type": "desk",
+          "attributes": []
+        },
+        {
+          "id": "e4",
+          "type": "lamp",
+          "attributes": [
+            "warm"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "subject": "e1",
+          "action": "type",
+          "object": "e2"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "e1",
+          "relation": "at",
+          "object": "e3"
+        },
+        {
+          "subject": "e2",
+          "relation": "on",
+          "object": "e3"
+        },
+        {
+          "subject": "e4",
+          "relation": "illuminates",
+          "object": "e3"
+        }
+      ],
+      "scene": {
+        "location": null,
+        "environment": []
+      }
+    },
+    "canonical_csr": {
+      "entities": [
+        {
+          "id": "e1",
+          "type": "man",
+          "attributes": [
+            "beard",
+            "glasses",
+            "white_shirt"
+          ]
+        },
+        {
+          "id": "e2",
+          "type": "laptop",
+          "attributes": []
+        },
+        {
+          "id": "e3",
+          "type": "desk",
+          "attributes": []
+        },
+        {
+          "id": "e4",
+          "type": "lamp",
+          "attributes": [
+            "warm"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "subject": "e1",
+          "action": "type",
+          "object": "e2"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "e1",
+          "relation": "at",
+          "object": "e3"
+        },
+        {
+          "subject": "e2",
+          "relation": "on",
+          "object": "e3"
+        },
+        {
+          "subject": "e3",
+          "relation": "illuminated_by",
+          "object": "e4"
+        }
+      ],
+      "scene": {
+        "location": null,
+        "environment": []
+      }
+    },
+    "aligned_csr": {
+      "entities": [
+        {
+          "id": "e1",
+          "type": "man",
+          "attributes": [
+            "beard",
+            "glasses",
+            "white_shirt"
+          ]
+        },
+        {
+          "id": "e2",
+          "type": "desk",
+          "attributes": []
+        },
+        {
+          "id": "e3",
+          "type": "laptop",
+          "attributes": []
+        },
+        {
+          "id": "e4",
+          "type": "lamp",
+          "attributes": [
+            "warm"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "subject": "e1",
+          "action": "type",
+          "object": "e3"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "e1",
+          "relation": "at",
+          "object": "e2"
+        },
+        {
+          "subject": "e2",
+          "relation": "illuminated_by",
+          "object": "e4"
+        },
+        {
+          "subject": "e3",
+          "relation": "on",
+          "object": "e2"
+        }
+      ],
+      "scene": {
+        "location": null,
+        "environment": []
+      }
+    },
+    "rendered_caption": "a man with a beard and a glasses wearing a white shirt types on a laptop at a desk.",
+    "status": "success"
+  },
+  {
+    "image_id": "test_003",
+    "image_file": "test_003.jpg",
+    "baseline_run_number": 3,
+    "extraction_run_number": 3,
+    "original_caption": "A man with glasses and a beard, wearing a white shirt, is focused on typing on a laptop at a desk illuminated by a warm desk lamp.",
+    "original_csr": {
+      "entities": [
+        {
+          "id": "e1",
+          "type": "man",
+          "attributes": [
+            "glasses",
+            "beard",
+            "white shirt",
+            "focused"
+          ]
+        },
+        {
+          "id": "e2",
+          "type": "laptop",
+          "attributes": []
+        },
+        {
+          "id": "e3",
+          "type": "desk",
+          "attributes": []
+        },
+        {
+          "id": "e4",
+          "type": "desk lamp",
+          "attributes": [
+            "warm"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "subject": "e1",
+          "action": "type",
+          "object": "e2"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "e1",
+          "relation": "at",
+          "object": "e3"
+        },
+        {
+          "subject": "e3",
+          "relation": "illuminated by",
+          "object": "e4"
+        }
+      ],
+      "scene": {
+        "location": null,
+        "environment": []
+      }
+    },
+    "canonical_csr": {
+      "entities": [
+        {
+          "id": "e1",
+          "type": "man",
+          "attributes": [
+            "beard",
+            "focused",
+            "glasses",
+            "white_shirt"
+          ]
+        },
+        {
+          "id": "e2",
+          "type": "laptop",
+          "attributes": []
+        },
+        {
+          "id": "e3",
+          "type": "desk",
+          "attributes": []
+        },
+        {
+          "id": "e4",
+          "type": "desk_lamp",
+          "attributes": [
+            "warm"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "subject": "e1",
+          "action": "type",
+          "object": "e2"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "e1",
+          "relation": "at",
+          "object": "e3"
+        },
+        {
+          "subject": "e3",
+          "relation": "illuminated_by",
+          "object": "e4"
+        }
+      ],
+      "scene": {
+        "location": null,
+        "environment": []
+      }
+    },
+    "aligned_csr": {
+      "entities": [
+        {
+          "id": "e1",
+          "type": "man",
+          "attributes": [
+            "beard",
+            "focused",
+            "glasses",
+            "white_shirt"
+          ]
+        },
+        {
+          "id": "e2",
+          "type": "desk",
+          "attributes": []
+        },
+        {
+          "id": "e3",
+          "type": "laptop",
+          "attributes": []
+        },
+        {
+          "id": "e4",
+          "type": "desk_lamp",
+          "attributes": [
+            "warm"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "subject": "e1",
+          "action": "type",
+          "object": "e3"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "e1",
+          "relation": "at",
+          "object": "e2"
+        },
+        {
+          "subject": "e2",
+          "relation": "illuminated_by",
+          "object": "e4"
+        }
+      ],
+      "scene": {
+        "location": null,
+        "environment": []
+      }
+    },
+    "rendered_caption": "a focused man with a beard and a glasses wearing a white shirt types on a laptop at a desk.",
+    "status": "success"
+  },
+  {
+    "image_id": "test_004",
+    "image_file": "test_004.jpg",
+    "baseline_run_number": 3,
+    "extraction_run_number": 1,
+    "original_caption": "A woman wearing a brown tank top and blue jeans walks a white dog on a red leash through a grassy park area with trees in the background.",
+    "original_csr": {
+      "entities": [
+        {
+          "id": "e1",
+          "type": "woman",
+          "attributes": []
+        },
+        {
+          "id": "e2",
+          "type": "tank_top",
+          "attributes": [
+            "brown"
+          ]
+        },
+        {
+          "id": "e3",
+          "type": "jeans",
+          "attributes": [
+            "blue"
+          ]
+        },
+        {
+          "id": "e4",
+          "type": "dog",
+          "attributes": [
+            "white"
+          ]
+        },
+        {
+          "id": "e5",
+          "type": "leash",
+          "attributes": [
+            "red"
+          ]
+        },
+        {
+          "id": "e6",
+          "type": "park_area",
+          "attributes": [
+            "grassy"
+          ]
+        },
+        {
+          "id": "e7",
+          "type": "trees",
+          "attributes": []
+        }
+      ],
+      "actions": [
+        {
+          "subject": "e1",
+          "action": "walk",
+          "object": "e4"
+        },
+        {
+          "subject": "e1",
+          "action": "wear",
+          "object": "e2"
+        },
+        {
+          "subject": "e1",
+          "action": "wear",
+          "object": "e3"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "e4",
+          "relation": "on",
+          "object": "e5"
+        },
+        {
+          "subject": "e1",
+          "relation": "through",
+          "object": "e6"
+        },
+        {
+          "subject": "e7",
+          "relation": "in_background_of",
+          "object": "e6"
+        }
+      ],
+      "scene": {
+        "location": "park_area",
+        "environment": [
+          "grassy",
+          "trees"
+        ]
+      }
+    },
+    "canonical_csr": {
+      "entities": [
+        {
+          "id": "e1",
+          "type": "woman",
+          "attributes": []
+        },
+        {
+          "id": "e2",
+          "type": "tank_top",
+          "attributes": [
+            "brown"
+          ]
+        },
+        {
+          "id": "e3",
+          "type": "jeans",
+          "attributes": [
+            "blue"
+          ]
+        },
+        {
+          "id": "e4",
+          "type": "dog",
+          "attributes": [
+            "white"
+          ]
+        },
+        {
+          "id": "e5",
+          "type": "leash",
+          "attributes": [
+            "red"
+          ]
+        },
+        {
+          "id": "e6",
+          "type": "park_area",
+          "attributes": [
+            "grassy"
+          ]
+        },
+        {
+          "id": "e7",
+          "type": "tree",
+          "attributes": []
+        }
+      ],
+      "actions": [
+        {
+          "subject": "e1",
+          "action": "walk",
+          "object": null
+        },
+        {
+          "subject": "e1",
+          "action": "wear",
+          "object": "e2"
+        },
+        {
+          "subject": "e1",
+          "action": "wear",
+          "object": "e3"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "e1",
+          "relation": "through",
+          "object": "e6"
+        },
+        {
+          "subject": "e4",
+          "relation": "on",
+          "object": "e5"
+        },
+        {
+          "subject": "e7",
+          "relation": "in_background_of",
+          "object": "e6"
+        }
+      ],
+      "scene": {
+        "location": "park_area",
+        "environment": [
+          "grassy",
+          "trees"
+        ]
+      }
+    },
+    "aligned_csr": {
+      "entities": [
+        {
+          "id": "e1",
+          "type": "woman",
+          "attributes": []
+        },
+        {
+          "id": "e2",
+          "type": "dog",
+          "attributes": [
+            "white"
+          ]
+        },
+        {
+          "id": "e3",
+          "type": "park_area",
+          "attributes": [
+            "grassy"
+          ]
+        },
+        {
+          "id": "e4",
+          "type": "leash",
+          "attributes": [
+            "red"
+          ]
+        },
+        {
+          "id": "e5",
+          "type": "jeans",
+          "attributes": [
+            "blue"
+          ]
+        },
+        {
+          "id": "e6",
+          "type": "tank_top",
+          "attributes": [
+            "brown"
+          ]
+        },
+        {
+          "id": "e7",
+          "type": "tree",
+          "attributes": []
+        }
+      ],
+      "actions": [
+        {
+          "subject": "e1",
+          "action": "walk",
+          "object": null
+        },
+        {
+          "subject": "e1",
+          "action": "wear",
+          "object": "e5"
+        },
+        {
+          "subject": "e1",
+          "action": "wear",
+          "object": "e6"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "e1",
+          "relation": "through",
+          "object": "e3"
+        },
+        {
+          "subject": "e2",
+          "relation": "on",
+          "object": "e4"
+        },
+        {
+          "subject": "e2",
+          "relation": "through",
+          "object": "e3"
+        },
+        {
+          "subject": "e7",
+          "relation": "in_background_of",
+          "object": "e3"
+        }
+      ],
+      "scene": {
+        "location": "park_area",
+        "environment": [
+          "grassy",
+          "trees"
+        ]
+      }
+    },
+    "rendered_caption": "a woman walks through a grassy park area. A tree in-background of a grassy park area. The scene is grassy.",
+    "status": "success"
+  },
+  {
+    "image_id": "test_004",
+    "image_file": "test_004.jpg",
+    "baseline_run_number": 3,
+    "extraction_run_number": 2,
+    "original_caption": "A woman wearing a brown tank top and blue jeans walks a white dog on a red leash through a grassy park area with trees in the background.",
+    "original_csr": {
+      "entities": [
+        {
+          "id": "e1",
+          "type": "woman",
+          "attributes": []
+        },
+        {
+          "id": "e2",
+          "type": "tank top",
+          "attributes": [
+            "brown"
+          ]
+        },
+        {
+          "id": "e3",
+          "type": "jeans",
+          "attributes": [
+            "blue"
+          ]
+        },
+        {
+          "id": "e4",
+          "type": "dog",
+          "attributes": [
+            "white"
+          ]
+        },
+        {
+          "id": "e5",
+          "type": "leash",
+          "attributes": [
+            "red"
+          ]
+        },
+        {
+          "id": "e6",
+          "type": "park area",
+          "attributes": [
+            "grassy"
+          ]
+        },
+        {
+          "id": "e7",
+          "type": "trees",
+          "attributes": [
+            "in background"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "subject": "e1",
+          "action": "walk",
+          "object": "e4"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "e1",
+          "relation": "wearing",
+          "object": "e2"
+        },
+        {
+          "subject": "e1",
+          "relation": "wearing",
+          "object": "e3"
+        },
+        {
+          "subject": "e4",
+          "relation": "on",
+          "object": "e5"
+        },
+        {
+          "subject": "e1",
+          "relation": "through",
+          "object": "e6"
+        },
+        {
+          "subject": "e7",
+          "relation": "background of",
+          "object": "e6"
+        }
+      ],
+      "scene": {
+        "location": "grassy park area",
+        "environment": [
+          "trees in background"
+        ]
+      }
+    },
+    "canonical_csr": {
+      "entities": [
+        {
+          "id": "e1",
+          "type": "woman",
+          "attributes": []
+        },
+        {
+          "id": "e2",
+          "type": "tank_top",
+          "attributes": [
+            "brown"
+          ]
+        },
+        {
+          "id": "e3",
+          "type": "jeans",
+          "attributes": [
+            "blue"
+          ]
+        },
+        {
+          "id": "e4",
+          "type": "dog",
+          "attributes": [
+            "white"
+          ]
+        },
+        {
+          "id": "e5",
+          "type": "leash",
+          "attributes": [
+            "red"
+          ]
+        },
+        {
+          "id": "e6",
+          "type": "park_area",
+          "attributes": [
+            "grassy"
+          ]
+        },
+        {
+          "id": "e7",
+          "type": "tree",
+          "attributes": [
+            "in_background"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "subject": "e1",
+          "action": "walk",
+          "object": null
+        }
+      ],
+      "relations": [
+        {
+          "subject": "e1",
+          "relation": "through",
+          "object": "e6"
+        },
+        {
+          "subject": "e1",
+          "relation": "wearing",
+          "object": "e2"
+        },
+        {
+          "subject": "e1",
+          "relation": "wearing",
+          "object": "e3"
+        },
+        {
+          "subject": "e4",
+          "relation": "on",
+          "object": "e5"
+        },
+        {
+          "subject": "e7",
+          "relation": "in_background_of",
+          "object": "e6"
+        }
+      ],
+      "scene": {
+        "location": "grassy park_area",
+        "environment": [
+          "trees_in_background"
+        ]
+      }
+    },
+    "aligned_csr": {
+      "entities": [
+        {
+          "id": "e1",
+          "type": "woman",
+          "attributes": []
+        },
+        {
+          "id": "e2",
+          "type": "dog",
+          "attributes": [
+            "white"
+          ]
+        },
+        {
+          "id": "e3",
+          "type": "park_area",
+          "attributes": [
+            "grassy"
+          ]
+        },
+        {
+          "id": "e4",
+          "type": "leash",
+          "attributes": [
+            "red"
+          ]
+        },
+        {
+          "id": "e5",
+          "type": "jeans",
+          "attributes": [
+            "blue"
+          ]
+        },
+        {
+          "id": "e6",
+          "type": "tank_top",
+          "attributes": [
+            "brown"
+          ]
+        },
+        {
+          "id": "e7",
+          "type": "tree",
+          "attributes": [
+            "in_background"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "subject": "e1",
+          "action": "walk",
+          "object": null
+        },
+        {
+          "subject": "e1",
+          "action": "wear",
+          "object": "e5"
+        },
+        {
+          "subject": "e1",
+          "action": "wear",
+          "object": "e6"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "e1",
+          "relation": "through",
+          "object": "e3"
+        },
+        {
+          "subject": "e2",
+          "relation": "on",
+          "object": "e4"
+        },
+        {
+          "subject": "e2",
+          "relation": "through",
+          "object": "e3"
+        },
+        {
+          "subject": "e7",
+          "relation": "in_background_of",
+          "object": "e3"
+        }
+      ],
+      "scene": {
+        "location": "grassy park_area",
+        "environment": [
+          "trees_in_background"
+        ]
+      }
+    },
+    "rendered_caption": "a woman walks through a grassy park area. An in the background tree in-background of a grassy park area.",
+    "status": "success"
+  },
+  {
+    "image_id": "test_004",
+    "image_file": "test_004.jpg",
+    "baseline_run_number": 3,
+    "extraction_run_number": 3,
+    "original_caption": "A woman wearing a brown tank top and blue jeans walks a white dog on a red leash through a grassy park area with trees in the background.",
+    "original_csr": {
+      "entities": [
+        {
+          "id": "e1",
+          "type": "woman",
+          "attributes": []
+        },
+        {
+          "id": "e2",
+          "type": "tank top",
+          "attributes": [
+            "brown"
+          ]
+        },
+        {
+          "id": "e3",
+          "type": "jeans",
+          "attributes": [
+            "blue"
+          ]
+        },
+        {
+          "id": "e4",
+          "type": "dog",
+          "attributes": [
+            "white"
+          ]
+        },
+        {
+          "id": "e5",
+          "type": "leash",
+          "attributes": [
+            "red"
+          ]
+        },
+        {
+          "id": "e6",
+          "type": "park area",
+          "attributes": [
+            "grassy"
+          ]
+        },
+        {
+          "id": "e7",
+          "type": "trees",
+          "attributes": []
+        }
+      ],
+      "actions": [
+        {
+          "subject": "e1",
+          "action": "walk",
+          "object": "e4"
+        },
+        {
+          "subject": "e1",
+          "action": "wear",
+          "object": "e2"
+        },
+        {
+          "subject": "e1",
+          "action": "wear",
+          "object": "e3"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "e1",
+          "relation": "through",
+          "object": "e6"
+        },
+        {
+          "subject": "e4",
+          "relation": "on",
+          "object": "e5"
+        },
+        {
+          "subject": "e7",
+          "relation": "in_background_of",
+          "object": "e6"
+        }
+      ],
+      "scene": {
+        "location": "park area",
+        "environment": [
+          "grassy",
+          "trees"
+        ]
+      }
+    },
+    "canonical_csr": {
+      "entities": [
+        {
+          "id": "e1",
+          "type": "woman",
+          "attributes": []
+        },
+        {
+          "id": "e2",
+          "type": "tank_top",
+          "attributes": [
+            "brown"
+          ]
+        },
+        {
+          "id": "e3",
+          "type": "jeans",
+          "attributes": [
+            "blue"
+          ]
+        },
+        {
+          "id": "e4",
+          "type": "dog",
+          "attributes": [
+            "white"
+          ]
+        },
+        {
+          "id": "e5",
+          "type": "leash",
+          "attributes": [
+            "red"
+          ]
+        },
+        {
+          "id": "e6",
+          "type": "park_area",
+          "attributes": [
+            "grassy"
+          ]
+        },
+        {
+          "id": "e7",
+          "type": "tree",
+          "attributes": []
+        }
+      ],
+      "actions": [
+        {
+          "subject": "e1",
+          "action": "walk",
+          "object": null
+        },
+        {
+          "subject": "e1",
+          "action": "wear",
+          "object": "e2"
+        },
+        {
+          "subject": "e1",
+          "action": "wear",
+          "object": "e3"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "e1",
+          "relation": "through",
+          "object": "e6"
+        },
+        {
+          "subject": "e4",
+          "relation": "on",
+          "object": "e5"
+        },
+        {
+          "subject": "e7",
+          "relation": "in_background_of",
+          "object": "e6"
+        }
+      ],
+      "scene": {
+        "location": "park_area",
+        "environment": [
+          "grassy",
+          "trees"
+        ]
+      }
+    },
+    "aligned_csr": {
+      "entities": [
+        {
+          "id": "e1",
+          "type": "woman",
+          "attributes": []
+        },
+        {
+          "id": "e2",
+          "type": "dog",
+          "attributes": [
+            "white"
+          ]
+        },
+        {
+          "id": "e3",
+          "type": "park_area",
+          "attributes": [
+            "grassy"
+          ]
+        },
+        {
+          "id": "e4",
+          "type": "leash",
+          "attributes": [
+            "red"
+          ]
+        },
+        {
+          "id": "e5",
+          "type": "jeans",
+          "attributes": [
+            "blue"
+          ]
+        },
+        {
+          "id": "e6",
+          "type": "tank_top",
+          "attributes": [
+            "brown"
+          ]
+        },
+        {
+          "id": "e7",
+          "type": "tree",
+          "attributes": []
+        }
+      ],
+      "actions": [
+        {
+          "subject": "e1",
+          "action": "walk",
+          "object": null
+        },
+        {
+          "subject": "e1",
+          "action": "wear",
+          "object": "e5"
+        },
+        {
+          "subject": "e1",
+          "action": "wear",
+          "object": "e6"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "e1",
+          "relation": "through",
+          "object": "e3"
+        },
+        {
+          "subject": "e2",
+          "relation": "on",
+          "object": "e4"
+        },
+        {
+          "subject": "e2",
+          "relation": "through",
+          "object": "e3"
+        },
+        {
+          "subject": "e7",
+          "relation": "in_background_of",
+          "object": "e3"
+        }
+      ],
+      "scene": {
+        "location": "park_area",
+        "environment": [
+          "grassy",
+          "trees"
+        ]
+      }
+    },
+    "rendered_caption": "a woman walks through a grassy park area. A tree in-background of a grassy park area. The scene is grassy.",
+    "status": "success"
+  },
+  {
+    "image_id": "test_005",
+    "image_file": "test_005.jpg",
+    "baseline_run_number": 3,
+    "extraction_run_number": 1,
+    "original_caption": "A teacher sits on the floor with a group of young children in a classroom, guiding them as they play with wooden toys and engage in educational activities.",
+    "original_csr": {
+      "entities": [
+        {
+          "id": "e1",
+          "type": "teacher",
+          "attributes": []
+        },
+        {
+          "id": "e2",
+          "type": "floor",
+          "attributes": []
+        },
+        {
+          "id": "e3",
+          "type": "children",
+          "attributes": [
+            "young"
+          ]
+        },
+        {
+          "id": "e4",
+          "type": "classroom",
+          "attributes": []
+        },
+        {
+          "id": "e5",
+          "type": "toy",
+          "attributes": [
+            "wooden"
+          ]
+        },
+        {
+          "id": "e6",
+          "type": "activity",
+          "attributes": [
+            "educational"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "subject": "e1",
+          "action": "sit",
+          "object": null
+        },
+        {
+          "subject": "e1",
+          "action": "guide",
+          "object": "e3"
+        },
+        {
+          "subject": "e3",
+          "action": "play",
+          "object": "e5"
+        },
+        {
+          "subject": "e3",
+          "action": "engage",
+          "object": "e6"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "e1",
+          "relation": "on",
+          "object": "e2"
+        },
+        {
+          "subject": "e1",
+          "relation": "with",
+          "object": "e3"
+        },
+        {
+          "subject": "e1",
+          "relation": "in",
+          "object": "e4"
+        },
+        {
+          "subject": "e3",
+          "relation": "in",
+          "object": "e4"
+        }
+      ],
+      "scene": {
+        "location": "classroom",
+        "environment": [
+          "indoor"
+        ]
+      }
+    },
+    "canonical_csr": {
+      "entities": [
+        {
+          "id": "e1",
+          "type": "teacher",
+          "attributes": []
+        },
+        {
+          "id": "e2",
+          "type": "floor",
+          "attributes": []
+        },
+        {
+          "id": "e3",
+          "type": "child",
+          "attributes": [
+            "young"
+          ]
+        },
+        {
+          "id": "e4",
+          "type": "classroom",
+          "attributes": []
+        },
+        {
+          "id": "e5",
+          "type": "toy",
+          "attributes": [
+            "wooden"
+          ]
+        },
+        {
+          "id": "e6",
+          "type": "activity",
+          "attributes": [
+            "educational"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "subject": "e1",
+          "action": "guide",
+          "object": "e3"
+        },
+        {
+          "subject": "e1",
+          "action": "sit",
+          "object": null
+        },
+        {
+          "subject": "e3",
+          "action": "engage",
+          "object": "e6"
+        },
+        {
+          "subject": "e3",
+          "action": "play",
+          "object": "e5"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "e1",
+          "relation": "in",
+          "object": "e4"
+        },
+        {
+          "subject": "e1",
+          "relation": "on",
+          "object": "e2"
+        },
+        {
+          "subject": "e1",
+          "relation": "with",
+          "object": "e3"
+        },
+        {
+          "subject": "e3",
+          "relation": "in",
+          "object": "e4"
+        }
+      ],
+      "scene": {
+        "location": "classroom",
+        "environment": [
+          "indoor"
+        ]
+      }
+    },
+    "aligned_csr": {
+      "entities": [
+        {
+          "id": "e1",
+          "type": "teacher",
+          "attributes": []
+        },
+        {
+          "id": "e2",
+          "type": "child",
+          "attributes": [
+            "young"
+          ]
+        },
+        {
+          "id": "e3",
+          "type": "classroom",
+          "attributes": []
+        },
+        {
+          "id": "e4",
+          "type": "floor",
+          "attributes": []
+        },
+        {
+          "id": "e5",
+          "type": "activity",
+          "attributes": [
+            "educational"
+          ]
+        },
+        {
+          "id": "e6",
+          "type": "toy",
+          "attributes": [
+            "wooden"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "subject": "e1",
+          "action": "guide",
+          "object": "e2"
+        },
+        {
+          "subject": "e1",
+          "action": "sit",
+          "object": null
+        },
+        {
+          "subject": "e2",
+          "action": "engage",
+          "object": "e5"
+        },
+        {
+          "subject": "e2",
+          "action": "play",
+          "object": "e6"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "e1",
+          "relation": "in",
+          "object": "e3"
+        },
+        {
+          "subject": "e1",
+          "relation": "on",
+          "object": "e4"
+        },
+        {
+          "subject": "e1",
+          "relation": "with",
+          "object": "e2"
+        },
+        {
+          "subject": "e2",
+          "relation": "in",
+          "object": "e3"
+        }
+      ],
+      "scene": {
+        "location": "classroom",
+        "environment": [
+          "indoor"
+        ]
+      }
+    },
+    "rendered_caption": "a teacher sits in a classroom and on a floor, guides a young child. The scene is indoor.",
+    "status": "success"
+  },
+  {
+    "image_id": "test_005",
+    "image_file": "test_005.jpg",
+    "baseline_run_number": 3,
+    "extraction_run_number": 2,
+    "original_caption": "A teacher sits on the floor with a group of young children in a classroom, guiding them as they play with wooden toys and engage in educational activities.",
+    "original_csr": {
+      "entities": [
+        {
+          "id": "e1",
+          "type": "teacher",
+          "attributes": []
+        },
+        {
+          "id": "e2",
+          "type": "child",
+          "attributes": [
+            "young",
+            "group"
+          ]
+        },
+        {
+          "id": "e3",
+          "type": "floor",
+          "attributes": []
+        },
+        {
+          "id": "e4",
+          "type": "classroom",
+          "attributes": []
+        },
+        {
+          "id": "e5",
+          "type": "toy",
+          "attributes": [
+            "wooden"
+          ]
+        },
+        {
+          "id": "e6",
+          "type": "activity",
+          "attributes": [
+            "educational"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "subject": "e1",
+          "action": "sit",
+          "object": null
+        },
+        {
+          "subject": "e1",
+          "action": "guide",
+          "object": "e2"
+        },
+        {
+          "subject": "e2",
+          "action": "play",
+          "object": "e5"
+        },
+        {
+          "subject": "e2",
+          "action": "engage",
+          "object": "e6"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "e1",
+          "relation": "on",
+          "object": "e3"
+        },
+        {
+          "subject": "e1",
+          "relation": "with",
+          "object": "e2"
+        },
+        {
+          "subject": "e2",
+          "relation": "in",
+          "object": "e4"
+        }
+      ],
+      "scene": {
+        "location": "classroom",
+        "environment": [
+          "classroom"
+        ]
+      }
+    },
+    "canonical_csr": {
+      "entities": [
+        {
+          "id": "e1",
+          "type": "teacher",
+          "attributes": []
+        },
+        {
+          "id": "e2",
+          "type": "child",
+          "attributes": [
+            "group",
+            "young"
+          ]
+        },
+        {
+          "id": "e3",
+          "type": "floor",
+          "attributes": []
+        },
+        {
+          "id": "e4",
+          "type": "classroom",
+          "attributes": []
+        },
+        {
+          "id": "e5",
+          "type": "toy",
+          "attributes": [
+            "wooden"
+          ]
+        },
+        {
+          "id": "e6",
+          "type": "activity",
+          "attributes": [
+            "educational"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "subject": "e1",
+          "action": "guide",
+          "object": "e2"
+        },
+        {
+          "subject": "e1",
+          "action": "sit",
+          "object": null
+        },
+        {
+          "subject": "e2",
+          "action": "engage",
+          "object": "e6"
+        },
+        {
+          "subject": "e2",
+          "action": "play",
+          "object": "e5"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "e1",
+          "relation": "on",
+          "object": "e3"
+        },
+        {
+          "subject": "e1",
+          "relation": "with",
+          "object": "e2"
+        },
+        {
+          "subject": "e2",
+          "relation": "in",
+          "object": "e4"
+        }
+      ],
+      "scene": {
+        "location": "classroom",
+        "environment": [
+          "classroom"
+        ]
+      }
+    },
+    "aligned_csr": {
+      "entities": [
+        {
+          "id": "e1",
+          "type": "teacher",
+          "attributes": []
+        },
+        {
+          "id": "e2",
+          "type": "child",
+          "attributes": [
+            "group",
+            "young"
+          ]
+        },
+        {
+          "id": "e3",
+          "type": "classroom",
+          "attributes": []
+        },
+        {
+          "id": "e4",
+          "type": "floor",
+          "attributes": []
+        },
+        {
+          "id": "e5",
+          "type": "activity",
+          "attributes": [
+            "educational"
+          ]
+        },
+        {
+          "id": "e6",
+          "type": "toy",
+          "attributes": [
+            "wooden"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "subject": "e1",
+          "action": "guide",
+          "object": "e2"
+        },
+        {
+          "subject": "e1",
+          "action": "sit",
+          "object": null
+        },
+        {
+          "subject": "e2",
+          "action": "engage",
+          "object": "e5"
+        },
+        {
+          "subject": "e2",
+          "action": "play",
+          "object": "e6"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "e1",
+          "relation": "on",
+          "object": "e4"
+        },
+        {
+          "subject": "e1",
+          "relation": "with",
+          "object": "e2"
+        },
+        {
+          "subject": "e2",
+          "relation": "in",
+          "object": "e3"
+        }
+      ],
+      "scene": {
+        "location": "classroom",
+        "environment": [
+          "classroom"
+        ]
+      }
+    },
+    "rendered_caption": "a teacher sits on a floor, guides a group and young child.",
+    "status": "success"
+  },
+  {
+    "image_id": "test_005",
+    "image_file": "test_005.jpg",
+    "baseline_run_number": 3,
+    "extraction_run_number": 3,
+    "original_caption": "A teacher sits on the floor with a group of young children in a classroom, guiding them as they play with wooden toys and engage in educational activities.",
+    "original_csr": {
+      "entities": [
+        {
+          "id": "e1",
+          "type": "teacher",
+          "attributes": []
+        },
+        {
+          "id": "e2",
+          "type": "children",
+          "attributes": [
+            "young"
+          ]
+        },
+        {
+          "id": "e3",
+          "type": "floor",
+          "attributes": []
+        },
+        {
+          "id": "e4",
+          "type": "classroom",
+          "attributes": []
+        },
+        {
+          "id": "e5",
+          "type": "toy",
+          "attributes": [
+            "wooden"
+          ]
+        },
+        {
+          "id": "e6",
+          "type": "activity",
+          "attributes": [
+            "educational"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "subject": "e1",
+          "action": "sit",
+          "object": null
+        },
+        {
+          "subject": "e1",
+          "action": "guide",
+          "object": "e2"
+        },
+        {
+          "subject": "e2",
+          "action": "play",
+          "object": "e5"
+        },
+        {
+          "subject": "e2",
+          "action": "engage",
+          "object": "e6"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "e1",
+          "relation": "on",
+          "object": "e3"
+        },
+        {
+          "subject": "e1",
+          "relation": "with",
+          "object": "e2"
+        },
+        {
+          "subject": "e1",
+          "relation": "in",
+          "object": "e4"
+        },
+        {
+          "subject": "e2",
+          "relation": "in",
+          "object": "e4"
+        }
+      ],
+      "scene": {
+        "location": "classroom",
+        "environment": [
+          "classroom"
+        ]
+      }
+    },
+    "canonical_csr": {
+      "entities": [
+        {
+          "id": "e1",
+          "type": "teacher",
+          "attributes": []
+        },
+        {
+          "id": "e2",
+          "type": "child",
+          "attributes": [
+            "young"
+          ]
+        },
+        {
+          "id": "e3",
+          "type": "floor",
+          "attributes": []
+        },
+        {
+          "id": "e4",
+          "type": "classroom",
+          "attributes": []
+        },
+        {
+          "id": "e5",
+          "type": "toy",
+          "attributes": [
+            "wooden"
+          ]
+        },
+        {
+          "id": "e6",
+          "type": "activity",
+          "attributes": [
+            "educational"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "subject": "e1",
+          "action": "guide",
+          "object": "e2"
+        },
+        {
+          "subject": "e1",
+          "action": "sit",
+          "object": null
+        },
+        {
+          "subject": "e2",
+          "action": "engage",
+          "object": "e6"
+        },
+        {
+          "subject": "e2",
+          "action": "play",
+          "object": "e5"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "e1",
+          "relation": "in",
+          "object": "e4"
+        },
+        {
+          "subject": "e1",
+          "relation": "on",
+          "object": "e3"
+        },
+        {
+          "subject": "e1",
+          "relation": "with",
+          "object": "e2"
+        },
+        {
+          "subject": "e2",
+          "relation": "in",
+          "object": "e4"
+        }
+      ],
+      "scene": {
+        "location": "classroom",
+        "environment": [
+          "classroom"
+        ]
+      }
+    },
+    "aligned_csr": {
+      "entities": [
+        {
+          "id": "e1",
+          "type": "teacher",
+          "attributes": []
+        },
+        {
+          "id": "e2",
+          "type": "child",
+          "attributes": [
+            "young"
+          ]
+        },
+        {
+          "id": "e3",
+          "type": "classroom",
+          "attributes": []
+        },
+        {
+          "id": "e4",
+          "type": "floor",
+          "attributes": []
+        },
+        {
+          "id": "e5",
+          "type": "activity",
+          "attributes": [
+            "educational"
+          ]
+        },
+        {
+          "id": "e6",
+          "type": "toy",
+          "attributes": [
+            "wooden"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "subject": "e1",
+          "action": "guide",
+          "object": "e2"
+        },
+        {
+          "subject": "e1",
+          "action": "sit",
+          "object": null
+        },
+        {
+          "subject": "e2",
+          "action": "engage",
+          "object": "e5"
+        },
+        {
+          "subject": "e2",
+          "action": "play",
+          "object": "e6"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "e1",
+          "relation": "in",
+          "object": "e3"
+        },
+        {
+          "subject": "e1",
+          "relation": "on",
+          "object": "e4"
+        },
+        {
+          "subject": "e1",
+          "relation": "with",
+          "object": "e2"
+        },
+        {
+          "subject": "e2",
+          "relation": "in",
+          "object": "e3"
+        }
+      ],
+      "scene": {
+        "location": "classroom",
+        "environment": [
+          "classroom"
+        ]
+      }
+    },
+    "rendered_caption": "a teacher sits in a classroom and on a floor, guides a young child.",
+    "status": "success"
+  }
+]

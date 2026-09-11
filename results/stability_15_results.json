@@ -1,0 +1,1326 @@
+[
+    {
+        "image_id": "test_001",
+        "baseline_run_number": 3,
+        "extraction_run_number": 1,
+        "image_file": "test_001.png",
+        "caption": "A tan dog runs through a grassy field dotted with yellow flowers.",
+        "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+        "temperature": 0.0,
+        "timestamp_utc": "2026-09-04T06:25:21.464935+00:00",
+        "generation_time_seconds": 28.62,
+        "attempts": 2,
+        "csr": {
+            "entities": [
+                {
+                    "id": "e1",
+                    "type": "dog",
+                    "attributes": [
+                        "tan"
+                    ]
+                },
+                {
+                    "id": "e2",
+                    "type": "field",
+                    "attributes": [
+                        "grassy"
+                    ]
+                },
+                {
+                    "id": "e3",
+                    "type": "flower",
+                    "attributes": [
+                        "yellow"
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "subject": "e1",
+                    "action": "run",
+                    "object": "e2"
+                }
+            ],
+            "relations": [
+                {
+                    "subject": "e2",
+                    "relation": "dotted_with",
+                    "object": "e3"
+                }
+            ],
+            "scene": {
+                "location": "grassy field",
+                "environment": [
+                    "grassy",
+                    "field"
+                ]
+            }
+        },
+        "raw_output": "{\n \"entities\": [\n        {\n            \"id\": \"e1\",\n            \"type\": \"dog\",\n            \"attributes\": [\"tan\"]\n        },\n        {\n            \"id\": \"e2\",\n            \"type\": \"field\",\n            \"attributes\": [\"grassy\"]\n        },\n        {\n            \"id\": \"e3\",\n            \"type\": \"flower\",\n            \"attributes\": [\"yellow\"]\n        }\n    ],\n    \"actions\": [\n        {\n            \"subject\": \"e1\",\n            \"action\": \"run\",\n            \"object\": \"e2\"\n        }\n    ],\n    \"relations\": [\n        {\n            \"subject\": \"e2\",\n            \"relation\": \"dotted_with\",\n            \"object\": \"e3\"\n        }\n    ],\n    \"scene\": {\n        \"location\": \"grassy field\",\n        \"environment\": [\"grassy\", \"field\"]\n    }\n}",
+        "status": "success"
+    },
+    {
+        "image_id": "test_001",
+        "baseline_run_number": 3,
+        "extraction_run_number": 2,
+        "image_file": "test_001.png",
+        "caption": "A tan dog runs through a grassy field dotted with yellow flowers.",
+        "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+        "temperature": 0.0,
+        "timestamp_utc": "2026-09-04T06:25:51.001395+00:00",
+        "generation_time_seconds": 29.528,
+        "attempts": 2,
+        "csr": {
+            "entities": [
+                {
+                    "id": "e1",
+                    "type": "dog",
+                    "attributes": [
+                        "tan"
+                    ]
+                },
+                {
+                    "id": "e2",
+                    "type": "field",
+                    "attributes": [
+                        "grassy"
+                    ]
+                },
+                {
+                    "id": "e3",
+                    "type": "flower",
+                    "attributes": [
+                        "yellow"
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "subject": "e1",
+                    "action": "run",
+                    "object": "e2"
+                }
+            ],
+            "relations": [
+                {
+                    "subject": "e2",
+                    "relation": "dotted with",
+                    "object": "e3"
+                }
+            ],
+            "scene": {
+                "location": null,
+                "environment": [
+                    "outdoor",
+                    "grassy",
+                    "field",
+                    "flowers"
+                ]
+            }
+        },
+        "raw_output": "{\n    \"entities\": [\n        {\n            \"id\": \"e1\",\n            \"type\": \"dog\",\n            \"attributes\": [\"tan\"]\n        },\n        {\n            \"id\": \"e2\",\n            \"type\": \"field\",\n            \"attributes\": [\"grassy\"]\n        },\n        {\n            \"id\": \"e3\",\n            \"type\": \"flower\",\n            \"attributes\": [\"yellow\"]\n        }\n    ],\n    \"actions\": [\n        {\n            \"subject\": \"e1\",\n            \"action\": \"run\",\n            \"object\": \"e2\"\n        }\n    ],\n    \"relations\": [\n        {\n            \"subject\": \"e2\",\n            \"relation\": \"dotted with\",\n            \"object\": \"e3\"\n        }\n    ],\n    \"scene\": {\n        \"location\": null,\n        \"environment\": [\"outdoor\", \"grassy\", \"field\", \"flowers\"]\n    }\n}",
+        "status": "success"
+    },
+    {
+        "image_id": "test_001",
+        "baseline_run_number": 3,
+        "extraction_run_number": 3,
+        "image_file": "test_001.png",
+        "caption": "A tan dog runs through a grassy field dotted with yellow flowers.",
+        "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+        "temperature": 0.0,
+        "timestamp_utc": "2026-09-04T06:26:15.115203+00:00",
+        "generation_time_seconds": 24.098,
+        "attempts": 1,
+        "csr": {
+            "entities": [
+                {
+                    "id": "e1",
+                    "type": "dog",
+                    "attributes": [
+                        "tan"
+                    ]
+                },
+                {
+                    "id": "e2",
+                    "type": "field",
+                    "attributes": [
+                        "grassy"
+                    ]
+                },
+                {
+                    "id": "e3",
+                    "type": "flower",
+                    "attributes": [
+                        "yellow"
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "subject": "e1",
+                    "action": "run",
+                    "object": "e2"
+                }
+            ],
+            "relations": [
+                {
+                    "subject": "e1",
+                    "relation": "through",
+                    "object": "e2"
+                },
+                {
+                    "subject": "e2",
+                    "relation": "dotted with",
+                    "object": "e3"
+                }
+            ],
+            "scene": {
+                "location": "grassy field",
+                "environment": [
+                    "grassy field",
+                    "yellow flowers"
+                ]
+            }
+        },
+        "raw_output": "{\n    \"entities\": [\n        {\n            \"id\": \"e1\",\n            \"type\": \"dog\",\n            \"attributes\": [\"tan\"]\n        },\n        {\n            \"id\": \"e2\",\n            \"type\": \"field\",\n            \"attributes\": [\"grassy\"]\n        },\n        {\n            \"id\": \"e3\",\n            \"type\": \"flower\",\n            \"attributes\": [\"yellow\"]\n        }\n    ],\n    \"actions\": [\n        {\n            \"subject\": \"e1\",\n            \"action\": \"run\",\n            \"object\": \"e2\"\n        }\n    ],\n    \"relations\": [\n        {\n            \"subject\": \"e1\",\n            \"relation\": \"through\",\n            \"object\": \"e2\"\n        },\n        {\n            \"subject\": \"e2\",\n            \"relation\": \"dotted with\",\n            \"object\": \"e3\"\n        }\n    ],\n    \"scene\": {\n        \"location\": \"grassy field\",\n        \"environment\": [\"grassy field\", \"yellow flowers\"]\n    }\n}",
+        "status": "success"
+    },
+    {
+        "image_id": "test_002",
+        "baseline_run_number": 1,
+        "extraction_run_number": 1,
+        "image_file": "test_002.png",
+        "caption": "A rustic log cabin sits on a calm lake, its reflection mirrored in the water with majestic snow-capped mountains rising in the background under a soft, golden sky.",
+        "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+        "temperature": 0.0,
+        "timestamp_utc": "2026-09-04T06:45:08.294129+00:00",
+        "generation_time_seconds": 208.83,
+        "attempts": 1,
+        "csr": {
+            "entities": [
+                {
+                    "id": "e1",
+                    "type": "cabin",
+                    "attributes": [
+                        "rustic",
+                        "log"
+                    ]
+                },
+                {
+                    "id": "e2",
+                    "type": "lake",
+                    "attributes": [
+                        "calm"
+                    ]
+                },
+                {
+                    "id": "e3",
+                    "type": "reflection",
+                    "attributes": [
+                        "mirrored"
+                    ]
+                },
+                {
+                    "id": "e4",
+                    "type": "mountain",
+                    "attributes": [
+                        "majestic",
+                        "snow-capped"
+                    ]
+                },
+                {
+                    "id": "e5",
+                    "type": "sky",
+                    "attributes": [
+                        "soft",
+                        "golden"
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "subject": "e1",
+                    "action": "sit",
+                    "object": "e2"
+                },
+                {
+                    "subject": "e3",
+                    "action": "mirror",
+                    "object": "e2"
+                },
+                {
+                    "subject": "e4",
+                    "action": "rise",
+                    "object": null
+                }
+            ],
+            "relations": [
+                {
+                    "subject": "e1",
+                    "relation": "on",
+                    "object": "e2"
+                },
+                {
+                    "subject": "e3",
+                    "relation": "of",
+                    "object": "e1"
+                },
+                {
+                    "subject": "e4",
+                    "relation": "in_background_of",
+                    "object": "e1"
+                },
+                {
+                    "subject": "e5",
+                    "relation": "above",
+                    "object": "e1"
+                }
+            ],
+            "scene": {
+                "location": null,
+                "environment": [
+                    "calm lake",
+                    "snow-capped mountains",
+                    "golden sky"
+                ]
+            }
+        },
+        "raw_output": "{\n \"entities\": [\n        {\n            \"id\": \"e1\",\n            \"type\": \"cabin\",\n            \"attributes\": [\"rustic\", \"log\"]\n        },\n        {\n            \"id\": \"e2\",\n            \"type\": \"lake\",\n            \"attributes\": [\"calm\"]\n        },\n        {\n            \"id\": \"e3\",\n            \"type\": \"reflection\",\n            \"attributes\": [\"mirrored\"]\n        },\n        {\n            \"id\": \"e4\",\n            \"type\": \"mountain\",\n            \"attributes\": [\"majestic\", \"snow-capped\"]\n        },\n        {\n            \"id\": \"e5\",\n            \"type\": \"sky\",\n            \"attributes\": [\"soft\", \"golden\"]\n        }\n    ],\n    \"actions\": [\n        {\n            \"subject\": \"e1\",\n            \"action\": \"sit\",\n            \"object\": \"e2\"\n        },\n        {\n            \"subject\": \"e3\",\n            \"action\": \"mirror\",\n            \"object\": \"e2\"\n        },\n        {\n            \"subject\": \"e4\",\n            \"action\": \"rise\",\n            \"object\": null\n        }\n    ],\n    \"relations\": [\n        {\n            \"subject\": \"e1\",\n            \"relation\": \"on\",\n            \"object\": \"e2\"\n        },\n        {\n            \"subject\": \"e3\",\n            \"relation\": \"of\",\n            \"object\": \"e1\"\n        },\n        {\n            \"subject\": \"e4\",\n            \"relation\": \"in_background_of\",\n            \"object\": \"e1\"\n        },\n        {\n            \"subject\": \"e5\",\n            \"relation\": \"above\",\n            \"object\": \"e1\"\n        }\n    ],\n    \"scene\": {\n        \"location\": null,\n        \"environment\": [\"calm lake\", \"snow-capped mountains\", \"golden sky\"]\n    }\n}",
+        "status": "success"
+    },
+    {
+        "image_id": "test_002",
+        "baseline_run_number": 1,
+        "extraction_run_number": 2,
+        "image_file": "test_002.png",
+        "caption": "A rustic log cabin sits on a calm lake, its reflection mirrored in the water with majestic snow-capped mountains rising in the background under a soft, golden sky.",
+        "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+        "temperature": 0.0,
+        "timestamp_utc": "2026-09-04T06:45:41.117159+00:00",
+        "generation_time_seconds": 32.815,
+        "attempts": 1,
+        "csr": {
+            "entities": [
+                {
+                    "id": "e1",
+                    "type": "cabin",
+                    "attributes": [
+                        "rustic",
+                        "log"
+                    ]
+                },
+                {
+                    "id": "e2",
+                    "type": "lake",
+                    "attributes": [
+                        "calm"
+                    ]
+                },
+                {
+                    "id": "e3",
+                    "type": "reflection",
+                    "attributes": [
+                        "mirrored"
+                    ]
+                },
+                {
+                    "id": "e4",
+                    "type": "mountains",
+                    "attributes": [
+                        "majestic",
+                        "snow-capped"
+                    ]
+                },
+                {
+                    "id": "e5",
+                    "type": "sky",
+                    "attributes": [
+                        "soft",
+                        "golden"
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "subject": "e1",
+                    "action": "sit",
+                    "object": "e2"
+                },
+                {
+                    "subject": "e3",
+                    "action": "mirror",
+                    "object": "e2"
+                },
+                {
+                    "subject": "e4",
+                    "action": "rise",
+                    "object": null
+                }
+            ],
+            "relations": [
+                {
+                    "subject": "e1",
+                    "relation": "on",
+                    "object": "e2"
+                },
+                {
+                    "subject": "e3",
+                    "relation": "in",
+                    "object": "e2"
+                },
+                {
+                    "subject": "e4",
+                    "relation": "behind",
+                    "object": "e1"
+                }
+            ],
+            "scene": {
+                "location": null,
+                "environment": [
+                    "calm lake",
+                    "snow-capped mountains",
+                    "soft golden sky"
+                ]
+            }
+        },
+        "raw_output": "{\n    \"entities\": [\n        {\n            \"id\": \"e1\",\n            \"type\": \"cabin\",\n            \"attributes\": [\"rustic\", \"log\"]\n        },\n        {\n            \"id\": \"e2\",\n            \"type\": \"lake\",\n            \"attributes\": [\"calm\"]\n        },\n        {\n            \"id\": \"e3\",\n            \"type\": \"reflection\",\n            \"attributes\": [\"mirrored\"]\n        },\n        {\n            \"id\": \"e4\",\n            \"type\": \"mountains\",\n            \"attributes\": [\"majestic\", \"snow-capped\"]\n        },\n        {\n            \"id\": \"e5\",\n            \"type\": \"sky\",\n            \"attributes\": [\"soft\", \"golden\"]\n        }\n    ],\n    \"actions\": [\n        {\n            \"subject\": \"e1\",\n            \"action\": \"sit\",\n            \"object\": \"e2\"\n        },\n        {\n            \"subject\": \"e3\",\n            \"action\": \"mirror\",\n            \"object\": \"e2\"\n        },\n        {\n            \"subject\": \"e4\",\n            \"action\": \"rise\",\n            \"object\": null\n        }\n    ],\n    \"relations\": [\n        {\n            \"subject\": \"e1\",\n            \"relation\": \"on\",\n            \"object\": \"e2\"\n        },\n        {\n            \"subject\": \"e3\",\n            \"relation\": \"in\",\n            \"object\": \"e2\"\n        },\n        {\n            \"subject\": \"e4\",\n            \"relation\": \"behind\",\n            \"object\": \"e1\"\n        }\n    ],\n    \"scene\": {\n        \"location\": null,\n        \"environment\": [\"calm lake\", \"snow-capped mountains\", \"soft golden sky\"]\n    }\n}",
+        "status": "success"
+    },
+    {
+        "image_id": "test_002",
+        "baseline_run_number": 1,
+        "extraction_run_number": 3,
+        "image_file": "test_002.png",
+        "caption": "A rustic log cabin sits on a calm lake, its reflection mirrored in the water with majestic snow-capped mountains rising in the background under a soft, golden sky.",
+        "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+        "temperature": 0.0,
+        "timestamp_utc": "2026-09-04T06:46:37.237321+00:00",
+        "generation_time_seconds": 56.098,
+        "attempts": 1,
+        "csr": {
+            "entities": [
+                {
+                    "id": "e1",
+                    "type": "cabin",
+                    "attributes": [
+                        "rustic",
+                        "log"
+                    ]
+                },
+                {
+                    "id": "e2",
+                    "type": "lake",
+                    "attributes": [
+                        "calm"
+                    ]
+                },
+                {
+                    "id": "e3",
+                    "type": "reflection",
+                    "attributes": [
+                        "mirrored"
+                    ]
+                },
+                {
+                    "id": "e4",
+                    "type": "water",
+                    "attributes": []
+                },
+                {
+                    "id": "e5",
+                    "type": "mountains",
+                    "attributes": [
+                        "majestic",
+                        "snow-capped"
+                    ]
+                },
+                {
+                    "id": "e6",
+                    "type": "sky",
+                    "attributes": [
+                        "soft",
+                        "golden"
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "subject": "e1",
+                    "action": "sit",
+                    "object": "e2"
+                },
+                {
+                    "subject": "e3",
+                    "action": "mirror",
+                    "object": "e4"
+                },
+                {
+                    "subject": "e5",
+                    "action": "rise",
+                    "object": null
+                }
+            ],
+            "relations": [
+                {
+                    "subject": "e1",
+                    "relation": "on",
+                    "object": "e2"
+                },
+                {
+                    "subject": "e3",
+                    "relation": "of",
+                    "object": "e1"
+                },
+                {
+                    "subject": "e3",
+                    "relation": "in",
+                    "object": "e4"
+                },
+                {
+                    "subject": "e5",
+                    "relation": "under",
+                    "object": "e6"
+                }
+            ],
+            "scene": {
+                "location": null,
+                "environment": [
+                    "calm lake",
+                    "snow-capped mountains",
+                    "golden sky"
+                ]
+            }
+        },
+        "raw_output": "{\n    \"entities\": [\n        {\n            \"id\": \"e1\",\n            \"type\": \"cabin\",\n            \"attributes\": [\"rustic\", \"log\"]\n        },\n        {\n            \"id\": \"e2\",\n            \"type\": \"lake\",\n            \"attributes\": [\"calm\"]\n        },\n        {\n            \"id\": \"e3\",\n            \"type\": \"reflection\",\n            \"attributes\": [\"mirrored\"]\n        },\n        {\n            \"id\": \"e4\",\n            \"type\": \"water\",\n            \"attributes\": []\n        },\n        {\n            \"id\": \"e5\",\n            \"type\": \"mountains\",\n            \"attributes\": [\"majestic\", \"snow-capped\"]\n        },\n        {\n            \"id\": \"e6\",\n            \"type\": \"sky\",\n            \"attributes\": [\"soft\", \"golden\"]\n        }\n    ],\n    \"actions\": [\n        {\n            \"subject\": \"e1\",\n            \"action\": \"sit\",\n            \"object\": \"e2\"\n        },\n        {\n            \"subject\": \"e3\",\n            \"action\": \"mirror\",\n            \"object\": \"e4\"\n        },\n        {\n            \"subject\": \"e5\",\n            \"action\": \"rise\",\n            \"object\": null\n        }\n    ],\n    \"relations\": [\n        {\n            \"subject\": \"e1\",\n            \"relation\": \"on\",\n            \"object\": \"e2\"\n        },\n        {\n            \"subject\": \"e3\",\n            \"relation\": \"of\",\n            \"object\": \"e1\"\n        },\n        {\n            \"subject\": \"e3\",\n            \"relation\": \"in\",\n            \"object\": \"e4\"\n        },\n        {\n            \"subject\": \"e5\",\n            \"relation\": \"under\",\n            \"object\": \"e6\"\n        }\n    ],\n    \"scene\": {\n        \"location\": null,\n        \"environment\": [\"calm lake\", \"snow-capped mountains\", \"golden sky\"]\n    }\n}",
+        "status": "success"
+    },
+    {
+        "image_id": "test_003",
+        "baseline_run_number": 3,
+        "extraction_run_number": 1,
+        "image_file": "test_003.jpg",
+        "caption": "A man with glasses and a beard, wearing a white shirt, is focused on typing on a laptop at a desk illuminated by a warm desk lamp.",
+        "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+        "temperature": 0.0,
+        "timestamp_utc": "2026-09-04T17:28:58.578577+00:00",
+        "generation_time_seconds": 55.262,
+        "attempts": 2,
+        "csr": {
+            "entities": [
+                {
+                    "id": "e1",
+                    "type": "man",
+                    "attributes": [
+                        "glasses",
+                        "beard",
+                        "white shirt"
+                    ]
+                },
+                {
+                    "id": "e2",
+                    "type": "laptop",
+                    "attributes": []
+                },
+                {
+                    "id": "e3",
+                    "type": "desk",
+                    "attributes": []
+                },
+                {
+                    "id": "e4",
+                    "type": "desk lamp",
+                    "attributes": [
+                        "warm"
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "subject": "e1",
+                    "action": "type",
+                    "object": "e2"
+                }
+            ],
+            "relations": [
+                {
+                    "subject": "e1",
+                    "relation": "at",
+                    "object": "e3"
+                },
+                {
+                    "subject": "e3",
+                    "relation": "illuminated by",
+                    "object": "e4"
+                }
+            ],
+            "scene": {
+                "location": null,
+                "environment": []
+            }
+        },
+        "raw_output": "{\n    \"entities\": [\n        {\n            \"id\": \"e1\",\n            \"type\": \"man\",\n            \"attributes\": [\"glasses\", \"beard\", \"white shirt\"]\n        },\n        {\n            \"id\": \"e2\",\n            \"type\": \"laptop\",\n            \"attributes\": []\n        },\n        {\n            \"id\": \"e3\",\n            \"type\": \"desk\",\n            \"attributes\": []\n        },\n        {\n            \"id\": \"e4\",\n            \"type\": \"desk lamp\",\n            \"attributes\": [\"warm\"]\n        }\n    ],\n    \"actions\": [\n        {\n            \"subject\": \"e1\",\n            \"action\": \"type\",\n            \"object\": \"e2\"\n        }\n    ],\n    \"relations\": [\n        {\n            \"subject\": \"e1\",\n            \"relation\": \"at\",\n            \"object\": \"e3\"\n        },\n        {\n            \"subject\": \"e3\",\n            \"relation\": \"illuminated by\",\n            \"object\": \"e4\"\n        }\n    ],\n    \"scene\": {\n        \"location\": null,\n        \"environment\": []\n    }\n}",
+        "status": "success"
+    },
+    {
+        "image_id": "test_003",
+        "baseline_run_number": 3,
+        "extraction_run_number": 2,
+        "image_file": "test_003.jpg",
+        "caption": "A man with glasses and a beard, wearing a white shirt, is focused on typing on a laptop at a desk illuminated by a warm desk lamp.",
+        "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+        "temperature": 0.0,
+        "timestamp_utc": "2026-09-04T17:29:56.117272+00:00",
+        "generation_time_seconds": 57.453,
+        "attempts": 1,
+        "csr": {
+            "entities": [
+                {
+                    "id": "e1",
+                    "type": "man",
+                    "attributes": [
+                        "glasses",
+                        "beard",
+                        "white shirt"
+                    ]
+                },
+                {
+                    "id": "e2",
+                    "type": "laptop",
+                    "attributes": []
+                },
+                {
+                    "id": "e3",
+                    "type": "desk",
+                    "attributes": []
+                },
+                {
+                    "id": "e4",
+                    "type": "lamp",
+                    "attributes": [
+                        "warm"
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "subject": "e1",
+                    "action": "type",
+                    "object": "e2"
+                }
+            ],
+            "relations": [
+                {
+                    "subject": "e1",
+                    "relation": "at",
+                    "object": "e3"
+                },
+                {
+                    "subject": "e2",
+                    "relation": "on",
+                    "object": "e3"
+                },
+                {
+                    "subject": "e4",
+                    "relation": "illuminates",
+                    "object": "e3"
+                }
+            ],
+            "scene": {
+                "location": null,
+                "environment": []
+            }
+        },
+        "raw_output": "{\n    \"entities\": [\n        {\n            \"id\": \"e1\",\n            \"type\": \"man\",\n            \"attributes\": [\"glasses\", \"beard\", \"white shirt\"]\n        },\n        {\n            \"id\": \"e2\",\n            \"type\": \"laptop\",\n            \"attributes\": []\n        },\n        {\n            \"id\": \"e3\",\n            \"type\": \"desk\",\n            \"attributes\": []\n        },\n        {\n            \"id\": \"e4\",\n            \"type\": \"lamp\",\n            \"attributes\": [\"warm\"]\n        }\n    ],\n    \"actions\": [\n        {\n            \"subject\": \"e1\",\n            \"action\": \"type\",\n            \"object\": \"e2\"\n        }\n    ],\n    \"relations\": [\n        {\n            \"subject\": \"e1\",\n            \"relation\": \"at\",\n            \"object\": \"e3\"\n        },\n        {\n            \"subject\": \"e2\",\n            \"relation\": \"on\",\n            \"object\": \"e3\"\n        },\n        {\n            \"subject\": \"e4\",\n            \"relation\": \"illuminates\",\n            \"object\": \"e3\"\n        }\n    ],\n    \"scene\": {\n        \"location\": null,\n        \"environment\": []\n    }\n}",
+        "status": "success"
+    },
+    {
+        "image_id": "test_003",
+        "baseline_run_number": 3,
+        "extraction_run_number": 3,
+        "image_file": "test_003.jpg",
+        "caption": "A man with glasses and a beard, wearing a white shirt, is focused on typing on a laptop at a desk illuminated by a warm desk lamp.",
+        "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+        "temperature": 0.0,
+        "timestamp_utc": "2026-09-04T17:31:05.957248+00:00",
+        "generation_time_seconds": 69.793,
+        "attempts": 2,
+        "csr": {
+            "entities": [
+                {
+                    "id": "e1",
+                    "type": "man",
+                    "attributes": [
+                        "glasses",
+                        "beard",
+                        "white shirt",
+                        "focused"
+                    ]
+                },
+                {
+                    "id": "e2",
+                    "type": "laptop",
+                    "attributes": []
+                },
+                {
+                    "id": "e3",
+                    "type": "desk",
+                    "attributes": []
+                },
+                {
+                    "id": "e4",
+                    "type": "desk lamp",
+                    "attributes": [
+                        "warm"
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "subject": "e1",
+                    "action": "type",
+                    "object": "e2"
+                }
+            ],
+            "relations": [
+                {
+                    "subject": "e1",
+                    "relation": "at",
+                    "object": "e3"
+                },
+                {
+                    "subject": "e3",
+                    "relation": "illuminated by",
+                    "object": "e4"
+                }
+            ],
+            "scene": {
+                "location": null,
+                "environment": []
+            }
+        },
+        "raw_output": "{\n    \"entities\": [\n        {\n            \"id\": \"e1\",\n            \"type\": \"man\",\n            \"attributes\": [\"glasses\", \"beard\", \"white shirt\", \"focused\"]\n        },\n        {\n            \"id\": \"e2\",\n            \"type\": \"laptop\",\n            \"attributes\": []\n        },\n        {\n            \"id\": \"e3\",\n            \"type\": \"desk\",\n            \"attributes\": []\n        },\n        {\n            \"id\": \"e4\",\n            \"type\": \"desk lamp\",\n            \"attributes\": [\"warm\"]\n        }\n    ],\n    \"actions\": [\n        {\n            \"subject\": \"e1\",\n            \"action\": \"type\",\n            \"object\": \"e2\"\n        }\n    ],\n    \"relations\": [\n        {\n            \"subject\": \"e1\",\n            \"relation\": \"at\",\n            \"object\": \"e3\"\n        },\n        {\n            \"subject\": \"e3\",\n            \"relation\": \"illuminated by\",\n            \"object\": \"e4\"\n        }\n    ],\n    \"scene\": {\n        \"location\": null,\n        \"environment\": []\n    }\n}",
+        "status": "success"
+    },
+    {
+        "image_id": "test_004",
+        "baseline_run_number": 3,
+        "extraction_run_number": 1,
+        "image_file": "test_004.jpg",
+        "caption": "A woman wearing a brown tank top and blue jeans walks a white dog on a red leash through a grassy park area with trees in the background.",
+        "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+        "temperature": 0.0,
+        "timestamp_utc": "2026-09-04T17:32:01.458998+00:00",
+        "generation_time_seconds": 55.442,
+        "attempts": 2,
+        "csr": {
+            "entities": [
+                {
+                    "id": "e1",
+                    "type": "woman",
+                    "attributes": []
+                },
+                {
+                    "id": "e2",
+                    "type": "tank_top",
+                    "attributes": [
+                        "brown"
+                    ]
+                },
+                {
+                    "id": "e3",
+                    "type": "jeans",
+                    "attributes": [
+                        "blue"
+                    ]
+                },
+                {
+                    "id": "e4",
+                    "type": "dog",
+                    "attributes": [
+                        "white"
+                    ]
+                },
+                {
+                    "id": "e5",
+                    "type": "leash",
+                    "attributes": [
+                        "red"
+                    ]
+                },
+                {
+                    "id": "e6",
+                    "type": "park_area",
+                    "attributes": [
+                        "grassy"
+                    ]
+                },
+                {
+                    "id": "e7",
+                    "type": "trees",
+                    "attributes": []
+                }
+            ],
+            "actions": [
+                {
+                    "subject": "e1",
+                    "action": "walk",
+                    "object": "e4"
+                },
+                {
+                    "subject": "e1",
+                    "action": "wear",
+                    "object": "e2"
+                },
+                {
+                    "subject": "e1",
+                    "action": "wear",
+                    "object": "e3"
+                }
+            ],
+            "relations": [
+                {
+                    "subject": "e4",
+                    "relation": "on",
+                    "object": "e5"
+                },
+                {
+                    "subject": "e1",
+                    "relation": "through",
+                    "object": "e6"
+                },
+                {
+                    "subject": "e7",
+                    "relation": "in_background_of",
+                    "object": "e6"
+                }
+            ],
+            "scene": {
+                "location": "park_area",
+                "environment": [
+                    "grassy",
+                    "trees"
+                ]
+            }
+        },
+        "raw_output": "{\n    \"entities\": [\n        {\n            \"id\": \"e1\",\n            \"type\": \"woman\",\n            \"attributes\": []\n        },\n        {\n            \"id\": \"e2\",\n            \"type\": \"tank_top\",\n            \"attributes\": [\"brown\"]\n        },\n        {\n            \"id\": \"e3\",\n            \"type\": \"jeans\",\n            \"attributes\": [\"blue\"]\n        },\n        {\n            \"id\": \"e4\",\n            \"type\": \"dog\",\n            \"attributes\": [\"white\"]\n        },\n        {\n            \"id\": \"e5\",\n            \"type\": \"leash\",\n            \"attributes\": [\"red\"]\n        },\n        {\n            \"id\": \"e6\",\n            \"type\": \"park_area\",\n            \"attributes\": [\"grassy\"]\n        },\n        {\n            \"id\": \"e7\",\n            \"type\": \"trees\",\n            \"attributes\": []\n        }\n    ],\n    \"actions\": [\n        {\n            \"subject\": \"e1\",\n            \"action\": \"walk\",\n            \"object\": \"e4\"\n        },\n        {\n            \"subject\": \"e1\",\n            \"action\": \"wear\",\n            \"object\": \"e2\"\n        },\n        {\n            \"subject\": \"e1\",\n            \"action\": \"wear\",\n            \"object\": \"e3\"\n        }\n    ],\n    \"relations\": [\n        {\n            \"subject\": \"e4\",\n            \"relation\": \"on\",\n            \"object\": \"e5\"\n        },\n        {\n            \"subject\": \"e1\",\n            \"relation\": \"through\",\n            \"object\": \"e6\"\n        },\n        {\n            \"subject\": \"e7\",\n            \"relation\": \"in_background_of\",\n            \"object\": \"e6\"\n        }\n    ],\n    \"scene\": {\n        \"location\": \"park_area\",\n        \"environment\": [\"grassy\", \"trees\"]\n    }\n}",
+        "status": "success"
+    },
+    {
+        "image_id": "test_004",
+        "baseline_run_number": 3,
+        "extraction_run_number": 2,
+        "image_file": "test_004.jpg",
+        "caption": "A woman wearing a brown tank top and blue jeans walks a white dog on a red leash through a grassy park area with trees in the background.",
+        "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+        "temperature": 0.0,
+        "timestamp_utc": "2026-09-04T17:33:11.195923+00:00",
+        "generation_time_seconds": 69.681,
+        "attempts": 3,
+        "csr": {
+            "entities": [
+                {
+                    "id": "e1",
+                    "type": "woman",
+                    "attributes": []
+                },
+                {
+                    "id": "e2",
+                    "type": "tank top",
+                    "attributes": [
+                        "brown"
+                    ]
+                },
+                {
+                    "id": "e3",
+                    "type": "jeans",
+                    "attributes": [
+                        "blue"
+                    ]
+                },
+                {
+                    "id": "e4",
+                    "type": "dog",
+                    "attributes": [
+                        "white"
+                    ]
+                },
+                {
+                    "id": "e5",
+                    "type": "leash",
+                    "attributes": [
+                        "red"
+                    ]
+                },
+                {
+                    "id": "e6",
+                    "type": "park area",
+                    "attributes": [
+                        "grassy"
+                    ]
+                },
+                {
+                    "id": "e7",
+                    "type": "trees",
+                    "attributes": [
+                        "in background"
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "subject": "e1",
+                    "action": "walk",
+                    "object": "e4"
+                }
+            ],
+            "relations": [
+                {
+                    "subject": "e1",
+                    "relation": "wearing",
+                    "object": "e2"
+                },
+                {
+                    "subject": "e1",
+                    "relation": "wearing",
+                    "object": "e3"
+                },
+                {
+                    "subject": "e4",
+                    "relation": "on",
+                    "object": "e5"
+                },
+                {
+                    "subject": "e1",
+                    "relation": "through",
+                    "object": "e6"
+                },
+                {
+                    "subject": "e7",
+                    "relation": "background of",
+                    "object": "e6"
+                }
+            ],
+            "scene": {
+                "location": "grassy park area",
+                "environment": [
+                    "trees in background"
+                ]
+            }
+        },
+        "raw_output": "{\n    \"entities\": [\n        {\n            \"id\": \"e1\",\n            \"type\": \"woman\",\n            \"attributes\": []\n        },\n        {\n            \"id\": \"e2\",\n            \"type\": \"tank top\",\n            \"attributes\": [\"brown\"]\n        },\n        {\n            \"id\": \"e3\",\n            \"type\": \"jeans\",\n            \"attributes\": [\"blue\"]\n        },\n        {\n            \"id\": \"e4\",\n            \"type\": \"dog\",\n            \"attributes\": [\"white\"]\n        },\n        {\n            \"id\": \"e5\",\n            \"type\": \"leash\",\n            \"attributes\": [\"red\"]\n        },\n        {\n            \"id\": \"e6\",\n            \"type\": \"park area\",\n            \"attributes\": [\"grassy\"]\n        },\n        {\n            \"id\": \"e7\",\n            \"type\": \"trees\",\n            \"attributes\": [\"in background\"]\n        }\n    ],\n    \"actions\": [\n        {\n            \"subject\": \"e1\",\n            \"action\": \"walk\",\n            \"object\": \"e4\"\n        }\n    ],\n    \"relations\": [\n        {\n            \"subject\": \"e1\",\n            \"relation\": \"wearing\",\n            \"object\": \"e2\"\n        },\n        {\n            \"subject\": \"e1\",\n            \"relation\": \"wearing\",\n            \"object\": \"e3\"\n        },\n        {\n            \"subject\": \"e4\",\n            \"relation\": \"on\",\n            \"object\": \"e5\"\n        },\n        {\n            \"subject\": \"e1\",\n            \"relation\": \"through\",\n            \"object\": \"e6\"\n        },\n        {\n            \"subject\": \"e7\",\n            \"relation\": \"background of\",\n            \"object\": \"e6\"\n        }\n    ],\n    \"scene\": {\n        \"location\": \"grassy park area\",\n        \"environment\": [\"trees in background\"]\n    }\n}",
+        "status": "success"
+    },
+    {
+        "image_id": "test_004",
+        "baseline_run_number": 3,
+        "extraction_run_number": 3,
+        "image_file": "test_004.jpg",
+        "caption": "A woman wearing a brown tank top and blue jeans walks a white dog on a red leash through a grassy park area with trees in the background.",
+        "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+        "temperature": 0.0,
+        "timestamp_utc": "2026-09-04T17:34:22.467281+00:00",
+        "generation_time_seconds": 71.225,
+        "attempts": 2,
+        "csr": {
+            "entities": [
+                {
+                    "id": "e1",
+                    "type": "woman",
+                    "attributes": []
+                },
+                {
+                    "id": "e2",
+                    "type": "tank top",
+                    "attributes": [
+                        "brown"
+                    ]
+                },
+                {
+                    "id": "e3",
+                    "type": "jeans",
+                    "attributes": [
+                        "blue"
+                    ]
+                },
+                {
+                    "id": "e4",
+                    "type": "dog",
+                    "attributes": [
+                        "white"
+                    ]
+                },
+                {
+                    "id": "e5",
+                    "type": "leash",
+                    "attributes": [
+                        "red"
+                    ]
+                },
+                {
+                    "id": "e6",
+                    "type": "park area",
+                    "attributes": [
+                        "grassy"
+                    ]
+                },
+                {
+                    "id": "e7",
+                    "type": "trees",
+                    "attributes": []
+                }
+            ],
+            "actions": [
+                {
+                    "subject": "e1",
+                    "action": "walk",
+                    "object": "e4"
+                },
+                {
+                    "subject": "e1",
+                    "action": "wear",
+                    "object": "e2"
+                },
+                {
+                    "subject": "e1",
+                    "action": "wear",
+                    "object": "e3"
+                }
+            ],
+            "relations": [
+                {
+                    "subject": "e1",
+                    "relation": "through",
+                    "object": "e6"
+                },
+                {
+                    "subject": "e4",
+                    "relation": "on",
+                    "object": "e5"
+                },
+                {
+                    "subject": "e7",
+                    "relation": "in_background_of",
+                    "object": "e6"
+                }
+            ],
+            "scene": {
+                "location": "park area",
+                "environment": [
+                    "grassy",
+                    "trees"
+                ]
+            }
+        },
+        "raw_output": "{\n    \"entities\": [\n        {\n            \"id\": \"e1\",\n            \"type\": \"woman\",\n            \"attributes\": []\n        },\n        {\n            \"id\": \"e2\",\n            \"type\": \"tank top\",\n            \"attributes\": [\"brown\"]\n        },\n        {\n            \"id\": \"e3\",\n            \"type\": \"jeans\",\n            \"attributes\": [\"blue\"]\n        },\n        {\n            \"id\": \"e4\",\n            \"type\": \"dog\",\n            \"attributes\": [\"white\"]\n        },\n        {\n            \"id\": \"e5\",\n            \"type\": \"leash\",\n            \"attributes\": [\"red\"]\n        },\n        {\n            \"id\": \"e6\",\n            \"type\": \"park area\",\n            \"attributes\": [\"grassy\"]\n        },\n        {\n            \"id\": \"e7\",\n            \"type\": \"trees\",\n            \"attributes\": []\n        }\n    ],\n    \"actions\": [\n        {\n            \"subject\": \"e1\",\n            \"action\": \"walk\",\n            \"object\": \"e4\"\n        },\n        {\n            \"subject\": \"e1\",\n            \"action\": \"wear\",\n            \"object\": \"e2\"\n        },\n        {\n            \"subject\": \"e1\",\n            \"action\": \"wear\",\n            \"object\": \"e3\"\n        }\n    ],\n    \"relations\": [\n        {\n            \"subject\": \"e1\",\n            \"relation\": \"through\",\n            \"object\": \"e6\"\n        },\n        {\n            \"subject\": \"e4\",\n            \"relation\": \"on\",\n            \"object\": \"e5\"\n        },\n        {\n            \"subject\": \"e7\",\n            \"relation\": \"in_background_of\",\n            \"object\": \"e6\"\n        }\n    ],\n    \"scene\": {\n        \"location\": \"park area\",\n        \"environment\": [\"grassy\", \"trees\"]\n    }\n}",
+        "status": "success"
+    },
+    {
+        "image_id": "test_005",
+        "baseline_run_number": 3,
+        "extraction_run_number": 1,
+        "image_file": "test_005.jpg",
+        "caption": "A teacher sits on the floor with a group of young children in a classroom, guiding them as they play with wooden toys and engage in educational activities.",
+        "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+        "temperature": 0.0,
+        "timestamp_utc": "2026-09-04T17:35:25.244914+00:00",
+        "generation_time_seconds": 62.72,
+        "attempts": 2,
+        "csr": {
+            "entities": [
+                {
+                    "id": "e1",
+                    "type": "teacher",
+                    "attributes": []
+                },
+                {
+                    "id": "e2",
+                    "type": "floor",
+                    "attributes": []
+                },
+                {
+                    "id": "e3",
+                    "type": "children",
+                    "attributes": [
+                        "young"
+                    ]
+                },
+                {
+                    "id": "e4",
+                    "type": "classroom",
+                    "attributes": []
+                },
+                {
+                    "id": "e5",
+                    "type": "toy",
+                    "attributes": [
+                        "wooden"
+                    ]
+                },
+                {
+                    "id": "e6",
+                    "type": "activity",
+                    "attributes": [
+                        "educational"
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "subject": "e1",
+                    "action": "sit",
+                    "object": null
+                },
+                {
+                    "subject": "e1",
+                    "action": "guide",
+                    "object": "e3"
+                },
+                {
+                    "subject": "e3",
+                    "action": "play",
+                    "object": "e5"
+                },
+                {
+                    "subject": "e3",
+                    "action": "engage",
+                    "object": "e6"
+                }
+            ],
+            "relations": [
+                {
+                    "subject": "e1",
+                    "relation": "on",
+                    "object": "e2"
+                },
+                {
+                    "subject": "e1",
+                    "relation": "with",
+                    "object": "e3"
+                },
+                {
+                    "subject": "e1",
+                    "relation": "in",
+                    "object": "e4"
+                },
+                {
+                    "subject": "e3",
+                    "relation": "in",
+                    "object": "e4"
+                }
+            ],
+            "scene": {
+                "location": "classroom",
+                "environment": [
+                    "indoor"
+                ]
+            }
+        },
+        "raw_output": "{\n \"entities\": [\n        {\n            \"id\": \"e1\",\n            \"type\": \"teacher\",\n            \"attributes\": []\n        },\n        {\n            \"id\": \"e2\",\n            \"type\": \"floor\",\n            \"attributes\": []\n        },\n        {\n            \"id\": \"e3\",\n            \"type\": \"children\",\n            \"attributes\": [\"young\"]\n        },\n        {\n            \"id\": \"e4\",\n            \"type\": \"classroom\",\n            \"attributes\": []\n        },\n        {\n            \"id\": \"e5\",\n            \"type\": \"toy\",\n            \"attributes\": [\"wooden\"]\n        },\n        {\n            \"id\": \"e6\",\n            \"type\": \"activity\",\n            \"attributes\": [\"educational\"]\n        }\n    ],\n    \"actions\": [\n        {\n            \"subject\": \"e1\",\n            \"action\": \"sit\",\n            \"object\": null\n        },\n        {\n            \"subject\": \"e1\",\n            \"action\": \"guide\",\n            \"object\": \"e3\"\n        },\n        {\n            \"subject\": \"e3\",\n            \"action\": \"play\",\n            \"object\": \"e5\"\n        },\n        {\n            \"subject\": \"e3\",\n            \"action\": \"engage\",\n            \"object\": \"e6\"\n        }\n    ],\n    \"relations\": [\n        {\n            \"subject\": \"e1\",\n            \"relation\": \"on\",\n            \"object\": \"e2\"\n        },\n        {\n            \"subject\": \"e1\",\n            \"relation\": \"with\",\n            \"object\": \"e3\"\n        },\n        {\n            \"subject\": \"e1\",\n            \"relation\": \"in\",\n            \"object\": \"e4\"\n        },\n        {\n            \"subject\": \"e3\",\n            \"relation\": \"in\",\n            \"object\": \"e4\"\n        }\n    ],\n    \"scene\": {\n        \"location\": \"classroom\",\n        \"environment\": [\"indoor\"]\n    }\n}",
+        "status": "success"
+    },
+    {
+        "image_id": "test_005",
+        "baseline_run_number": 3,
+        "extraction_run_number": 2,
+        "image_file": "test_005.jpg",
+        "caption": "A teacher sits on the floor with a group of young children in a classroom, guiding them as they play with wooden toys and engage in educational activities.",
+        "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+        "temperature": 0.0,
+        "timestamp_utc": "2026-09-04T17:36:26.618310+00:00",
+        "generation_time_seconds": 61.31,
+        "attempts": 1,
+        "csr": {
+            "entities": [
+                {
+                    "id": "e1",
+                    "type": "teacher",
+                    "attributes": []
+                },
+                {
+                    "id": "e2",
+                    "type": "child",
+                    "attributes": [
+                        "young",
+                        "group"
+                    ]
+                },
+                {
+                    "id": "e3",
+                    "type": "floor",
+                    "attributes": []
+                },
+                {
+                    "id": "e4",
+                    "type": "classroom",
+                    "attributes": []
+                },
+                {
+                    "id": "e5",
+                    "type": "toy",
+                    "attributes": [
+                        "wooden"
+                    ]
+                },
+                {
+                    "id": "e6",
+                    "type": "activity",
+                    "attributes": [
+                        "educational"
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "subject": "e1",
+                    "action": "sit",
+                    "object": null
+                },
+                {
+                    "subject": "e1",
+                    "action": "guide",
+                    "object": "e2"
+                },
+                {
+                    "subject": "e2",
+                    "action": "play",
+                    "object": "e5"
+                },
+                {
+                    "subject": "e2",
+                    "action": "engage",
+                    "object": "e6"
+                }
+            ],
+            "relations": [
+                {
+                    "subject": "e1",
+                    "relation": "on",
+                    "object": "e3"
+                },
+                {
+                    "subject": "e1",
+                    "relation": "with",
+                    "object": "e2"
+                },
+                {
+                    "subject": "e2",
+                    "relation": "in",
+                    "object": "e4"
+                }
+            ],
+            "scene": {
+                "location": "classroom",
+                "environment": [
+                    "classroom"
+                ]
+            }
+        },
+        "raw_output": "{\n    \"entities\": [\n        {\n            \"id\": \"e1\",\n            \"type\": \"teacher\",\n            \"attributes\": []\n        },\n        {\n            \"id\": \"e2\",\n            \"type\": \"child\",\n            \"attributes\": [\"young\", \"group\"]\n        },\n        {\n            \"id\": \"e3\",\n            \"type\": \"floor\",\n            \"attributes\": []\n        },\n        {\n            \"id\": \"e4\",\n            \"type\": \"classroom\",\n            \"attributes\": []\n        },\n        {\n            \"id\": \"e5\",\n            \"type\": \"toy\",\n            \"attributes\": [\"wooden\"]\n        },\n        {\n            \"id\": \"e6\",\n            \"type\": \"activity\",\n            \"attributes\": [\"educational\"]\n        }\n    ],\n    \"actions\": [\n        {\n            \"subject\": \"e1\",\n            \"action\": \"sit\",\n            \"object\": null\n        },\n        {\n            \"subject\": \"e1\",\n            \"action\": \"guide\",\n            \"object\": \"e2\"\n        },\n        {\n            \"subject\": \"e2\",\n            \"action\": \"play\",\n            \"object\": \"e5\"\n        },\n        {\n            \"subject\": \"e2\",\n            \"action\": \"engage\",\n            \"object\": \"e6\"\n        }\n    ],\n    \"relations\": [\n        {\n            \"subject\": \"e1\",\n            \"relation\": \"on\",\n            \"object\": \"e3\"\n        },\n        {\n            \"subject\": \"e1\",\n            \"relation\": \"with\",\n            \"object\": \"e2\"\n        },\n        {\n            \"subject\": \"e2\",\n            \"relation\": \"in\",\n            \"object\": \"e4\"\n        }\n    ],\n    \"scene\": {\n        \"location\": \"classroom\",\n        \"environment\": [\"classroom\"]\n    }\n}",
+        "status": "success"
+    },
+    {
+        "image_id": "test_005",
+        "baseline_run_number": 3,
+        "extraction_run_number": 3,
+        "image_file": "test_005.jpg",
+        "caption": "A teacher sits on the floor with a group of young children in a classroom, guiding them as they play with wooden toys and engage in educational activities.",
+        "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+        "temperature": 0.0,
+        "timestamp_utc": "2026-09-04T17:37:00.814700+00:00",
+        "generation_time_seconds": 34.149,
+        "attempts": 1,
+        "csr": {
+            "entities": [
+                {
+                    "id": "e1",
+                    "type": "teacher",
+                    "attributes": []
+                },
+                {
+                    "id": "e2",
+                    "type": "children",
+                    "attributes": [
+                        "young"
+                    ]
+                },
+                {
+                    "id": "e3",
+                    "type": "floor",
+                    "attributes": []
+                },
+                {
+                    "id": "e4",
+                    "type": "classroom",
+                    "attributes": []
+                },
+                {
+                    "id": "e5",
+                    "type": "toy",
+                    "attributes": [
+                        "wooden"
+                    ]
+                },
+                {
+                    "id": "e6",
+                    "type": "activity",
+                    "attributes": [
+                        "educational"
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "subject": "e1",
+                    "action": "sit",
+                    "object": null
+                },
+                {
+                    "subject": "e1",
+                    "action": "guide",
+                    "object": "e2"
+                },
+                {
+                    "subject": "e2",
+                    "action": "play",
+                    "object": "e5"
+                },
+                {
+                    "subject": "e2",
+                    "action": "engage",
+                    "object": "e6"
+                }
+            ],
+            "relations": [
+                {
+                    "subject": "e1",
+                    "relation": "on",
+                    "object": "e3"
+                },
+                {
+                    "subject": "e1",
+                    "relation": "with",
+                    "object": "e2"
+                },
+                {
+                    "subject": "e1",
+                    "relation": "in",
+                    "object": "e4"
+                },
+                {
+                    "subject": "e2",
+                    "relation": "in",
+                    "object": "e4"
+                }
+            ],
+            "scene": {
+                "location": "classroom",
+                "environment": [
+                    "classroom"
+                ]
+            }
+        },
+        "raw_output": "{\n    \"entities\": [\n        {\n            \"id\": \"e1\",\n            \"type\": \"teacher\",\n            \"attributes\": []\n        },\n        {\n            \"id\": \"e2\",\n            \"type\": \"children\",\n            \"attributes\": [\"young\"]\n        },\n        {\n            \"id\": \"e3\",\n            \"type\": \"floor\",\n            \"attributes\": []\n        },\n        {\n            \"id\": \"e4\",\n            \"type\": \"classroom\",\n            \"attributes\": []\n        },\n        {\n            \"id\": \"e5\",\n            \"type\": \"toy\",\n            \"attributes\": [\"wooden\"]\n        },\n        {\n            \"id\": \"e6\",\n            \"type\": \"activity\",\n            \"attributes\": [\"educational\"]\n        }\n    ],\n    \"actions\": [\n        {\n            \"subject\": \"e1\",\n            \"action\": \"sit\",\n            \"object\": null\n        },\n        {\n            \"subject\": \"e1\",\n            \"action\": \"guide\",\n            \"object\": \"e2\"\n        },\n        {\n            \"subject\": \"e2\",\n            \"action\": \"play\",\n            \"object\": \"e5\"\n        },\n        {\n            \"subject\": \"e2\",\n            \"action\": \"engage\",\n            \"object\": \"e6\"\n        }\n    ],\n    \"relations\": [\n        {\n            \"subject\": \"e1\",\n            \"relation\": \"on\",\n            \"object\": \"e3\"\n        },\n        {\n            \"subject\": \"e1\",\n            \"relation\": \"with\",\n            \"object\": \"e2\"\n        },\n        {\n            \"subject\": \"e1\",\n            \"relation\": \"in\",\n            \"object\": \"e4\"\n        },\n        {\n            \"subject\": \"e2\",\n            \"relation\": \"in\",\n            \"object\": \"e4\"\n        }\n    ],\n    \"scene\": {\n        \"location\": \"classroom\",\n        \"environment\": [\"classroom\"]\n    }\n}",
+        "status": "success"
+    }
+]

@@ -1,0 +1,226 @@
+[
+    {
+        "image_id": "test_002",
+        "csr": {
+            "image_id": "test_002",
+            "entities": [
+                {
+                    "id": "e2",
+                    "type": "cabin",
+                    "attributes": [
+                        "log",
+                        "wooden"
+                    ]
+                },
+                {
+                    "id": "e3",
+                    "type": "lake",
+                    "attributes": [
+                        "calm"
+                    ]
+                },
+                {
+                    "id": "e4",
+                    "type": "mountain",
+                    "attributes": [
+                        "majestic",
+                        "snow_capped"
+                    ]
+                },
+                {
+                    "id": "e6",
+                    "type": "reflection",
+                    "attributes": [
+                        "mirrored"
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "subject": "e2",
+                    "action": "sit",
+                    "object": null
+                }
+            ],
+            "relations": [
+                {
+                    "subject": "e2",
+                    "relation": "on",
+                    "object": "e3"
+                },
+                {
+                    "subject": "e6",
+                    "relation": "in",
+                    "object": "e3"
+                },
+                {
+                    "subject": "e6",
+                    "relation": "of",
+                    "object": "e2"
+                }
+            ],
+            "scene": {
+                "location": null,
+                "environment": [
+                    "snow_capped_mountains"
+                ]
+            }
+        },
+        "provenance": {
+            "consensus_policy": {
+                "number_of_runs": 3,
+                "minimum_support": 2,
+                "rule": "strict majority"
+            },
+            "minority_entities": [
+                {
+                    "consensus_id": "e1",
+                    "support": 1,
+                    "runs": [
+                        0
+                    ],
+                    "type_variants": [
+                        "background"
+                    ],
+                    "attribute_support": {}
+                },
+                {
+                    "consensus_id": "e5",
+                    "support": 1,
+                    "runs": [
+                        0
+                    ],
+                    "type_variants": [
+                        "platform"
+                    ],
+                    "attribute_support": {
+                        "small": 1
+                    }
+                },
+                {
+                    "consensus_id": "e7",
+                    "support": 1,
+                    "runs": [
+                        1
+                    ],
+                    "type_variants": [
+                        "shoreline"
+                    ],
+                    "attribute_support": {
+                        "forested": 1
+                    }
+                },
+                {
+                    "consensus_id": "e8",
+                    "support": 1,
+                    "runs": [
+                        1
+                    ],
+                    "type_variants": [
+                        "sky"
+                    ],
+                    "attribute_support": {
+                        "partly_cloudy": 1
+                    }
+                },
+                {
+                    "consensus_id": "e9",
+                    "support": 1,
+                    "runs": [
+                        0
+                    ],
+                    "type_variants": [
+                        "water"
+                    ],
+                    "attribute_support": {}
+                }
+            ],
+            "minority_actions": [
+                {
+                    "fact": {
+                        "subject": "e4",
+                        "action": "rise",
+                        "object": null
+                    },
+                    "support": 1,
+                    "runs": [
+                        0
+                    ]
+                }
+            ],
+            "minority_relations": [
+                {
+                    "fact": {
+                        "subject": "e2",
+                        "relation": "has",
+                        "object": "e6"
+                    },
+                    "support": 1,
+                    "runs": [
+                        0
+                    ]
+                },
+                {
+                    "fact": {
+                        "subject": "e4",
+                        "relation": "behind",
+                        "object": "e2"
+                    },
+                    "support": 1,
+                    "runs": [
+                        1
+                    ]
+                }
+            ],
+            "scene": {
+                "location_support": {
+                    "calm_lake": 1
+                },
+                "minority_environment": [
+                    {
+                        "value": "calm_lake",
+                        "support": 1,
+                        "runs": [
+                            0
+                        ]
+                    },
+                    {
+                        "value": "forested_hillside",
+                        "support": 1,
+                        "runs": [
+                            2
+                        ]
+                    },
+                    {
+                        "value": "lake",
+                        "support": 1,
+                        "runs": [
+                            1
+                        ]
+                    },
+                    {
+                        "value": "mountain",
+                        "support": 1,
+                        "runs": [
+                            1
+                        ]
+                    },
+                    {
+                        "value": "shoreline",
+                        "support": 1,
+                        "runs": [
+                            1
+                        ]
+                    },
+                    {
+                        "value": "sky",
+                        "support": 1,
+                        "runs": [
+                            1
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+]

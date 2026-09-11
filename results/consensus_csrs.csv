@@ -1,0 +1,6 @@
+image_id,entity_count,action_count,relation_count,scene_location,environment
+test_001,3,1,1,grassy field,field; grassy
+test_002,5,3,2,,calm lake; golden sky; snow-capped mountains
+test_003,4,1,2,,
+test_004,7,3,3,,grassy; trees
+test_005,6,4,4,classroom,classroom

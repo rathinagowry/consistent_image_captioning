@@ -1,0 +1,3600 @@
+image_id,baseline_run_number,extraction_run_number,image_file,caption,model,temperature,timestamp_utc,generation_time_seconds,attempts,csr,raw_output,status,error
+test_001,1,1,test_001.png,A brown dog runs through a green field dotted with yellow flowers.,nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-01T17:00:43.474538+00:00,14.926,3,,,error,"Semantic extraction failed after 3 attempts: Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day', 'code': 429, 'metadata': {'headers': {'X-RateLimit-Limit': '50', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1788307200000'}, 'limit_source': 'openrouter_free_tier_daily', 'remedy_hint': 'Wait for the daily reset (see X-RateLimit-Reset), or purchase credits to raise your free-model daily limit.', 'provider_name': None}}, 'user_id': 'user_3IjWbdFHhB7b0j6QVQtcJnXC1gw'}"
+test_001,1,2,test_001.png,A brown dog runs through a green field dotted with yellow flowers.,nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-01T17:00:53.605444+00:00,10.108,3,,,error,"Semantic extraction failed after 3 attempts: Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day', 'code': 429, 'metadata': {'headers': {'X-RateLimit-Limit': '50', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1788307200000'}, 'limit_source': 'openrouter_free_tier_daily', 'remedy_hint': 'Wait for the daily reset (see X-RateLimit-Reset), or purchase credits to raise your free-model daily limit.', 'provider_name': None}}, 'user_id': 'user_3IjWbdFHhB7b0j6QVQtcJnXC1gw'}"
+test_001,1,1,test_001.png,A brown dog runs through a green field dotted with yellow flowers.,nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T06:21:37.986534+00:00,69.111,2,"{'entities': [{'id': 'e1', 'type': 'dog', 'attributes': ['brown']}, {'id': 'e2', 'type': 'field', 'attributes': ['green']}, {'id': 'e3', 'type': 'flower', 'attributes': ['yellow']}], 'actions': [{'subject': 'e1', 'action': 'run', 'object': 'e2'}], 'relations': [{'subject': 'e1', 'relation': 'through', 'object': 'e2'}, {'subject': 'e2', 'relation': 'dotted_with', 'object': 'e3'}], 'scene': {'location': None, 'environment': ['field']}}","{
+    ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""dog"",
+            ""attributes"": [""brown""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""field"",
+            ""attributes"": [""green""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""flower"",
+            ""attributes"": [""yellow""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""run"",
+            ""object"": ""e2""
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e1"",
+            ""relation"": ""through"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e2"",
+            ""relation"": ""dotted_with"",
+            ""object"": ""e3""
+        }
+    ],
+    ""scene"": {
+        ""location"": null,
+        ""environment"": [""field""]
+    }
+}",success,
+test_001,1,2,test_001.png,A brown dog runs through a green field dotted with yellow flowers.,nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T06:22:25.874932+00:00,47.862,2,"{'entities': [{'id': 'e1', 'type': 'dog', 'attributes': ['brown']}, {'id': 'e2', 'type': 'field', 'attributes': ['green']}, {'id': 'e3', 'type': 'flower', 'attributes': ['yellow']}], 'actions': [{'subject': 'e1', 'action': 'run', 'object': 'e2'}], 'relations': [{'subject': 'e2', 'relation': 'has', 'object': 'e3'}], 'scene': {'location': None, 'environment': ['green field', 'yellow flowers']}}","{
+    ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""dog"",
+            ""attributes"": [""brown""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""field"",
+            ""attributes"": [""green""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""flower"",
+            ""attributes"": [""yellow""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""run"",
+            ""object"": ""e2""
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e2"",
+            ""relation"": ""has"",
+            ""object"": ""e3""
+        }
+    ],
+    ""scene"": {
+        ""location"": null,
+        ""environment"": [""green field"", ""yellow flowers""]
+    }
+}",success,
+test_001,1,3,test_001.png,A brown dog runs through a green field dotted with yellow flowers.,nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T06:23:05.760464+00:00,39.879,1,"{'entities': [{'id': 'e1', 'type': 'dog', 'attributes': ['brown']}, {'id': 'e2', 'type': 'field', 'attributes': ['green']}, {'id': 'e3', 'type': 'flower', 'attributes': ['yellow']}], 'actions': [{'subject': 'e1', 'action': 'run', 'object': 'e2'}], 'relations': [{'subject': 'e1', 'relation': 'through', 'object': 'e2'}, {'subject': 'e2', 'relation': 'dotted_with', 'object': 'e3'}], 'scene': {'location': None, 'environment': ['field', 'flowers']}}","{
+    ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""dog"",
+            ""attributes"": [""brown""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""field"",
+            ""attributes"": [""green""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""flower"",
+            ""attributes"": [""yellow""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""run"",
+            ""object"": ""e2""
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e1"",
+            ""relation"": ""through"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e2"",
+            ""relation"": ""dotted_with"",
+            ""object"": ""e3""
+        }
+    ],
+    ""scene"": {
+        ""location"": null,
+        ""environment"": [""field"", ""flowers""]
+    }
+}",success,
+test_001,2,1,test_001.png,A brown dog runs across a green field dotted with yellow flowers.,nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T06:23:30.457069+00:00,24.689,1,"{'entities': [{'id': 'e1', 'type': 'dog', 'attributes': ['brown']}, {'id': 'e2', 'type': 'field', 'attributes': ['green']}, {'id': 'e3', 'type': 'flower', 'attributes': ['yellow']}], 'actions': [{'subject': 'e1', 'action': 'run', 'object': 'e2'}], 'relations': [{'subject': 'e2', 'relation': 'dotted with', 'object': 'e3'}], 'scene': {'location': None, 'environment': ['field']}}","{
+    ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""dog"",
+            ""attributes"": [""brown""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""field"",
+            ""attributes"": [""green""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""flower"",
+            ""attributes"": [""yellow""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""run"",
+            ""object"": ""e2""
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e2"",
+            ""relation"": ""dotted with"",
+            ""object"": ""e3""
+        }
+    ],
+    ""scene"": {
+        ""location"": null,
+        ""environment"": [""field""]
+    }
+}",success,
+test_001,2,2,test_001.png,A brown dog runs across a green field dotted with yellow flowers.,nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T06:24:30.307856+00:00,59.845,2,"{'entities': [{'id': 'e1', 'type': 'dog', 'attributes': ['brown']}, {'id': 'e2', 'type': 'field', 'attributes': ['green']}, {'id': 'e3', 'type': 'flower', 'attributes': ['yellow']}], 'actions': [{'subject': 'e1', 'action': 'run', 'object': 'e2'}], 'relations': [{'subject': 'e2', 'relation': 'dotted_with', 'object': 'e3'}], 'scene': {'location': None, 'environment': ['green field', 'yellow flowers']}}","{
+    ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""dog"",
+            ""attributes"": [""brown""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""field"",
+            ""attributes"": [""green""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""flower"",
+            ""attributes"": [""yellow""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""run"",
+            ""object"": ""e2""
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e2"",
+            ""relation"": ""dotted_with"",
+            ""object"": ""e3""
+        }
+    ],
+    ""scene"": {
+        ""location"": null,
+        ""environment"": [""green field"", ""yellow flowers""]
+    }
+}",success,
+test_001,2,3,test_001.png,A brown dog runs across a green field dotted with yellow flowers.,nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T06:24:52.836214+00:00,22.517,1,"{'entities': [{'id': 'e1', 'type': 'dog', 'attributes': ['brown']}, {'id': 'e2', 'type': 'field', 'attributes': ['green']}, {'id': 'e3', 'type': 'flower', 'attributes': ['yellow']}], 'actions': [{'subject': 'e1', 'action': 'run', 'object': 'e2'}], 'relations': [{'subject': 'e2', 'relation': 'dotted with', 'object': 'e3'}], 'scene': {'location': 'green field', 'environment': ['field']}}","{
+    ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""dog"",
+            ""attributes"": [""brown""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""field"",
+            ""attributes"": [""green""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""flower"",
+            ""attributes"": [""yellow""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""run"",
+            ""object"": ""e2""
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e2"",
+            ""relation"": ""dotted with"",
+            ""object"": ""e3""
+        }
+    ],
+    ""scene"": {
+        ""location"": ""green field"",
+        ""environment"": [""field""]
+    }
+}",success,
+test_001,3,1,test_001.png,A tan dog runs through a grassy field dotted with yellow flowers.,nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T06:25:21.464935+00:00,28.62,2,"{'entities': [{'id': 'e1', 'type': 'dog', 'attributes': ['tan']}, {'id': 'e2', 'type': 'field', 'attributes': ['grassy']}, {'id': 'e3', 'type': 'flower', 'attributes': ['yellow']}], 'actions': [{'subject': 'e1', 'action': 'run', 'object': 'e2'}], 'relations': [{'subject': 'e2', 'relation': 'dotted_with', 'object': 'e3'}], 'scene': {'location': 'grassy field', 'environment': ['grassy', 'field']}}","{
+ ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""dog"",
+            ""attributes"": [""tan""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""field"",
+            ""attributes"": [""grassy""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""flower"",
+            ""attributes"": [""yellow""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""run"",
+            ""object"": ""e2""
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e2"",
+            ""relation"": ""dotted_with"",
+            ""object"": ""e3""
+        }
+    ],
+    ""scene"": {
+        ""location"": ""grassy field"",
+        ""environment"": [""grassy"", ""field""]
+    }
+}",success,
+test_001,3,2,test_001.png,A tan dog runs through a grassy field dotted with yellow flowers.,nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T06:25:51.001395+00:00,29.528,2,"{'entities': [{'id': 'e1', 'type': 'dog', 'attributes': ['tan']}, {'id': 'e2', 'type': 'field', 'attributes': ['grassy']}, {'id': 'e3', 'type': 'flower', 'attributes': ['yellow']}], 'actions': [{'subject': 'e1', 'action': 'run', 'object': 'e2'}], 'relations': [{'subject': 'e2', 'relation': 'dotted with', 'object': 'e3'}], 'scene': {'location': None, 'environment': ['outdoor', 'grassy', 'field', 'flowers']}}","{
+    ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""dog"",
+            ""attributes"": [""tan""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""field"",
+            ""attributes"": [""grassy""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""flower"",
+            ""attributes"": [""yellow""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""run"",
+            ""object"": ""e2""
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e2"",
+            ""relation"": ""dotted with"",
+            ""object"": ""e3""
+        }
+    ],
+    ""scene"": {
+        ""location"": null,
+        ""environment"": [""outdoor"", ""grassy"", ""field"", ""flowers""]
+    }
+}",success,
+test_001,3,3,test_001.png,A tan dog runs through a grassy field dotted with yellow flowers.,nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T06:26:15.115203+00:00,24.098,1,"{'entities': [{'id': 'e1', 'type': 'dog', 'attributes': ['tan']}, {'id': 'e2', 'type': 'field', 'attributes': ['grassy']}, {'id': 'e3', 'type': 'flower', 'attributes': ['yellow']}], 'actions': [{'subject': 'e1', 'action': 'run', 'object': 'e2'}], 'relations': [{'subject': 'e1', 'relation': 'through', 'object': 'e2'}, {'subject': 'e2', 'relation': 'dotted with', 'object': 'e3'}], 'scene': {'location': 'grassy field', 'environment': ['grassy field', 'yellow flowers']}}","{
+    ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""dog"",
+            ""attributes"": [""tan""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""field"",
+            ""attributes"": [""grassy""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""flower"",
+            ""attributes"": [""yellow""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""run"",
+            ""object"": ""e2""
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e1"",
+            ""relation"": ""through"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e2"",
+            ""relation"": ""dotted with"",
+            ""object"": ""e3""
+        }
+    ],
+    ""scene"": {
+        ""location"": ""grassy field"",
+        ""environment"": [""grassy field"", ""yellow flowers""]
+    }
+}",success,
+test_001,4,1,test_001.png,A brown dog runs across a green field dotted with yellow flowers.,nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T06:26:40.461637+00:00,25.323,1,"{'entities': [{'id': 'e1', 'type': 'dog', 'attributes': ['brown']}, {'id': 'e2', 'type': 'field', 'attributes': ['green']}, {'id': 'e3', 'type': 'flower', 'attributes': ['yellow']}], 'actions': [{'subject': 'e1', 'action': 'run', 'object': 'e2'}], 'relations': [{'subject': 'e2', 'relation': 'contains', 'object': 'e3'}], 'scene': {'location': None, 'environment': ['field', 'flower']}}","{
+    ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""dog"",
+            ""attributes"": [""brown""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""field"",
+            ""attributes"": [""green""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""flower"",
+            ""attributes"": [""yellow""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""run"",
+            ""object"": ""e2""
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e2"",
+            ""relation"": ""contains"",
+            ""object"": ""e3""
+        }
+    ],
+    ""scene"": {
+        ""location"": null,
+        ""environment"": [""field"", ""flower""]
+    }
+}",success,
+test_001,4,2,test_001.png,A brown dog runs across a green field dotted with yellow flowers.,nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T06:27:00.156001+00:00,19.685,1,"{'entities': [{'id': 'e1', 'type': 'dog', 'attributes': ['brown']}, {'id': 'e2', 'type': 'field', 'attributes': ['green']}, {'id': 'e3', 'type': 'flower', 'attributes': ['yellow']}], 'actions': [{'subject': 'e1', 'action': 'run', 'object': 'e2'}], 'relations': [{'subject': 'e2', 'relation': 'dotted_with', 'object': 'e3'}], 'scene': {'location': 'field', 'environment': ['green field', 'yellow flowers']}}","{
+    ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""dog"",
+            ""attributes"": [""brown""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""field"",
+            ""attributes"": [""green""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""flower"",
+            ""attributes"": [""yellow""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""run"",
+            ""object"": ""e2""
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e2"",
+            ""relation"": ""dotted_with"",
+            ""object"": ""e3""
+        }
+    ],
+    ""scene"": {
+        ""location"": ""field"",
+        ""environment"": [""green field"", ""yellow flowers""]
+    }
+}",success,
+test_001,4,3,test_001.png,A brown dog runs across a green field dotted with yellow flowers.,nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T06:27:39.956305+00:00,39.791,2,"{'entities': [{'id': 'e1', 'type': 'dog', 'attributes': ['brown']}, {'id': 'e2', 'type': 'field', 'attributes': ['green']}, {'id': 'e3', 'type': 'flower', 'attributes': ['yellow']}], 'actions': [{'subject': 'e1', 'action': 'run', 'object': 'e2'}], 'relations': [{'subject': 'e2', 'relation': 'dotted_with', 'object': 'e3'}], 'scene': {'location': None, 'environment': ['field', 'flowers']}}","{
+    ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""dog"",
+            ""attributes"": [""brown""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""field"",
+            ""attributes"": [""green""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""flower"",
+            ""attributes"": [""yellow""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""run"",
+            ""object"": ""e2""
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e2"",
+            ""relation"": ""dotted_with"",
+            ""object"": ""e3""
+        }
+    ],
+    ""scene"": {
+        ""location"": null,
+        ""environment"": [""field"", ""flowers""]
+    }
+}",success,
+test_001,5,1,test_001.png,A brown dog runs across a green field dotted with yellow flowers.,nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T06:28:45.083943+00:00,65.08,1,"{'entities': [{'id': 'e1', 'type': 'dog', 'attributes': ['brown']}, {'id': 'e2', 'type': 'field', 'attributes': ['green']}, {'id': 'e3', 'type': 'flower', 'attributes': ['yellow']}], 'actions': [{'subject': 'e1', 'action': 'run', 'object': 'e2'}], 'relations': [{'subject': 'e2', 'relation': 'dotted_with', 'object': 'e3'}, {'subject': 'e1', 'relation': 'across', 'object': 'e2'}], 'scene': {'location': None, 'environment': ['field']}}","{
+    ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""dog"",
+            ""attributes"": [""brown""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""field"",
+            ""attributes"": [""green""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""flower"",
+            ""attributes"": [""yellow""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""run"",
+            ""object"": ""e2""
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e2"",
+            ""relation"": ""dotted_with"",
+            ""object"": ""e3""
+        },
+        {
+            ""subject"": ""e1"",
+            ""relation"": ""across"",
+            ""object"": ""e2""
+        }
+    ],
+    ""scene"": {
+        ""location"": null,
+        ""environment"": [""field""]
+    }
+}",success,
+test_001,5,2,test_001.png,A brown dog runs across a green field dotted with yellow flowers.,nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T06:29:10.900516+00:00,25.783,2,"{'entities': [{'id': 'e1', 'type': 'dog', 'attributes': ['brown']}, {'id': 'e2', 'type': 'field', 'attributes': ['green']}, {'id': 'e3', 'type': 'flower', 'attributes': ['yellow']}], 'actions': [{'subject': 'e1', 'action': 'run', 'object': 'e2'}], 'relations': [{'subject': 'e2', 'relation': 'dotted with', 'object': 'e3'}], 'scene': {'location': None, 'environment': ['green field', 'yellow flowers']}}","{
+    ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""dog"",
+            ""attributes"": [""brown""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""field"",
+            ""attributes"": [""green""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""flower"",
+            ""attributes"": [""yellow""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""run"",
+            ""object"": ""e2""
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e2"",
+            ""relation"": ""dotted with"",
+            ""object"": ""e3""
+        }
+    ],
+    ""scene"": {
+        ""location"": null,
+        ""environment"": [""green field"", ""yellow flowers""]
+    }
+}",success,
+test_001,5,3,test_001.png,A brown dog runs across a green field dotted with yellow flowers.,nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T06:30:26.880048+00:00,75.965,2,"{'entities': [{'id': 'e1', 'type': 'dog', 'attributes': ['brown']}, {'id': 'e2', 'type': 'field', 'attributes': ['green']}, {'id': 'e3', 'type': 'flower', 'attributes': ['yellow']}], 'actions': [{'subject': 'e1', 'action': 'run', 'object': 'e2'}], 'relations': [{'subject': 'e2', 'relation': 'dotted with', 'object': 'e3'}], 'scene': {'location': 'field', 'environment': ['green field', 'yellow flowers']}}","{
+    ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""dog"",
+            ""attributes"": [""brown""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""field"",
+            ""attributes"": [""green""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""flower"",
+            ""attributes"": [""yellow""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""run"",
+            ""object"": ""e2""
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e2"",
+            ""relation"": ""dotted with"",
+            ""object"": ""e3""
+        }
+    ],
+    ""scene"": {
+        ""location"": ""field"",
+        ""environment"": [""green field"", ""yellow flowers""]
+    }
+}",success,
+test_001,6,1,test_001.png,A brown dog runs through a green field dotted with yellow flowers.,nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T06:30:52.267621+00:00,25.374,1,"{'entities': [{'id': 'e1', 'type': 'dog', 'attributes': ['brown']}, {'id': 'e2', 'type': 'field', 'attributes': ['green']}, {'id': 'e3', 'type': 'flower', 'attributes': ['yellow']}], 'actions': [{'subject': 'e1', 'action': 'run', 'object': None}], 'relations': [{'subject': 'e1', 'relation': 'through', 'object': 'e2'}, {'subject': 'e2', 'relation': 'dotted_with', 'object': 'e3'}], 'scene': {'location': None, 'environment': ['field', 'flowers']}}","{
+    ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""dog"",
+            ""attributes"": [""brown""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""field"",
+            ""attributes"": [""green""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""flower"",
+            ""attributes"": [""yellow""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""run"",
+            ""object"": null
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e1"",
+            ""relation"": ""through"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e2"",
+            ""relation"": ""dotted_with"",
+            ""object"": ""e3""
+        }
+    ],
+    ""scene"": {
+        ""location"": null,
+        ""environment"": [""field"", ""flowers""]
+    }
+}",success,
+test_001,6,2,test_001.png,A brown dog runs through a green field dotted with yellow flowers.,nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T06:31:55.316433+00:00,63.038,1,"{'entities': [{'id': 'e1', 'type': 'dog', 'attributes': ['brown']}, {'id': 'e2', 'type': 'field', 'attributes': ['green']}, {'id': 'e3', 'type': 'flower', 'attributes': ['yellow']}], 'actions': [{'subject': 'e1', 'action': 'run', 'object': None}], 'relations': [{'subject': 'e1', 'relation': 'through', 'object': 'e2'}, {'subject': 'e2', 'relation': 'dotted_with', 'object': 'e3'}], 'scene': {'location': None, 'environment': ['green field', 'yellow flowers']}}","{
+    ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""dog"",
+            ""attributes"": [""brown""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""field"",
+            ""attributes"": [""green""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""flower"",
+            ""attributes"": [""yellow""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""run"",
+            ""object"": null
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e1"",
+            ""relation"": ""through"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e2"",
+            ""relation"": ""dotted_with"",
+            ""object"": ""e3""
+        }
+    ],
+    ""scene"": {
+        ""location"": null,
+        ""environment"": [""green field"", ""yellow flowers""]
+    }
+}",success,
+test_001,6,3,test_001.png,A brown dog runs through a green field dotted with yellow flowers.,nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T06:32:43.374119+00:00,48.054,2,"{'entities': [{'id': 'e1', 'type': 'dog', 'attributes': ['brown']}, {'id': 'e2', 'type': 'field', 'attributes': ['green']}, {'id': 'e3', 'type': 'flower', 'attributes': ['yellow']}], 'actions': [{'subject': 'e1', 'action': 'run', 'object': 'e2'}], 'relations': [{'subject': 'e2', 'relation': 'contains', 'object': 'e3'}], 'scene': {'location': None, 'environment': ['field', 'flowers']}}","{
+    ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""dog"",
+            ""attributes"": [""brown""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""field"",
+            ""attributes"": [""green""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""flower"",
+            ""attributes"": [""yellow""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""run"",
+            ""object"": ""e2""
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e2"",
+            ""relation"": ""contains"",
+            ""object"": ""e3""
+        }
+    ],
+    ""scene"": {
+        ""location"": null,
+        ""environment"": [""field"", ""flowers""]
+    }
+}",success,
+test_001,7,1,test_001.png,A tan dog runs through a grassy field dotted with yellow flowers.,nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T06:33:30.784839+00:00,47.398,1,"{'entities': [{'id': 'e1', 'type': 'dog', 'attributes': ['tan']}, {'id': 'e2', 'type': 'field', 'attributes': ['grassy']}, {'id': 'e3', 'type': 'flower', 'attributes': ['yellow']}], 'actions': [{'subject': 'e1', 'action': 'run', 'object': 'e2'}], 'relations': [{'subject': 'e2', 'relation': 'dotted_with', 'object': 'e3'}], 'scene': {'location': None, 'environment': ['grassy field', 'yellow flowers']}}","{
+    ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""dog"",
+            ""attributes"": [""tan""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""field"",
+            ""attributes"": [""grassy""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""flower"",
+            ""attributes"": [""yellow""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""run"",
+            ""object"": ""e2""
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e2"",
+            ""relation"": ""dotted_with"",
+            ""object"": ""e3""
+        }
+    ],
+    ""scene"": {
+        ""location"": null,
+        ""environment"": [""grassy field"", ""yellow flowers""]
+    }
+}",success,
+test_001,7,2,test_001.png,A tan dog runs through a grassy field dotted with yellow flowers.,nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T06:34:05.101275+00:00,34.312,1,"{'entities': [{'id': 'e1', 'type': 'dog', 'attributes': ['tan']}, {'id': 'e2', 'type': 'field', 'attributes': ['grassy']}, {'id': 'e3', 'type': 'flower', 'attributes': ['yellow']}], 'actions': [{'subject': 'e1', 'action': 'run', 'object': 'e2'}], 'relations': [{'subject': 'e2', 'relation': 'dotted_with', 'object': 'e3'}, {'subject': 'e1', 'relation': 'in', 'object': 'e2'}], 'scene': {'location': None, 'environment': ['grassy field', 'yellow flowers']}}","{
+    ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""dog"",
+            ""attributes"": [""tan""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""field"",
+            ""attributes"": [""grassy""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""flower"",
+            ""attributes"": [""yellow""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""run"",
+            ""object"": ""e2""
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e2"",
+            ""relation"": ""dotted_with"",
+            ""object"": ""e3""
+        },
+        {
+            ""subject"": ""e1"",
+            ""relation"": ""in"",
+            ""object"": ""e2""
+        }
+    ],
+    ""scene"": {
+        ""location"": null,
+        ""environment"": [""grassy field"", ""yellow flowers""]
+    }
+}",success,
+test_001,7,3,test_001.png,A tan dog runs through a grassy field dotted with yellow flowers.,nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T06:34:38.988470+00:00,33.882,1,"{'entities': [{'id': 'e1', 'type': 'dog', 'attributes': ['tan']}, {'id': 'e2', 'type': 'field', 'attributes': ['grassy']}, {'id': 'e3', 'type': 'flower', 'attributes': ['yellow']}], 'actions': [{'subject': 'e1', 'action': 'run', 'object': 'e2'}], 'relations': [{'subject': 'e2', 'relation': 'dotted with', 'object': 'e3'}], 'scene': {'location': None, 'environment': ['grassy field', 'yellow flowers']}}","{
+    ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""dog"",
+            ""attributes"": [""tan""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""field"",
+            ""attributes"": [""grassy""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""flower"",
+            ""attributes"": [""yellow""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""run"",
+            ""object"": ""e2""
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e2"",
+            ""relation"": ""dotted with"",
+            ""object"": ""e3""
+        }
+    ],
+    ""scene"": {
+        ""location"": null,
+        ""environment"": [""grassy field"", ""yellow flowers""]
+    }
+}",success,
+test_001,8,1,test_001.png,A brown dog runs through a green field scattered with yellow flowers.,nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T06:35:12.886805+00:00,33.878,1,"{'entities': [{'id': 'e1', 'type': 'dog', 'attributes': ['brown']}, {'id': 'e2', 'type': 'field', 'attributes': ['green']}, {'id': 'e3', 'type': 'flower', 'attributes': ['yellow']}], 'actions': [{'subject': 'e1', 'action': 'run', 'object': 'e2'}], 'relations': [{'subject': 'e2', 'relation': 'scattered with', 'object': 'e3'}], 'scene': {'location': 'green field', 'environment': []}}","{
+    ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""dog"",
+            ""attributes"": [""brown""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""field"",
+            ""attributes"": [""green""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""flower"",
+            ""attributes"": [""yellow""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""run"",
+            ""object"": ""e2""
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e2"",
+            ""relation"": ""scattered with"",
+            ""object"": ""e3""
+        }
+    ],
+    ""scene"": {
+        ""location"": ""green field"",
+        ""environment"": []
+    }
+}",success,
+test_001,8,2,test_001.png,A brown dog runs through a green field scattered with yellow flowers.,nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T06:35:39.813303+00:00,26.913,1,"{'entities': [{'id': 'e1', 'type': 'dog', 'attributes': ['brown']}, {'id': 'e2', 'type': 'field', 'attributes': ['green']}, {'id': 'e3', 'type': 'flower', 'attributes': ['yellow']}], 'actions': [{'subject': 'e1', 'action': 'run', 'object': 'e2'}], 'relations': [{'subject': 'e2', 'relation': 'scattered_with', 'object': 'e3'}], 'scene': {'location': None, 'environment': []}}","{
+    ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""dog"",
+            ""attributes"": [""brown""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""field"",
+            ""attributes"": [""green""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""flower"",
+            ""attributes"": [""yellow""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""run"",
+            ""object"": ""e2""
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e2"",
+            ""relation"": ""scattered_with"",
+            ""object"": ""e3""
+        }
+    ],
+    ""scene"": {
+        ""location"": null,
+        ""environment"": []
+    }
+}",success,
+test_001,8,3,test_001.png,A brown dog runs through a green field scattered with yellow flowers.,nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T06:36:19.873119+00:00,40.048,2,"{'entities': [{'id': 'e1', 'type': 'dog', 'attributes': ['brown']}, {'id': 'e2', 'type': 'field', 'attributes': ['green']}, {'id': 'e3', 'type': 'flower', 'attributes': ['yellow']}], 'actions': [{'subject': 'e1', 'action': 'run', 'object': 'e2'}], 'relations': [{'subject': 'e2', 'relation': 'has', 'object': 'e3'}], 'scene': {'location': 'green field', 'environment': []}}","{
+  ""entities"": [
+    {
+      ""id"": ""e1"",
+      ""type"": ""dog"",
+      ""attributes"": [""brown""]
+    },
+    {
+      ""id"": ""e2"",
+      ""type"": ""field"",
+      ""attributes"": [""green""]
+    },
+    {
+      ""id"": ""e3"",
+      ""type"": ""flower"",
+      ""attributes"": [""yellow""]
+    }
+  ],
+  ""actions"": [
+    {
+      ""subject"": ""e1"",
+      ""action"": ""run"",
+      ""object"": ""e2""
+    }
+  ],
+  ""relations"": [
+    {
+      ""subject"": ""e2"",
+      ""relation"": ""has"",
+      ""object"": ""e3""
+    }
+  ],
+  ""scene"": {
+    ""location"": ""green field"",
+    ""environment"": []
+  }
+}",success,
+test_001,9,1,test_001.png,A brown dog runs through a grassy field dotted with yellow flowers.,nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T06:36:46.276397+00:00,26.388,1,"{'entities': [{'id': 'e1', 'type': 'dog', 'attributes': ['brown']}, {'id': 'e2', 'type': 'field', 'attributes': ['grassy']}, {'id': 'e3', 'type': 'flower', 'attributes': ['yellow']}], 'actions': [{'subject': 'e1', 'action': 'run', 'object': 'e2'}], 'relations': [{'subject': 'e2', 'relation': 'dotted_with', 'object': 'e3'}], 'scene': {'location': 'grassy field', 'environment': ['grassy field', 'yellow flowers']}}","{
+    ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""dog"",
+            ""attributes"": [""brown""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""field"",
+            ""attributes"": [""grassy""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""flower"",
+            ""attributes"": [""yellow""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""run"",
+            ""object"": ""e2""
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e2"",
+            ""relation"": ""dotted_with"",
+            ""object"": ""e3""
+        }
+    ],
+    ""scene"": {
+        ""location"": ""grassy field"",
+        ""environment"": [""grassy field"", ""yellow flowers""]
+    }
+}",success,
+test_001,9,2,test_001.png,A brown dog runs through a grassy field dotted with yellow flowers.,nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T06:37:28.854631+00:00,42.565,1,"{'entities': [{'id': 'e1', 'type': 'dog', 'attributes': ['brown']}, {'id': 'e2', 'type': 'field', 'attributes': ['grassy']}, {'id': 'e3', 'type': 'flower', 'attributes': ['yellow']}], 'actions': [{'subject': 'e1', 'action': 'run', 'object': 'e2'}], 'relations': [{'subject': 'e2', 'relation': 'dotted with', 'object': 'e3'}], 'scene': {'location': None, 'environment': ['grassy field', 'yellow flowers']}}","{
+    ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""dog"",
+            ""attributes"": [""brown""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""field"",
+            ""attributes"": [""grassy""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""flower"",
+            ""attributes"": [""yellow""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""run"",
+            ""object"": ""e2""
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e2"",
+            ""relation"": ""dotted with"",
+            ""object"": ""e3""
+        }
+    ],
+    ""scene"": {
+        ""location"": null,
+        ""environment"": [""grassy field"", ""yellow flowers""]
+    }
+}",success,
+test_001,9,3,test_001.png,A brown dog runs through a grassy field dotted with yellow flowers.,nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T06:38:00.109228+00:00,31.239,1,"{'entities': [{'id': 'e1', 'type': 'dog', 'attributes': ['brown']}, {'id': 'e2', 'type': 'field', 'attributes': ['grassy']}, {'id': 'e3', 'type': 'flower', 'attributes': ['yellow']}], 'actions': [{'subject': 'e1', 'action': 'run', 'object': 'e2'}], 'relations': [{'subject': 'e1', 'relation': 'through', 'object': 'e2'}, {'subject': 'e2', 'relation': 'dotted_with', 'object': 'e3'}], 'scene': {'location': 'grassy field', 'environment': []}}","{
+    ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""dog"",
+            ""attributes"": [""brown""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""field"",
+            ""attributes"": [""grassy""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""flower"",
+            ""attributes"": [""yellow""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""run"",
+            ""object"": ""e2""
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e1"",
+            ""relation"": ""through"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e2"",
+            ""relation"": ""dotted_with"",
+            ""object"": ""e3""
+        }
+    ],
+    ""scene"": {
+        ""location"": ""grassy field"",
+        ""environment"": []
+    }
+}",success,
+test_001,10,1,test_001.png,A brown dog runs through a green field dotted with yellow flowers.,nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T06:39:54.182443+00:00,114.052,2,"{'entities': [{'id': 'e1', 'type': 'dog', 'attributes': ['brown']}, {'id': 'e2', 'type': 'field', 'attributes': ['green']}, {'id': 'e3', 'type': 'flower', 'attributes': ['yellow']}], 'actions': [{'subject': 'e1', 'action': 'run', 'object': None}], 'relations': [{'subject': 'e1', 'relation': 'through', 'object': 'e2'}, {'subject': 'e2', 'relation': 'dotted with', 'object': 'e3'}], 'scene': {'location': None, 'environment': ['green field', 'yellow flowers']}}","{
+    ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""dog"",
+            ""attributes"": [""brown""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""field"",
+            ""attributes"": [""green""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""flower"",
+            ""attributes"": [""yellow""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""run"",
+            ""object"": null
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e1"",
+            ""relation"": ""through"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e2"",
+            ""relation"": ""dotted with"",
+            ""object"": ""e3""
+        }
+    ],
+    ""scene"": {
+        ""location"": null,
+        ""environment"": [""green field"", ""yellow flowers""]
+    }
+}",success,
+test_001,10,2,test_001.png,A brown dog runs through a green field dotted with yellow flowers.,nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T06:40:23.467704+00:00,29.229,1,"{'entities': [{'id': 'e1', 'type': 'dog', 'attributes': ['brown']}, {'id': 'e2', 'type': 'field', 'attributes': ['green']}, {'id': 'e3', 'type': 'flower', 'attributes': ['yellow']}], 'actions': [{'subject': 'e1', 'action': 'run', 'object': 'e2'}], 'relations': [{'subject': 'e2', 'relation': 'dotted_with', 'object': 'e3'}], 'scene': {'location': None, 'environment': []}}","{
+ ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""dog"",
+            ""attributes"": [""brown""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""field"",
+            ""attributes"": [""green""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""flower"",
+            ""attributes"": [""yellow""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""run"",
+            ""object"": ""e2""
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e2"",
+            ""relation"": ""dotted_with"",
+            ""object"": ""e3""
+        }
+    ],
+    ""scene"": {
+        ""location"": null,
+        ""environment"": []
+    }
+}",success,
+test_001,10,3,test_001.png,A brown dog runs through a green field dotted with yellow flowers.,nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T06:41:39.450383+00:00,75.934,1,"{'entities': [{'id': 'e1', 'type': 'dog', 'attributes': ['brown']}, {'id': 'e2', 'type': 'field', 'attributes': ['green']}, {'id': 'e3', 'type': 'flower', 'attributes': ['yellow']}], 'actions': [{'subject': 'e1', 'action': 'run', 'object': 'e2'}], 'relations': [{'subject': 'e2', 'relation': 'dotted with', 'object': 'e3'}], 'scene': {'location': 'green field', 'environment': ['outdoor']}}","{
+    ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""dog"",
+            ""attributes"": [""brown""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""field"",
+            ""attributes"": [""green""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""flower"",
+            ""attributes"": [""yellow""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""run"",
+            ""object"": ""e2""
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e2"",
+            ""relation"": ""dotted with"",
+            ""object"": ""e3""
+        }
+    ],
+    ""scene"": {
+        ""location"": ""green field"",
+        ""environment"": [""outdoor""]
+    }
+}",success,
+test_002,1,1,test_002.png,"A rustic log cabin sits on a calm lake, its reflection mirrored in the water with majestic snow-capped mountains rising in the background under a soft, golden sky.",nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T06:45:08.294129+00:00,208.83,1,"{'entities': [{'id': 'e1', 'type': 'cabin', 'attributes': ['rustic', 'log']}, {'id': 'e2', 'type': 'lake', 'attributes': ['calm']}, {'id': 'e3', 'type': 'reflection', 'attributes': ['mirrored']}, {'id': 'e4', 'type': 'mountain', 'attributes': ['majestic', 'snow-capped']}, {'id': 'e5', 'type': 'sky', 'attributes': ['soft', 'golden']}], 'actions': [{'subject': 'e1', 'action': 'sit', 'object': 'e2'}, {'subject': 'e3', 'action': 'mirror', 'object': 'e2'}, {'subject': 'e4', 'action': 'rise', 'object': None}], 'relations': [{'subject': 'e1', 'relation': 'on', 'object': 'e2'}, {'subject': 'e3', 'relation': 'of', 'object': 'e1'}, {'subject': 'e4', 'relation': 'in_background_of', 'object': 'e1'}, {'subject': 'e5', 'relation': 'above', 'object': 'e1'}], 'scene': {'location': None, 'environment': ['calm lake', 'snow-capped mountains', 'golden sky']}}","{
+ ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""cabin"",
+            ""attributes"": [""rustic"", ""log""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""lake"",
+            ""attributes"": [""calm""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""reflection"",
+            ""attributes"": [""mirrored""]
+        },
+        {
+            ""id"": ""e4"",
+            ""type"": ""mountain"",
+            ""attributes"": [""majestic"", ""snow-capped""]
+        },
+        {
+            ""id"": ""e5"",
+            ""type"": ""sky"",
+            ""attributes"": [""soft"", ""golden""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""sit"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e3"",
+            ""action"": ""mirror"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e4"",
+            ""action"": ""rise"",
+            ""object"": null
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e1"",
+            ""relation"": ""on"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e3"",
+            ""relation"": ""of"",
+            ""object"": ""e1""
+        },
+        {
+            ""subject"": ""e4"",
+            ""relation"": ""in_background_of"",
+            ""object"": ""e1""
+        },
+        {
+            ""subject"": ""e5"",
+            ""relation"": ""above"",
+            ""object"": ""e1""
+        }
+    ],
+    ""scene"": {
+        ""location"": null,
+        ""environment"": [""calm lake"", ""snow-capped mountains"", ""golden sky""]
+    }
+}",success,
+test_002,1,2,test_002.png,"A rustic log cabin sits on a calm lake, its reflection mirrored in the water with majestic snow-capped mountains rising in the background under a soft, golden sky.",nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T06:45:41.117159+00:00,32.815,1,"{'entities': [{'id': 'e1', 'type': 'cabin', 'attributes': ['rustic', 'log']}, {'id': 'e2', 'type': 'lake', 'attributes': ['calm']}, {'id': 'e3', 'type': 'reflection', 'attributes': ['mirrored']}, {'id': 'e4', 'type': 'mountains', 'attributes': ['majestic', 'snow-capped']}, {'id': 'e5', 'type': 'sky', 'attributes': ['soft', 'golden']}], 'actions': [{'subject': 'e1', 'action': 'sit', 'object': 'e2'}, {'subject': 'e3', 'action': 'mirror', 'object': 'e2'}, {'subject': 'e4', 'action': 'rise', 'object': None}], 'relations': [{'subject': 'e1', 'relation': 'on', 'object': 'e2'}, {'subject': 'e3', 'relation': 'in', 'object': 'e2'}, {'subject': 'e4', 'relation': 'behind', 'object': 'e1'}], 'scene': {'location': None, 'environment': ['calm lake', 'snow-capped mountains', 'soft golden sky']}}","{
+    ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""cabin"",
+            ""attributes"": [""rustic"", ""log""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""lake"",
+            ""attributes"": [""calm""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""reflection"",
+            ""attributes"": [""mirrored""]
+        },
+        {
+            ""id"": ""e4"",
+            ""type"": ""mountains"",
+            ""attributes"": [""majestic"", ""snow-capped""]
+        },
+        {
+            ""id"": ""e5"",
+            ""type"": ""sky"",
+            ""attributes"": [""soft"", ""golden""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""sit"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e3"",
+            ""action"": ""mirror"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e4"",
+            ""action"": ""rise"",
+            ""object"": null
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e1"",
+            ""relation"": ""on"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e3"",
+            ""relation"": ""in"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e4"",
+            ""relation"": ""behind"",
+            ""object"": ""e1""
+        }
+    ],
+    ""scene"": {
+        ""location"": null,
+        ""environment"": [""calm lake"", ""snow-capped mountains"", ""soft golden sky""]
+    }
+}",success,
+test_002,1,3,test_002.png,"A rustic log cabin sits on a calm lake, its reflection mirrored in the water with majestic snow-capped mountains rising in the background under a soft, golden sky.",nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T06:46:37.237321+00:00,56.098,1,"{'entities': [{'id': 'e1', 'type': 'cabin', 'attributes': ['rustic', 'log']}, {'id': 'e2', 'type': 'lake', 'attributes': ['calm']}, {'id': 'e3', 'type': 'reflection', 'attributes': ['mirrored']}, {'id': 'e4', 'type': 'water', 'attributes': []}, {'id': 'e5', 'type': 'mountains', 'attributes': ['majestic', 'snow-capped']}, {'id': 'e6', 'type': 'sky', 'attributes': ['soft', 'golden']}], 'actions': [{'subject': 'e1', 'action': 'sit', 'object': 'e2'}, {'subject': 'e3', 'action': 'mirror', 'object': 'e4'}, {'subject': 'e5', 'action': 'rise', 'object': None}], 'relations': [{'subject': 'e1', 'relation': 'on', 'object': 'e2'}, {'subject': 'e3', 'relation': 'of', 'object': 'e1'}, {'subject': 'e3', 'relation': 'in', 'object': 'e4'}, {'subject': 'e5', 'relation': 'under', 'object': 'e6'}], 'scene': {'location': None, 'environment': ['calm lake', 'snow-capped mountains', 'golden sky']}}","{
+    ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""cabin"",
+            ""attributes"": [""rustic"", ""log""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""lake"",
+            ""attributes"": [""calm""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""reflection"",
+            ""attributes"": [""mirrored""]
+        },
+        {
+            ""id"": ""e4"",
+            ""type"": ""water"",
+            ""attributes"": []
+        },
+        {
+            ""id"": ""e5"",
+            ""type"": ""mountains"",
+            ""attributes"": [""majestic"", ""snow-capped""]
+        },
+        {
+            ""id"": ""e6"",
+            ""type"": ""sky"",
+            ""attributes"": [""soft"", ""golden""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""sit"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e3"",
+            ""action"": ""mirror"",
+            ""object"": ""e4""
+        },
+        {
+            ""subject"": ""e5"",
+            ""action"": ""rise"",
+            ""object"": null
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e1"",
+            ""relation"": ""on"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e3"",
+            ""relation"": ""of"",
+            ""object"": ""e1""
+        },
+        {
+            ""subject"": ""e3"",
+            ""relation"": ""in"",
+            ""object"": ""e4""
+        },
+        {
+            ""subject"": ""e5"",
+            ""relation"": ""under"",
+            ""object"": ""e6""
+        }
+    ],
+    ""scene"": {
+        ""location"": null,
+        ""environment"": [""calm lake"", ""snow-capped mountains"", ""golden sky""]
+    }
+}",success,
+test_002,2,1,test_002.png,"A wooden log cabin sits on a calm lake, its reflection perfectly mirrored in the water, with majestic snow-capped mountains rising behind a forested shoreline under a blue sky with golden clouds.",nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T06:58:49.778607+00:00,732.496,3,,,error,Semantic extraction failed after 3 attempts: Connection error.
+test_002,2,2,test_002.png,"A wooden log cabin sits on a calm lake, its reflection perfectly mirrored in the water, with majestic snow-capped mountains rising behind a forested shoreline under a blue sky with golden clouds.",nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T06:58:59.691750+00:00,9.903,3,,,error,Semantic extraction failed after 3 attempts: Connection error.
+test_002,2,3,test_002.png,"A wooden log cabin sits on a calm lake, its reflection perfectly mirrored in the water, with majestic snow-capped mountains rising behind a forested shoreline under a blue sky with golden clouds.",nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T06:59:09.823428+00:00,10.116,3,,,error,Semantic extraction failed after 3 attempts: Connection error.
+test_002,4,1,test_002.png,"A wooden log cabin sits on a rocky platform at the edge of a calm lake, its reflection mirrored perfectly in the water, with a majestic snow-capped mountain range rising behind a dense evergreen forest under a partly cloudy sky.",nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T07:00:14.203802+00:00,64.371,2,"{'entities': [{'id': 'e1', 'type': 'cabin', 'attributes': ['wooden', 'log']}, {'id': 'e2', 'type': 'platform', 'attributes': ['rocky']}, {'id': 'e3', 'type': 'lake', 'attributes': ['calm']}, {'id': 'e4', 'type': 'reflection', 'attributes': ['mirrored perfectly']}, {'id': 'e5', 'type': 'water', 'attributes': []}, {'id': 'e6', 'type': 'mountain range', 'attributes': ['majestic', 'snow-capped']}, {'id': 'e7', 'type': 'forest', 'attributes': ['dense', 'evergreen']}, {'id': 'e8', 'type': 'sky', 'attributes': ['partly cloudy']}], 'actions': [{'subject': 'e1', 'action': 'sit', 'object': 'e2'}, {'subject': 'e4', 'action': 'mirror', 'object': 'e5'}, {'subject': 'e6', 'action': 'rise', 'object': None}], 'relations': [{'subject': 'e1', 'relation': 'on', 'object': 'e2'}, {'subject': 'e2', 'relation': 'at_edge_of', 'object': 'e3'}, {'subject': 'e4', 'relation': 'in', 'object': 'e5'}, {'subject': 'e6', 'relation': 'behind', 'object': 'e7'}, {'subject': 'e7', 'relation': 'under', 'object': 'e8'}], 'scene': {'location': None, 'environment': ['lake', 'forest', 'mountains', 'sky']}}","{
+    ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""cabin"",
+            ""attributes"": [""wooden"", ""log""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""platform"",
+            ""attributes"": [""rocky""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""lake"",
+            ""attributes"": [""calm""]
+        },
+        {
+            ""id"": ""e4"",
+            ""type"": ""reflection"",
+            ""attributes"": [""mirrored perfectly""]
+        },
+        {
+            ""id"": ""e5"",
+            ""type"": ""water"",
+            ""attributes"": []
+        },
+        {
+            ""id"": ""e6"",
+            ""type"": ""mountain range"",
+            ""attributes"": [""majestic"", ""snow-capped""]
+        },
+        {
+            ""id"": ""e7"",
+            ""type"": ""forest"",
+            ""attributes"": [""dense"", ""evergreen""]
+        },
+        {
+            ""id"": ""e8"",
+            ""type"": ""sky"",
+            ""attributes"": [""partly cloudy""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""sit"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e4"",
+            ""action"": ""mirror"",
+            ""object"": ""e5""
+        },
+        {
+            ""subject"": ""e6"",
+            ""action"": ""rise"",
+            ""object"": null
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e1"",
+            ""relation"": ""on"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e2"",
+            ""relation"": ""at_edge_of"",
+            ""object"": ""e3""
+        },
+        {
+            ""subject"": ""e4"",
+            ""relation"": ""in"",
+            ""object"": ""e5""
+        },
+        {
+            ""subject"": ""e6"",
+            ""relation"": ""behind"",
+            ""object"": ""e7""
+        },
+        {
+            ""subject"": ""e7"",
+            ""relation"": ""under"",
+            ""object"": ""e8""
+        }
+    ],
+    ""scene"": {
+        ""location"": null,
+        ""environment"": [""lake"", ""forest"", ""mountains"", ""sky""]
+    }
+}",success,
+test_002,4,2,test_002.png,"A wooden log cabin sits on a rocky platform at the edge of a calm lake, its reflection mirrored perfectly in the water, with a majestic snow-capped mountain range rising behind a dense evergreen forest under a partly cloudy sky.",nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T07:01:33.590505+00:00,79.345,1,"{'entities': [{'id': 'e1', 'type': 'cabin', 'attributes': ['wooden', 'log']}, {'id': 'e2', 'type': 'platform', 'attributes': ['rocky']}, {'id': 'e3', 'type': 'lake', 'attributes': ['calm']}, {'id': 'e4', 'type': 'reflection', 'attributes': ['mirrored perfectly']}, {'id': 'e5', 'type': 'water', 'attributes': []}, {'id': 'e6', 'type': 'mountain range', 'attributes': ['majestic', 'snow-capped']}, {'id': 'e7', 'type': 'forest', 'attributes': ['dense', 'evergreen']}, {'id': 'e8', 'type': 'sky', 'attributes': ['partly cloudy']}], 'actions': [{'subject': 'e1', 'action': 'sit', 'object': 'e2'}, {'subject': 'e4', 'action': 'mirror', 'object': 'e5'}, {'subject': 'e6', 'action': 'rise', 'object': None}], 'relations': [{'subject': 'e1', 'relation': 'on', 'object': 'e2'}, {'subject': 'e2', 'relation': 'at_edge_of', 'object': 'e3'}, {'subject': 'e4', 'relation': 'in', 'object': 'e5'}, {'subject': 'e6', 'relation': 'behind', 'object': 'e7'}, {'subject': 'e7', 'relation': 'under', 'object': 'e8'}], 'scene': {'location': None, 'environment': ['lake', 'forest', 'mountain range', 'sky']}}","{
+ ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""cabin"",
+            ""attributes"": [""wooden"", ""log""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""platform"",
+            ""attributes"": [""rocky""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""lake"",
+            ""attributes"": [""calm""]
+        },
+        {
+            ""id"": ""e4"",
+            ""type"": ""reflection"",
+            ""attributes"": [""mirrored perfectly""]
+        },
+        {
+            ""id"": ""e5"",
+            ""type"": ""water"",
+            ""attributes"": []
+        },
+        {
+            ""id"": ""e6"",
+            ""type"": ""mountain range"",
+            ""attributes"": [""majestic"", ""snow-capped""]
+        },
+        {
+            ""id"": ""e7"",
+            ""type"": ""forest"",
+            ""attributes"": [""dense"", ""evergreen""]
+        },
+        {
+            ""id"": ""e8"",
+            ""type"": ""sky"",
+            ""attributes"": [""partly cloudy""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""sit"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e4"",
+            ""action"": ""mirror"",
+            ""object"": ""e5""
+        },
+        {
+            ""subject"": ""e6"",
+            ""action"": ""rise"",
+            ""object"": null
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e1"",
+            ""relation"": ""on"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e2"",
+            ""relation"": ""at_edge_of"",
+            ""object"": ""e3""
+        },
+        {
+            ""subject"": ""e4"",
+            ""relation"": ""in"",
+            ""object"": ""e5""
+        },
+        {
+            ""subject"": ""e6"",
+            ""relation"": ""behind"",
+            ""object"": ""e7""
+        },
+        {
+            ""subject"": ""e7"",
+            ""relation"": ""under"",
+            ""object"": ""e8""
+        }
+    ],
+    ""scene"": {
+        ""location"": null,
+        ""environment"": [""lake"", ""forest"", ""mountain range"", ""sky""]
+    }
+}",success,
+test_002,4,3,test_002.png,"A wooden log cabin sits on a rocky platform at the edge of a calm lake, its reflection mirrored perfectly in the water, with a majestic snow-capped mountain range rising behind a dense evergreen forest under a partly cloudy sky.",nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T07:02:39.695875+00:00,66.083,1,"{'entities': [{'id': 'e1', 'type': 'cabin', 'attributes': ['wooden', 'log']}, {'id': 'e2', 'type': 'platform', 'attributes': ['rocky']}, {'id': 'e3', 'type': 'lake', 'attributes': ['calm']}, {'id': 'e4', 'type': 'reflection', 'attributes': ['mirrored perfectly']}, {'id': 'e5', 'type': 'mountain range', 'attributes': ['majestic', 'snow-capped']}, {'id': 'e6', 'type': 'forest', 'attributes': ['dense', 'evergreen']}, {'id': 'e7', 'type': 'sky', 'attributes': ['partly cloudy']}], 'actions': [{'subject': 'e1', 'action': 'sit on', 'object': 'e2'}, {'subject': 'e4', 'action': 'mirror in', 'object': 'e3'}, {'subject': 'e5', 'action': 'rise behind', 'object': 'e6'}], 'relations': [{'subject': 'e1', 'relation': 'on', 'object': 'e2'}, {'subject': 'e2', 'relation': 'at edge of', 'object': 'e3'}, {'subject': 'e4', 'relation': 'in', 'object': 'e3'}, {'subject': 'e5', 'relation': 'behind', 'object': 'e6'}, {'subject': 'e6', 'relation': 'under', 'object': 'e7'}], 'scene': {'location': None, 'environment': ['lake', 'forest', 'mountain range', 'sky']}}","{
+ ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""cabin"",
+            ""attributes"": [""wooden"", ""log""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""platform"",
+            ""attributes"": [""rocky""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""lake"",
+            ""attributes"": [""calm""]
+        },
+        {
+            ""id"": ""e4"",
+            ""type"": ""reflection"",
+            ""attributes"": [""mirrored perfectly""]
+        },
+        {
+            ""id"": ""e5"",
+            ""type"": ""mountain range"",
+            ""attributes"": [""majestic"", ""snow-capped""]
+        },
+        {
+            ""id"": ""e6"",
+            ""type"": ""forest"",
+            ""attributes"": [""dense"", ""evergreen""]
+        },
+        {
+            ""id"": ""e7"",
+            ""type"": ""sky"",
+            ""attributes"": [""partly cloudy""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""sit on"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e4"",
+            ""action"": ""mirror in"",
+            ""object"": ""e3""
+        },
+        {
+            ""subject"": ""e5"",
+            ""action"": ""rise behind"",
+            ""object"": ""e6""
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e1"",
+            ""relation"": ""on"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e2"",
+            ""relation"": ""at edge of"",
+            ""object"": ""e3""
+        },
+        {
+            ""subject"": ""e4"",
+            ""relation"": ""in"",
+            ""object"": ""e3""
+        },
+        {
+            ""subject"": ""e5"",
+            ""relation"": ""behind"",
+            ""object"": ""e6""
+        },
+        {
+            ""subject"": ""e6"",
+            ""relation"": ""under"",
+            ""object"": ""e7""
+        }
+    ],
+    ""scene"": {
+        ""location"": null,
+        ""environment"": [""lake"", ""forest"", ""mountain range"", ""sky""]
+    }
+}",success,
+test_002,5,1,test_002.png,"A rustic log cabin sits on a calm lake, its reflection mirrored in the water with majestic snow-capped mountains rising behind a dense forest under a soft, cloudy sky.",nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T07:03:39.107306+00:00,59.401,1,"{'entities': [{'id': 'e1', 'type': 'log cabin', 'attributes': ['rustic']}, {'id': 'e2', 'type': 'lake', 'attributes': ['calm']}, {'id': 'e3', 'type': 'reflection', 'attributes': ['mirrored']}, {'id': 'e4', 'type': 'mountains', 'attributes': ['snow-capped', 'majestic']}, {'id': 'e5', 'type': 'forest', 'attributes': ['dense']}, {'id': 'e6', 'type': 'sky', 'attributes': ['soft', 'cloudy']}], 'actions': [{'subject': 'e1', 'action': 'sit', 'object': 'e2'}, {'subject': 'e3', 'action': 'mirror', 'object': 'e2'}, {'subject': 'e4', 'action': 'rise', 'object': 'e5'}], 'relations': [{'subject': 'e1', 'relation': 'on', 'object': 'e2'}, {'subject': 'e3', 'relation': 'in', 'object': 'e2'}, {'subject': 'e4', 'relation': 'behind', 'object': 'e5'}, {'subject': 'e5', 'relation': 'under', 'object': 'e6'}], 'scene': {'location': None, 'environment': ['calm lake', 'dense forest', 'snow-capped mountains', 'cloudy sky']}}","{
+    ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""log cabin"",
+            ""attributes"": [""rustic""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""lake"",
+            ""attributes"": [""calm""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""reflection"",
+            ""attributes"": [""mirrored""]
+        },
+        {
+            ""id"": ""e4"",
+            ""type"": ""mountains"",
+            ""attributes"": [""snow-capped"", ""majestic""]
+        },
+        {
+            ""id"": ""e5"",
+            ""type"": ""forest"",
+            ""attributes"": [""dense""]
+        },
+        {
+            ""id"": ""e6"",
+            ""type"": ""sky"",
+            ""attributes"": [""soft"", ""cloudy""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""sit"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e3"",
+            ""action"": ""mirror"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e4"",
+            ""action"": ""rise"",
+            ""object"": ""e5""
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e1"",
+            ""relation"": ""on"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e3"",
+            ""relation"": ""in"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e4"",
+            ""relation"": ""behind"",
+            ""object"": ""e5""
+        },
+        {
+            ""subject"": ""e5"",
+            ""relation"": ""under"",
+            ""object"": ""e6""
+        }
+    ],
+    ""scene"": {
+        ""location"": null,
+        ""environment"": [""calm lake"", ""dense forest"", ""snow-capped mountains"", ""cloudy sky""]
+    }
+}",success,
+test_002,5,2,test_002.png,"A rustic log cabin sits on a calm lake, its reflection mirrored in the water with majestic snow-capped mountains rising behind a dense forest under a soft, cloudy sky.",nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T07:05:10.490154+00:00,91.371,2,"{'entities': [{'id': 'e1', 'type': 'cabin', 'attributes': ['rustic', 'log']}, {'id': 'e2', 'type': 'lake', 'attributes': ['calm']}, {'id': 'e3', 'type': 'reflection', 'attributes': ['mirrored']}, {'id': 'e4', 'type': 'water', 'attributes': []}, {'id': 'e5', 'type': 'mountains', 'attributes': ['majestic', 'snow-capped']}, {'id': 'e6', 'type': 'forest', 'attributes': ['dense']}, {'id': 'e7', 'type': 'sky', 'attributes': ['soft', 'cloudy']}], 'actions': [{'subject': 'e1', 'action': 'sit', 'object': 'e2'}, {'subject': 'e3', 'action': 'mirror', 'object': 'e4'}, {'subject': 'e5', 'action': 'rise', 'object': 'e6'}], 'relations': [{'subject': 'e1', 'relation': 'on', 'object': 'e2'}, {'subject': 'e3', 'relation': 'in', 'object': 'e4'}, {'subject': 'e5', 'relation': 'behind', 'object': 'e6'}, {'subject': 'e6', 'relation': 'under', 'object': 'e7'}], 'scene': {'location': None, 'environment': ['lake', 'forest', 'mountains', 'sky']}}","{
+    ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""cabin"",
+            ""attributes"": [""rustic"", ""log""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""lake"",
+            ""attributes"": [""calm""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""reflection"",
+            ""attributes"": [""mirrored""]
+        },
+        {
+            ""id"": ""e4"",
+            ""type"": ""water"",
+            ""attributes"": []
+        },
+        {
+            ""id"": ""e5"",
+            ""type"": ""mountains"",
+            ""attributes"": [""majestic"", ""snow-capped""]
+        },
+        {
+            ""id"": ""e6"",
+            ""type"": ""forest"",
+            ""attributes"": [""dense""]
+        },
+        {
+            ""id"": ""e7"",
+            ""type"": ""sky"",
+            ""attributes"": [""soft"", ""cloudy""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""sit"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e3"",
+            ""action"": ""mirror"",
+            ""object"": ""e4""
+        },
+        {
+            ""subject"": ""e5"",
+            ""action"": ""rise"",
+            ""object"": ""e6""
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e1"",
+            ""relation"": ""on"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e3"",
+            ""relation"": ""in"",
+            ""object"": ""e4""
+        },
+        {
+            ""subject"": ""e5"",
+            ""relation"": ""behind"",
+            ""object"": ""e6""
+        },
+        {
+            ""subject"": ""e6"",
+            ""relation"": ""under"",
+            ""object"": ""e7""
+        }
+    ],
+    ""scene"": {
+        ""location"": null,
+        ""environment"": [""lake"", ""forest"", ""mountains"", ""sky""]
+    }
+}",success,
+test_002,5,3,test_002.png,"A rustic log cabin sits on a calm lake, its reflection mirrored in the water with majestic snow-capped mountains rising behind a dense forest under a soft, cloudy sky.",nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T07:06:40.769540+00:00,90.263,1,"{'entities': [{'id': 'e1', 'type': 'cabin', 'attributes': ['rustic', 'log']}, {'id': 'e2', 'type': 'lake', 'attributes': ['calm']}, {'id': 'e3', 'type': 'reflection', 'attributes': ['mirrored']}, {'id': 'e4', 'type': 'water', 'attributes': []}, {'id': 'e5', 'type': 'mountain', 'attributes': ['majestic', 'snow-capped']}, {'id': 'e6', 'type': 'forest', 'attributes': ['dense']}, {'id': 'e7', 'type': 'sky', 'attributes': ['soft', 'cloudy']}], 'actions': [{'subject': 'e1', 'action': 'sit', 'object': 'e2'}, {'subject': 'e3', 'action': 'mirror', 'object': 'e4'}, {'subject': 'e5', 'action': 'rise', 'object': None}], 'relations': [{'subject': 'e1', 'relation': 'on', 'object': 'e2'}, {'subject': 'e3', 'relation': 'in', 'object': 'e4'}, {'subject': 'e5', 'relation': 'behind', 'object': 'e6'}, {'subject': 'e6', 'relation': 'under', 'object': 'e7'}, {'subject': 'e5', 'relation': 'under', 'object': 'e7'}], 'scene': {'location': None, 'environment': ['lake', 'forest', 'mountains', 'sky']}}","{
+    ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""cabin"",
+            ""attributes"": [""rustic"", ""log""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""lake"",
+            ""attributes"": [""calm""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""reflection"",
+            ""attributes"": [""mirrored""]
+        },
+        {
+            ""id"": ""e4"",
+            ""type"": ""water"",
+            ""attributes"": []
+        },
+        {
+            ""id"": ""e5"",
+            ""type"": ""mountain"",
+            ""attributes"": [""majestic"", ""snow-capped""]
+        },
+        {
+            ""id"": ""e6"",
+            ""type"": ""forest"",
+            ""attributes"": [""dense""]
+        },
+        {
+            ""id"": ""e7"",
+            ""type"": ""sky"",
+            ""attributes"": [""soft"", ""cloudy""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""sit"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e3"",
+            ""action"": ""mirror"",
+            ""object"": ""e4""
+        },
+        {
+            ""subject"": ""e5"",
+            ""action"": ""rise"",
+            ""object"": null
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e1"",
+            ""relation"": ""on"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e3"",
+            ""relation"": ""in"",
+            ""object"": ""e4""
+        },
+        {
+            ""subject"": ""e5"",
+            ""relation"": ""behind"",
+            ""object"": ""e6""
+        },
+        {
+            ""subject"": ""e6"",
+            ""relation"": ""under"",
+            ""object"": ""e7""
+        },
+        {
+            ""subject"": ""e5"",
+            ""relation"": ""under"",
+            ""object"": ""e7""
+        }
+    ],
+    ""scene"": {
+        ""location"": null,
+        ""environment"": [""lake"", ""forest"", ""mountains"", ""sky""]
+    }
+}",success,
+test_002,6,1,test_002.png,"A wooden log cabin sits on the snowy edge of a tranquil lake, its reflection perfectly mirrored in the water with a majestic snow-capped mountain rising in the background.",nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T07:07:50.410239+00:00,69.632,1,"{'entities': [{'id': 'e1', 'type': 'cabin', 'attributes': ['wooden', 'log']}, {'id': 'e2', 'type': 'lake', 'attributes': ['tranquil']}, {'id': 'e3', 'type': 'edge', 'attributes': ['snowy']}, {'id': 'e4', 'type': 'reflection', 'attributes': ['perfectly mirrored']}, {'id': 'e5', 'type': 'water', 'attributes': []}, {'id': 'e6', 'type': 'mountain', 'attributes': ['majestic', 'snow-capped']}], 'actions': [{'subject': 'e1', 'action': 'sit', 'object': 'e3'}, {'subject': 'e6', 'action': 'rise', 'object': None}], 'relations': [{'subject': 'e3', 'relation': 'of', 'object': 'e2'}, {'subject': 'e4', 'relation': 'of', 'object': 'e1'}, {'subject': 'e4', 'relation': 'in', 'object': 'e5'}, {'subject': 'e5', 'relation': 'of', 'object': 'e2'}, {'subject': 'e6', 'relation': 'in background of', 'object': 'e2'}], 'scene': {'location': None, 'environment': ['snowy', 'tranquil', 'mountainous']}}","{
+ ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""cabin"",
+            ""attributes"": [""wooden"", ""log""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""lake"",
+            ""attributes"": [""tranquil""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""edge"",
+            ""attributes"": [""snowy""]
+        },
+        {
+            ""id"": ""e4"",
+            ""type"": ""reflection"",
+            ""attributes"": [""perfectly mirrored""]
+        },
+        {
+            ""id"": ""e5"",
+            ""type"": ""water"",
+            ""attributes"": []
+        },
+        {
+            ""id"": ""e6"",
+            ""type"": ""mountain"",
+            ""attributes"": [""majestic"", ""snow-capped""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""sit"",
+            ""object"": ""e3""
+        },
+        {
+            ""subject"": ""e6"",
+            ""action"": ""rise"",
+            ""object"": null
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e3"",
+            ""relation"": ""of"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e4"",
+            ""relation"": ""of"",
+            ""object"": ""e1""
+        },
+        {
+            ""subject"": ""e4"",
+            ""relation"": ""in"",
+            ""object"": ""e5""
+        },
+        {
+            ""subject"": ""e5"",
+            ""relation"": ""of"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e6"",
+            ""relation"": ""in background of"",
+            ""object"": ""e2""
+        }
+    ],
+    ""scene"": {
+        ""location"": null,
+        ""environment"": [""snowy"", ""tranquil"", ""mountainous""]
+    }
+}",success,
+test_002,6,2,test_002.png,"A wooden log cabin sits on the snowy edge of a tranquil lake, its reflection perfectly mirrored in the water with a majestic snow-capped mountain rising in the background.",nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T07:09:02.926589+00:00,72.499,1,"{'entities': [{'id': 'e1', 'type': 'cabin', 'attributes': ['wooden', 'log']}, {'id': 'e2', 'type': 'edge', 'attributes': ['snowy']}, {'id': 'e3', 'type': 'lake', 'attributes': ['tranquil']}, {'id': 'e4', 'type': 'reflection', 'attributes': ['perfectly mirrored']}, {'id': 'e5', 'type': 'water', 'attributes': []}, {'id': 'e6', 'type': 'mountain', 'attributes': ['majestic', 'snow-capped']}], 'actions': [{'subject': 'e1', 'action': 'sit', 'object': 'e2'}, {'subject': 'e4', 'action': 'mirror', 'object': 'e5'}, {'subject': 'e6', 'action': 'rise', 'object': None}], 'relations': [{'subject': 'e1', 'relation': 'on', 'object': 'e2'}, {'subject': 'e2', 'relation': 'of', 'object': 'e3'}, {'subject': 'e4', 'relation': 'in', 'object': 'e5'}, {'subject': 'e6', 'relation': 'in', 'object': 'e3'}], 'scene': {'location': None, 'environment': ['snowy', 'tranquil', 'mountainous']}}","{
+ ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""cabin"",
+            ""attributes"": [""wooden"", ""log""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""edge"",
+            ""attributes"": [""snowy""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""lake"",
+            ""attributes"": [""tranquil""]
+        },
+        {
+            ""id"": ""e4"",
+            ""type"": ""reflection"",
+            ""attributes"": [""perfectly mirrored""]
+        },
+        {
+            ""id"": ""e5"",
+            ""type"": ""water"",
+            ""attributes"": []
+        },
+        {
+            ""id"": ""e6"",
+            ""type"": ""mountain"",
+            ""attributes"": [""majestic"", ""snow-capped""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""sit"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e4"",
+            ""action"": ""mirror"",
+            ""object"": ""e5""
+        },
+        {
+            ""subject"": ""e6"",
+            ""action"": ""rise"",
+            ""object"": null
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e1"",
+            ""relation"": ""on"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e2"",
+            ""relation"": ""of"",
+            ""object"": ""e3""
+        },
+        {
+            ""subject"": ""e4"",
+            ""relation"": ""in"",
+            ""object"": ""e5""
+        },
+        {
+            ""subject"": ""e6"",
+            ""relation"": ""in"",
+            ""object"": ""e3""
+        }
+    ],
+    ""scene"": {
+        ""location"": null,
+        ""environment"": [""snowy"", ""tranquil"", ""mountainous""]
+    }
+}",success,
+test_002,6,3,test_002.png,"A wooden log cabin sits on the snowy edge of a tranquil lake, its reflection perfectly mirrored in the water with a majestic snow-capped mountain rising in the background.",nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T07:10:26.976714+00:00,84.009,1,"{'entities': [{'id': 'e1', 'type': 'cabin', 'attributes': ['wooden', 'log']}, {'id': 'e2', 'type': 'lake', 'attributes': ['tranquil']}, {'id': 'e3', 'type': 'edge', 'attributes': ['snowy']}, {'id': 'e4', 'type': 'reflection', 'attributes': ['perfectly mirrored']}, {'id': 'e5', 'type': 'mountain', 'attributes': ['majestic', 'snow-capped']}], 'actions': [{'subject': 'e1', 'action': 'sit', 'object': 'e3'}, {'subject': 'e4', 'action': 'mirror', 'object': 'e2'}, {'subject': 'e5', 'action': 'rise', 'object': None}], 'relations': [{'subject': 'e1', 'relation': 'on', 'object': 'e3'}, {'subject': 'e3', 'relation': 'of', 'object': 'e2'}, {'subject': 'e4', 'relation': 'of', 'object': 'e1'}, {'subject': 'e4', 'relation': 'in', 'object': 'e2'}, {'subject': 'e5', 'relation': 'in_background_of', 'object': 'e2'}], 'scene': {'location': None, 'environment': ['snowy', 'tranquil']}}","{
+    ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""cabin"",
+            ""attributes"": [""wooden"", ""log""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""lake"",
+            ""attributes"": [""tranquil""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""edge"",
+            ""attributes"": [""snowy""]
+        },
+        {
+            ""id"": ""e4"",
+            ""type"": ""reflection"",
+            ""attributes"": [""perfectly mirrored""]
+        },
+        {
+            ""id"": ""e5"",
+            ""type"": ""mountain"",
+            ""attributes"": [""majestic"", ""snow-capped""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""sit"",
+            ""object"": ""e3""
+        },
+        {
+            ""subject"": ""e4"",
+            ""action"": ""mirror"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e5"",
+            ""action"": ""rise"",
+            ""object"": null
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e1"",
+            ""relation"": ""on"",
+            ""object"": ""e3""
+        },
+        {
+            ""subject"": ""e3"",
+            ""relation"": ""of"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e4"",
+            ""relation"": ""of"",
+            ""object"": ""e1""
+        },
+        {
+            ""subject"": ""e4"",
+            ""relation"": ""in"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e5"",
+            ""relation"": ""in_background_of"",
+            ""object"": ""e2""
+        }
+    ],
+    ""scene"": {
+        ""location"": null,
+        ""environment"": [""snowy"", ""tranquil""]
+    }
+}",success,
+test_002,7,1,test_002.png,"The user wants a one-sentence description of the image.
+
+1.  **Identify key elements:**
+    *   **Foreground:** A calm lake with a clear reflection of the cabin and mountains. The water is dark blue/green.
+    *   **Mid-ground:** A wooden log cabin sitting on a small rocky platform or dock extending into the water. There's snow on the ground to the left.
+    *   **Background:** A large, majestic mountain range with snow-capped peaks. The slopes are covered in green pine trees.
+    *   **Sky:** Blue sky with some clouds, illuminated by warm sunlight (likely sunrise or sunset), casting a golden glow on the clouds and parts of the mountain.
+
+2.  **Synthesize into a single sentence:**
+    *   Start with the main subject: A wooden log cabin.
+    *   Describe its location: Situated on the edge of a serene lake.
+    *   Describe the surroundings: Surrounded by a dense forest and towering, snow-capped mountains.
+    *   Mention the reflection: The scene is perfectly reflected in the still water.
+    *   Add atmospheric details: The lighting suggests early morning or late evening with warm clouds.
+
+3.  **Drafting the sentence:**
+    *   *Draft 1:* A wooden cabin sits on a lake with snow and mountains in the background, reflecting perfectly in the water.
+    *   *Draft 2:* A picturesque log cabin rests on a rocky outcrop by a calm lake, its reflection mirrored in the water beneath towering snow-capped mountains under a cloudy sky.
+    *   *Draft 3 (Refining for flow):* A cozy log cabin sits on a small island or dock in a tranquil lake, perfectly reflecting the surrounding snow-capped mountains and golden-hued sky.
+
+4.  **Final Polish:** ""A cozy log cabin sits on a rocky platform at the edge of a tranquil lake, its reflection perfectly mirrored in the still water beneath towering, snow-capped mountains under a partly cloudy sky."" -> This is a bit long but accurate. Let's try to be more concise.
+
+    *   *Concise version:* A wooden log cabin sits on a rocky outcrop by a calm lake, reflecting the majestic snow-capped mountains and golden sky in the still water.
+
+5.  **Final Selection:** ""A wooden log cabin sits on a rocky platform by a calm lake, perfectly reflecting the majestic snow-capped mountains and golden sky in the still water."" This covers all the main points in one sentence. Let's make it slightly more descriptive of the scene's beauty.
+
+    *   *Revised:* ( thebeatsableatlasbeings[...] [user]] [user]] [user]] [user]] [user]] [[user] [[user] [user]] [user]] [[user] [[user] [[user] [user]] [user[user]<unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk> ""I'm not sure what you're asking me to do with<unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk> ""I'm not sure if I can do this.""",nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T07:11:20.708593+00:00,53.709,1,"{'entities': [{'id': 'e1', 'type': 'lake', 'attributes': ['calm', 'dark blue', 'dark green', 'still water']}, {'id': 'e2', 'type': 'cabin', 'attributes': ['wooden', 'log', 'cozy']}, {'id': 'e3', 'type': 'platform', 'attributes': ['rocky', 'small']}, {'id': 'e4', 'type': 'mountain range', 'attributes': ['large', 'majestic', 'towering', 'snow-capped peaks']}, {'id': 'e5', 'type': 'slope', 'attributes': ['green', 'pine tree covered']}, {'id': 'e6', 'type': 'sky', 'attributes': ['blue', 'partly cloudy', 'warm sunlight', 'golden glow']}, {'id': 'e7', 'type': 'cloud', 'attributes': ['warm', 'golden-hued']}, {'id': 'e8', 'type': 'ground', 'attributes': ['snow covered']}, {'id': 'e9', 'type': 'reflection', 'attributes': ['perfect', 'mirrored']}], 'actions': [{'subject': 'e2', 'action': 'sit', 'object': 'e3'}, {'subject': 'e9', 'action': 'mirror', 'object': 'e2'}, {'subject': 'e9', 'action': 'mirror', 'object': 'e4'}, {'subject': 'e9', 'action': 'mirror', 'object': 'e6'}], 'relations': [{'subject': 'e2', 'relation': 'on', 'object': 'e3'}, {'subject': 'e3', 'relation': 'at edge of', 'object': 'e1'}, {'subject': 'e4', 'relation': 'behind', 'object': 'e2'}, {'subject': 'e5', 'relation': 'on', 'object': 'e4'}, {'subject': 'e8', 'relation': 'left of', 'object': 'e2'}, {'subject': 'e6', 'relation': 'above', 'object': 'e4'}, {'subject': 'e7', 'relation': 'in', 'object': 'e6'}, {'subject': 'e9', 'relation': 'in', 'object': 'e1'}], 'scene': {'location': None, 'environment': ['lake', 'mountain', 'forest', 'sunrise', 'sunset']}}","{
+    ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""lake"",
+            ""attributes"": [""calm"", ""dark blue"", ""dark green"", ""still water""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""cabin"",
+            ""attributes"": [""wooden"", ""log"", ""cozy""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""platform"",
+            ""attributes"": [""rocky"", ""small""]
+        },
+        {
+            ""id"": ""e4"",
+            ""type"": ""mountain range"",
+            ""attributes"": [""large"", ""majestic"", ""towering"", ""snow-capped peaks""]
+        },
+        {
+            ""id"": ""e5"",
+            ""type"": ""slope"",
+            ""attributes"": [""green"", ""pine tree covered""]
+        },
+        {
+            ""id"": ""e6"",
+            ""type"": ""sky"",
+            ""attributes"": [""blue"", ""partly cloudy"", ""warm sunlight"", ""golden glow""]
+        },
+        {
+            ""id"": ""e7"",
+            ""type"": ""cloud"",
+            ""attributes"": [""warm"", ""golden-hued""]
+        },
+        {
+            ""id"": ""e8"",
+            ""type"": ""ground"",
+            ""attributes"": [""snow covered""]
+        },
+        {
+            ""id"": ""e9"",
+            ""type"": ""reflection"",
+            ""attributes"": [""perfect"", ""mirrored""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e2"",
+            ""action"": ""sit"",
+            ""object"": ""e3""
+        },
+        {
+            ""subject"": ""e9"",
+            ""action"": ""mirror"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e9"",
+            ""action"": ""mirror"",
+            ""object"": ""e4""
+        },
+        {
+            ""subject"": ""e9"",
+            ""action"": ""mirror"",
+            ""object"": ""e6""
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e2"",
+            ""relation"": ""on"",
+            ""object"": ""e3""
+        },
+        {
+            ""subject"": ""e3"",
+            ""relation"": ""at edge of"",
+            ""object"": ""e1""
+        },
+        {
+            ""subject"": ""e4"",
+            ""relation"": ""behind"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e5"",
+            ""relation"": ""on"",
+            ""object"": ""e4""
+        },
+        {
+            ""subject"": ""e8"",
+            ""relation"": ""left of"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e6"",
+            ""relation"": ""above"",
+            ""object"": ""e4""
+        },
+        {
+            ""subject"": ""e7"",
+            ""relation"": ""in"",
+            ""object"": ""e6""
+        },
+        {
+            ""subject"": ""e9"",
+            ""relation"": ""in"",
+            ""object"": ""e1""
+        }
+    ],
+    ""scene"": {
+        ""location"": null,
+        ""environment"": [""lake"", ""mountain"", ""forest"", ""sunrise"", ""sunset""]
+    }
+}",success,
+test_002,7,2,test_002.png,"The user wants a one-sentence description of the image.
+
+1.  **Identify key elements:**
+    *   **Foreground:** A calm lake with a clear reflection of the cabin and mountains. The water is dark blue/green.
+    *   **Mid-ground:** A wooden log cabin sitting on a small rocky platform or dock extending into the water. There's snow on the ground to the left.
+    *   **Background:** A large, majestic mountain range with snow-capped peaks. The slopes are covered in green pine trees.
+    *   **Sky:** Blue sky with some clouds, illuminated by warm sunlight (likely sunrise or sunset), casting a golden glow on the clouds and parts of the mountain.
+
+2.  **Synthesize into a single sentence:**
+    *   Start with the main subject: A wooden log cabin.
+    *   Describe its location: Situated on the edge of a serene lake.
+    *   Describe the surroundings: Surrounded by a dense forest and towering, snow-capped mountains.
+    *   Mention the reflection: The scene is perfectly reflected in the still water.
+    *   Add atmospheric details: The lighting suggests early morning or late evening with warm clouds.
+
+3.  **Drafting the sentence:**
+    *   *Draft 1:* A wooden cabin sits on a lake with snow and mountains in the background, reflecting perfectly in the water.
+    *   *Draft 2:* A picturesque log cabin rests on a rocky outcrop by a calm lake, its reflection mirrored in the water beneath towering snow-capped mountains under a cloudy sky.
+    *   *Draft 3 (Refining for flow):* A cozy log cabin sits on a small island or dock in a tranquil lake, perfectly reflecting the surrounding snow-capped mountains and golden-hued sky.
+
+4.  **Final Polish:** ""A cozy log cabin sits on a rocky platform at the edge of a tranquil lake, its reflection perfectly mirrored in the still water beneath towering, snow-capped mountains under a partly cloudy sky."" -> This is a bit long but accurate. Let's try to be more concise.
+
+    *   *Concise version:* A wooden log cabin sits on a rocky outcrop by a calm lake, reflecting the majestic snow-capped mountains and golden sky in the still water.
+
+5.  **Final Selection:** ""A wooden log cabin sits on a rocky platform by a calm lake, perfectly reflecting the majestic snow-capped mountains and golden sky in the still water."" This covers all the main points in one sentence. Let's make it slightly more descriptive of the scene's beauty.
+
+    *   *Revised:* ( thebeatsableatlasbeings[...] [user]] [user]] [user]] [user]] [user]] [[user] [[user] [user]] [user]] [[user] [[user] [[user] [user]] [user[user]<unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk> ""I'm not sure what you're asking me to do with<unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk> ""I'm not sure if I can do this.""",nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T07:12:28.207958+00:00,67.435,1,"{'entities': [{'id': 'e1', 'type': 'lake', 'attributes': ['calm', 'dark blue', 'dark green']}, {'id': 'e2', 'type': 'cabin', 'attributes': ['wooden', 'log']}, {'id': 'e3', 'type': 'platform', 'attributes': ['rocky', 'small']}, {'id': 'e4', 'type': 'mountain', 'attributes': ['large', 'majestic', 'snow-capped']}, {'id': 'e5', 'type': 'tree', 'attributes': ['green', 'pine']}, {'id': 'e6', 'type': 'sky', 'attributes': ['blue', 'cloudy']}, {'id': 'e7', 'type': 'sunlight', 'attributes': ['warm', 'golden']}, {'id': 'e8', 'type': 'snow', 'attributes': ['on ground', 'left side']}], 'actions': [{'subject': 'e7', 'action': 'illuminate', 'object': 'e6'}, {'subject': 'e7', 'action': 'cast', 'object': 'e4'}], 'relations': [{'subject': 'e2', 'relation': 'on', 'object': 'e3'}, {'subject': 'e3', 'relation': 'at edge of', 'object': 'e1'}, {'subject': 'e3', 'relation': 'extends into', 'object': 'e1'}, {'subject': 'e4', 'relation': 'behind', 'object': 'e1'}, {'subject': 'e5', 'relation': 'on slope of', 'object': 'e4'}, {'subject': 'e8', 'relation': 'on ground near', 'object': 'e2'}, {'subject': 'e6', 'relation': 'above', 'object': 'e4'}, {'subject': 'e2', 'relation': 'reflected in', 'object': 'e1'}, {'subject': 'e4', 'relation': 'reflected in', 'object': 'e1'}], 'scene': {'location': None, 'environment': ['lake', 'mountain', 'forest', 'sky', 'snow']}}","{
+    ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""lake"",
+            ""attributes"": [""calm"", ""dark blue"", ""dark green""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""cabin"",
+            ""attributes"": [""wooden"", ""log""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""platform"",
+            ""attributes"": [""rocky"", ""small""]
+        },
+        {
+            ""id"": ""e4"",
+            ""type"": ""mountain"",
+            ""attributes"": [""large"", ""majestic"", ""snow-capped""]
+        },
+        {
+            ""id"": ""e5"",
+            ""type"": ""tree"",
+            ""attributes"": [""green"", ""pine""]
+        },
+        {
+            ""id"": ""e6"",
+            ""type"": ""sky"",
+            ""attributes"": [""blue"", ""cloudy""]
+        },
+        {
+            ""id"": ""e7"",
+            ""type"": ""sunlight"",
+            ""attributes"": [""warm"", ""golden""]
+        },
+        {
+            ""id"": ""e8"",
+            ""type"": ""snow"",
+            ""attributes"": [""on ground"", ""left side""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e7"",
+            ""action"": ""illuminate"",
+            ""object"": ""e6""
+        },
+        {
+            ""subject"": ""e7"",
+            ""action"": ""cast"",
+            ""object"": ""e4""
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e2"",
+            ""relation"": ""on"",
+            ""object"": ""e3""
+        },
+        {
+            ""subject"": ""e3"",
+            ""relation"": ""at edge of"",
+            ""object"": ""e1""
+        },
+        {
+            ""subject"": ""e3"",
+            ""relation"": ""extends into"",
+            ""object"": ""e1""
+        },
+        {
+            ""subject"": ""e4"",
+            ""relation"": ""behind"",
+            ""object"": ""e1""
+        },
+        {
+            ""subject"": ""e5"",
+            ""relation"": ""on slope of"",
+            ""object"": ""e4""
+        },
+        {
+            ""subject"": ""e8"",
+            ""relation"": ""on ground near"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e6"",
+            ""relation"": ""above"",
+            ""object"": ""e4""
+        },
+        {
+            ""subject"": ""e2"",
+            ""relation"": ""reflected in"",
+            ""object"": ""e1""
+        },
+        {
+            ""subject"": ""e4"",
+            ""relation"": ""reflected in"",
+            ""object"": ""e1""
+        }
+    ],
+    ""scene"": {
+        ""location"": null,
+        ""environment"": [""lake"", ""mountain"", ""forest"", ""sky"", ""snow""]
+    }
+}",success,
+test_002,7,3,test_002.png,"The user wants a one-sentence description of the image.
+
+1.  **Identify key elements:**
+    *   **Foreground:** A calm lake with a clear reflection of the cabin and mountains. The water is dark blue/green.
+    *   **Mid-ground:** A wooden log cabin sitting on a small rocky platform or dock extending into the water. There's snow on the ground to the left.
+    *   **Background:** A large, majestic mountain range with snow-capped peaks. The slopes are covered in green pine trees.
+    *   **Sky:** Blue sky with some clouds, illuminated by warm sunlight (likely sunrise or sunset), casting a golden glow on the clouds and parts of the mountain.
+
+2.  **Synthesize into a single sentence:**
+    *   Start with the main subject: A wooden log cabin.
+    *   Describe its location: Situated on the edge of a serene lake.
+    *   Describe the surroundings: Surrounded by a dense forest and towering, snow-capped mountains.
+    *   Mention the reflection: The scene is perfectly reflected in the still water.
+    *   Add atmospheric details: The lighting suggests early morning or late evening with warm clouds.
+
+3.  **Drafting the sentence:**
+    *   *Draft 1:* A wooden cabin sits on a lake with snow and mountains in the background, reflecting perfectly in the water.
+    *   *Draft 2:* A picturesque log cabin rests on a rocky outcrop by a calm lake, its reflection mirrored in the water beneath towering snow-capped mountains under a cloudy sky.
+    *   *Draft 3 (Refining for flow):* A cozy log cabin sits on a small island or dock in a tranquil lake, perfectly reflecting the surrounding snow-capped mountains and golden-hued sky.
+
+4.  **Final Polish:** ""A cozy log cabin sits on a rocky platform at the edge of a tranquil lake, its reflection perfectly mirrored in the still water beneath towering, snow-capped mountains under a partly cloudy sky."" -> This is a bit long but accurate. Let's try to be more concise.
+
+    *   *Concise version:* A wooden log cabin sits on a rocky outcrop by a calm lake, reflecting the majestic snow-capped mountains and golden sky in the still water.
+
+5.  **Final Selection:** ""A wooden log cabin sits on a rocky platform by a calm lake, perfectly reflecting the majestic snow-capped mountains and golden sky in the still water."" This covers all the main points in one sentence. Let's make it slightly more descriptive of the scene's beauty.
+
+    *   *Revised:* ( thebeatsableatlasbeings[...] [user]] [user]] [user]] [user]] [user]] [[user] [[user] [user]] [user]] [[user] [[user] [[user] [user]] [user[user]<unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk> ""I'm not sure what you're asking me to do with<unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk><unk> ""I'm not sure if I can do this.""",nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T07:13:35.798215+00:00,67.355,1,"{'entities': [{'id': 'e1', 'type': 'lake', 'attributes': ['calm', 'dark blue', 'dark green', 'still water']}, {'id': 'e2', 'type': 'reflection', 'attributes': ['clear', 'perfectly mirrored']}, {'id': 'e3', 'type': 'cabin', 'attributes': ['wooden', 'log', 'cozy']}, {'id': 'e4', 'type': 'platform', 'attributes': ['rocky', 'small', 'dock']}, {'id': 'e5', 'type': 'snow', 'attributes': ['on ground', 'left side']}, {'id': 'e6', 'type': 'mountain range', 'attributes': ['large', 'majestic', 'towering', 'snow-capped peaks']}, {'id': 'e7', 'type': 'pine tree', 'attributes': ['green', 'dense forest', 'covering slopes']}, {'id': 'e8', 'type': 'sky', 'attributes': ['blue', 'partly cloudy', 'clouds']}, {'id': 'e9', 'type': 'sunlight', 'attributes': ['warm', 'golden glow', 'sunrise or sunset']}], 'actions': [{'subject': 'e3', 'action': 'sit', 'object': 'e4'}, {'subject': 'e2', 'action': 'reflect', 'object': 'e1'}, {'subject': 'e9', 'action': 'illuminate', 'object': 'e8'}, {'subject': 'e9', 'action': 'cast', 'object': 'e6'}], 'relations': [{'subject': 'e3', 'relation': 'on', 'object': 'e4'}, {'subject': 'e4', 'relation': 'extend into', 'object': 'e1'}, {'subject': 'e5', 'relation': 'near', 'object': 'e3'}, {'subject': 'e6', 'relation': 'behind', 'object': 'e3'}, {'subject': 'e7', 'relation': 'cover', 'object': 'e6'}, {'subject': 'e2', 'relation': 'of', 'object': 'e3'}, {'subject': 'e2', 'relation': 'of', 'object': 'e6'}, {'subject': 'e8', 'relation': 'above', 'object': 'e6'}], 'scene': {'location': None, 'environment': ['lake', 'mountains', 'forest', 'sky']}}","{
+    ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""lake"",
+            ""attributes"": [""calm"", ""dark blue"", ""dark green"", ""still water""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""reflection"",
+            ""attributes"": [""clear"", ""perfectly mirrored""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""cabin"",
+            ""attributes"": [""wooden"", ""log"", ""cozy""]
+        },
+        {
+            ""id"": ""e4"",
+            ""type"": ""platform"",
+            ""attributes"": [""rocky"", ""small"", ""dock""]
+        },
+        {
+            ""id"": ""e5"",
+            ""type"": ""snow"",
+            ""attributes"": [""on ground"", ""left side""]
+        },
+        {
+            ""id"": ""e6"",
+            ""type"": ""mountain range"",
+            ""attributes"": [""large"", ""majestic"", ""towering"", ""snow-capped peaks""]
+        },
+        {
+            ""id"": ""e7"",
+            ""type"": ""pine tree"",
+            ""attributes"": [""green"", ""dense forest"", ""covering slopes""]
+        },
+        {
+            ""id"": ""e8"",
+            ""type"": ""sky"",
+            ""attributes"": [""blue"", ""partly cloudy"", ""clouds""]
+        },
+        {
+            ""id"": ""e9"",
+            ""type"": ""sunlight"",
+            ""attributes"": [""warm"", ""golden glow"", ""sunrise or sunset""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e3"",
+            ""action"": ""sit"",
+            ""object"": ""e4""
+        },
+        {
+            ""subject"": ""e2"",
+            ""action"": ""reflect"",
+            ""object"": ""e1""
+        },
+        {
+            ""subject"": ""e9"",
+            ""action"": ""illuminate"",
+            ""object"": ""e8""
+        },
+        {
+            ""subject"": ""e9"",
+            ""action"": ""cast"",
+            ""object"": ""e6""
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e3"",
+            ""relation"": ""on"",
+            ""object"": ""e4""
+        },
+        {
+            ""subject"": ""e4"",
+            ""relation"": ""extend into"",
+            ""object"": ""e1""
+        },
+        {
+            ""subject"": ""e5"",
+            ""relation"": ""near"",
+            ""object"": ""e3""
+        },
+        {
+            ""subject"": ""e6"",
+            ""relation"": ""behind"",
+            ""object"": ""e3""
+        },
+        {
+            ""subject"": ""e7"",
+            ""relation"": ""cover"",
+            ""object"": ""e6""
+        },
+        {
+            ""subject"": ""e2"",
+            ""relation"": ""of"",
+            ""object"": ""e3""
+        },
+        {
+            ""subject"": ""e2"",
+            ""relation"": ""of"",
+            ""object"": ""e6""
+        },
+        {
+            ""subject"": ""e8"",
+            ""relation"": ""above"",
+            ""object"": ""e6""
+        }
+    ],
+    ""scene"": {
+        ""location"": null,
+        ""environment"": [""lake"", ""mountains"", ""forest"", ""sky""]
+    }
+}",success,
+test_002,8,1,test_002.png,"A wooden log cabin sits on a calm lake, reflecting the majestic snow-capped mountain and blue sky in the water.",nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T07:17:26.572052+00:00,230.719,2,"{'entities': [{'id': 'e1', 'type': 'cabin', 'attributes': ['wooden', 'log']}, {'id': 'e2', 'type': 'lake', 'attributes': ['calm']}, {'id': 'e3', 'type': 'mountain', 'attributes': ['majestic', 'snow-capped']}, {'id': 'e4', 'type': 'sky', 'attributes': ['blue']}], 'actions': [{'subject': 'e1', 'action': 'sit', 'object': 'e2'}, {'subject': 'e2', 'action': 'reflect', 'object': 'e3'}, {'subject': 'e2', 'action': 'reflect', 'object': 'e4'}], 'relations': [{'subject': 'e1', 'relation': 'on', 'object': 'e2'}], 'scene': {'location': None, 'environment': []}}","{
+  ""entities"": [
+    {
+      ""id"": ""e1"",
+      ""type"": ""cabin"",
+      ""attributes"": [""wooden"", ""log""]
+    },
+    {
+      ""id"": ""e2"",
+      ""type"": ""lake"",
+      ""attributes"": [""calm""]
+    },
+    {
+      ""id"": ""e3"",
+      ""type"": ""mountain"",
+      ""attributes"": [""majestic"", ""snow-capped""]
+    },
+    {
+      ""id"": ""e4"",
+      ""type"": ""sky"",
+      ""attributes"": [""blue""]
+    }
+  ],
+  ""actions"": [
+    {
+      ""subject"": ""e1"",
+      ""action"": ""sit"",
+      ""object"": ""e2""
+    },
+    {
+      ""subject"": ""e2"",
+      ""action"": ""reflect"",
+      ""object"": ""e3""
+    },
+    {
+      ""subject"": ""e2"",
+      ""action"": ""reflect"",
+      ""object"": ""e4""
+    }
+  ],
+  ""relations"": [
+    {
+      ""subject"": ""e1"",
+      ""relation"": ""on"",
+      ""object"": ""e2""
+    }
+  ],
+  ""scene"": {
+    ""location"": null,
+    ""environment"": []
+  }
+}",success,
+test_002,8,2,test_002.png,"A wooden log cabin sits on a calm lake, reflecting the majestic snow-capped mountain and blue sky in the water.",nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T07:18:33.431437+00:00,66.321,1,"{'entities': [{'id': 'e1', 'type': 'cabin', 'attributes': ['wooden', 'log']}, {'id': 'e2', 'type': 'lake', 'attributes': ['calm']}, {'id': 'e3', 'type': 'mountain', 'attributes': ['majestic', 'snow-capped']}, {'id': 'e4', 'type': 'sky', 'attributes': ['blue']}], 'actions': [{'subject': 'e1', 'action': 'sit on', 'object': 'e2'}, {'subject': 'e2', 'action': 'reflect', 'object': 'e3'}, {'subject': 'e2', 'action': 'reflect', 'object': 'e4'}], 'relations': [{'subject': 'e1', 'relation': 'on', 'object': 'e2'}], 'scene': {'location': None, 'environment': ['lake', 'mountain', 'sky']}}","{
+    ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""cabin"",
+            ""attributes"": [""wooden"", ""log""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""lake"",
+            ""attributes"": [""calm""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""mountain"",
+            ""attributes"": [""majestic"", ""snow-capped""]
+        },
+        {
+            ""id"": ""e4"",
+            ""type"": ""sky"",
+            ""attributes"": [""blue""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""sit on"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e2"",
+            ""action"": ""reflect"",
+            ""object"": ""e3""
+        },
+        {
+            ""subject"": ""e2"",
+            ""action"": ""reflect"",
+            ""object"": ""e4""
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e1"",
+            ""relation"": ""on"",
+            ""object"": ""e2""
+        }
+    ],
+    ""scene"": {
+        ""location"": null,
+        ""environment"": [""lake"", ""mountain"", ""sky""]
+    }
+}",success,
+test_002,8,3,test_002.png,"A wooden log cabin sits on a calm lake, reflecting the majestic snow-capped mountain and blue sky in the water.",nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T07:19:48.942368+00:00,75.352,3,,,error,"Semantic extraction failed after 3 attempts: Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day', 'code': 429, 'metadata': {'headers': {'X-RateLimit-Limit': '50', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1788566400000'}, 'limit_source': 'openrouter_free_tier_daily', 'remedy_hint': 'Wait for the daily reset (see X-RateLimit-Reset), or purchase credits to raise your free-model daily limit.', 'provider_name': None}}, 'user_id': 'user_3IjWbdFHhB7b0j6QVQtcJnXC1gw'}"
+test_002,9,1,test_002.png,"A wooden log cabin sits on a small dock in a calm lake, its reflection mirrored in the water, with a majestic snow-capped mountain and evergreen forest in the background under a partly cloudy sky.",nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T07:19:59.267736+00:00,10.257,3,,,error,"Semantic extraction failed after 3 attempts: Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day', 'code': 429, 'metadata': {'headers': {'X-RateLimit-Limit': '50', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1788566400000'}, 'limit_source': 'openrouter_free_tier_daily', 'remedy_hint': 'Wait for the daily reset (see X-RateLimit-Reset), or purchase credits to raise your free-model daily limit.', 'provider_name': None}}, 'user_id': 'user_3IjWbdFHhB7b0j6QVQtcJnXC1gw'}"
+test_003,3,1,test_003.jpg,"A man with glasses and a beard, wearing a white shirt, is focused on typing on a laptop at a desk illuminated by a warm desk lamp.",nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T17:28:58.578577+00:00,55.262,2,"{'entities': [{'id': 'e1', 'type': 'man', 'attributes': ['glasses', 'beard', 'white shirt']}, {'id': 'e2', 'type': 'laptop', 'attributes': []}, {'id': 'e3', 'type': 'desk', 'attributes': []}, {'id': 'e4', 'type': 'desk lamp', 'attributes': ['warm']}], 'actions': [{'subject': 'e1', 'action': 'type', 'object': 'e2'}], 'relations': [{'subject': 'e1', 'relation': 'at', 'object': 'e3'}, {'subject': 'e3', 'relation': 'illuminated by', 'object': 'e4'}], 'scene': {'location': None, 'environment': []}}","{
+    ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""man"",
+            ""attributes"": [""glasses"", ""beard"", ""white shirt""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""laptop"",
+            ""attributes"": []
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""desk"",
+            ""attributes"": []
+        },
+        {
+            ""id"": ""e4"",
+            ""type"": ""desk lamp"",
+            ""attributes"": [""warm""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""type"",
+            ""object"": ""e2""
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e1"",
+            ""relation"": ""at"",
+            ""object"": ""e3""
+        },
+        {
+            ""subject"": ""e3"",
+            ""relation"": ""illuminated by"",
+            ""object"": ""e4""
+        }
+    ],
+    ""scene"": {
+        ""location"": null,
+        ""environment"": []
+    }
+}",success,
+test_003,3,2,test_003.jpg,"A man with glasses and a beard, wearing a white shirt, is focused on typing on a laptop at a desk illuminated by a warm desk lamp.",nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T17:29:56.117272+00:00,57.453,1,"{'entities': [{'id': 'e1', 'type': 'man', 'attributes': ['glasses', 'beard', 'white shirt']}, {'id': 'e2', 'type': 'laptop', 'attributes': []}, {'id': 'e3', 'type': 'desk', 'attributes': []}, {'id': 'e4', 'type': 'lamp', 'attributes': ['warm']}], 'actions': [{'subject': 'e1', 'action': 'type', 'object': 'e2'}], 'relations': [{'subject': 'e1', 'relation': 'at', 'object': 'e3'}, {'subject': 'e2', 'relation': 'on', 'object': 'e3'}, {'subject': 'e4', 'relation': 'illuminates', 'object': 'e3'}], 'scene': {'location': None, 'environment': []}}","{
+    ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""man"",
+            ""attributes"": [""glasses"", ""beard"", ""white shirt""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""laptop"",
+            ""attributes"": []
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""desk"",
+            ""attributes"": []
+        },
+        {
+            ""id"": ""e4"",
+            ""type"": ""lamp"",
+            ""attributes"": [""warm""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""type"",
+            ""object"": ""e2""
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e1"",
+            ""relation"": ""at"",
+            ""object"": ""e3""
+        },
+        {
+            ""subject"": ""e2"",
+            ""relation"": ""on"",
+            ""object"": ""e3""
+        },
+        {
+            ""subject"": ""e4"",
+            ""relation"": ""illuminates"",
+            ""object"": ""e3""
+        }
+    ],
+    ""scene"": {
+        ""location"": null,
+        ""environment"": []
+    }
+}",success,
+test_003,3,3,test_003.jpg,"A man with glasses and a beard, wearing a white shirt, is focused on typing on a laptop at a desk illuminated by a warm desk lamp.",nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T17:31:05.957248+00:00,69.793,2,"{'entities': [{'id': 'e1', 'type': 'man', 'attributes': ['glasses', 'beard', 'white shirt', 'focused']}, {'id': 'e2', 'type': 'laptop', 'attributes': []}, {'id': 'e3', 'type': 'desk', 'attributes': []}, {'id': 'e4', 'type': 'desk lamp', 'attributes': ['warm']}], 'actions': [{'subject': 'e1', 'action': 'type', 'object': 'e2'}], 'relations': [{'subject': 'e1', 'relation': 'at', 'object': 'e3'}, {'subject': 'e3', 'relation': 'illuminated by', 'object': 'e4'}], 'scene': {'location': None, 'environment': []}}","{
+    ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""man"",
+            ""attributes"": [""glasses"", ""beard"", ""white shirt"", ""focused""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""laptop"",
+            ""attributes"": []
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""desk"",
+            ""attributes"": []
+        },
+        {
+            ""id"": ""e4"",
+            ""type"": ""desk lamp"",
+            ""attributes"": [""warm""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""type"",
+            ""object"": ""e2""
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e1"",
+            ""relation"": ""at"",
+            ""object"": ""e3""
+        },
+        {
+            ""subject"": ""e3"",
+            ""relation"": ""illuminated by"",
+            ""object"": ""e4""
+        }
+    ],
+    ""scene"": {
+        ""location"": null,
+        ""environment"": []
+    }
+}",success,
+test_004,3,1,test_004.jpg,A woman wearing a brown tank top and blue jeans walks a white dog on a red leash through a grassy park area with trees in the background.,nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T17:32:01.458998+00:00,55.442,2,"{'entities': [{'id': 'e1', 'type': 'woman', 'attributes': []}, {'id': 'e2', 'type': 'tank_top', 'attributes': ['brown']}, {'id': 'e3', 'type': 'jeans', 'attributes': ['blue']}, {'id': 'e4', 'type': 'dog', 'attributes': ['white']}, {'id': 'e5', 'type': 'leash', 'attributes': ['red']}, {'id': 'e6', 'type': 'park_area', 'attributes': ['grassy']}, {'id': 'e7', 'type': 'trees', 'attributes': []}], 'actions': [{'subject': 'e1', 'action': 'walk', 'object': 'e4'}, {'subject': 'e1', 'action': 'wear', 'object': 'e2'}, {'subject': 'e1', 'action': 'wear', 'object': 'e3'}], 'relations': [{'subject': 'e4', 'relation': 'on', 'object': 'e5'}, {'subject': 'e1', 'relation': 'through', 'object': 'e6'}, {'subject': 'e7', 'relation': 'in_background_of', 'object': 'e6'}], 'scene': {'location': 'park_area', 'environment': ['grassy', 'trees']}}","{
+    ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""woman"",
+            ""attributes"": []
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""tank_top"",
+            ""attributes"": [""brown""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""jeans"",
+            ""attributes"": [""blue""]
+        },
+        {
+            ""id"": ""e4"",
+            ""type"": ""dog"",
+            ""attributes"": [""white""]
+        },
+        {
+            ""id"": ""e5"",
+            ""type"": ""leash"",
+            ""attributes"": [""red""]
+        },
+        {
+            ""id"": ""e6"",
+            ""type"": ""park_area"",
+            ""attributes"": [""grassy""]
+        },
+        {
+            ""id"": ""e7"",
+            ""type"": ""trees"",
+            ""attributes"": []
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""walk"",
+            ""object"": ""e4""
+        },
+        {
+            ""subject"": ""e1"",
+            ""action"": ""wear"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e1"",
+            ""action"": ""wear"",
+            ""object"": ""e3""
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e4"",
+            ""relation"": ""on"",
+            ""object"": ""e5""
+        },
+        {
+            ""subject"": ""e1"",
+            ""relation"": ""through"",
+            ""object"": ""e6""
+        },
+        {
+            ""subject"": ""e7"",
+            ""relation"": ""in_background_of"",
+            ""object"": ""e6""
+        }
+    ],
+    ""scene"": {
+        ""location"": ""park_area"",
+        ""environment"": [""grassy"", ""trees""]
+    }
+}",success,
+test_004,3,2,test_004.jpg,A woman wearing a brown tank top and blue jeans walks a white dog on a red leash through a grassy park area with trees in the background.,nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T17:33:11.195923+00:00,69.681,3,"{'entities': [{'id': 'e1', 'type': 'woman', 'attributes': []}, {'id': 'e2', 'type': 'tank top', 'attributes': ['brown']}, {'id': 'e3', 'type': 'jeans', 'attributes': ['blue']}, {'id': 'e4', 'type': 'dog', 'attributes': ['white']}, {'id': 'e5', 'type': 'leash', 'attributes': ['red']}, {'id': 'e6', 'type': 'park area', 'attributes': ['grassy']}, {'id': 'e7', 'type': 'trees', 'attributes': ['in background']}], 'actions': [{'subject': 'e1', 'action': 'walk', 'object': 'e4'}], 'relations': [{'subject': 'e1', 'relation': 'wearing', 'object': 'e2'}, {'subject': 'e1', 'relation': 'wearing', 'object': 'e3'}, {'subject': 'e4', 'relation': 'on', 'object': 'e5'}, {'subject': 'e1', 'relation': 'through', 'object': 'e6'}, {'subject': 'e7', 'relation': 'background of', 'object': 'e6'}], 'scene': {'location': 'grassy park area', 'environment': ['trees in background']}}","{
+    ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""woman"",
+            ""attributes"": []
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""tank top"",
+            ""attributes"": [""brown""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""jeans"",
+            ""attributes"": [""blue""]
+        },
+        {
+            ""id"": ""e4"",
+            ""type"": ""dog"",
+            ""attributes"": [""white""]
+        },
+        {
+            ""id"": ""e5"",
+            ""type"": ""leash"",
+            ""attributes"": [""red""]
+        },
+        {
+            ""id"": ""e6"",
+            ""type"": ""park area"",
+            ""attributes"": [""grassy""]
+        },
+        {
+            ""id"": ""e7"",
+            ""type"": ""trees"",
+            ""attributes"": [""in background""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""walk"",
+            ""object"": ""e4""
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e1"",
+            ""relation"": ""wearing"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e1"",
+            ""relation"": ""wearing"",
+            ""object"": ""e3""
+        },
+        {
+            ""subject"": ""e4"",
+            ""relation"": ""on"",
+            ""object"": ""e5""
+        },
+        {
+            ""subject"": ""e1"",
+            ""relation"": ""through"",
+            ""object"": ""e6""
+        },
+        {
+            ""subject"": ""e7"",
+            ""relation"": ""background of"",
+            ""object"": ""e6""
+        }
+    ],
+    ""scene"": {
+        ""location"": ""grassy park area"",
+        ""environment"": [""trees in background""]
+    }
+}",success,
+test_004,3,3,test_004.jpg,A woman wearing a brown tank top and blue jeans walks a white dog on a red leash through a grassy park area with trees in the background.,nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T17:34:22.467281+00:00,71.225,2,"{'entities': [{'id': 'e1', 'type': 'woman', 'attributes': []}, {'id': 'e2', 'type': 'tank top', 'attributes': ['brown']}, {'id': 'e3', 'type': 'jeans', 'attributes': ['blue']}, {'id': 'e4', 'type': 'dog', 'attributes': ['white']}, {'id': 'e5', 'type': 'leash', 'attributes': ['red']}, {'id': 'e6', 'type': 'park area', 'attributes': ['grassy']}, {'id': 'e7', 'type': 'trees', 'attributes': []}], 'actions': [{'subject': 'e1', 'action': 'walk', 'object': 'e4'}, {'subject': 'e1', 'action': 'wear', 'object': 'e2'}, {'subject': 'e1', 'action': 'wear', 'object': 'e3'}], 'relations': [{'subject': 'e1', 'relation': 'through', 'object': 'e6'}, {'subject': 'e4', 'relation': 'on', 'object': 'e5'}, {'subject': 'e7', 'relation': 'in_background_of', 'object': 'e6'}], 'scene': {'location': 'park area', 'environment': ['grassy', 'trees']}}","{
+    ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""woman"",
+            ""attributes"": []
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""tank top"",
+            ""attributes"": [""brown""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""jeans"",
+            ""attributes"": [""blue""]
+        },
+        {
+            ""id"": ""e4"",
+            ""type"": ""dog"",
+            ""attributes"": [""white""]
+        },
+        {
+            ""id"": ""e5"",
+            ""type"": ""leash"",
+            ""attributes"": [""red""]
+        },
+        {
+            ""id"": ""e6"",
+            ""type"": ""park area"",
+            ""attributes"": [""grassy""]
+        },
+        {
+            ""id"": ""e7"",
+            ""type"": ""trees"",
+            ""attributes"": []
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""walk"",
+            ""object"": ""e4""
+        },
+        {
+            ""subject"": ""e1"",
+            ""action"": ""wear"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e1"",
+            ""action"": ""wear"",
+            ""object"": ""e3""
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e1"",
+            ""relation"": ""through"",
+            ""object"": ""e6""
+        },
+        {
+            ""subject"": ""e4"",
+            ""relation"": ""on"",
+            ""object"": ""e5""
+        },
+        {
+            ""subject"": ""e7"",
+            ""relation"": ""in_background_of"",
+            ""object"": ""e6""
+        }
+    ],
+    ""scene"": {
+        ""location"": ""park area"",
+        ""environment"": [""grassy"", ""trees""]
+    }
+}",success,
+test_005,3,1,test_005.jpg,"A teacher sits on the floor with a group of young children in a classroom, guiding them as they play with wooden toys and engage in educational activities.",nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T17:35:25.244914+00:00,62.72,2,"{'entities': [{'id': 'e1', 'type': 'teacher', 'attributes': []}, {'id': 'e2', 'type': 'floor', 'attributes': []}, {'id': 'e3', 'type': 'children', 'attributes': ['young']}, {'id': 'e4', 'type': 'classroom', 'attributes': []}, {'id': 'e5', 'type': 'toy', 'attributes': ['wooden']}, {'id': 'e6', 'type': 'activity', 'attributes': ['educational']}], 'actions': [{'subject': 'e1', 'action': 'sit', 'object': None}, {'subject': 'e1', 'action': 'guide', 'object': 'e3'}, {'subject': 'e3', 'action': 'play', 'object': 'e5'}, {'subject': 'e3', 'action': 'engage', 'object': 'e6'}], 'relations': [{'subject': 'e1', 'relation': 'on', 'object': 'e2'}, {'subject': 'e1', 'relation': 'with', 'object': 'e3'}, {'subject': 'e1', 'relation': 'in', 'object': 'e4'}, {'subject': 'e3', 'relation': 'in', 'object': 'e4'}], 'scene': {'location': 'classroom', 'environment': ['indoor']}}","{
+ ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""teacher"",
+            ""attributes"": []
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""floor"",
+            ""attributes"": []
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""children"",
+            ""attributes"": [""young""]
+        },
+        {
+            ""id"": ""e4"",
+            ""type"": ""classroom"",
+            ""attributes"": []
+        },
+        {
+            ""id"": ""e5"",
+            ""type"": ""toy"",
+            ""attributes"": [""wooden""]
+        },
+        {
+            ""id"": ""e6"",
+            ""type"": ""activity"",
+            ""attributes"": [""educational""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""sit"",
+            ""object"": null
+        },
+        {
+            ""subject"": ""e1"",
+            ""action"": ""guide"",
+            ""object"": ""e3""
+        },
+        {
+            ""subject"": ""e3"",
+            ""action"": ""play"",
+            ""object"": ""e5""
+        },
+        {
+            ""subject"": ""e3"",
+            ""action"": ""engage"",
+            ""object"": ""e6""
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e1"",
+            ""relation"": ""on"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e1"",
+            ""relation"": ""with"",
+            ""object"": ""e3""
+        },
+        {
+            ""subject"": ""e1"",
+            ""relation"": ""in"",
+            ""object"": ""e4""
+        },
+        {
+            ""subject"": ""e3"",
+            ""relation"": ""in"",
+            ""object"": ""e4""
+        }
+    ],
+    ""scene"": {
+        ""location"": ""classroom"",
+        ""environment"": [""indoor""]
+    }
+}",success,
+test_005,3,2,test_005.jpg,"A teacher sits on the floor with a group of young children in a classroom, guiding them as they play with wooden toys and engage in educational activities.",nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T17:36:26.618310+00:00,61.31,1,"{'entities': [{'id': 'e1', 'type': 'teacher', 'attributes': []}, {'id': 'e2', 'type': 'child', 'attributes': ['young', 'group']}, {'id': 'e3', 'type': 'floor', 'attributes': []}, {'id': 'e4', 'type': 'classroom', 'attributes': []}, {'id': 'e5', 'type': 'toy', 'attributes': ['wooden']}, {'id': 'e6', 'type': 'activity', 'attributes': ['educational']}], 'actions': [{'subject': 'e1', 'action': 'sit', 'object': None}, {'subject': 'e1', 'action': 'guide', 'object': 'e2'}, {'subject': 'e2', 'action': 'play', 'object': 'e5'}, {'subject': 'e2', 'action': 'engage', 'object': 'e6'}], 'relations': [{'subject': 'e1', 'relation': 'on', 'object': 'e3'}, {'subject': 'e1', 'relation': 'with', 'object': 'e2'}, {'subject': 'e2', 'relation': 'in', 'object': 'e4'}], 'scene': {'location': 'classroom', 'environment': ['classroom']}}","{
+    ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""teacher"",
+            ""attributes"": []
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""child"",
+            ""attributes"": [""young"", ""group""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""floor"",
+            ""attributes"": []
+        },
+        {
+            ""id"": ""e4"",
+            ""type"": ""classroom"",
+            ""attributes"": []
+        },
+        {
+            ""id"": ""e5"",
+            ""type"": ""toy"",
+            ""attributes"": [""wooden""]
+        },
+        {
+            ""id"": ""e6"",
+            ""type"": ""activity"",
+            ""attributes"": [""educational""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""sit"",
+            ""object"": null
+        },
+        {
+            ""subject"": ""e1"",
+            ""action"": ""guide"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e2"",
+            ""action"": ""play"",
+            ""object"": ""e5""
+        },
+        {
+            ""subject"": ""e2"",
+            ""action"": ""engage"",
+            ""object"": ""e6""
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e1"",
+            ""relation"": ""on"",
+            ""object"": ""e3""
+        },
+        {
+            ""subject"": ""e1"",
+            ""relation"": ""with"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e2"",
+            ""relation"": ""in"",
+            ""object"": ""e4""
+        }
+    ],
+    ""scene"": {
+        ""location"": ""classroom"",
+        ""environment"": [""classroom""]
+    }
+}",success,
+test_005,3,3,test_005.jpg,"A teacher sits on the floor with a group of young children in a classroom, guiding them as they play with wooden toys and engage in educational activities.",nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-04T17:37:00.814700+00:00,34.149,1,"{'entities': [{'id': 'e1', 'type': 'teacher', 'attributes': []}, {'id': 'e2', 'type': 'children', 'attributes': ['young']}, {'id': 'e3', 'type': 'floor', 'attributes': []}, {'id': 'e4', 'type': 'classroom', 'attributes': []}, {'id': 'e5', 'type': 'toy', 'attributes': ['wooden']}, {'id': 'e6', 'type': 'activity', 'attributes': ['educational']}], 'actions': [{'subject': 'e1', 'action': 'sit', 'object': None}, {'subject': 'e1', 'action': 'guide', 'object': 'e2'}, {'subject': 'e2', 'action': 'play', 'object': 'e5'}, {'subject': 'e2', 'action': 'engage', 'object': 'e6'}], 'relations': [{'subject': 'e1', 'relation': 'on', 'object': 'e3'}, {'subject': 'e1', 'relation': 'with', 'object': 'e2'}, {'subject': 'e1', 'relation': 'in', 'object': 'e4'}, {'subject': 'e2', 'relation': 'in', 'object': 'e4'}], 'scene': {'location': 'classroom', 'environment': ['classroom']}}","{
+    ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""teacher"",
+            ""attributes"": []
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""children"",
+            ""attributes"": [""young""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""floor"",
+            ""attributes"": []
+        },
+        {
+            ""id"": ""e4"",
+            ""type"": ""classroom"",
+            ""attributes"": []
+        },
+        {
+            ""id"": ""e5"",
+            ""type"": ""toy"",
+            ""attributes"": [""wooden""]
+        },
+        {
+            ""id"": ""e6"",
+            ""type"": ""activity"",
+            ""attributes"": [""educational""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""sit"",
+            ""object"": null
+        },
+        {
+            ""subject"": ""e1"",
+            ""action"": ""guide"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e2"",
+            ""action"": ""play"",
+            ""object"": ""e5""
+        },
+        {
+            ""subject"": ""e2"",
+            ""action"": ""engage"",
+            ""object"": ""e6""
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e1"",
+            ""relation"": ""on"",
+            ""object"": ""e3""
+        },
+        {
+            ""subject"": ""e1"",
+            ""relation"": ""with"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e1"",
+            ""relation"": ""in"",
+            ""object"": ""e4""
+        },
+        {
+            ""subject"": ""e2"",
+            ""relation"": ""in"",
+            ""object"": ""e4""
+        }
+    ],
+    ""scene"": {
+        ""location"": ""classroom"",
+        ""environment"": [""classroom""]
+    }
+}",success,
+test_001,3,1,test_001.png,A tan dog runs through a grassy field dotted with yellow flowers.,nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-05T16:30:31.696332+00:00,48.176,1,"{'entities': [{'id': 'e1', 'type': 'dog', 'attributes': ['tan']}, {'id': 'e2', 'type': 'field', 'attributes': ['grassy']}, {'id': 'e3', 'type': 'flower', 'attributes': ['yellow']}], 'actions': [{'subject': 'e1', 'action': 'run', 'object': None}], 'relations': [{'subject': 'e1', 'relation': 'through', 'object': 'e2'}, {'subject': 'e2', 'relation': 'dotted_with', 'object': 'e3'}], 'scene': {'location': 'grassy field', 'environment': ['yellow flowers']}}","{
+ ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""dog"",
+            ""attributes"": [""tan""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""field"",
+            ""attributes"": [""grassy""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""flower"",
+            ""attributes"": [""yellow""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""run"",
+            ""object"": null
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e1"",
+            ""relation"": ""through"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e2"",
+            ""relation"": ""dotted_with"",
+            ""object"": ""e3""
+        }
+    ],
+    ""scene"": {
+        ""location"": ""grassy field"",
+        ""environment"": [""yellow flowers""]
+    }
+}",success,
+test_001,3,2,test_001.png,A tan dog runs through a grassy field dotted with yellow flowers.,nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-05T16:31:33.741950+00:00,62.018,2,"{'entities': [{'id': 'e1', 'type': 'dog', 'attributes': ['tan']}, {'id': 'e2', 'type': 'field', 'attributes': ['grassy']}, {'id': 'e3', 'type': 'flowers', 'attributes': ['yellow']}], 'actions': [{'subject': 'e1', 'action': 'run', 'object': None}], 'relations': [{'subject': 'e1', 'relation': 'through', 'object': 'e2'}, {'subject': 'e2', 'relation': 'dotted_with', 'object': 'e3'}], 'scene': {'location': 'grassy field', 'environment': ['outdoor', 'grassy', 'yellow flowers']}}","{
+    ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""dog"",
+            ""attributes"": [""tan""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""field"",
+            ""attributes"": [""grassy""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""flowers"",
+            ""attributes"": [""yellow""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""run"",
+            ""object"": null
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e1"",
+            ""relation"": ""through"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e2"",
+            ""relation"": ""dotted_with"",
+            ""object"": ""e3""
+        }
+    ],
+    ""scene"": {
+        ""location"": ""grassy field"",
+        ""environment"": [""outdoor"", ""grassy"", ""yellow flowers""]
+    }
+}",success,
+test_001,3,3,test_001.png,A tan dog runs through a grassy field dotted with yellow flowers.,nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-05T16:32:49.343750+00:00,75.582,1,"{'entities': [{'id': 'e1', 'type': 'dog', 'attributes': ['tan']}, {'id': 'e2', 'type': 'field', 'attributes': ['grassy']}, {'id': 'e3', 'type': 'flower', 'attributes': ['yellow']}], 'actions': [{'subject': 'e1', 'action': 'run', 'object': None}], 'relations': [{'subject': 'e1', 'relation': 'through', 'object': 'e2'}, {'subject': 'e2', 'relation': 'dotted_with', 'object': 'e3'}], 'scene': {'location': None, 'environment': ['grassy']}}","{
+    ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""dog"",
+            ""attributes"": [""tan""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""field"",
+            ""attributes"": [""grassy""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""flower"",
+            ""attributes"": [""yellow""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""run"",
+            ""object"": null
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e1"",
+            ""relation"": ""through"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e2"",
+            ""relation"": ""dotted_with"",
+            ""object"": ""e3""
+        }
+    ],
+    ""scene"": {
+        ""location"": null,
+        ""environment"": [""grassy""]
+    }
+}",success,
+test_002,1,1,test_002.png,"A rustic log cabin sits on a calm lake, its reflection mirrored in the water with majestic snow-capped mountains rising in the background under a soft, golden sky.",nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-05T16:34:30.331870+00:00,100.965,1,"{'entities': [{'id': 'e1', 'type': 'cabin', 'attributes': ['rustic', 'log']}, {'id': 'e2', 'type': 'lake', 'attributes': ['calm']}, {'id': 'e3', 'type': 'reflection', 'attributes': []}, {'id': 'e4', 'type': 'water', 'attributes': []}, {'id': 'e5', 'type': 'mountains', 'attributes': ['majestic', 'snow-capped']}, {'id': 'e6', 'type': 'sky', 'attributes': ['soft', 'golden']}], 'actions': [{'subject': 'e1', 'action': 'sit', 'object': None}, {'subject': 'e5', 'action': 'rise', 'object': None}], 'relations': [{'subject': 'e1', 'relation': 'on', 'object': 'e2'}, {'subject': 'e3', 'relation': 'in', 'object': 'e4'}, {'subject': 'e5', 'relation': 'under', 'object': 'e6'}], 'scene': {'location': None, 'environment': ['calm lake', 'snow-capped mountains', 'golden sky']}}","{
+    ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""cabin"",
+            ""attributes"": [""rustic"", ""log""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""lake"",
+            ""attributes"": [""calm""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""reflection"",
+            ""attributes"": []
+        },
+        {
+            ""id"": ""e4"",
+            ""type"": ""water"",
+            ""attributes"": []
+        },
+        {
+            ""id"": ""e5"",
+            ""type"": ""mountains"",
+            ""attributes"": [""majestic"", ""snow-capped""]
+        },
+        {
+            ""id"": ""e6"",
+            ""type"": ""sky"",
+            ""attributes"": [""soft"", ""golden""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""sit"",
+            ""object"": null
+        },
+        {
+            ""subject"": ""e5"",
+            ""action"": ""rise"",
+            ""object"": null
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e1"",
+            ""relation"": ""on"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e3"",
+            ""relation"": ""in"",
+            ""object"": ""e4""
+        },
+        {
+            ""subject"": ""e5"",
+            ""relation"": ""under"",
+            ""object"": ""e6""
+        }
+    ],
+    ""scene"": {
+        ""location"": null,
+        ""environment"": [""calm lake"", ""snow-capped mountains"", ""golden sky""]
+    }
+}",success,
+test_002,1,2,test_002.png,"A rustic log cabin sits on a calm lake, its reflection mirrored in the water with majestic snow-capped mountains rising in the background under a soft, golden sky.",nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-05T16:35:30.421828+00:00,60.067,2,"{'entities': [{'id': 'e1', 'type': 'cabin', 'attributes': ['rustic', 'log']}, {'id': 'e2', 'type': 'lake', 'attributes': ['calm']}, {'id': 'e3', 'type': 'reflection', 'attributes': ['mirrored']}, {'id': 'e4', 'type': 'mountain', 'attributes': ['majestic', 'snow-capped']}, {'id': 'e5', 'type': 'sky', 'attributes': ['soft', 'golden']}], 'actions': [{'subject': 'e1', 'action': 'sit', 'object': None}, {'subject': 'e4', 'action': 'rise', 'object': None}], 'relations': [{'subject': 'e1', 'relation': 'on', 'object': 'e2'}, {'subject': 'e3', 'relation': 'in', 'object': 'e2'}, {'subject': 'e3', 'relation': 'of', 'object': 'e1'}], 'scene': {'location': None, 'environment': ['calm lake', 'snow-capped mountains', 'soft golden sky']}}","{
+    ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""cabin"",
+            ""attributes"": [""rustic"", ""log""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""lake"",
+            ""attributes"": [""calm""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""reflection"",
+            ""attributes"": [""mirrored""]
+        },
+        {
+            ""id"": ""e4"",
+            ""type"": ""mountain"",
+            ""attributes"": [""majestic"", ""snow-capped""]
+        },
+        {
+            ""id"": ""e5"",
+            ""type"": ""sky"",
+            ""attributes"": [""soft"", ""golden""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""sit"",
+            ""object"": null
+        },
+        {
+            ""subject"": ""e4"",
+            ""action"": ""rise"",
+            ""object"": null
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e1"",
+            ""relation"": ""on"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e3"",
+            ""relation"": ""in"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e3"",
+            ""relation"": ""of"",
+            ""object"": ""e1""
+        }
+    ],
+    ""scene"": {
+        ""location"": null,
+        ""environment"": [""calm lake"", ""snow-capped mountains"", ""soft golden sky""]
+    }
+}",success,
+test_002,1,3,test_002.png,"A rustic log cabin sits on a calm lake, its reflection mirrored in the water with majestic snow-capped mountains rising in the background under a soft, golden sky.",nvidia/nemotron-3-ultra-550b-a55b:free,0.0,2026-09-05T16:36:28.934154+00:00,58.485,1,"{'entities': [{'id': 'e1', 'type': 'cabin', 'attributes': ['rustic', 'log']}, {'id': 'e2', 'type': 'lake', 'attributes': ['calm']}, {'id': 'e3', 'type': 'reflection', 'attributes': []}, {'id': 'e4', 'type': 'water', 'attributes': []}, {'id': 'e5', 'type': 'mountain', 'attributes': ['majestic', 'snow-capped']}, {'id': 'e6', 'type': 'sky', 'attributes': ['soft', 'golden']}], 'actions': [{'subject': 'e1', 'action': 'sit', 'object': None}, {'subject': 'e3', 'action': 'mirror', 'object': None}, {'subject': 'e5', 'action': 'rise', 'object': None}], 'relations': [{'subject': 'e1', 'relation': 'on', 'object': 'e2'}, {'subject': 'e3', 'relation': 'in', 'object': 'e4'}, {'subject': 'e3', 'relation': 'of', 'object': 'e1'}, {'subject': 'e5', 'relation': 'under', 'object': 'e6'}], 'scene': {'location': None, 'environment': ['lake', 'mountains', 'sky']}}","{
+ ""entities"": [
+        {
+            ""id"": ""e1"",
+            ""type"": ""cabin"",
+            ""attributes"": [""rustic"", ""log""]
+        },
+        {
+            ""id"": ""e2"",
+            ""type"": ""lake"",
+            ""attributes"": [""calm""]
+        },
+        {
+            ""id"": ""e3"",
+            ""type"": ""reflection"",
+            ""attributes"": []
+        },
+        {
+            ""id"": ""e4"",
+            ""type"": ""water"",
+            ""attributes"": []
+        },
+        {
+            ""id"": ""e5"",
+            ""type"": ""mountain"",
+            ""attributes"": [""majestic"", ""snow-capped""]
+        },
+        {
+            ""id"": ""e6"",
+            ""type"": ""sky"",
+            ""attributes"": [""soft"", ""golden""]
+        }
+    ],
+    ""actions"": [
+        {
+            ""subject"": ""e1"",
+            ""action"": ""sit"",
+            ""object"": null
+        },
+        {
+            ""subject"": ""e3"",
+            ""action"": ""mirror"",
+            ""object"": null
+        },
+        {
+            ""subject"": ""e5"",
+            ""action"": ""rise"",
+            ""object"": null
+        }
+    ],
+    ""relations"": [
+        {
+            ""subject"": ""e1"",
+            ""relation"": ""on"",
+            ""object"": ""e2""
+        },
+        {
+            ""subject"": ""e3"",
+            ""relation"": ""in"",
+            ""object"": ""e4""
+        },
+        {
+            ""subject"": ""e3"",
+            ""relation"": ""of"",
+            ""object"": ""e1""
+        },
+        {
+            ""subject"": ""e5"",
+            ""relation"": ""under"",
+            ""object"": ""e6""
+        }
+    ],
+    ""scene"": {
+        ""location"": null,
+        ""environment"": [""lake"", ""mountains"", ""sky""]
+    }
+}",success,

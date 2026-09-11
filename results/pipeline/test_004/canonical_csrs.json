@@ -1,0 +1,495 @@
+[
+    {
+        "image_id": "test_004",
+        "image_file": "test_004.jpg",
+        "baseline_run_number": 1,
+        "extraction_run_number": 1,
+        "caption": "A woman in a brown tank top and blue jeans walks a white dog on a red leash through a grassy park area.",
+        "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+        "temperature": 0.0,
+        "status": "success",
+        "attempts": 3,
+        "original_csr": {
+            "entities": [
+                {
+                    "id": "e1",
+                    "type": "woman",
+                    "attributes": [
+                        "brown tank top",
+                        "blue jeans"
+                    ]
+                },
+                {
+                    "id": "e2",
+                    "type": "dog",
+                    "attributes": [
+                        "white"
+                    ]
+                },
+                {
+                    "id": "e3",
+                    "type": "leash",
+                    "attributes": [
+                        "red"
+                    ]
+                },
+                {
+                    "id": "e4",
+                    "type": "park_area",
+                    "attributes": [
+                        "grassy"
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "subject": "e1",
+                    "action": "walk",
+                    "object": "e2"
+                }
+            ],
+            "relations": [
+                {
+                    "subject": "e1",
+                    "relation": "through",
+                    "object": "e4"
+                },
+                {
+                    "subject": "e2",
+                    "relation": "on",
+                    "object": "e3"
+                }
+            ],
+            "scene": {
+                "location": "grassy park area",
+                "environment": []
+            }
+        },
+        "csr": {
+            "entities": [
+                {
+                    "id": "e1",
+                    "type": "dog",
+                    "attributes": [
+                        "white"
+                    ]
+                },
+                {
+                    "id": "e2",
+                    "type": "leash",
+                    "attributes": [
+                        "red"
+                    ]
+                },
+                {
+                    "id": "e3",
+                    "type": "park_area",
+                    "attributes": [
+                        "grassy"
+                    ]
+                },
+                {
+                    "id": "e4",
+                    "type": "woman",
+                    "attributes": [
+                        "blue_jeans",
+                        "brown_tank_top"
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "subject": "e4",
+                    "action": "walk",
+                    "object": "e1"
+                }
+            ],
+            "relations": [
+                {
+                    "subject": "e1",
+                    "relation": "on",
+                    "object": "e2"
+                },
+                {
+                    "subject": "e4",
+                    "relation": "through",
+                    "object": "e3"
+                }
+            ],
+            "scene": {
+                "location": "grassy_park_area",
+                "environment": []
+            }
+        },
+        "extraction_attempts": 3,
+        "raw_extraction_output": "{\n    \"entities\": [\n        {\n            \"id\": \"e1\",\n            \"type\": \"woman\",\n            \"attributes\": [\"brown tank top\", \"blue jeans\"]\n        },\n        {\n            \"id\": \"e2\",\n            \"type\": \"dog\",\n            \"attributes\": [\"white\"]\n        },\n        {\n            \"id\": \"e3\",\n            \"type\": \"leash\",\n            \"attributes\": [\"red\"]\n        },\n        {\n            \"id\": \"e4\",\n            \"type\": \"park_area\",\n            \"attributes\": [\"grassy\"]\n        }\n    ],\n    \"actions\": [\n        {\n            \"subject\": \"e1\",\n            \"action\": \"walk\",\n            \"object\": \"e2\"\n        }\n    ],\n    \"relations\": [\n        {\n            \"subject\": \"e1\",\n            \"relation\": \"through\",\n            \"object\": \"e4\"\n        },\n        {\n            \"subject\": \"e2\",\n            \"relation\": \"on\",\n            \"object\": \"e3\"\n        }\n    ],\n    \"scene\": {\n        \"location\": \"grassy park area\",\n        \"environment\": []\n    }\n}"
+    },
+    {
+        "image_id": "test_004",
+        "image_file": "test_004.jpg",
+        "baseline_run_number": 2,
+        "extraction_run_number": 2,
+        "caption": "A woman wearing a brown tank top and blue jeans walks a white dog on a red leash through a grassy park with trees in the background.",
+        "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+        "temperature": 0.0,
+        "status": "success",
+        "attempts": 1,
+        "original_csr": {
+            "entities": [
+                {
+                    "id": "e1",
+                    "type": "woman",
+                    "attributes": []
+                },
+                {
+                    "id": "e2",
+                    "type": "tank top",
+                    "attributes": [
+                        "brown"
+                    ]
+                },
+                {
+                    "id": "e3",
+                    "type": "jeans",
+                    "attributes": [
+                        "blue"
+                    ]
+                },
+                {
+                    "id": "e4",
+                    "type": "dog",
+                    "attributes": [
+                        "white"
+                    ]
+                },
+                {
+                    "id": "e5",
+                    "type": "leash",
+                    "attributes": [
+                        "red"
+                    ]
+                },
+                {
+                    "id": "e6",
+                    "type": "park",
+                    "attributes": [
+                        "grassy"
+                    ]
+                },
+                {
+                    "id": "e7",
+                    "type": "trees",
+                    "attributes": []
+                }
+            ],
+            "actions": [
+                {
+                    "subject": "e1",
+                    "action": "walk",
+                    "object": "e4"
+                }
+            ],
+            "relations": [
+                {
+                    "subject": "e1",
+                    "relation": "wearing",
+                    "object": "e2"
+                },
+                {
+                    "subject": "e1",
+                    "relation": "wearing",
+                    "object": "e3"
+                },
+                {
+                    "subject": "e4",
+                    "relation": "on",
+                    "object": "e5"
+                },
+                {
+                    "subject": "e1",
+                    "relation": "through",
+                    "object": "e6"
+                },
+                {
+                    "subject": "e7",
+                    "relation": "in_background",
+                    "object": "e6"
+                }
+            ],
+            "scene": {
+                "location": "grassy park",
+                "environment": [
+                    "outdoor"
+                ]
+            }
+        },
+        "csr": {
+            "entities": [
+                {
+                    "id": "e1",
+                    "type": "dog",
+                    "attributes": [
+                        "white"
+                    ]
+                },
+                {
+                    "id": "e2",
+                    "type": "jeans",
+                    "attributes": [
+                        "blue"
+                    ]
+                },
+                {
+                    "id": "e3",
+                    "type": "leash",
+                    "attributes": [
+                        "red"
+                    ]
+                },
+                {
+                    "id": "e4",
+                    "type": "park",
+                    "attributes": [
+                        "grassy"
+                    ]
+                },
+                {
+                    "id": "e5",
+                    "type": "tank_top",
+                    "attributes": [
+                        "brown"
+                    ]
+                },
+                {
+                    "id": "e6",
+                    "type": "trees",
+                    "attributes": []
+                },
+                {
+                    "id": "e7",
+                    "type": "woman",
+                    "attributes": []
+                }
+            ],
+            "actions": [
+                {
+                    "subject": "e7",
+                    "action": "walk",
+                    "object": "e1"
+                }
+            ],
+            "relations": [
+                {
+                    "subject": "e1",
+                    "relation": "on",
+                    "object": "e3"
+                },
+                {
+                    "subject": "e6",
+                    "relation": "in_background",
+                    "object": "e4"
+                },
+                {
+                    "subject": "e7",
+                    "relation": "through",
+                    "object": "e4"
+                },
+                {
+                    "subject": "e7",
+                    "relation": "wearing",
+                    "object": "e2"
+                },
+                {
+                    "subject": "e7",
+                    "relation": "wearing",
+                    "object": "e5"
+                }
+            ],
+            "scene": {
+                "location": "grassy_park",
+                "environment": [
+                    "outdoor"
+                ]
+            }
+        },
+        "extraction_attempts": 1,
+        "raw_extraction_output": "{\n \"entities\": [\n        {\n            \"id\": \"e1\",\n            \"type\": \"woman\",\n            \"attributes\": []\n        },\n        {\n            \"id\": \"e2\",\n            \"type\": \"tank top\",\n            \"attributes\": [\"brown\"]\n        },\n        {\n            \"id\": \"e3\",\n            \"type\": \"jeans\",\n            \"attributes\": [\"blue\"]\n        },\n        {\n            \"id\": \"e4\",\n            \"type\": \"dog\",\n            \"attributes\": [\"white\"]\n        },\n        {\n            \"id\": \"e5\",\n            \"type\": \"leash\",\n            \"attributes\": [\"red\"]\n        },\n        {\n            \"id\": \"e6\",\n            \"type\": \"park\",\n            \"attributes\": [\"grassy\"]\n        },\n        {\n            \"id\": \"e7\",\n            \"type\": \"trees\",\n            \"attributes\": []\n        }\n    ],\n    \"actions\": [\n        {\n            \"subject\": \"e1\",\n            \"action\": \"walk\",\n            \"object\": \"e4\"\n        }\n    ],\n    \"relations\": [\n        {\n            \"subject\": \"e1\",\n            \"relation\": \"wearing\",\n            \"object\": \"e2\"\n        },\n        {\n            \"subject\": \"e1\",\n            \"relation\": \"wearing\",\n            \"object\": \"e3\"\n        },\n        {\n            \"subject\": \"e4\",\n            \"relation\": \"on\",\n            \"object\": \"e5\"\n        },\n        {\n            \"subject\": \"e1\",\n            \"relation\": \"through\",\n            \"object\": \"e6\"\n        },\n        {\n            \"subject\": \"e7\",\n            \"relation\": \"in_background\",\n            \"object\": \"e6\"\n        }\n    ],\n    \"scene\": {\n        \"location\": \"grassy park\",\n        \"environment\": [\"outdoor\"]\n    }\n}"
+    },
+    {
+        "image_id": "test_004",
+        "image_file": "test_004.jpg",
+        "baseline_run_number": 3,
+        "extraction_run_number": 3,
+        "caption": "A woman in a brown tank top and blue jeans walks a light-colored dog on a red leash through a sunny park with scattered leaves on the grass.",
+        "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+        "temperature": 0.0,
+        "status": "success",
+        "attempts": 2,
+        "original_csr": {
+            "entities": [
+                {
+                    "id": "e1",
+                    "type": "woman",
+                    "attributes": [
+                        "brown tank top",
+                        "blue jeans"
+                    ]
+                },
+                {
+                    "id": "e2",
+                    "type": "dog",
+                    "attributes": [
+                        "light-colored"
+                    ]
+                },
+                {
+                    "id": "e3",
+                    "type": "leash",
+                    "attributes": [
+                        "red"
+                    ]
+                },
+                {
+                    "id": "e4",
+                    "type": "park",
+                    "attributes": [
+                        "sunny"
+                    ]
+                },
+                {
+                    "id": "e5",
+                    "type": "leaves",
+                    "attributes": [
+                        "scattered"
+                    ]
+                },
+                {
+                    "id": "e6",
+                    "type": "grass",
+                    "attributes": []
+                }
+            ],
+            "actions": [
+                {
+                    "subject": "e1",
+                    "action": "walk",
+                    "object": "e2"
+                }
+            ],
+            "relations": [
+                {
+                    "subject": "e1",
+                    "relation": "through",
+                    "object": "e4"
+                },
+                {
+                    "subject": "e2",
+                    "relation": "on",
+                    "object": "e3"
+                },
+                {
+                    "subject": "e5",
+                    "relation": "on",
+                    "object": "e6"
+                },
+                {
+                    "subject": "e6",
+                    "relation": "in",
+                    "object": "e4"
+                }
+            ],
+            "scene": {
+                "location": "park",
+                "environment": [
+                    "sunny",
+                    "scattered leaves",
+                    "grass"
+                ]
+            }
+        },
+        "csr": {
+            "entities": [
+                {
+                    "id": "e1",
+                    "type": "dog",
+                    "attributes": [
+                        "light_colored"
+                    ]
+                },
+                {
+                    "id": "e2",
+                    "type": "grass",
+                    "attributes": []
+                },
+                {
+                    "id": "e3",
+                    "type": "leash",
+                    "attributes": [
+                        "red"
+                    ]
+                },
+                {
+                    "id": "e4",
+                    "type": "leaves",
+                    "attributes": [
+                        "scattered"
+                    ]
+                },
+                {
+                    "id": "e5",
+                    "type": "park",
+                    "attributes": [
+                        "sunny"
+                    ]
+                },
+                {
+                    "id": "e6",
+                    "type": "woman",
+                    "attributes": [
+                        "blue_jeans",
+                        "brown_tank_top"
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "subject": "e6",
+                    "action": "walk",
+                    "object": "e1"
+                }
+            ],
+            "relations": [
+                {
+                    "subject": "e1",
+                    "relation": "on",
+                    "object": "e3"
+                },
+                {
+                    "subject": "e2",
+                    "relation": "in",
+                    "object": "e5"
+                },
+                {
+                    "subject": "e4",
+                    "relation": "on",
+                    "object": "e2"
+                },
+                {
+                    "subject": "e6",
+                    "relation": "through",
+                    "object": "e5"
+                }
+            ],
+            "scene": {
+                "location": "park",
+                "environment": [
+                    "grass",
+                    "scattered_leaves",
+                    "sunny"
+                ]
+            }
+        },
+        "extraction_attempts": 1,
+        "raw_extraction_output": "{\n    \"entities\": [\n        {\n            \"id\": \"e1\",\n            \"type\": \"woman\",\n            \"attributes\": [\"brown tank top\", \"blue jeans\"]\n        },\n        {\n            \"id\": \"e2\",\n            \"type\": \"dog\",\n            \"attributes\": [\"light-colored\"]\n        },\n        {\n            \"id\": \"e3\",\n            \"type\": \"leash\",\n            \"attributes\": [\"red\"]\n        },\n        {\n            \"id\": \"e4\",\n            \"type\": \"park\",\n            \"attributes\": [\"sunny\"]\n        },\n        {\n            \"id\": \"e5\",\n            \"type\": \"leaves\",\n            \"attributes\": [\"scattered\"]\n        },\n        {\n            \"id\": \"e6\",\n            \"type\": \"grass\",\n            \"attributes\": []\n        }\n    ],\n    \"actions\": [\n        {\n            \"subject\": \"e1\",\n            \"action\": \"walk\",\n            \"object\": \"e2\"\n        }\n    ],\n    \"relations\": [\n        {\n            \"subject\": \"e1\",\n            \"relation\": \"through\",\n            \"object\": \"e4\"\n        },\n        {\n            \"subject\": \"e2\",\n            \"relation\": \"on\",\n            \"object\": \"e3\"\n        },\n        {\n            \"subject\": \"e5\",\n            \"relation\": \"on\",\n            \"object\": \"e6\"\n        },\n        {\n            \"subject\": \"e6\",\n            \"relation\": \"in\",\n            \"object\": \"e4\"\n        }\n    ],\n    \"scene\": {\n        \"location\": \"park\",\n        \"environment\": [\"sunny\", \"scattered leaves\", \"grass\"]\n    }\n}"
+    }
+]

@@ -1,0 +1,567 @@
+[
+    {
+        "image_id": "test_005",
+        "image_file": "test_005.jpg",
+        "baseline_run_number": 1,
+        "extraction_run_number": 1,
+        "caption": "A female teacher sits on the floor with a group of diverse young children, guiding them as they engage in educational play with wooden toys and materials in a bright classroom.",
+        "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+        "temperature": 0.0,
+        "status": "success",
+        "attempts": 1,
+        "original_csr": {
+            "entities": [
+                {
+                    "id": "e1",
+                    "type": "teacher",
+                    "attributes": [
+                        "female"
+                    ]
+                },
+                {
+                    "id": "e2",
+                    "type": "floor",
+                    "attributes": []
+                },
+                {
+                    "id": "e3",
+                    "type": "children",
+                    "attributes": [
+                        "diverse",
+                        "young"
+                    ]
+                },
+                {
+                    "id": "e4",
+                    "type": "toys",
+                    "attributes": [
+                        "wooden"
+                    ]
+                },
+                {
+                    "id": "e5",
+                    "type": "materials",
+                    "attributes": []
+                },
+                {
+                    "id": "e6",
+                    "type": "classroom",
+                    "attributes": [
+                        "bright"
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "subject": "e1",
+                    "action": "sit",
+                    "object": null
+                },
+                {
+                    "subject": "e1",
+                    "action": "guide",
+                    "object": "e3"
+                },
+                {
+                    "subject": "e3",
+                    "action": "play",
+                    "object": "e4"
+                },
+                {
+                    "subject": "e3",
+                    "action": "play",
+                    "object": "e5"
+                }
+            ],
+            "relations": [
+                {
+                    "subject": "e1",
+                    "relation": "on",
+                    "object": "e2"
+                },
+                {
+                    "subject": "e1",
+                    "relation": "with",
+                    "object": "e3"
+                },
+                {
+                    "subject": "e3",
+                    "relation": "with",
+                    "object": "e4"
+                },
+                {
+                    "subject": "e3",
+                    "relation": "with",
+                    "object": "e5"
+                },
+                {
+                    "subject": "e1",
+                    "relation": "in",
+                    "object": "e6"
+                },
+                {
+                    "subject": "e3",
+                    "relation": "in",
+                    "object": "e6"
+                }
+            ],
+            "scene": {
+                "location": "classroom",
+                "environment": [
+                    "bright"
+                ]
+            }
+        },
+        "csr": {
+            "entities": [
+                {
+                    "id": "e1",
+                    "type": "children",
+                    "attributes": [
+                        "diverse",
+                        "young"
+                    ]
+                },
+                {
+                    "id": "e2",
+                    "type": "classroom",
+                    "attributes": [
+                        "bright"
+                    ]
+                },
+                {
+                    "id": "e3",
+                    "type": "floor",
+                    "attributes": []
+                },
+                {
+                    "id": "e4",
+                    "type": "materials",
+                    "attributes": []
+                },
+                {
+                    "id": "e5",
+                    "type": "teacher",
+                    "attributes": [
+                        "female"
+                    ]
+                },
+                {
+                    "id": "e6",
+                    "type": "toys",
+                    "attributes": [
+                        "wooden"
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "subject": "e1",
+                    "action": "play",
+                    "object": "e4"
+                },
+                {
+                    "subject": "e1",
+                    "action": "play",
+                    "object": "e6"
+                },
+                {
+                    "subject": "e5",
+                    "action": "guide",
+                    "object": "e1"
+                },
+                {
+                    "subject": "e5",
+                    "action": "sit",
+                    "object": null
+                }
+            ],
+            "relations": [
+                {
+                    "subject": "e1",
+                    "relation": "in",
+                    "object": "e2"
+                },
+                {
+                    "subject": "e1",
+                    "relation": "with",
+                    "object": "e4"
+                },
+                {
+                    "subject": "e1",
+                    "relation": "with",
+                    "object": "e6"
+                },
+                {
+                    "subject": "e5",
+                    "relation": "in",
+                    "object": "e2"
+                },
+                {
+                    "subject": "e5",
+                    "relation": "on",
+                    "object": "e3"
+                },
+                {
+                    "subject": "e5",
+                    "relation": "with",
+                    "object": "e1"
+                }
+            ],
+            "scene": {
+                "location": "classroom",
+                "environment": [
+                    "bright"
+                ]
+            }
+        },
+        "extraction_attempts": 1,
+        "raw_extraction_output": "{\n    \"entities\": [\n        {\n            \"id\": \"e1\",\n            \"type\": \"teacher\",\n            \"attributes\": [\"female\"]\n        },\n        {\n            \"id\": \"e2\",\n            \"type\": \"floor\",\n            \"attributes\": []\n        },\n        {\n            \"id\": \"e3\",\n            \"type\": \"children\",\n            \"attributes\": [\"diverse\", \"young\"]\n        },\n        {\n            \"id\": \"e4\",\n            \"type\": \"toys\",\n            \"attributes\": [\"wooden\"]\n        },\n        {\n            \"id\": \"e5\",\n            \"type\": \"materials\",\n            \"attributes\": []\n        },\n        {\n            \"id\": \"e6\",\n            \"type\": \"classroom\",\n            \"attributes\": [\"bright\"]\n        }\n    ],\n    \"actions\": [\n        {\n            \"subject\": \"e1\",\n            \"action\": \"sit\",\n            \"object\": null\n        },\n        {\n            \"subject\": \"e1\",\n            \"action\": \"guide\",\n            \"object\": \"e3\"\n        },\n        {\n            \"subject\": \"e3\",\n            \"action\": \"play\",\n            \"object\": \"e4\"\n        },\n        {\n            \"subject\": \"e3\",\n            \"action\": \"play\",\n            \"object\": \"e5\"\n        }\n    ],\n    \"relations\": [\n        {\n            \"subject\": \"e1\",\n            \"relation\": \"on\",\n            \"object\": \"e2\"\n        },\n        {\n            \"subject\": \"e1\",\n            \"relation\": \"with\",\n            \"object\": \"e3\"\n        },\n        {\n            \"subject\": \"e3\",\n            \"relation\": \"with\",\n            \"object\": \"e4\"\n        },\n        {\n            \"subject\": \"e3\",\n            \"relation\": \"with\",\n            \"object\": \"e5\"\n        },\n        {\n            \"subject\": \"e1\",\n            \"relation\": \"in\",\n            \"object\": \"e6\"\n        },\n        {\n            \"subject\": \"e3\",\n            \"relation\": \"in\",\n            \"object\": \"e6\"\n        }\n    ],\n    \"scene\": {\n        \"location\": \"classroom\",\n        \"environment\": [\"bright\"]\n    }\n}"
+    },
+    {
+        "image_id": "test_005",
+        "image_file": "test_005.jpg",
+        "baseline_run_number": 2,
+        "extraction_run_number": 2,
+        "caption": "In a bright classroom, a teacher sits on the floor surrounded by a diverse group of young children engaged in play with wooden educational materials.",
+        "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+        "temperature": 0.0,
+        "status": "success",
+        "attempts": 1,
+        "original_csr": {
+            "entities": [
+                {
+                    "id": "e1",
+                    "type": "classroom",
+                    "attributes": [
+                        "bright"
+                    ]
+                },
+                {
+                    "id": "e2",
+                    "type": "teacher",
+                    "attributes": []
+                },
+                {
+                    "id": "e3",
+                    "type": "floor",
+                    "attributes": []
+                },
+                {
+                    "id": "e4",
+                    "type": "group",
+                    "attributes": [
+                        "diverse",
+                        "young",
+                        "children"
+                    ]
+                },
+                {
+                    "id": "e5",
+                    "type": "material",
+                    "attributes": [
+                        "wooden",
+                        "educational"
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "subject": "e2",
+                    "action": "sit",
+                    "object": null
+                },
+                {
+                    "subject": "e4",
+                    "action": "play",
+                    "object": "e5"
+                }
+            ],
+            "relations": [
+                {
+                    "subject": "e2",
+                    "relation": "on",
+                    "object": "e3"
+                },
+                {
+                    "subject": "e2",
+                    "relation": "surrounded_by",
+                    "object": "e4"
+                }
+            ],
+            "scene": {
+                "location": "classroom",
+                "environment": [
+                    "bright"
+                ]
+            }
+        },
+        "csr": {
+            "entities": [
+                {
+                    "id": "e1",
+                    "type": "classroom",
+                    "attributes": [
+                        "bright"
+                    ]
+                },
+                {
+                    "id": "e2",
+                    "type": "floor",
+                    "attributes": []
+                },
+                {
+                    "id": "e3",
+                    "type": "group",
+                    "attributes": [
+                        "children",
+                        "diverse",
+                        "young"
+                    ]
+                },
+                {
+                    "id": "e4",
+                    "type": "material",
+                    "attributes": [
+                        "educational",
+                        "wooden"
+                    ]
+                },
+                {
+                    "id": "e5",
+                    "type": "teacher",
+                    "attributes": []
+                }
+            ],
+            "actions": [
+                {
+                    "subject": "e3",
+                    "action": "play",
+                    "object": "e4"
+                },
+                {
+                    "subject": "e5",
+                    "action": "sit",
+                    "object": null
+                }
+            ],
+            "relations": [
+                {
+                    "subject": "e5",
+                    "relation": "on",
+                    "object": "e2"
+                },
+                {
+                    "subject": "e5",
+                    "relation": "surrounded_by",
+                    "object": "e3"
+                }
+            ],
+            "scene": {
+                "location": "classroom",
+                "environment": [
+                    "bright"
+                ]
+            }
+        },
+        "extraction_attempts": 1,
+        "raw_extraction_output": "{\n  \"entities\": [\n    {\n      \"id\": \"e1\",\n      \"type\": \"classroom\",\n      \"attributes\": [\"bright\"]\n    },\n    {\n      \"id\": \"e2\",\n      \"type\": \"teacher\",\n      \"attributes\": []\n    },\n    {\n      \"id\": \"e3\",\n      \"type\": \"floor\",\n      \"attributes\": []\n    },\n    {\n      \"id\": \"e4\",\n      \"type\": \"group\",\n      \"attributes\": [\"diverse\", \"young\", \"children\"]\n    },\n    {\n      \"id\": \"e5\",\n      \"type\": \"material\",\n      \"attributes\": [\"wooden\", \"educational\"]\n    }\n  ],\n  \"actions\": [\n    {\n      \"subject\": \"e2\",\n      \"action\": \"sit\",\n      \"object\": null\n    },\n    {\n      \"subject\": \"e4\",\n      \"action\": \"play\",\n      \"object\": \"e5\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"e2\",\n      \"relation\": \"on\",\n      \"object\": \"e3\"\n    },\n    {\n      \"subject\": \"e2\",\n      \"relation\": \"surrounded_by\",\n      \"object\": \"e4\"\n    }\n  ],\n  \"scene\": {\n    \"location\": \"classroom\",\n    \"environment\": [\"bright\"]\n  }\n}"
+    },
+    {
+        "image_id": "test_005",
+        "image_file": "test_005.jpg",
+        "baseline_run_number": 3,
+        "extraction_run_number": 3,
+        "caption": "A female teacher sits on the floor surrounded by a diverse group of young children engaged in various hands-on learning activities with wooden toys in a well-lit classroom.",
+        "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+        "temperature": 0.0,
+        "status": "success",
+        "attempts": 1,
+        "original_csr": {
+            "entities": [
+                {
+                    "id": "e1",
+                    "type": "teacher",
+                    "attributes": [
+                        "female"
+                    ]
+                },
+                {
+                    "id": "e2",
+                    "type": "floor",
+                    "attributes": []
+                },
+                {
+                    "id": "e3",
+                    "type": "group",
+                    "attributes": [
+                        "diverse",
+                        "young"
+                    ]
+                },
+                {
+                    "id": "e4",
+                    "type": "activity",
+                    "attributes": [
+                        "hands-on",
+                        "learning",
+                        "various"
+                    ]
+                },
+                {
+                    "id": "e5",
+                    "type": "toy",
+                    "attributes": [
+                        "wooden"
+                    ]
+                },
+                {
+                    "id": "e6",
+                    "type": "classroom",
+                    "attributes": [
+                        "well-lit"
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "subject": "e1",
+                    "action": "sit",
+                    "object": null
+                },
+                {
+                    "subject": "e3",
+                    "action": "engage_in",
+                    "object": "e4"
+                }
+            ],
+            "relations": [
+                {
+                    "subject": "e1",
+                    "relation": "on",
+                    "object": "e2"
+                },
+                {
+                    "subject": "e3",
+                    "relation": "surround",
+                    "object": "e1"
+                },
+                {
+                    "subject": "e4",
+                    "relation": "with",
+                    "object": "e5"
+                },
+                {
+                    "subject": "e1",
+                    "relation": "in",
+                    "object": "e6"
+                },
+                {
+                    "subject": "e3",
+                    "relation": "in",
+                    "object": "e6"
+                }
+            ],
+            "scene": {
+                "location": "classroom",
+                "environment": [
+                    "well-lit"
+                ]
+            }
+        },
+        "csr": {
+            "entities": [
+                {
+                    "id": "e1",
+                    "type": "activity",
+                    "attributes": [
+                        "hands_on",
+                        "learning",
+                        "various"
+                    ]
+                },
+                {
+                    "id": "e2",
+                    "type": "classroom",
+                    "attributes": [
+                        "well_lit"
+                    ]
+                },
+                {
+                    "id": "e3",
+                    "type": "floor",
+                    "attributes": []
+                },
+                {
+                    "id": "e4",
+                    "type": "group",
+                    "attributes": [
+                        "diverse",
+                        "young"
+                    ]
+                },
+                {
+                    "id": "e5",
+                    "type": "teacher",
+                    "attributes": [
+                        "female"
+                    ]
+                },
+                {
+                    "id": "e6",
+                    "type": "toy",
+                    "attributes": [
+                        "wooden"
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "subject": "e4",
+                    "action": "engage_in",
+                    "object": "e1"
+                },
+                {
+                    "subject": "e5",
+                    "action": "sit",
+                    "object": null
+                }
+            ],
+            "relations": [
+                {
+                    "subject": "e1",
+                    "relation": "with",
+                    "object": "e6"
+                },
+                {
+                    "subject": "e4",
+                    "relation": "in",
+                    "object": "e2"
+                },
+                {
+                    "subject": "e4",
+                    "relation": "surround",
+                    "object": "e5"
+                },
+                {
+                    "subject": "e5",
+                    "relation": "in",
+                    "object": "e2"
+                },
+                {
+                    "subject": "e5",
+                    "relation": "on",
+                    "object": "e3"
+                }
+            ],
+            "scene": {
+                "location": "classroom",
+                "environment": [
+                    "well_lit"
+                ]
+            }
+        },
+        "extraction_attempts": 1,
+        "raw_extraction_output": "{\n \"entities\": [\n        {\n            \"id\": \"e1\",\n            \"type\": \"teacher\",\n            \"attributes\": [\"female\"]\n        },\n        {\n            \"id\": \"e2\",\n            \"type\": \"floor\",\n            \"attributes\": []\n        },\n        {\n            \"id\": \"e3\",\n            \"type\": \"group\",\n            \"attributes\": [\"diverse\", \"young\"]\n        },\n        {\n            \"id\": \"e4\",\n            \"type\": \"activity\",\n            \"attributes\": [\"hands-on\", \"learning\", \"various\"]\n        },\n        {\n            \"id\": \"e5\",\n            \"type\": \"toy\",\n            \"attributes\": [\"wooden\"]\n        },\n        {\n            \"id\": \"e6\",\n            \"type\": \"classroom\",\n            \"attributes\": [\"well-lit\"]\n        }\n    ],\n    \"actions\": [\n        {\n            \"subject\": \"e1\",\n            \"action\": \"sit\",\n            \"object\": null\n        },\n        {\n            \"subject\": \"e3\",\n            \"action\": \"engage_in\",\n            \"object\": \"e4\"\n        }\n    ],\n    \"relations\": [\n        {\n            \"subject\": \"e1\",\n            \"relation\": \"on\",\n            \"object\": \"e2\"\n        },\n        {\n            \"subject\": \"e3\",\n            \"relation\": \"surround\",\n            \"object\": \"e1\"\n        },\n        {\n            \"subject\": \"e4\",\n            \"relation\": \"with\",\n            \"object\": \"e5\"\n        },\n        {\n            \"subject\": \"e1\",\n            \"relation\": \"in\",\n            \"object\": \"e6\"\n        },\n        {\n            \"subject\": \"e3\",\n            \"relation\": \"in\",\n            \"object\": \"e6\"\n        }\n    ],\n    \"scene\": {\n        \"location\": \"classroom\",\n        \"environment\": [\"well-lit\"]\n    }\n}"
+    }
+]

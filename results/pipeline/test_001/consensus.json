@@ -1,0 +1,117 @@
+[
+    {
+        "image_id": "test_001",
+        "csr": {
+            "image_id": "test_001",
+            "entities": [
+                {
+                    "id": "e1",
+                    "type": "dog",
+                    "attributes": [
+                        "brown"
+                    ]
+                },
+                {
+                    "id": "e2",
+                    "type": "field",
+                    "attributes": [
+                        "grassy"
+                    ]
+                },
+                {
+                    "id": "e3",
+                    "type": "flower",
+                    "attributes": [
+                        "yellow"
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "subject": "e1",
+                    "action": "run",
+                    "object": null
+                }
+            ],
+            "relations": [
+                {
+                    "subject": "e1",
+                    "relation": "through",
+                    "object": "e2"
+                },
+                {
+                    "subject": "e2",
+                    "relation": "dotted_with",
+                    "object": "e3"
+                }
+            ],
+            "scene": {
+                "location": null,
+                "environment": [
+                    "outdoor"
+                ]
+            }
+        },
+        "provenance": {
+            "consensus_policy": {
+                "number_of_runs": 3,
+                "minimum_support": 2,
+                "rule": "strict majority"
+            },
+            "minority_entities": [],
+            "minority_actions": [],
+            "minority_relations": [
+                {
+                    "fact": {
+                        "subject": "e1",
+                        "relation": "across",
+                        "object": "e2"
+                    },
+                    "support": 1,
+                    "runs": [
+                        0
+                    ]
+                },
+                {
+                    "fact": {
+                        "subject": "e3",
+                        "relation": "in",
+                        "object": "e2"
+                    },
+                    "support": 1,
+                    "runs": [
+                        2
+                    ]
+                }
+            ],
+            "scene": {
+                "location_support": {
+                    "field": 1
+                },
+                "minority_environment": [
+                    {
+                        "value": "grassy_field",
+                        "support": 1,
+                        "runs": [
+                            1
+                        ]
+                    },
+                    {
+                        "value": "nature",
+                        "support": 1,
+                        "runs": [
+                            2
+                        ]
+                    },
+                    {
+                        "value": "yellow_flowers",
+                        "support": 1,
+                        "runs": [
+                            1
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+]

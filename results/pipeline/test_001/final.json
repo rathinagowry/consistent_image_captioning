@@ -1,0 +1,58 @@
+[
+    {
+        "image_id": "test_001",
+        "status": "success",
+        "caption": "A brown dog runs. The brown dog is through a grassy field. The grassy field is dotted with a yellow flower. The environment includes an outdoor.",
+        "csr": {
+            "image_id": "test_001",
+            "entities": [
+                {
+                    "id": "e1",
+                    "type": "dog",
+                    "attributes": [
+                        "brown"
+                    ]
+                },
+                {
+                    "id": "e2",
+                    "type": "field",
+                    "attributes": [
+                        "grassy"
+                    ]
+                },
+                {
+                    "id": "e3",
+                    "type": "flower",
+                    "attributes": [
+                        "yellow"
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "subject": "e1",
+                    "action": "run",
+                    "object": null
+                }
+            ],
+            "relations": [
+                {
+                    "subject": "e1",
+                    "relation": "through",
+                    "object": "e2"
+                },
+                {
+                    "subject": "e2",
+                    "relation": "dotted_with",
+                    "object": "e3"
+                }
+            ],
+            "scene": {
+                "location": null,
+                "environment": [
+                    "outdoor"
+                ]
+            }
+        }
+    }
+]

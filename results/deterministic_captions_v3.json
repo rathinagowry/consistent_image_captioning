@@ -1,0 +1,32 @@
+[
+  {
+    "image_id": "test_001",
+    "caption": "A tan dog runs a grassy field. The grassy field is dotted with a yellow flower. The scene is set in a grassy field.",
+    "reproducibility": true,
+    "unique_outputs": 1
+  },
+  {
+    "image_id": "test_002",
+    "caption": "A rustic cabin with a log sits a calm lake. Majestic snow-capped mountains rise. A mirrored reflection mirrors the calm lake. The rustic cabin with a log is on the calm lake. The mirrored reflection is of the rustic cabin with a log. The environment is golden sky and the environment includes a calm lake and snow-capped mountains.",
+    "reproducibility": true,
+    "unique_outputs": 1
+  },
+  {
+    "image_id": "test_003",
+    "caption": "A man with a beard, glasses, and a white shirt types a laptop. A desk is illuminated by a warm desk lamp. The man with a beard, glasses, and a white shirt is at the desk.",
+    "reproducibility": true,
+    "unique_outputs": 1
+  },
+  {
+    "image_id": "test_004",
+    "caption": "A woman walks a white dog, wears blue jeans, and wears a brown tank top. The white dog is on a red leash. Trees is in the background of a grassy park area. The woman is through the grassy park area. The environment is grassy and the environment includes trees.",
+    "reproducibility": true,
+    "unique_outputs": 1
+  },
+  {
+    "image_id": "test_005",
+    "caption": "Young children engage an educational activity and play a wooden toy. A teacher guides the young children and sits. The young children is in a classroom. The teacher is in the classroom, on a floor, and with the young children. The scene is set in a classroom.",
+    "reproducibility": true,
+    "unique_outputs": 1
+  }
+]

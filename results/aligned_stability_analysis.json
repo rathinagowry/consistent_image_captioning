@@ -1,0 +1,909 @@
+{
+  "experiment": {
+    "input_records": 15,
+    "images": 5,
+    "runs_per_image": 3,
+    "stages": [
+      "raw_csr",
+      "canonical_csr",
+      "aligned_csr"
+    ],
+    "metrics": [
+      "exact_match_rate",
+      "pairwise_similarity"
+    ]
+  },
+  "per_image": {
+    "test_001": {
+      "num_runs": 3,
+      "raw": {
+        "whole_csr": {
+          "exact_match_rate": 0.3333333333333333,
+          "pairwise_similarity": 0.0
+        },
+        "entities": {
+          "exact_match_rate": 1.0,
+          "pairwise_similarity": 1.0
+        },
+        "attributes": {
+          "exact_match_rate": 1.0,
+          "pairwise_similarity": 1.0
+        },
+        "actions": {
+          "exact_match_rate": 1.0,
+          "pairwise_similarity": 1.0
+        },
+        "relations": {
+          "exact_match_rate": 0.3333333333333333,
+          "pairwise_similarity": 0.0
+        },
+        "scene": {
+          "exact_match_rate": 0.3333333333333333,
+          "pairwise_similarity": 0.0
+        }
+      },
+      "canonical": {
+        "whole_csr": {
+          "exact_match_rate": 0.3333333333333333,
+          "pairwise_similarity": 0.0
+        },
+        "entities": {
+          "exact_match_rate": 1.0,
+          "pairwise_similarity": 1.0
+        },
+        "attributes": {
+          "exact_match_rate": 1.0,
+          "pairwise_similarity": 1.0
+        },
+        "actions": {
+          "exact_match_rate": 1.0,
+          "pairwise_similarity": 1.0
+        },
+        "relations": {
+          "exact_match_rate": 0.6666666666666666,
+          "pairwise_similarity": 0.3333333333333333
+        },
+        "scene": {
+          "exact_match_rate": 0.3333333333333333,
+          "pairwise_similarity": 0.0
+        }
+      },
+      "aligned": {
+        "whole_csr": {
+          "exact_match_rate": 0.3333333333333333,
+          "pairwise_similarity": 0.0
+        },
+        "entities": {
+          "exact_match_rate": 1.0,
+          "pairwise_similarity": 1.0
+        },
+        "attributes": {
+          "exact_match_rate": 1.0,
+          "pairwise_similarity": 1.0
+        },
+        "actions": {
+          "exact_match_rate": 1.0,
+          "pairwise_similarity": 1.0
+        },
+        "relations": {
+          "exact_match_rate": 1.0,
+          "pairwise_similarity": 1.0
+        },
+        "scene": {
+          "exact_match_rate": 0.3333333333333333,
+          "pairwise_similarity": 0.0
+        }
+      },
+      "improvement": {
+        "raw_to_canonical": {
+          "whole_csr": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "entities": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "attributes": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "actions": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "relations": {
+            "exact_match_change": 0.3333333333333333,
+            "pairwise_change": 0.3333333333333333
+          },
+          "scene": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          }
+        },
+        "canonical_to_aligned": {
+          "whole_csr": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "entities": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "attributes": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "actions": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "relations": {
+            "exact_match_change": 0.33333333333333337,
+            "pairwise_change": 0.6666666666666667
+          },
+          "scene": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          }
+        },
+        "raw_to_aligned": {
+          "whole_csr": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "entities": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "attributes": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "actions": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "relations": {
+            "exact_match_change": 0.6666666666666667,
+            "pairwise_change": 1.0
+          },
+          "scene": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          }
+        }
+      }
+    },
+    "test_002": {
+      "num_runs": 3,
+      "raw": {
+        "whole_csr": {
+          "exact_match_rate": 0.3333333333333333,
+          "pairwise_similarity": 0.0
+        },
+        "entities": {
+          "exact_match_rate": 0.3333333333333333,
+          "pairwise_similarity": 0.0
+        },
+        "attributes": {
+          "exact_match_rate": 1.0,
+          "pairwise_similarity": 1.0
+        },
+        "actions": {
+          "exact_match_rate": 0.6666666666666666,
+          "pairwise_similarity": 0.3333333333333333
+        },
+        "relations": {
+          "exact_match_rate": 0.3333333333333333,
+          "pairwise_similarity": 0.0
+        },
+        "scene": {
+          "exact_match_rate": 0.6666666666666666,
+          "pairwise_similarity": 0.3333333333333333
+        }
+      },
+      "canonical": {
+        "whole_csr": {
+          "exact_match_rate": 0.3333333333333333,
+          "pairwise_similarity": 0.0
+        },
+        "entities": {
+          "exact_match_rate": 0.6666666666666666,
+          "pairwise_similarity": 0.3333333333333333
+        },
+        "attributes": {
+          "exact_match_rate": 1.0,
+          "pairwise_similarity": 1.0
+        },
+        "actions": {
+          "exact_match_rate": 0.6666666666666666,
+          "pairwise_similarity": 0.3333333333333333
+        },
+        "relations": {
+          "exact_match_rate": 0.3333333333333333,
+          "pairwise_similarity": 0.0
+        },
+        "scene": {
+          "exact_match_rate": 0.6666666666666666,
+          "pairwise_similarity": 0.3333333333333333
+        }
+      },
+      "aligned": {
+        "whole_csr": {
+          "exact_match_rate": 0.3333333333333333,
+          "pairwise_similarity": 0.0
+        },
+        "entities": {
+          "exact_match_rate": 0.6666666666666666,
+          "pairwise_similarity": 0.3333333333333333
+        },
+        "attributes": {
+          "exact_match_rate": 1.0,
+          "pairwise_similarity": 1.0
+        },
+        "actions": {
+          "exact_match_rate": 0.6666666666666666,
+          "pairwise_similarity": 0.3333333333333333
+        },
+        "relations": {
+          "exact_match_rate": 0.3333333333333333,
+          "pairwise_similarity": 0.0
+        },
+        "scene": {
+          "exact_match_rate": 0.6666666666666666,
+          "pairwise_similarity": 0.3333333333333333
+        }
+      },
+      "improvement": {
+        "raw_to_canonical": {
+          "whole_csr": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "entities": {
+            "exact_match_change": 0.3333333333333333,
+            "pairwise_change": 0.3333333333333333
+          },
+          "attributes": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "actions": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "relations": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "scene": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          }
+        },
+        "canonical_to_aligned": {
+          "whole_csr": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "entities": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "attributes": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "actions": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "relations": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "scene": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          }
+        },
+        "raw_to_aligned": {
+          "whole_csr": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "entities": {
+            "exact_match_change": 0.3333333333333333,
+            "pairwise_change": 0.3333333333333333
+          },
+          "attributes": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "actions": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "relations": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "scene": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          }
+        }
+      }
+    },
+    "test_003": {
+      "num_runs": 3,
+      "raw": {
+        "whole_csr": {
+          "exact_match_rate": 0.3333333333333333,
+          "pairwise_similarity": 0.0
+        },
+        "entities": {
+          "exact_match_rate": 0.3333333333333333,
+          "pairwise_similarity": 0.0
+        },
+        "attributes": {
+          "exact_match_rate": 0.6666666666666666,
+          "pairwise_similarity": 0.3333333333333333
+        },
+        "actions": {
+          "exact_match_rate": 1.0,
+          "pairwise_similarity": 1.0
+        },
+        "relations": {
+          "exact_match_rate": 0.6666666666666666,
+          "pairwise_similarity": 0.3333333333333333
+        },
+        "scene": {
+          "exact_match_rate": 1.0,
+          "pairwise_similarity": 1.0
+        }
+      },
+      "canonical": {
+        "whole_csr": {
+          "exact_match_rate": 0.3333333333333333,
+          "pairwise_similarity": 0.0
+        },
+        "entities": {
+          "exact_match_rate": 0.3333333333333333,
+          "pairwise_similarity": 0.0
+        },
+        "attributes": {
+          "exact_match_rate": 0.6666666666666666,
+          "pairwise_similarity": 0.3333333333333333
+        },
+        "actions": {
+          "exact_match_rate": 1.0,
+          "pairwise_similarity": 1.0
+        },
+        "relations": {
+          "exact_match_rate": 0.6666666666666666,
+          "pairwise_similarity": 0.3333333333333333
+        },
+        "scene": {
+          "exact_match_rate": 1.0,
+          "pairwise_similarity": 1.0
+        }
+      },
+      "aligned": {
+        "whole_csr": {
+          "exact_match_rate": 0.3333333333333333,
+          "pairwise_similarity": 0.0
+        },
+        "entities": {
+          "exact_match_rate": 0.3333333333333333,
+          "pairwise_similarity": 0.0
+        },
+        "attributes": {
+          "exact_match_rate": 0.6666666666666666,
+          "pairwise_similarity": 0.3333333333333333
+        },
+        "actions": {
+          "exact_match_rate": 1.0,
+          "pairwise_similarity": 1.0
+        },
+        "relations": {
+          "exact_match_rate": 0.6666666666666666,
+          "pairwise_similarity": 0.3333333333333333
+        },
+        "scene": {
+          "exact_match_rate": 1.0,
+          "pairwise_similarity": 1.0
+        }
+      },
+      "improvement": {
+        "raw_to_canonical": {
+          "whole_csr": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "entities": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "attributes": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "actions": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "relations": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "scene": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          }
+        },
+        "canonical_to_aligned": {
+          "whole_csr": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "entities": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "attributes": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "actions": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "relations": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "scene": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          }
+        },
+        "raw_to_aligned": {
+          "whole_csr": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "entities": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "attributes": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "actions": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "relations": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "scene": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          }
+        }
+      }
+    },
+    "test_004": {
+      "num_runs": 3,
+      "raw": {
+        "whole_csr": {
+          "exact_match_rate": 0.3333333333333333,
+          "pairwise_similarity": 0.0
+        },
+        "entities": {
+          "exact_match_rate": 0.3333333333333333,
+          "pairwise_similarity": 0.0
+        },
+        "attributes": {
+          "exact_match_rate": 0.6666666666666666,
+          "pairwise_similarity": 0.3333333333333333
+        },
+        "actions": {
+          "exact_match_rate": 0.6666666666666666,
+          "pairwise_similarity": 0.3333333333333333
+        },
+        "relations": {
+          "exact_match_rate": 0.3333333333333333,
+          "pairwise_similarity": 0.0
+        },
+        "scene": {
+          "exact_match_rate": 0.3333333333333333,
+          "pairwise_similarity": 0.0
+        }
+      },
+      "canonical": {
+        "whole_csr": {
+          "exact_match_rate": 0.6666666666666666,
+          "pairwise_similarity": 0.3333333333333333
+        },
+        "entities": {
+          "exact_match_rate": 0.6666666666666666,
+          "pairwise_similarity": 0.3333333333333333
+        },
+        "attributes": {
+          "exact_match_rate": 0.6666666666666666,
+          "pairwise_similarity": 0.3333333333333333
+        },
+        "actions": {
+          "exact_match_rate": 0.6666666666666666,
+          "pairwise_similarity": 0.3333333333333333
+        },
+        "relations": {
+          "exact_match_rate": 0.6666666666666666,
+          "pairwise_similarity": 0.3333333333333333
+        },
+        "scene": {
+          "exact_match_rate": 0.6666666666666666,
+          "pairwise_similarity": 0.3333333333333333
+        }
+      },
+      "aligned": {
+        "whole_csr": {
+          "exact_match_rate": 0.6666666666666666,
+          "pairwise_similarity": 0.3333333333333333
+        },
+        "entities": {
+          "exact_match_rate": 0.6666666666666666,
+          "pairwise_similarity": 0.3333333333333333
+        },
+        "attributes": {
+          "exact_match_rate": 0.6666666666666666,
+          "pairwise_similarity": 0.3333333333333333
+        },
+        "actions": {
+          "exact_match_rate": 1.0,
+          "pairwise_similarity": 1.0
+        },
+        "relations": {
+          "exact_match_rate": 1.0,
+          "pairwise_similarity": 1.0
+        },
+        "scene": {
+          "exact_match_rate": 0.6666666666666666,
+          "pairwise_similarity": 0.3333333333333333
+        }
+      },
+      "improvement": {
+        "raw_to_canonical": {
+          "whole_csr": {
+            "exact_match_change": 0.3333333333333333,
+            "pairwise_change": 0.3333333333333333
+          },
+          "entities": {
+            "exact_match_change": 0.3333333333333333,
+            "pairwise_change": 0.3333333333333333
+          },
+          "attributes": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "actions": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "relations": {
+            "exact_match_change": 0.3333333333333333,
+            "pairwise_change": 0.3333333333333333
+          },
+          "scene": {
+            "exact_match_change": 0.3333333333333333,
+            "pairwise_change": 0.3333333333333333
+          }
+        },
+        "canonical_to_aligned": {
+          "whole_csr": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "entities": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "attributes": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "actions": {
+            "exact_match_change": 0.33333333333333337,
+            "pairwise_change": 0.6666666666666667
+          },
+          "relations": {
+            "exact_match_change": 0.33333333333333337,
+            "pairwise_change": 0.6666666666666667
+          },
+          "scene": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          }
+        },
+        "raw_to_aligned": {
+          "whole_csr": {
+            "exact_match_change": 0.3333333333333333,
+            "pairwise_change": 0.3333333333333333
+          },
+          "entities": {
+            "exact_match_change": 0.3333333333333333,
+            "pairwise_change": 0.3333333333333333
+          },
+          "attributes": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "actions": {
+            "exact_match_change": 0.33333333333333337,
+            "pairwise_change": 0.6666666666666667
+          },
+          "relations": {
+            "exact_match_change": 0.6666666666666667,
+            "pairwise_change": 1.0
+          },
+          "scene": {
+            "exact_match_change": 0.3333333333333333,
+            "pairwise_change": 0.3333333333333333
+          }
+        }
+      }
+    },
+    "test_005": {
+      "num_runs": 3,
+      "raw": {
+        "whole_csr": {
+          "exact_match_rate": 0.3333333333333333,
+          "pairwise_similarity": 0.0
+        },
+        "entities": {
+          "exact_match_rate": 0.3333333333333333,
+          "pairwise_similarity": 0.0
+        },
+        "attributes": {
+          "exact_match_rate": 0.6666666666666666,
+          "pairwise_similarity": 0.3333333333333333
+        },
+        "actions": {
+          "exact_match_rate": 0.6666666666666666,
+          "pairwise_similarity": 0.3333333333333333
+        },
+        "relations": {
+          "exact_match_rate": 0.3333333333333333,
+          "pairwise_similarity": 0.0
+        },
+        "scene": {
+          "exact_match_rate": 0.6666666666666666,
+          "pairwise_similarity": 0.3333333333333333
+        }
+      },
+      "canonical": {
+        "whole_csr": {
+          "exact_match_rate": 0.3333333333333333,
+          "pairwise_similarity": 0.0
+        },
+        "entities": {
+          "exact_match_rate": 0.3333333333333333,
+          "pairwise_similarity": 0.0
+        },
+        "attributes": {
+          "exact_match_rate": 0.6666666666666666,
+          "pairwise_similarity": 0.3333333333333333
+        },
+        "actions": {
+          "exact_match_rate": 0.6666666666666666,
+          "pairwise_similarity": 0.3333333333333333
+        },
+        "relations": {
+          "exact_match_rate": 0.3333333333333333,
+          "pairwise_similarity": 0.0
+        },
+        "scene": {
+          "exact_match_rate": 0.6666666666666666,
+          "pairwise_similarity": 0.3333333333333333
+        }
+      },
+      "aligned": {
+        "whole_csr": {
+          "exact_match_rate": 0.3333333333333333,
+          "pairwise_similarity": 0.0
+        },
+        "entities": {
+          "exact_match_rate": 0.6666666666666666,
+          "pairwise_similarity": 0.3333333333333333
+        },
+        "attributes": {
+          "exact_match_rate": 0.6666666666666666,
+          "pairwise_similarity": 0.3333333333333333
+        },
+        "actions": {
+          "exact_match_rate": 1.0,
+          "pairwise_similarity": 1.0
+        },
+        "relations": {
+          "exact_match_rate": 0.6666666666666666,
+          "pairwise_similarity": 0.3333333333333333
+        },
+        "scene": {
+          "exact_match_rate": 0.6666666666666666,
+          "pairwise_similarity": 0.3333333333333333
+        }
+      },
+      "improvement": {
+        "raw_to_canonical": {
+          "whole_csr": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "entities": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "attributes": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "actions": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "relations": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "scene": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          }
+        },
+        "canonical_to_aligned": {
+          "whole_csr": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "entities": {
+            "exact_match_change": 0.3333333333333333,
+            "pairwise_change": 0.3333333333333333
+          },
+          "attributes": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "actions": {
+            "exact_match_change": 0.33333333333333337,
+            "pairwise_change": 0.6666666666666667
+          },
+          "relations": {
+            "exact_match_change": 0.3333333333333333,
+            "pairwise_change": 0.3333333333333333
+          },
+          "scene": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          }
+        },
+        "raw_to_aligned": {
+          "whole_csr": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "entities": {
+            "exact_match_change": 0.3333333333333333,
+            "pairwise_change": 0.3333333333333333
+          },
+          "attributes": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          },
+          "actions": {
+            "exact_match_change": 0.33333333333333337,
+            "pairwise_change": 0.6666666666666667
+          },
+          "relations": {
+            "exact_match_change": 0.3333333333333333,
+            "pairwise_change": 0.3333333333333333
+          },
+          "scene": {
+            "exact_match_change": 0.0,
+            "pairwise_change": 0.0
+          }
+        }
+      }
+    }
+  },
+  "overall": {
+    "whole_csr": {
+      "raw_exact_match_rate": 0.3333333333333333,
+      "canonical_exact_match_rate": 0.4,
+      "aligned_exact_match_rate": 0.4,
+      "raw_to_canonical_exact_change": 0.06666666666666671,
+      "canonical_to_aligned_exact_change": 0.0,
+      "raw_to_aligned_exact_change": 0.06666666666666671,
+      "raw_pairwise_similarity": 0.0,
+      "canonical_pairwise_similarity": 0.06666666666666667,
+      "aligned_pairwise_similarity": 0.06666666666666667,
+      "raw_to_canonical_pairwise_change": 0.06666666666666667,
+      "canonical_to_aligned_pairwise_change": 0.0,
+      "raw_to_aligned_pairwise_change": 0.06666666666666667
+    },
+    "entities": {
+      "raw_exact_match_rate": 0.4666666666666666,
+      "canonical_exact_match_rate": 0.6,
+      "aligned_exact_match_rate": 0.6666666666666666,
+      "raw_to_canonical_exact_change": 0.13333333333333336,
+      "canonical_to_aligned_exact_change": 0.06666666666666665,
+      "raw_to_aligned_exact_change": 0.2,
+      "raw_pairwise_similarity": 0.2,
+      "canonical_pairwise_similarity": 0.3333333333333333,
+      "aligned_pairwise_similarity": 0.4,
+      "raw_to_canonical_pairwise_change": 0.1333333333333333,
+      "canonical_to_aligned_pairwise_change": 0.06666666666666671,
+      "raw_to_aligned_pairwise_change": 0.2
+    },
+    "attributes": {
+      "raw_exact_match_rate": 0.8,
+      "canonical_exact_match_rate": 0.8,
+      "aligned_exact_match_rate": 0.8,
+      "raw_to_canonical_exact_change": 0.0,
+      "canonical_to_aligned_exact_change": 0.0,
+      "raw_to_aligned_exact_change": 0.0,
+      "raw_pairwise_similarity": 0.6,
+      "canonical_pairwise_similarity": 0.6,
+      "aligned_pairwise_similarity": 0.6,
+      "raw_to_canonical_pairwise_change": 0.0,
+      "canonical_to_aligned_pairwise_change": 0.0,
+      "raw_to_aligned_pairwise_change": 0.0
+    },
+    "actions": {
+      "raw_exact_match_rate": 0.8,
+      "canonical_exact_match_rate": 0.8,
+      "aligned_exact_match_rate": 0.9333333333333333,
+      "raw_to_canonical_exact_change": 0.0,
+      "canonical_to_aligned_exact_change": 0.1333333333333333,
+      "raw_to_aligned_exact_change": 0.1333333333333333,
+      "raw_pairwise_similarity": 0.6,
+      "canonical_pairwise_similarity": 0.6,
+      "aligned_pairwise_similarity": 0.8666666666666666,
+      "raw_to_canonical_pairwise_change": 0.0,
+      "canonical_to_aligned_pairwise_change": 0.2666666666666666,
+      "raw_to_aligned_pairwise_change": 0.2666666666666666
+    },
+    "relations": {
+      "raw_exact_match_rate": 0.4,
+      "canonical_exact_match_rate": 0.5333333333333333,
+      "aligned_exact_match_rate": 0.7333333333333333,
+      "raw_to_canonical_exact_change": 0.1333333333333333,
+      "canonical_to_aligned_exact_change": 0.19999999999999996,
+      "raw_to_aligned_exact_change": 0.33333333333333326,
+      "raw_pairwise_similarity": 0.06666666666666667,
+      "canonical_pairwise_similarity": 0.2,
+      "aligned_pairwise_similarity": 0.5333333333333333,
+      "raw_to_canonical_pairwise_change": 0.13333333333333336,
+      "canonical_to_aligned_pairwise_change": 0.3333333333333333,
+      "raw_to_aligned_pairwise_change": 0.4666666666666667
+    },
+    "scene": {
+      "raw_exact_match_rate": 0.6,
+      "canonical_exact_match_rate": 0.6666666666666666,
+      "aligned_exact_match_rate": 0.6666666666666666,
+      "raw_to_canonical_exact_change": 0.06666666666666665,
+      "canonical_to_aligned_exact_change": 0.0,
+      "raw_to_aligned_exact_change": 0.06666666666666665,
+      "raw_pairwise_similarity": 0.3333333333333333,
+      "canonical_pairwise_similarity": 0.4,
+      "aligned_pairwise_similarity": 0.4,
+      "raw_to_canonical_pairwise_change": 0.06666666666666671,
+      "canonical_to_aligned_pairwise_change": 0.0,
+      "raw_to_aligned_pairwise_change": 0.06666666666666671
+    }
+  }
+}

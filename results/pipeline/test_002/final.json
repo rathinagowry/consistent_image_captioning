@@ -1,0 +1,72 @@
+[
+    {
+        "image_id": "test_002",
+        "status": "success",
+        "caption": "A wooden cabin with a log sits. The wooden cabin with a log is on a calm lake. A mirrored reflection is in the calm lake and of the wooden cabin with a log. The environment includes snow capped mountains.",
+        "csr": {
+            "image_id": "test_002",
+            "entities": [
+                {
+                    "id": "e2",
+                    "type": "cabin",
+                    "attributes": [
+                        "log",
+                        "wooden"
+                    ]
+                },
+                {
+                    "id": "e3",
+                    "type": "lake",
+                    "attributes": [
+                        "calm"
+                    ]
+                },
+                {
+                    "id": "e4",
+                    "type": "mountain",
+                    "attributes": [
+                        "majestic",
+                        "snow_capped"
+                    ]
+                },
+                {
+                    "id": "e6",
+                    "type": "reflection",
+                    "attributes": [
+                        "mirrored"
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "subject": "e2",
+                    "action": "sit",
+                    "object": null
+                }
+            ],
+            "relations": [
+                {
+                    "subject": "e2",
+                    "relation": "on",
+                    "object": "e3"
+                },
+                {
+                    "subject": "e6",
+                    "relation": "in",
+                    "object": "e3"
+                },
+                {
+                    "subject": "e6",
+                    "relation": "of",
+                    "object": "e2"
+                }
+            ],
+            "scene": {
+                "location": null,
+                "environment": [
+                    "snow_capped_mountains"
+                ]
+            }
+        }
+    }
+]

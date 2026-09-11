@@ -1,0 +1,56 @@
+[
+    {
+        "image_id": "test_001",
+        "status": "success",
+        "caption": "A brown dog runs. The brown dog is across a green field. The green field is dotted with a yellow flower. The scene is set in a field.",
+        "csr": {
+            "image_id": "test_001",
+            "entities": [
+                {
+                    "id": "e1",
+                    "type": "dog",
+                    "attributes": [
+                        "brown"
+                    ]
+                },
+                {
+                    "id": "e2",
+                    "type": "field",
+                    "attributes": [
+                        "green"
+                    ]
+                },
+                {
+                    "id": "e3",
+                    "type": "flower",
+                    "attributes": [
+                        "yellow"
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "subject": "e1",
+                    "action": "run",
+                    "object": null
+                }
+            ],
+            "relations": [
+                {
+                    "subject": "e1",
+                    "relation": "across",
+                    "object": "e2"
+                },
+                {
+                    "subject": "e2",
+                    "relation": "dotted_with",
+                    "object": "e3"
+                }
+            ],
+            "scene": {
+                "location": "field",
+                "environment": []
+            }
+        }
+    }
+]

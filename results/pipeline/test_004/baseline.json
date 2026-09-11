@@ -1,0 +1,35 @@
+[
+    {
+        "image_id": "test_004",
+        "image_file": "test_004.jpg",
+        "baseline_run_number": 1,
+        "extraction_run_number": 1,
+        "caption": "A woman in a brown tank top and blue jeans walks a white dog on a red leash through a grassy park area.",
+        "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+        "temperature": 0.0,
+        "status": "success",
+        "attempts": 3
+    },
+    {
+        "image_id": "test_004",
+        "image_file": "test_004.jpg",
+        "baseline_run_number": 2,
+        "extraction_run_number": 2,
+        "caption": "A woman wearing a brown tank top and blue jeans walks a white dog on a red leash through a grassy park with trees in the background.",
+        "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+        "temperature": 0.0,
+        "status": "success",
+        "attempts": 1
+    },
+    {
+        "image_id": "test_004",
+        "image_file": "test_004.jpg",
+        "baseline_run_number": 3,
+        "extraction_run_number": 3,
+        "caption": "A woman in a brown tank top and blue jeans walks a light-colored dog on a red leash through a sunny park with scattered leaves on the grass.",
+        "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+        "temperature": 0.0,
+        "status": "success",
+        "attempts": 2
+    }
+]

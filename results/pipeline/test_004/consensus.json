@@ -1,0 +1,171 @@
+[
+    {
+        "image_id": "test_004",
+        "csr": {
+            "image_id": "test_004",
+            "entities": [
+                {
+                    "id": "e1",
+                    "type": "dog",
+                    "attributes": [
+                        "white"
+                    ]
+                },
+                {
+                    "id": "e4",
+                    "type": "leash",
+                    "attributes": [
+                        "red"
+                    ]
+                },
+                {
+                    "id": "e6",
+                    "type": "park",
+                    "attributes": [
+                        "grassy"
+                    ]
+                },
+                {
+                    "id": "e9",
+                    "type": "woman",
+                    "attributes": [
+                        "blue_jeans",
+                        "brown_tank_top"
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "subject": "e9",
+                    "action": "walk",
+                    "object": "e1"
+                }
+            ],
+            "relations": [
+                {
+                    "subject": "e1",
+                    "relation": "on",
+                    "object": "e4"
+                },
+                {
+                    "subject": "e9",
+                    "relation": "through",
+                    "object": "e6"
+                }
+            ],
+            "scene": {
+                "location": null,
+                "environment": []
+            }
+        },
+        "provenance": {
+            "consensus_policy": {
+                "number_of_runs": 3,
+                "minimum_support": 2,
+                "rule": "strict majority"
+            },
+            "minority_entities": [
+                {
+                    "consensus_id": "e2",
+                    "support": 1,
+                    "runs": [
+                        2
+                    ],
+                    "type_variants": [
+                        "grass"
+                    ],
+                    "attribute_support": {}
+                },
+                {
+                    "consensus_id": "e3",
+                    "support": 1,
+                    "runs": [
+                        1
+                    ],
+                    "type_variants": [
+                        "jeans"
+                    ],
+                    "attribute_support": {
+                        "blue": 1
+                    }
+                },
+                {
+                    "consensus_id": "e5",
+                    "support": 1,
+                    "runs": [
+                        2
+                    ],
+                    "type_variants": [
+                        "leaves"
+                    ],
+                    "attribute_support": {
+                        "scattered": 1
+                    }
+                },
+                {
+                    "consensus_id": "e7",
+                    "support": 1,
+                    "runs": [
+                        1
+                    ],
+                    "type_variants": [
+                        "tank_top"
+                    ],
+                    "attribute_support": {
+                        "brown": 1
+                    }
+                },
+                {
+                    "consensus_id": "e8",
+                    "support": 1,
+                    "runs": [
+                        1
+                    ],
+                    "type_variants": [
+                        "trees"
+                    ],
+                    "attribute_support": {}
+                }
+            ],
+            "minority_actions": [],
+            "minority_relations": [],
+            "scene": {
+                "location_support": {
+                    "grassy_park_area": 1,
+                    "grassy_park": 1,
+                    "park": 1
+                },
+                "minority_environment": [
+                    {
+                        "value": "grass",
+                        "support": 1,
+                        "runs": [
+                            2
+                        ]
+                    },
+                    {
+                        "value": "outdoor",
+                        "support": 1,
+                        "runs": [
+                            1
+                        ]
+                    },
+                    {
+                        "value": "scattered_leaves",
+                        "support": 1,
+                        "runs": [
+                            2
+                        ]
+                    },
+                    {
+                        "value": "sunny",
+                        "support": 1,
+                        "runs": [
+                            2
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+]

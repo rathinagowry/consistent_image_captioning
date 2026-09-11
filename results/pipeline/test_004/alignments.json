@@ -1,0 +1,260 @@
+[
+    {
+        "pair_id": "test_004_1_1_2",
+        "image_id": "test_004",
+        "record_a": {
+            "baseline_run_number": 1,
+            "extraction_run_number": 1
+        },
+        "record_b": {
+            "baseline_run_number": 2,
+            "extraction_run_number": 2
+        },
+        "status": "success",
+        "alignment": {
+            "entity_matches": [
+                {
+                    "a": "e1",
+                    "b": "e1"
+                },
+                {
+                    "a": "e2",
+                    "b": "e3"
+                },
+                {
+                    "a": "e3",
+                    "b": "e4"
+                },
+                {
+                    "a": "e4",
+                    "b": "e7"
+                }
+            ],
+            "attribute_matches": [
+                {
+                    "entity_a": "e1",
+                    "entity_b": "e1",
+                    "matches": [
+                        {
+                            "a": "white",
+                            "b": "white"
+                        }
+                    ]
+                },
+                {
+                    "entity_a": "e2",
+                    "entity_b": "e3",
+                    "matches": [
+                        {
+                            "a": "red",
+                            "b": "red"
+                        }
+                    ]
+                },
+                {
+                    "entity_a": "e3",
+                    "entity_b": "e4",
+                    "matches": [
+                        {
+                            "a": "grassy",
+                            "b": "grassy"
+                        }
+                    ]
+                }
+            ],
+            "action_matches": [
+                {
+                    "a_index": 0,
+                    "b_index": 0,
+                    "confidence": 1.0
+                }
+            ],
+            "relation_matches": [
+                {
+                    "a_index": 0,
+                    "b_index": 0,
+                    "confidence": 1.0
+                },
+                {
+                    "a_index": 1,
+                    "b_index": 2,
+                    "confidence": 1.0
+                }
+            ],
+            "scene_match": {
+                "equivalent": true,
+                "confidence": 0.95
+            }
+        }
+    },
+    {
+        "pair_id": "test_004_1_1_3",
+        "image_id": "test_004",
+        "record_a": {
+            "baseline_run_number": 1,
+            "extraction_run_number": 1
+        },
+        "record_b": {
+            "baseline_run_number": 3,
+            "extraction_run_number": 3
+        },
+        "status": "success",
+        "alignment": {
+            "entity_matches": [
+                {
+                    "a": "e1",
+                    "b": "e1"
+                },
+                {
+                    "a": "e2",
+                    "b": "e3"
+                },
+                {
+                    "a": "e3",
+                    "b": "e5"
+                },
+                {
+                    "a": "e4",
+                    "b": "e6"
+                }
+            ],
+            "attribute_matches": [
+                {
+                    "entity_a": "e1",
+                    "entity_b": "e1",
+                    "matches": [
+                        {
+                            "a": "white",
+                            "b": "light_colored"
+                        }
+                    ]
+                },
+                {
+                    "entity_a": "e2",
+                    "entity_b": "e3",
+                    "matches": [
+                        {
+                            "a": "red",
+                            "b": "red"
+                        }
+                    ]
+                },
+                {
+                    "entity_a": "e4",
+                    "entity_b": "e6",
+                    "matches": [
+                        {
+                            "a": "blue_jeans",
+                            "b": "blue_jeans"
+                        },
+                        {
+                            "a": "brown_tank_top",
+                            "b": "brown_tank_top"
+                        }
+                    ]
+                }
+            ],
+            "action_matches": [
+                {
+                    "a_index": 0,
+                    "b_index": 0,
+                    "confidence": 0.95
+                }
+            ],
+            "relation_matches": [
+                {
+                    "a_index": 0,
+                    "b_index": 0,
+                    "confidence": 0.95
+                },
+                {
+                    "a_index": 1,
+                    "b_index": 3,
+                    "confidence": 0.95
+                }
+            ],
+            "scene_match": {
+                "equivalent": true,
+                "confidence": 0.8
+            }
+        }
+    },
+    {
+        "pair_id": "test_004_2_2_3",
+        "image_id": "test_004",
+        "record_a": {
+            "baseline_run_number": 2,
+            "extraction_run_number": 2
+        },
+        "record_b": {
+            "baseline_run_number": 3,
+            "extraction_run_number": 3
+        },
+        "status": "success",
+        "alignment": {
+            "entity_matches": [
+                {
+                    "a": "e1",
+                    "b": "e1"
+                },
+                {
+                    "a": "e3",
+                    "b": "e3"
+                },
+                {
+                    "a": "e4",
+                    "b": "e5"
+                },
+                {
+                    "a": "e7",
+                    "b": "e6"
+                }
+            ],
+            "attribute_matches": [
+                {
+                    "entity_a": "e1",
+                    "entity_b": "e1",
+                    "matches": [
+                        {
+                            "a": "white",
+                            "b": "light_colored"
+                        }
+                    ]
+                },
+                {
+                    "entity_a": "e3",
+                    "entity_b": "e3",
+                    "matches": [
+                        {
+                            "a": "red",
+                            "b": "red"
+                        }
+                    ]
+                }
+            ],
+            "action_matches": [
+                {
+                    "a_index": 0,
+                    "b_index": 0,
+                    "confidence": 0.95
+                }
+            ],
+            "relation_matches": [
+                {
+                    "a_index": 0,
+                    "b_index": 0,
+                    "confidence": 0.95
+                },
+                {
+                    "a_index": 2,
+                    "b_index": 3,
+                    "confidence": 0.95
+                }
+            ],
+            "scene_match": {
+                "equivalent": true,
+                "confidence": 0.85
+            }
+        }
+    }
+]

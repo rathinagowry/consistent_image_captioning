@@ -47,6 +47,47 @@ def get_image_files():
     return images
 
 
+def load_existing_results():
+    """
+    Load previously saved experiment results.
+
+    If no previous results exist, return an empty list.
+    """
+
+    output_path = Path(JSON_OUTPUT)
+
+    if not output_path.exists():
+        return []
+
+    try:
+
+        with open(
+            output_path,
+            "r",
+            encoding="utf-8",
+        ) as file:
+
+            results = json.load(file)
+
+        if not isinstance(results, list):
+            print(
+                "Warning: Existing JSON does not contain "
+                "a list. Starting with empty results."
+            )
+            return []
+
+        return results
+
+    except json.JSONDecodeError:
+
+        print(
+            "Warning: Existing JSON could not be parsed. "
+            "Starting with empty results."
+        )
+
+        return []
+
+
 def save_results(results):
     """
     Save experiment results as JSON and CSV.
@@ -87,6 +128,50 @@ def save_results(results):
     )
 
 
+def get_successful_results_for_image(
+    results,
+    image_id,
+):
+    """
+    Return successful generations for a particular image.
+    """
+
+    return [
+        result
+        for result in results
+        if result.get("image_id") == image_id
+        and result.get("status") == "success"
+        and result.get("output")
+    ]
+
+
+def get_next_run_number(
+    results,
+    image_id,
+):
+    """
+    Return the next unused run number for an image.
+
+    This preserves existing run numbers and avoids
+    overwriting previous records.
+    """
+
+    run_numbers = [
+        result.get("run_number")
+        for result in results
+        if result.get("image_id") == image_id
+        and isinstance(
+            result.get("run_number"),
+            int,
+        )
+    ]
+
+    if not run_numbers:
+        return 1
+
+    return max(run_numbers) + 1
+
+
 def run_baseline():
 
     images = get_image_files()
@@ -95,6 +180,16 @@ def run_baseline():
         raise ValueError(
             f"No images found in {IMAGE_DIR}"
         )
+
+    # ------------------------------------------------
+    # Load previous results
+    # ------------------------------------------------
+
+    results = load_existing_results()
+
+    # ------------------------------------------------
+    # Experiment header
+    # ------------------------------------------------
 
     print("=" * 60)
     print("IMAGE-TO-TEXT BASELINE EXPERIMENT")
@@ -105,15 +200,22 @@ def run_baseline():
     print(f"Temperature : {TEMPERATURE}")
     print(f"Images      : {len(images)}")
     print(f"Runs/image  : {NUM_RUNS}")
+
     print(
-        f"Total calls : {len(images) * NUM_RUNS}"
+        f"Total target generations : "
+        f"{len(images) * NUM_RUNS}"
     )
 
     print("=" * 60)
 
-    results = []
+    # ------------------------------------------------
+    # Process each image
+    # ------------------------------------------------
 
-    for image_index, image_path in enumerate(images, start=1):
+    for image_index, image_path in enumerate(
+        images,
+        start=1,
+    ):
 
         image_id = image_path.stem
 
@@ -123,10 +225,69 @@ def run_baseline():
             f"{image_path.name}"
         )
 
-        for run_number in range(1, NUM_RUNS + 1):
+        # ------------------------------------------------
+        # Find existing successful generations
+        # ------------------------------------------------
+
+        successful_results = (
+            get_successful_results_for_image(
+                results,
+                image_id,
+            )
+        )
+
+        successful_count = len(
+            successful_results
+        )
+
+        # ------------------------------------------------
+        # Image already complete
+        # ------------------------------------------------
+
+        if successful_count >= NUM_RUNS:
 
             print(
-                f"  Run {run_number}/{NUM_RUNS}...",
+                f"  Already has "
+                f"{successful_count}/{NUM_RUNS} "
+                f"successful runs."
+            )
+
+            print("  Skipping image.")
+
+            continue
+
+        # ------------------------------------------------
+        # Determine missing runs
+        # ------------------------------------------------
+
+        missing_runs = (
+            NUM_RUNS - successful_count
+        )
+
+        print(
+            f"  Existing successful runs : "
+            f"{successful_count}/{NUM_RUNS}"
+        )
+
+        print(
+            f"  Missing successful runs  : "
+            f"{missing_runs}"
+        )
+
+        # ------------------------------------------------
+        # Generate only missing runs
+        # ------------------------------------------------
+
+        for _ in range(missing_runs):
+
+            run_number = get_next_run_number(
+                results,
+                image_id,
+            )
+
+            print(
+                f"  Run {run_number} "
+                f"(missing run)...",
                 end=" ",
                 flush=True,
             )
@@ -135,15 +296,27 @@ def run_baseline():
 
             try:
 
-                generation_result = generate_caption(
-                    image_path=str(image_path),
-                    prompt=PROMPT,
-                    temperature=TEMPERATURE,
+                generation_result = (
+                    generate_caption(
+                        image_path=str(
+                            image_path
+                        ),
+                        prompt=PROMPT,
+                        temperature=TEMPERATURE,
+                    )
                 )
-                caption = generation_result["output"]           
-                attempts = generation_result["attempts"]
 
-                elapsed_time = time.time() - start_time
+                caption = generation_result[
+                    "output"
+                ]
+
+                attempts = generation_result[
+                    "attempts"
+                ]
+
+                elapsed_time = (
+                    time.time() - start_time
+                )
 
                 result = {
                     "image_id": image_id,
@@ -168,7 +341,9 @@ def run_baseline():
 
             except Exception as error:
 
-                elapsed_time = time.time() - start_time
+                elapsed_time = (
+                    time.time() - start_time
+                )
 
                 result = {
                     "image_id": image_id,
@@ -191,30 +366,60 @@ def run_baseline():
                 }
 
                 print("FAILED")
-                print(f"    Error: {error}")
+                print(
+                    f"    Error: {error}"
+                )
+
+            # ------------------------------------------------
+            # Add result
+            # ------------------------------------------------
 
             results.append(result)
 
-            # Save after every generation so that
-            # partial results aren't lost.
+            # ------------------------------------------------
+            # Save immediately
+            # ------------------------------------------------
+
             save_results(results)
+
+    # ------------------------------------------------
+    # Final summary
+    # ------------------------------------------------
+
+    successful_total = sum(
+        result.get("status") == "success"
+        for result in results
+    )
+
+    failed_total = sum(
+        result.get("status") == "error"
+        for result in results
+    )
 
     print()
     print("=" * 60)
     print("EXPERIMENT COMPLETE")
     print("=" * 60)
 
-    print(f"JSON: {JSON_OUTPUT}")
-    print(f"CSV : {CSV_OUTPUT}")
+    print(
+        f"JSON: {JSON_OUTPUT}"
+    )
+
+    print(
+        f"CSV : {CSV_OUTPUT}"
+    )
+
     print(
         f"Successful generations: "
-        f"{sum(r['status'] == 'success' for r in results)}"
+        f"{successful_total}"
     )
 
     print(
         f"Failed generations: "
-        f"{sum(r['status'] == 'error' for r in results)}"
+        f"{failed_total}"
     )
+
+    print("=" * 60)
 
 
 if __name__ == "__main__":

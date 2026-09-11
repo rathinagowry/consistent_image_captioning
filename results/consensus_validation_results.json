@@ -1,0 +1,56 @@
+[
+  {
+    "image_id": "test_001",
+    "status": "PASS",
+    "error_count": 0,
+    "warning_count": 0,
+    "info_count": 0,
+    "issues": []
+  },
+  {
+    "image_id": "test_002",
+    "status": "PASS",
+    "error_count": 0,
+    "warning_count": 0,
+    "info_count": 1,
+    "issues": [
+      {
+        "severity": "INFO",
+        "category": "semantic_review",
+        "message": "The same subject/object pair appears in both an action and a relation. Review whether the representation contains redundant semantics.",
+        "location": "relations[0]"
+      }
+    ]
+  },
+  {
+    "image_id": "test_003",
+    "status": "PASS",
+    "error_count": 0,
+    "warning_count": 0,
+    "info_count": 0,
+    "issues": []
+  },
+  {
+    "image_id": "test_004",
+    "status": "PASS",
+    "error_count": 0,
+    "warning_count": 0,
+    "info_count": 0,
+    "issues": []
+  },
+  {
+    "image_id": "test_005",
+    "status": "PASS",
+    "error_count": 0,
+    "warning_count": 0,
+    "info_count": 1,
+    "issues": [
+      {
+        "severity": "INFO",
+        "category": "semantic_review",
+        "message": "The same subject/object pair appears in both an action and a relation. Review whether the representation contains redundant semantics.",
+        "location": "relations[3]"
+      }
+    ]
+  }
+]

@@ -1,0 +1,6 @@
+image_id,caption,reproducibility,unique_outputs
+test_001,A tan dog runs a grassy field. a grassy field is dotted with a yellow flower. The scene is set in a grassy field.,True,1
+test_002,"A log rustic cabin sits a calm lake. a majestic snow-capped mountains rises. a mirrored reflection mirrors a calm lake. a log rustic cabin is on a calm lake. a mirrored reflection is of a log rustic cabin. The scene contains calm lake, golden sky, and snow-capped mountains.",True,1
+test_003,A beard glasses white shirt man types a laptop. a beard glasses white shirt man is at a desk. a desk is illuminated by a warm desk lamp.,True,1
+test_004,A woman walks a white dog. a woman wears a blue jeans. a woman wears a brown tank top. a trees is in background of a grassy park area. a white dog is on a red leash. a woman is through a grassy park area. The scene contains grassy and trees.,True,1
+test_005,A teacher guides a young children. a teacher sits. a young children engages an educational activity. a young children plays a wooden toy. a teacher is in a classroom. a teacher is on a floor. a teacher is with a young children. a young children is in a classroom. The scene is set in a classroom.,True,1

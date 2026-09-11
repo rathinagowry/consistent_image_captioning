@@ -1,0 +1,6 @@
+image_id,status,error_count,warning_count,info_count
+test_001,PASS,0,0,0
+test_002,PASS,0,0,1
+test_003,PASS,0,0,0
+test_004,PASS,0,0,0
+test_005,PASS,0,0,1

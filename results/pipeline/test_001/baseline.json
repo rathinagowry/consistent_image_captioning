@@ -1,0 +1,35 @@
+[
+    {
+        "image_id": "test_001",
+        "image_file": "test_001.png",
+        "baseline_run_number": 1,
+        "extraction_run_number": 1,
+        "caption": "A brown dog runs across a grassy field dotted with yellow flowers.",
+        "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+        "temperature": 0.0,
+        "status": "success",
+        "attempts": 1
+    },
+    {
+        "image_id": "test_001",
+        "image_file": "test_001.png",
+        "baseline_run_number": 2,
+        "extraction_run_number": 2,
+        "caption": "A tan dog runs through a grassy field dotted with yellow flowers.",
+        "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+        "temperature": 0.0,
+        "status": "success",
+        "attempts": 1
+    },
+    {
+        "image_id": "test_001",
+        "image_file": "test_001.png",
+        "baseline_run_number": 3,
+        "extraction_run_number": 3,
+        "caption": "A brown dog runs through a green field dotted with yellow flowers.",
+        "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+        "temperature": 0.0,
+        "status": "success",
+        "attempts": 3
+    }
+]
